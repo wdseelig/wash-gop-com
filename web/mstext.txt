@@ -1,0 +1,429 @@
+ ------------------ ------------------------- -------- ------- ---------- ------------- --------------------- 
+  Group              Migration ID              Status   Total   Imported   Unprocessed   Last Imported        
+ ------------------ ------------------------- -------- ------- ---------- ------------- --------------------- 
+  Import from        upgrade_block_content_t   Idle     1       0          1                                  
+  Drupal 7           ype                                                                                      
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_dblog_settin   Idle     1       1          0             2020-06-24 15:32:16  
+  Drupal 7           gs                                                                                       
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_file_private   Idle     0       0          0             2020-06-24 15:32:16  
+  Drupal 7                                                                                                    
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_filter_setti   Idle     1       1          0             2020-06-24 15:32:16  
+  Drupal 7           ngs                                                                                      
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_global_theme   Idle     1       1          0             2020-06-24 15:32:16  
+  Drupal 7           _settings                                                                                
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_menu           Idle     14      14         0             2020-06-24 15:32:16  
+  Drupal 7                                                                                                    
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_node_setting   Idle     1       1          0             2020-06-24 15:32:16  
+  Drupal 7           s                                                                                        
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_system_autho   Idle     1       1          0             2020-06-24 15:32:16  
+  Drupal 7           rize                                                                                     
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_system_cron    Idle     1       1          0             2020-06-24 15:32:16  
+  Drupal 7                                                                                                    
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_system_date    Idle     1       1          0             2020-06-24 15:32:16  
+  Drupal 7                                                                                                    
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_system_file    Idle     1       0          0             2020-06-24 15:32:16  
+  Drupal 7                                                                                                    
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_system_mail    Idle     1       1          0             2020-06-24 15:32:16  
+  Drupal 7                                                                                                    
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_system_perfo   Idle     1       1          0             2020-06-24 15:32:16  
+  Drupal 7           rmance                                                                                   
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_theme_settin   Idle     9       0          9             2020-06-24 15:32:16  
+  Drupal 7           gs                                                                                       
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_user_flood     Idle     1       1          0             2020-06-24 15:32:16  
+  Drupal 7                                                                                                    
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_user_mail      Idle     1       1          0             2020-06-24 15:32:16  
+  Drupal 7                                                                                                    
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_file_settings     Idle     1       1          0             2020-06-24 15:32:16  
+  Drupal 7                                                                                                    
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_system_image      Idle     1       1          0             2020-06-24 15:32:16  
+  Drupal 7                                                                                                    
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_system_image_gd   Idle     1       1          0             2020-06-24 15:32:16  
+  Drupal 7                                                                                                    
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_system_logging    Idle     1       1          0             2020-06-24 15:32:16  
+  Drupal 7                                                                                                    
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_system_maintena   Idle     1       1          0             2020-06-24 15:32:16  
+  Drupal 7           nce                                                                                      
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_system_rss        Idle     1       1          0             2020-06-24 15:32:16  
+  Drupal 7                                                                                                    
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_system_site       Idle     1       1          0             2020-06-24 15:32:16  
+  Drupal 7                                                                                                    
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_text_settings     Idle     1       1          0             2020-06-24 15:32:16  
+  Drupal 7                                                                                                    
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_update_settings   Idle     1       1          0             2020-06-24 15:32:16  
+  Drupal 7                                                                                                    
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_user_profile_fi   Idle     2       2          0             2020-06-24 15:32:16  
+  Drupal 7           eld                                                                                      
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_block_content_b   Idle     1       0          1                                  
+  Drupal 7           ody_field                                                                                
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_user_profile_fi   Idle     2       2          0             2020-06-24 15:32:16  
+  Drupal 7           eld_instance                                                                             
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_block_content_e   Idle     1       0          1                                  
+  Drupal 7           ntity_display                                                                            
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_user_profile_en   Idle     2       2          0             2020-06-24 15:32:17  
+  Drupal 7           tity_display                                                                             
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_block_content_e   Idle     1       0          1                                  
+  Drupal 7           ntity_form_display                                                                       
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_user_profile_en   Idle     2       2          0             2020-06-24 15:32:17  
+  Drupal 7           tity_form_display                                                                        
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_filter_forma   Idle     9       8          0             2020-06-24 15:32:16  
+  Drupal 7           t                                                                                        
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_custom_block   Idle     49      0          49                                 
+  Drupal 7                                                                                                    
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_user_role      Idle     11      11         0             2020-06-24 15:32:16  
+  Drupal 7                                                                                                    
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_block          Idle     1292    39         0             2020-06-24 15:32:17  
+  Drupal 7                                                                                                    
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_field          Idle     236     31         0             2020-06-24 15:32:17  
+  Drupal 7                                                                                                    
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_node_type      Idle     54      54         0             2020-06-24 15:32:17  
+  Drupal 7                                                                                                    
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_field_instan   Idle     483     89         0             2020-06-24 15:32:18  
+  Drupal 7           ce                                                                                       
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_view_modes     Idle     76      18         0             2020-06-24 15:32:18  
+  Drupal 7                                                                                                    
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_field_format   Idle     1231    206        0             2020-06-24 15:32:28  
+  Drupal 7           ter_settings                                                                             
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_field_instan   Idle     483     0          483                                
+  Drupal 7           ce_widget_settings                                                                       
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_file           Idle     605     0          605                                
+  Drupal 7                                                                                                    
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_user_picture_fi   Idle     1       0          1                                  
+  Drupal 7           eld                                                                                      
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_user_picture_fi   Idle     1       0          1                                  
+  Drupal 7           eld_instance                                                                             
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_user_picture_en   Idle     1       0          1                                  
+  Drupal 7           tity_display                                                                             
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_user_picture_en   Idle     1       0          1                                  
+  Drupal 7           tity_form_display                                                                        
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_user           Idle     1113    0          1113                               
+  Drupal 7                                                                                                    
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     6       0          6                                  
+  Drupal 7           e_advpoll                                                                                
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     0       0          0                                  
+  Drupal 7           e_basicpetition                                                                          
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     37      0          37                                 
+  Drupal 7           e_blog                                                                                   
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     16      0          16                                 
+  Drupal 7           e_blogauto                                                                               
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     1       0          1                                  
+  Drupal 7           e_cmcv_volunteer                                                                         
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     0       0          0                                  
+  Drupal 7           e_commercelineitems                                                                      
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     2       0          2                                  
+  Drupal 7           e_donation_display                                                                       
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     62      0          62                                 
+  Drupal 7           e_event                                                                                  
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     2       0          2                                  
+  Drupal 7           e_feed                                                                                   
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     0       0          0                                  
+  Drupal 7           e_feed_item                                                                              
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     0       0          0                                  
+  Drupal 7           e_forumadmissionselecti                                                                  
+  (migrate_drupal_   on                                                                                       
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     1       0          1                                  
+  Drupal 7           e_forumitemdisplay                                                                       
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     4       0          4                                  
+  Drupal 7           e_forumitemdisplayv2                                                                     
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     2       0          2                                  
+  Drupal 7           e_forum_admission                                                                        
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     1       0          1                                  
+  Drupal 7           e_forum_ticket                                                                           
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     1       0          1                                  
+  Drupal 7           e_genericproductdisplay                                                                  
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     1       0          1                                  
+  Drupal 7           e_golfoutingdisplay                                                                      
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     1       0          1                                  
+  Drupal 7           e_gop_ldd_2019_sponsors                                                                  
+  (migrate_drupal_   hips                                                                                     
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     3       0          3                                  
+  Drupal 7           e_gop_lincoln_day_dinne                                                                  
+  (migrate_drupal_   rs                                                                                       
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     3       0          3                                  
+  Drupal 7           e_gop_lincoln_day_recep                                                                  
+  (migrate_drupal_   tion_and_di                                                                              
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     2       0          2                                  
+  Drupal 7           e_gop_lincoln_day_spons                                                                  
+  (migrate_drupal_   orships                                                                                  
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     1       0          1                                  
+  Drupal 7           e_inaugurationparty                                                                      
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     1       0          1                                  
+  Drupal 7           e_lddd2020couples                                                                        
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     1       0          1                                  
+  Drupal 7           e_lddd2020sponsorshipdi                                                                  
+  (migrate_drupal_   splay                                                                                    
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     1       0          1                                  
+  Drupal 7           e_lddd2020tablefor10                                                                     
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     1       0          1                                  
+  Drupal 7           e_lddd2020vipplusdispla                                                                  
+  (migrate_drupal_   y                                                                                        
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     1       0          1                                  
+  Drupal 7           e_ldrad2020display                                                                       
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     1       0          1                                  
+  Drupal 7           e_mass_contact                                                                           
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     2       0          2                                  
+  Drupal 7           e_membershipitemdisplay                                                                  
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     2       0          2                                  
+  Drupal 7           e_membership_products                                                                    
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     3       0          3                                  
+  Drupal 7           e_migrate_example_beer                                                                   
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     0       0          0                                  
+  Drupal 7           e_migrate_example_produ                                                                  
+  (migrate_drupal_   cer                                                                                      
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     0       0          0                                  
+  Drupal 7           e_migrate_example_wine                                                                   
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     5       0          5                                  
+  Drupal 7           e_node_gallery_gallery                                                                   
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     311     0          311                                
+  Drupal 7           e_node_gallery_item                                                                      
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     153     0          153                                
+  Drupal 7           e_page                                                                                   
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     1       0          1                                  
+  Drupal 7           e_pagewithadvancedpoll                                                                   
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     0       0          0                                  
+  Drupal 7           e_paypal_donate                                                                          
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     1       0          1                                  
+  Drupal 7           e_picnicitemdisplay                                                                      
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     5       0          5                                  
+  Drupal 7           e_poll                                                                                   
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     2       0          2                                  
+  Drupal 7           e_pollwithpage                                                                           
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     0       0          0                                  
+  Drupal 7           e_product                                                                                
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     0       0          0                                  
+  Drupal 7           e_product_display                                                                        
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     0       0          0                                  
+  Drupal 7           e_product_kit                                                                            
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     66      0          66                                 
+  Drupal 7           e_story                                                                                  
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     1       0          1                                  
+  Drupal 7           e_trialproductdisplay                                                                    
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     6       0          6                                  
+  Drupal 7           e_volunteertimesloteven                                                                  
+  (migrate_drupal_   t                                                                                        
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     35      0          35                                 
+  Drupal 7           e_volunteertimesloteven                                                                  
+  (migrate_drupal_   tday                                                                                     
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     1       0          1                                  
+  Drupal 7           e_wcgop2019dinner                                                                        
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     1       0          1                                  
+  Drupal 7           e_wcgop2019reception                                                                     
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     1       0          1                                  
+  Drupal 7           e_wcgop2020dinner                                                                        
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     51      0          51                                 
+  Drupal 7           e_wcgopevent                                                                             
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     5       0          5                                  
+  Drupal 7           e_wcgop_store                                                                            
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_node_complet   Idle     72      0          72                                 
+  Drupal 7           e_webform                                                                                
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+  Import from        upgrade_d7_node_title_l   Idle     54      0          54                                 
+  Drupal 7           abel                                                                                     
+  (migrate_drupal_                                                                                            
+  7)                                                                                                          
+                                                                                                              
+  Default            block_content_type        Idle     1       0          1                                  
+  (default)                                                                                                   
+  Default            block_content_body_fiel   Idle     1       0          1                                  
+  (default)          d                                                                                        
+  Default            block_content_entity_fo   Idle     1       0          1                                  
+  (default)          rm_display                                                                               
+  Default            block_content_entity_di   Idle     1       0          1                                  
+  (default)          splay                                                                                    
+  Default            d6_upload_field           Idle     1       0          1                                  
+  (default)                                                                                                   
+  Default            user_picture_field        Idle     1       0          1                                  
+  (default)                                                                                                   
+ ------------------ ------------------------- -------- ------- ---------- ------------- --------------------- 
