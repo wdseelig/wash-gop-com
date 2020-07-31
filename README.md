@@ -34,7 +34,7 @@ new password with each drupal install.
 ```
 cd /var/www/drupal8vm/web
 drush site:install minimal
-  --db-url="mysql://drupal:drupal@localhost:3306/drupal" --site-name="WCGOP"  -y 
+   --site-name="WCGOP"  -y 
 drush upwd "admin" "wd17hh21"
 ```
 
@@ -71,7 +71,7 @@ machine.  This was a fairly straightforward process:
 * Use mysql commands to import the .sql file to a database
 * Add another database to the settings.php file as follows:
 ```
-$databases['drupal7']['default'] = array (
+$databases['migrate']['default'] = array (
   'database' => 'washgopc_GOPV7V2',
   'username' => 'gopdbadmin',
   'password' => '18WMTNwcta65',
@@ -103,3 +103,65 @@ migrate-upgrade command all belong to a "group" called migrate_drupal_7; we'll
 use that group below in the drush migrate-import command.
 
 -------------second commit-------------
+
+The command to do the migrations is called import and it looks like this:
+```
+drush migrate-import --group=migrate_drupal_7
+```
+When I run this command the first time, the upgrade_d7_filter_format migration
+fails with the following message:
+```
+4/9 [============>---------------]  44% [error]  The "" plugin does not exist.
+Valid plugin IDs for Drupal\filter\FilterPluginManager are:
+filter_html_image_secure, filter_url, filter_null, filter_html, filter_autop,
+filter_align, filter_caption, filter_htmlcorrector, filter_html_escape 
+(/var/www/drupal8vm/web/core/lib/Drupal/Component/Plugin/Discovery/DiscoveryTrait.php:53)
+[error]  Missing filter plugin: filter_null.
+```
+ [notice] Processed 9 items (8 created, 0 updated, 1 failed, 0 ignored) - done with 'upgrade_d7_filter_format'
+ 
+ 
+ 
+ -------------third commit-------------
+ 
+ July 30, 2020 OK, it is now about 25 days since my last commit, and I have
+ made some major changes in direction.  First, in early July I decided to
+ abandon Vagrant and go with the Docker approach that Jeff was using.
+ Here are some comments about that process:
+ 
+ 
+ Stuff from July 8, 2020
+ 
+ I made slight modifications to Jeff's naming conventions:
+ 
+ * In my build command, I changed the name of the image I'm building to
+ wdseelig:latest so this command looks like this:
+    docker build -t wdseelig:latest .
+    docker-compose up -d
+ 
+ * In my config.yml file I changed the image: to wdseelig:latest [the one I 
+ just built above] and the container name to WCGOP
+ 
+ * I added a second mysql container to hold the old Drupal 7 database. My
+ docker-compose.yml file now creates 3 containers
+ 
+ Once that was completed and I had a crude and preliminary version of my site
+ running in a Docker container, I started running into still more problems with
+ migrations, so I decided that I needed to have an IDE working with my system.
+ It took several days to accomplish this, but on Sunday, July 26th, a red
+ letter day if there ever was one,  I got that working, and by Thursday,
+ July 30th, I was ready to make the commit that would capture the status.
+ Here is the process that I went through:
+ 
+* Started with Jeff's Dockerfile and a docker-compose.yml file to create the
+Docker containers
+* Included the following additions:
+ 	* installed xdebug and sshd server
+ 	* Wrote necessary xdebug configuration information to
+ 	/etc/php/7.4/mods-available/xdebug.ini file
+ 	* Installed the vim editor [necessary if I want to edit system files]
+ 	* Wrote ssh key information to /root/.ssh/authorized_keys file
+* I spent a day and a half (!) trying to figure out how to start Apache and
+sshd automatically when I brought up my containers.  I eventually gave up on
+this and just created an alias, dssh, to start ssh service on my container. 
+ 
