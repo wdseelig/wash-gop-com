@@ -1,0 +1,28 @@
+uuid: e5ee14e5-b131-4c1e-9dd0-53eb1e65fe4f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.migrate_example_producer.body
+    - node.type.migrate_example_producer
+  module:
+    - text
+    - user
+id: node.migrate_example_producer.default
+targetEntityType: node
+bundle: migrate_example_producer
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

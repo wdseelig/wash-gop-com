@@ -1,0 +1,20 @@
+uuid: 2de88c96-d522-4f9d-bf59-9fe7883a9603
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_cmcv_slots
+field_name: field_cmcv_slots
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

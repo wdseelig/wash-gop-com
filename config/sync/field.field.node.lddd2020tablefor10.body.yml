@@ -1,0 +1,23 @@
+uuid: 725b2bac-e650-4a6d-b633-06e2dfd7cd10
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.lddd2020tablefor10
+  module:
+    - text
+id: node.lddd2020tablefor10.body
+field_name: body
+entity_type: node
+bundle: lddd2020tablefor10
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

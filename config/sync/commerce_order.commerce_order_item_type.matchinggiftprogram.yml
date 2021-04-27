@@ -1,0 +1,10 @@
+uuid: 727ed52b-3008-475d-83a7-fcecca30a3fc
+langcode: en
+status: true
+dependencies: {  }
+label: matchinggiftprogram
+id: matchinggiftprogram
+purchasableEntityType: commerce_product_variation
+orderType: default
+traits: {  }
+locked: false

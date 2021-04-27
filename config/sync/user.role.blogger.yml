@@ -1,0 +1,23 @@
+uuid: 684f007e-fe09-4686-bfac-df1a2bb4182a
+langcode: en
+status: true
+dependencies: {  }
+id: blogger
+label: blogger
+weight: 2
+is_admin: null
+permissions:
+  - 'cancel own signups'
+  - 'create blog content'
+  - 'create node_gallery_gallery content'
+  - 'create node_gallery_item content'
+  - 'delete own node_gallery_gallery content'
+  - 'delete own node_gallery_item content'
+  - 'edit own blog content'
+  - 'edit own node_gallery_gallery content'
+  - 'edit own node_gallery_item content'
+  - 'edit own page content'
+  - 'sign up for content'
+  - 'skip CAPTCHA'
+  - 'use text format 1'
+  - 'view files'

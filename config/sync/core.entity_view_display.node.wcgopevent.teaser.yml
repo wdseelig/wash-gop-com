@@ -1,0 +1,30 @@
+uuid: a9c2ebae-c8f4-414d-b638-9dec455f018d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.wcgopevent.body
+    - node.type.wcgopevent
+  module:
+    - text
+    - user
+id: node.wcgopevent.teaser
+targetEntityType: node
+bundle: wcgopevent
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

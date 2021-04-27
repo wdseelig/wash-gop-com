@@ -1,0 +1,10 @@
+uuid: 19ec21d1-7f33-4995-b0f9-ee3d0ef9dbff
+langcode: en
+status: true
+dependencies: {  }
+id: receptionanddinner2018
+label: ReceptionAndDinner2018
+orderItemType: default
+generateTitle: false
+traits: {  }
+locked: false

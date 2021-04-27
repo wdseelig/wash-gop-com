@@ -1,0 +1,28 @@
+uuid: bf2e2912-e967-422c-a65d-d35e0e43c165
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.golfoutingdisplay.body
+    - node.type.golfoutingdisplay
+  module:
+    - text
+    - user
+id: node.golfoutingdisplay.default
+targetEntityType: node
+bundle: golfoutingdisplay
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

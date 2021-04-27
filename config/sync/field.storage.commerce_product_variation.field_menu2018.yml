@@ -1,0 +1,30 @@
+uuid: 1a07c8e0-974f-43b0-8b99-9fa3fa2508ad
+langcode: und
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - options
+id: commerce_product_variation.field_menu2018
+field_name: field_menu2018
+entity_type: commerce_product_variation
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 1
+      label: 'Combination Steak and Salmon Dinner'
+    -
+      value: 2
+      label: 'Grilled Artichoke Chicken'
+    -
+      value: 3
+      label: 'Vegetarian Platter'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

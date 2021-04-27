@@ -1,0 +1,10 @@
+uuid: c54d6329-3aa4-4016-aa21-40d54afa6820
+langcode: en
+status: true
+dependencies: {  }
+id: gop_membership
+label: 'GOP Membership'
+orderItemType: default
+generateTitle: false
+traits: {  }
+locked: false

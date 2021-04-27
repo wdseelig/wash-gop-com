@@ -1,0 +1,36 @@
+uuid: 72b1386e-fe43-4efa-94f9-69e11b403e29
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_wcgop2019reception
+    - field.field.comment.comment_node_wcgop2019reception.comment_body
+  module:
+    - text
+id: comment.comment_node_wcgop2019reception.default
+targetEntityType: comment
+bundle: comment_node_wcgop2019reception
+mode: default
+content:
+  author:
+    weight: -2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_body:
+    type: text_textarea
+    weight: 11
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  subject:
+    type: string_textfield
+    weight: 10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

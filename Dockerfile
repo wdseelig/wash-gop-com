@@ -6,12 +6,13 @@ FROM composer as vendor
 COPY composer.json composer.json
 COPY composer.lock composer.lock
 COPY web/ web/
+COPY GoodKey.gpg GoodKey.gpg
 
-RUN composer install \
-    --ignore-platform-reqs \
-    --no-interaction \
-    --no-dev \
-    --prefer-dist
+# RUN composer install \
+#    --ignore-platform-reqs \
+#    --no-interaction \
+#    --no-dev \ 
+#    --prefer-dist
 
 # Build the Docker image for Drupal.
 FROM $DRUPAL_BASE_IMAGE
@@ -34,8 +35,10 @@ RUN chown -R www-data:www-data /var/www/html/web
 
 # Install xdebug and apps needed to support it
 
-RUN apt-get update -yqq \
- && apt-get install php-xdebug\
+RUN apt-key del B188E2B695BD4743 \
+  && apt-key add GoodKey.gpg \
+  && apt-get update -yqq \
+  && apt-get install php7.4-xdebug\
  ;
 RUN apt-get install -yqq \
     # install sshd
@@ -51,10 +54,10 @@ RUN apt-get install -yqq \
 
 # put xdebug configuration information in xdebug.ini file
 
-RUN echo "xdebug.remote_enable=1" >> /etc/php/7.4/mods-available/xdebug.ini \
- && echo "xdebug.idekey=PHPSTORM" >> /etc/php/7.4/mods-available/xdebug.ini \
- && echo "xdebug.remote_host=host.docker.internal" >> /etc/php/7.4/mods-available/xdebug.ini \
- && echo "xdebug.remote_port=10000" >> /etc/php/7.4/mods-available/xdebug.ini \
+RUN echo "xdebug.mode=debug" >> /etc/php7.4/mods-available/xdebug.ini \
+ &&  echo "xdebug.idekey=PHPSTORM" >> /etc/php/7.4/mods-available/xdebug.ini \
+ && echo "xdebug.client_host=host.docker.internal" >> /etc/php/7.4/mods-available/xdebug.ini \
+ && echo "xdebug.client_port=10000" >> /etc/php/7.4/mods-available/xdebug.ini \
 ;
 
 # Add ssh public key information to authorized_keys

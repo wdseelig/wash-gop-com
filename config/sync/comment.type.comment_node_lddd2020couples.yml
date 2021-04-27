@@ -1,0 +1,8 @@
+uuid: 50f669ba-1efc-444b-ab6c-50033bc4cff0
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_lddd2020couples
+label: 'LDDD2020Couples comment'
+target_entity_type_id: node
+description: null

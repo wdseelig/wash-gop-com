@@ -1,0 +1,12 @@
+uuid: b9d1689e-7d1d-4c16-a6c1-d3d10f0064c8
+langcode: en
+status: true
+dependencies: {  }
+id: gop_lincoln_day_dinners
+label: 'GOP Lincoln Day Dinners'
+description: 'These are the dinners that we''ll be serving'
+variationType: ldd2018
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

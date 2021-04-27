@@ -1,0 +1,23 @@
+uuid: 9591578f-6174-456a-bde3-60be7da4c882
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.volunteertimeslotevent
+  module:
+    - text
+id: node.volunteertimeslotevent.body
+field_name: body
+entity_type: node
+bundle: volunteertimeslotevent
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

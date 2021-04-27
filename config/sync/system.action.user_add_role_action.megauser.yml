@@ -1,0 +1,14 @@
+uuid: 7292d2ad-0259-43c5-8fa0-40386ad268f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.megauser
+  module:
+    - user
+id: user_add_role_action.megauser
+label: 'Add the megauser role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: megauser

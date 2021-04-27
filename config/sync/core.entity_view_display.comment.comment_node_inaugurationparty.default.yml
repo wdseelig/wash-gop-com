@@ -1,0 +1,27 @@
+uuid: fc636b6f-34ba-43c8-825d-b028c51f729e
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_inaugurationparty
+    - field.field.comment.comment_node_inaugurationparty.comment_body
+  module:
+    - text
+id: comment.comment_node_inaugurationparty.default
+targetEntityType: comment
+bundle: comment_node_inaugurationparty
+mode: default
+content:
+  comment_body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

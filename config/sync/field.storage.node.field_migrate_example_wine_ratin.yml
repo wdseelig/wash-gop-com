@@ -1,0 +1,20 @@
+uuid: ad02a7ef-be3a-4914-97ae-6a5155fb6434
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_migrate_example_wine_ratin
+field_name: field_migrate_example_wine_ratin
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

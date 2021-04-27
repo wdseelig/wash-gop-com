@@ -1,0 +1,30 @@
+uuid: c729650e-6f52-4dd3-879a-e05144a25f0d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.picnicitemdisplay.body
+    - node.type.picnicitemdisplay
+  module:
+    - text
+    - user
+id: node.picnicitemdisplay.teaser
+targetEntityType: node
+bundle: picnicitemdisplay
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

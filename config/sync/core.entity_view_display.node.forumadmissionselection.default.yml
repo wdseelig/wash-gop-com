@@ -1,0 +1,28 @@
+uuid: 1e371614-6d9f-4e97-a6b3-4ea72e1d7b25
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.forumadmissionselection.body
+    - node.type.forumadmissionselection
+  module:
+    - text
+    - user
+id: node.forumadmissionselection.default
+targetEntityType: node
+bundle: forumadmissionselection
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

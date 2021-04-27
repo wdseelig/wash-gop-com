@@ -1,0 +1,21 @@
+uuid: cc4e0dc3-8ca1-4759-8c7a-6fb2c0498212
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_wcgop2020dinner
+    - field.storage.comment.comment_body
+  module:
+    - text
+id: comment.comment_node_wcgop2020dinner.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: comment_node_wcgop2020dinner
+label: Comment
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

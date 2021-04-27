@@ -1,0 +1,8 @@
+uuid: 5a6ce7e1-8059-4338-a54b-b57284b8e521
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_lddd2020tablefor10
+label: 'lddd2020tablefor10 comment'
+target_entity_type_id: node
+description: null

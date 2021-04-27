@@ -1,0 +1,18 @@
+uuid: 651a9900-bc81-4cb8-8b93-60cc02db064e
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main-menu
+    parent: 'main-menu:0:'
+name: InaugurationParty
+type: inaugurationparty
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

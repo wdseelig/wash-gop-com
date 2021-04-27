@@ -1,0 +1,30 @@
+uuid: 591b426e-3dbd-4799-a5f9-b827026f3878
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.lddd2020vipplusdisplay.body
+    - node.type.lddd2020vipplusdisplay
+  module:
+    - text
+    - user
+id: node.lddd2020vipplusdisplay.teaser
+targetEntityType: node
+bundle: lddd2020vipplusdisplay
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

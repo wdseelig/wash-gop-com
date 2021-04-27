@@ -1,0 +1,10 @@
+uuid: c40e695d-bba4-43c6-ab67-3d32e7c675e5
+langcode: en
+status: true
+dependencies: {  }
+id: golf_outing
+label: 'Golf Outing'
+orderItemType: default
+generateTitle: false
+traits: {  }
+locked: false

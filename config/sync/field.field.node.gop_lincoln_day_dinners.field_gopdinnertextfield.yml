@@ -1,0 +1,21 @@
+uuid: 29356d1e-f354-4471-90e4-faae3c517caa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gopdinnertextfield
+    - node.type.gop_lincoln_day_dinners
+  module:
+    - text
+id: node.gop_lincoln_day_dinners.field_gopdinnertextfield
+field_name: field_gopdinnertextfield
+entity_type: node
+bundle: gop_lincoln_day_dinners
+label: GOPDinnerTextField
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

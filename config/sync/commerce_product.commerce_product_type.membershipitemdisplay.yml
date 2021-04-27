@@ -1,0 +1,12 @@
+uuid: 16ebf0a3-899a-4b4c-814d-0d86493f6f38
+langcode: en
+status: true
+dependencies: {  }
+id: membershipitemdisplay
+label: MembershipItemDisplay
+description: 'This is the content type that display GOP Membership Items'
+variationType: gop_membership
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

@@ -1,0 +1,47 @@
+diff --git a/modules/commerce/commerce_migrate_commerce.module b/modules/commerce/commerce_migrate_commerce.module
+index d8bb8dd..fb61e85 100644
+--- a/modules/commerce/commerce_migrate_commerce.module
++++ b/modules/commerce/commerce_migrate_commerce.module
+@@ -76,10 +76,21 @@ function commerce_migrate_commerce_migration_plugins_alter(array &$migrations) {
+         if (is_a($source, Field::class)) {
+           $migration['source']['plugin'] = 'commerce1_field';
+           $migration['process']['entity_type'] = _commerce_migrate_commerce_get_entity_type('commerce1_entity_type');
+-          $migration['migration_dependencies']['required'][] = 'commerce1_product_type';
+-          $migration['migration_dependencies']['required'][] = 'commerce1_product_variation_type';
+           $migration['process']['field_name'] = ['plugin' => 'commerce1_field_name'];
+-          $migration['process']['settings/target_type'] = ['plugin' => 'commerce1_attribute_target_type'];
++          $migration['process']['settings/target_type'] = [
++            'plugin' => 'commerce1_attribute_target_type',
++          ];
++
++          // Migrate Upgrade prefixes all migrations with "upgrade_", so account
++          // for that.
++          if (\Drupal::moduleHandler()->moduleExists('migrate_upgrade')) {
++            $migration['migration_dependencies']['required'][] = 'upgrade_commerce1_product_type';
++            $migration['migration_dependencies']['required'][] = 'upgrade_commerce1_product_variation_type';
++          }
++          else {
++            $migration['migration_dependencies']['required'][] = 'commerce1_product_type';
++            $migration['migration_dependencies']['required'][] = 'commerce1_product_variation_type';
++          }
+         }
+ 
+         // Field instance.
+@@ -89,13 +100,21 @@ function commerce_migrate_commerce_migration_plugins_alter(array &$migrations) {
+           $migration['process']['field_name'] = _commerce_migrate_commerce_get_field_name();
+           // Add process to set the target_bundles setting for attributes.  This
+           // must be after the process for the settings field.
+-         $attributes_process['settings/handler_settings'] =
+-            [
+-              'plugin' => 'commerce1_attribute_handler_setting',
+-            ];
++          $attributes_process['settings/handler_settings'] = [
++            'plugin' => 'commerce1_attribute_handler_setting',
++          ];
+           $migration['process'] += $attributes_process;
+-          $migration['migration_dependencies']['required'][] = 'commerce1_product_type';
+-          $migration['migration_dependencies']['required'][] = 'commerce1_product_variation_type';
+ 
+         }
+ 
+         // Field instance widget settings.

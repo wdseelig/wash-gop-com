@@ -1,0 +1,27 @@
+uuid: 61af1d20-b2d8-4616-a0e6-f991b8b8fb49
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_wcgop2019reception
+    - field.field.comment.comment_node_wcgop2019reception.comment_body
+  module:
+    - text
+id: comment.comment_node_wcgop2019reception.default
+targetEntityType: comment
+bundle: comment_node_wcgop2019reception
+mode: default
+content:
+  comment_body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

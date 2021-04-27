@@ -1,0 +1,23 @@
+uuid: bd9e8c78-3f1c-41b5-8a69-cd61905dac3a
+langcode: en
+status: true
+dependencies: {  }
+name: node_gallery_display
+label: node_gallery_display
+effects:
+  e1ffb068-296c-41e2-a179-2f041aefc492:
+    uuid: e1ffb068-296c-41e2-a179-2f041aefc492
+    id: image_scale
+    weight: 0
+    data:
+      width: null
+      height: 1500
+      upscale: false
+  3c392222-7eac-4d6a-9e01-5936e1953146:
+    uuid: 3c392222-7eac-4d6a-9e01-5936e1953146
+    id: image_scale
+    weight: 1
+    data:
+      width: 600
+      height: null
+      upscale: false

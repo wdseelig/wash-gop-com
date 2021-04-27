@@ -1,0 +1,14 @@
+uuid: 731c4866-308b-43c9-9ab6-bc3bc1dbb9ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.blogger_auto_post
+  module:
+    - user
+id: user_add_role_action.blogger_auto_post
+label: 'Add the blogger - auto post role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: blogger_auto_post

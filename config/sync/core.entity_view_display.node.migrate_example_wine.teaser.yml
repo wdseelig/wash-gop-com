@@ -1,0 +1,30 @@
+uuid: a9e9168b-624e-4fda-8c69-b062d6e9fee1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.migrate_example_wine.body
+    - node.type.migrate_example_wine
+  module:
+    - text
+    - user
+id: node.migrate_example_wine.teaser
+targetEntityType: node
+bundle: migrate_example_wine
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,28 @@
+uuid: 22520497-53e5-40cf-9b70-49e576d9c404
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.gop_lincoln_day_sponsorships.body
+    - node.type.gop_lincoln_day_sponsorships
+  module:
+    - text
+    - user
+id: node.gop_lincoln_day_sponsorships.default
+targetEntityType: node
+bundle: gop_lincoln_day_sponsorships
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

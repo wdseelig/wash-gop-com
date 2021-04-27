@@ -1,0 +1,20 @@
+uuid: 548bb7b5-058b-4bad-bd25-393e818f9386
+langcode: en
+status: true
+dependencies: {  }
+id: file_uploader
+label: 'file uploader'
+weight: 6
+is_admin: null
+permissions:
+  - 'access own imagepicker'
+  - 'access toolbar'
+  - 'cancel own signups'
+  - 'sign up for content'
+  - 'skip CAPTCHA'
+  - 'upload files'
+  - 'use imagepicker'
+  - 'use public imagepicker'
+  - 'use text format 3'
+  - 'view files'
+  - 'view uploaded files'

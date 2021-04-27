@@ -1,0 +1,8 @@
+uuid: 068ec971-fed4-45bf-9df7-fdc9b0b81e36
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_paypal_donate
+label: 'Paypal donate page comment'
+target_entity_type_id: node
+description: null

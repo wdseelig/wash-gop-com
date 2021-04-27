@@ -1,0 +1,8 @@
+uuid: 6dc36a04-8f8e-4aa5-9311-f8786801cc86
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_membership_products
+label: 'Membership Products comment'
+target_entity_type_id: node
+description: null

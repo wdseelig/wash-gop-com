@@ -1,0 +1,24 @@
+uuid: 06f3bb02-4a78-4d21-9352-94d23e0d5ea5
+langcode: und
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - options
+id: commerce_product_variation.field_gopmembership2016
+field_name: field_gopmembership2016
+entity_type: commerce_product_variation
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 0
+      label: 'GOP Membership for 2016 - 2017 ($30)'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,18 @@
+uuid: 20730b85-6edb-4316-997d-46b3eb5f1828
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main-menu
+    parent: 'main-menu:0:'
+name: 'Product Display'
+type: product_display
+description: 'This displays product for purchase for different types of events and donations.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

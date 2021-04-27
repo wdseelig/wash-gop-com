@@ -1,0 +1,10 @@
+uuid: b43b1eaf-19d2-4264-8ead-2904334fc696
+langcode: en
+status: true
+dependencies: {  }
+id: lddd2020vipplus
+label: LDDD2020VIPPlus
+orderItemType: product
+generateTitle: false
+traits: {  }
+locked: false

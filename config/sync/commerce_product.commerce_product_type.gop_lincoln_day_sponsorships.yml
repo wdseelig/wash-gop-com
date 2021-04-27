@@ -1,0 +1,12 @@
+uuid: 0619d7bc-0b62-444a-bea0-6a6bae75b8c8
+langcode: en
+status: true
+dependencies: {  }
+id: gop_lincoln_day_sponsorships
+label: 'GOP Lincoln Day Sponsorships'
+description: 'A sponsorship of the 2016 Lincoln Day Dinner'
+variationType: sponsorship2017
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

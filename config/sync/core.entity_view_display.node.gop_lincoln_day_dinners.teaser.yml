@@ -1,0 +1,32 @@
+uuid: 7c0e690f-88ad-4590-99c6-71016595f643
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.gop_lincoln_day_dinners.body
+    - field.field.node.gop_lincoln_day_dinners.field_gopdinnertextfield
+    - node.type.gop_lincoln_day_dinners
+  module:
+    - text
+    - user
+id: node.gop_lincoln_day_dinners.teaser
+targetEntityType: node
+bundle: gop_lincoln_day_dinners
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_gopdinnertextfield: true

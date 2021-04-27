@@ -1,0 +1,19 @@
+uuid: c45ed626-a8e5-4376-8f70-3eda73aa4be5
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_gop_2019_sponsorships
+field_name: field_gop_2019_sponsorships
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

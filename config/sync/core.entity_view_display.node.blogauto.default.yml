@@ -1,0 +1,28 @@
+uuid: b3ec7d4d-1826-4e59-a625-687ae5f2eb91
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.blogauto.body
+    - node.type.blogauto
+  module:
+    - text
+    - user
+id: node.blogauto.default
+targetEntityType: node
+bundle: blogauto
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,38 @@
+uuid: 78776147-34da-43c0-a9b8-d7cc2b3bb8b7
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - poll
+_core:
+  default_config_hash: F45q2Gzw7kgrTb3lzI9hdMfms5sU20YeNIKQomYkOx8
+id: poll.field_poll_type
+field_name: field_poll_type
+entity_type: poll
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: approval
+      label: Approval
+    -
+      value: borda
+      label: 'Borda Count'
+    -
+      value: instant
+      label: 'Instant Runoff'
+    -
+      value: pooled
+      label: Pooled
+    -
+      value: ranked
+      label: 'Ranked Choice'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

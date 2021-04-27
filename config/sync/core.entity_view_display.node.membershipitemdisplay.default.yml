@@ -1,0 +1,28 @@
+uuid: 14963321-6c58-4b91-8087-db28e28ff609
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.membershipitemdisplay.body
+    - node.type.membershipitemdisplay
+  module:
+    - text
+    - user
+id: node.membershipitemdisplay.default
+targetEntityType: node
+bundle: membershipitemdisplay
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

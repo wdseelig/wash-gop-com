@@ -1,0 +1,28 @@
+uuid: a9fd4c14-9563-458a-a615-ffd179f742ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.wcgop2019reception.body
+    - node.type.wcgop2019reception
+  module:
+    - text
+    - user
+id: node.wcgop2019reception.default
+targetEntityType: node
+bundle: wcgop2019reception
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

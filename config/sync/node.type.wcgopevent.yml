@@ -1,0 +1,18 @@
+uuid: a0d6e198-724a-4d3c-9622-ff0ed21952d1
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - navigation
+    parent: 'navigation:0:'
+name: WCGOPEvent
+type: wcgopevent
+description: 'A Washtenaw County Event'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

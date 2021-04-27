@@ -1,0 +1,28 @@
+uuid: 87e0c936-0e50-462b-811f-22c92b631cac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.ldrad2020display.body
+    - node.type.ldrad2020display
+  module:
+    - text
+    - user
+id: node.ldrad2020display.default
+targetEntityType: node
+bundle: ldrad2020display
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

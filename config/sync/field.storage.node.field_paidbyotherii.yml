@@ -1,0 +1,18 @@
+uuid: 4390cd4b-d49d-43a1-8c94-d82d07e7ba88
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_paidbyotherii
+field_name: field_paidbyotherii
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

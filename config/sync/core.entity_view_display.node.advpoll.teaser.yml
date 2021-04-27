@@ -1,0 +1,30 @@
+uuid: 6c56b940-eaf9-4c34-b738-bc8b63dffa78
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.advpoll.body
+    - node.type.advpoll
+  module:
+    - text
+    - user
+id: node.advpoll.teaser
+targetEntityType: node
+bundle: advpoll
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

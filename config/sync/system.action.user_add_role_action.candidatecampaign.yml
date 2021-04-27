@@ -1,0 +1,14 @@
+uuid: fe120a67-d240-4f78-8e30-5e7c2ba64ccc
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.candidatecampaign
+  module:
+    - user
+id: user_add_role_action.candidatecampaign
+label: 'Add the CandidateCampaign role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: candidatecampaign

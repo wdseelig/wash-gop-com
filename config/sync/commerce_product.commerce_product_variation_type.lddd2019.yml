@@ -1,0 +1,10 @@
+uuid: 2845ef77-750f-4892-bc9c-c7bbf638e866
+langcode: en
+status: true
+dependencies: {  }
+id: lddd2019
+label: LDDD2019
+orderItemType: default
+generateTitle: false
+traits: {  }
+locked: false

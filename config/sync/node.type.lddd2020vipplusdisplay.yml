@@ -1,0 +1,18 @@
+uuid: e0284514-3db5-42b4-bfc9-c183c366999e
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main-menu
+    parent: 'main-menu:0:'
+name: lddd2020VIPPLUSDisplay
+type: lddd2020vipplusdisplay
+description: 'This is the content type that will display VIP Plus admissions'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

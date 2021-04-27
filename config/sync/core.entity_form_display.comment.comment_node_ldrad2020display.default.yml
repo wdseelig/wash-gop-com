@@ -1,0 +1,36 @@
+uuid: 4af358e1-a22b-405c-bc9a-5c272f7eb719
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_ldrad2020display
+    - field.field.comment.comment_node_ldrad2020display.comment_body
+  module:
+    - text
+id: comment.comment_node_ldrad2020display.default
+targetEntityType: comment
+bundle: comment_node_ldrad2020display
+mode: default
+content:
+  author:
+    weight: -2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_body:
+    type: text_textarea
+    weight: 11
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  subject:
+    type: string_textfield
+    weight: 10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,39 @@
+uuid: 81895a11-29d5-42fd-a4fa-b8a9498eb26f
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.advpoll_behavior
+field_name: advpoll_behavior
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: approval
+      label: 'Approval voting'
+    -
+      value: pool
+      label: 'Pool votes and choices'
+    -
+      value: borda
+      label: 'Borda count (Ranking Poll)'
+    -
+      value: runoff
+      label: 'Instant-runoff (Ranking Poll)'
+    -
+      value: borda_all
+      label: 'Borda count drag and drop (Ranking Poll)'
+    -
+      value: runoff_all
+      label: 'Instant-runoff drag and drop (Ranking Poll)'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

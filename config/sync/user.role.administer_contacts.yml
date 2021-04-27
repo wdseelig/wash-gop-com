@@ -1,0 +1,10 @@
+uuid: e83a3994-9a73-414c-81d8-d968bd66402a
+langcode: en
+status: true
+dependencies: {  }
+id: administer_contacts
+label: 'Administer Contacts'
+weight: 10
+is_admin: null
+permissions:
+  - 'administer contacts'

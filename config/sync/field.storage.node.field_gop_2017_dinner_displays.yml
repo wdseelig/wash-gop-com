@@ -1,0 +1,19 @@
+uuid: 8ff90e1c-cdcd-4055-970a-61877f0624d5
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_gop_2017_dinner_displays
+field_name: field_gop_2017_dinner_displays
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

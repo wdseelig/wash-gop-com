@@ -1,0 +1,21 @@
+uuid: 4aa2ce01-1049-41e6-8bb3-d62975483d70
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_mass_contact
+    - field.storage.comment.comment_body
+  module:
+    - text
+id: comment.comment_node_mass_contact.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: comment_node_mass_contact
+label: Comment
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

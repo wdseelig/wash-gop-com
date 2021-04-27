@@ -1,0 +1,28 @@
+uuid: ebc5f111-34e5-4c47-a413-4970285aa46f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.picnicitemdisplay.body
+    - node.type.picnicitemdisplay
+  module:
+    - text
+    - user
+id: node.picnicitemdisplay.default
+targetEntityType: node
+bundle: picnicitemdisplay
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,30 @@
+uuid: d0335f8e-a5c0-4123-9828-149370ea0368
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.lddd2020couples.body
+    - node.type.lddd2020couples
+  module:
+    - text
+    - user
+id: node.lddd2020couples.teaser
+targetEntityType: node
+bundle: lddd2020couples
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

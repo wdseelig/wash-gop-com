@@ -1,0 +1,23 @@
+uuid: c9fca481-8cad-4a93-891c-a29374bd6d24
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.forumitemdisplayv2
+  module:
+    - text
+id: node.forumitemdisplayv2.body
+field_name: body
+entity_type: node
+bundle: forumitemdisplayv2
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

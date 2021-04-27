@@ -1,0 +1,20 @@
+uuid: 0005d13e-2e2e-4aa3-a0a4-520b72c01db1
+langcode: und
+status: true
+dependencies:
+  module:
+    - datetime
+    - node
+id: node.advpoll_dates
+field_name: advpoll_dates
+entity_type: node
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

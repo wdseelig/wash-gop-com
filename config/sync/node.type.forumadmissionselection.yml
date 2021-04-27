@@ -1,0 +1,18 @@
+uuid: 8e942e6d-08e1-4106-a8bd-12631463c52c
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main-menu
+    parent: 'main-menu:0:'
+name: ForumAdmissionSelection
+type: forumadmissionselection
+description: 'These are the choices to get into the forum'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,8 @@
+uuid: 5cbdc4c6-c4dc-46b3-857d-c136caf9953d
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_wcgop2019reception
+label: 'WCGOP2019Reception comment'
+target_entity_type_id: node
+description: null

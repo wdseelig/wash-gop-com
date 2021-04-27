@@ -1,0 +1,28 @@
+uuid: 0d26204e-5222-4bd1-80c6-0f1e365b0c3c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.wcgop2019dinner.body
+    - node.type.wcgop2019dinner
+  module:
+    - text
+    - user
+id: node.wcgop2019dinner.default
+targetEntityType: node
+bundle: wcgop2019dinner
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

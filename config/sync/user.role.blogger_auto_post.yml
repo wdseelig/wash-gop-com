@@ -1,0 +1,17 @@
+uuid: b2ed7468-b7cd-4f10-9651-7d3b935f57f7
+langcode: en
+status: true
+dependencies: {  }
+id: blogger_auto_post
+label: 'blogger - auto post'
+weight: 3
+is_admin: null
+permissions:
+  - 'cancel own signups'
+  - 'create blog content'
+  - 'create blogauto content'
+  - 'edit own blogauto content'
+  - 'edit own page content'
+  - 'sign up for content'
+  - 'skip CAPTCHA'
+  - 'view files'

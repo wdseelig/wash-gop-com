@@ -1,0 +1,20 @@
+uuid: 38cf38f9-204f-4d29-86d5-e9392e92af9b
+langcode: und
+status: true
+dependencies:
+  module:
+    - commerce_order
+    - profile
+id: profile.field_orderattached
+field_name: field_orderattached
+entity_type: profile
+type: entity_reference
+settings:
+  target_type: commerce_order
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

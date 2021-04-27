@@ -1,0 +1,18 @@
+uuid: 5b0c0ae0-5491-483c-8047-5ef23e9d24e2
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main-menu
+    parent: 'main-menu:0:'
+name: ForumItemDisplayV2
+type: forumitemdisplayv2
+description: 'A second version of the "store front" for Forum Items'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,19 @@
+uuid: 6a6665d2-df48-44fb-8921-5bc9830fb912
+langcode: und
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.field_level1parent
+field_name: field_level1parent
+entity_type: taxonomy_term
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

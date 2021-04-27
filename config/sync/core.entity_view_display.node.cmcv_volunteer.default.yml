@@ -1,0 +1,28 @@
+uuid: db91e46a-6ed9-426c-886b-ae547a45bd27
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.cmcv_volunteer.body
+    - node.type.cmcv_volunteer
+  module:
+    - text
+    - user
+id: node.cmcv_volunteer.default
+targetEntityType: node
+bundle: cmcv_volunteer
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

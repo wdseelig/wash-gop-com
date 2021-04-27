@@ -1,0 +1,27 @@
+uuid: c9ee3529-8caf-43d4-8ecc-daad529e1c9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_picnicitemdisplay
+    - field.field.comment.comment_node_picnicitemdisplay.comment_body
+  module:
+    - text
+id: comment.comment_node_picnicitemdisplay.default
+targetEntityType: comment
+bundle: comment_node_picnicitemdisplay
+mode: default
+content:
+  comment_body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

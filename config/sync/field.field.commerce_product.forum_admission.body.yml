@@ -1,0 +1,23 @@
+uuid: eb095fa3-7aa9-4dfd-be45-e4976d492777
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.forum_admission
+    - field.storage.commerce_product.body
+  module:
+    - text
+id: commerce_product.forum_admission.body
+field_name: body
+entity_type: commerce_product
+bundle: forum_admission
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: null
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

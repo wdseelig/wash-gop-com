@@ -1,0 +1,19 @@
+uuid: c1016b8f-5faf-4add-8800-d2ad012c2787
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_uppercaption
+field_name: field_uppercaption
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,30 @@
+uuid: 798c9c4a-5fd7-47d6-b706-18bb7e6b0b77
+langcode: und
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - options
+id: commerce_product_variation.field_ldrad2020
+field_name: field_ldrad2020
+entity_type: commerce_product_variation
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 1
+      label: 'Sirloin Steak w/ red-wine demi-glaze'
+    -
+      value: 2
+      label: 'Pan Seared Chicken Parmesan'
+    -
+      value: 3
+      label: 'Vegan Penne Primavera'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

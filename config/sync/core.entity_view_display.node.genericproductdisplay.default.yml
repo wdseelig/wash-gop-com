@@ -1,0 +1,28 @@
+uuid: 8966c5a5-f69d-4157-a23e-0e193225524b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.genericproductdisplay.body
+    - node.type.genericproductdisplay
+  module:
+    - text
+    - user
+id: node.genericproductdisplay.default
+targetEntityType: node
+bundle: genericproductdisplay
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

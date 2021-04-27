@@ -1,0 +1,12 @@
+uuid: 61085db8-c74c-4cb0-8443-1e883abbc695
+langcode: en
+status: true
+dependencies: {  }
+id: gop_ldd_2019_sponsorships
+label: WCGOP2019Sponsorships
+description: 'If you want to help the WCGOP by sponsoring this event, please choose one of the options below'
+variationType: sponsorship2017
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

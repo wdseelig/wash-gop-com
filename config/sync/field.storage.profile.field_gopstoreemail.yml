@@ -1,0 +1,21 @@
+uuid: 0cfce03f-5905-4032-aa05-86dee991f9b5
+langcode: und
+status: true
+dependencies:
+  module:
+    - profile
+id: profile.field_gopstoreemail
+field_name: field_gopstoreemail
+entity_type: profile
+type: string
+settings:
+  max_length: 60
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

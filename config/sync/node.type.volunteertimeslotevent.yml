@@ -1,0 +1,18 @@
+uuid: f9fe99b0-b7b1-46c8-a0f5-fd8de054d20a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main-menu
+    parent: 'main-menu:0:'
+name: VolunteerTimeSlotEvent
+type: volunteertimeslotevent
+description: 'This node stores information about an event for which volunteer time slots are available'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,23 @@
+uuid: 57d057c8-fb58-4e6d-a2fb-e585dcbf40d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.forum_ticket
+  module:
+    - text
+id: node.forum_ticket.body
+field_name: body
+entity_type: node
+bundle: forum_ticket
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

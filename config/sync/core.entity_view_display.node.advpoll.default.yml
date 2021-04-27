@@ -1,0 +1,28 @@
+uuid: 2ee7a6c2-0a6a-4cda-bd5e-2943a22ebe60
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.advpoll.body
+    - node.type.advpoll
+  module:
+    - text
+    - user
+id: node.advpoll.default
+targetEntityType: node
+bundle: advpoll
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

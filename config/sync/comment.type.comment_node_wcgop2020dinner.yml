@@ -1,0 +1,8 @@
+uuid: 68b45316-4aec-44b2-9632-aea327df6801
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_wcgop2020dinner
+label: 'WCGOP2020Dinner comment'
+target_entity_type_id: node
+description: null

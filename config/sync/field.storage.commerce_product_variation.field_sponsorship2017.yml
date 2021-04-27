@@ -1,0 +1,36 @@
+uuid: b9da2a54-1ad3-402e-a265-b7233d96fe09
+langcode: und
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - options
+id: commerce_product_variation.field_sponsorship2017
+field_name: field_sponsorship2017
+entity_type: commerce_product_variation
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 1
+      label: 'Scrolling Message ($100)'
+    -
+      value: 2
+      label: 'Table for 8 ($720)'
+    -
+      value: 3
+      label: 'Sponsorship ($1000) Includes Private Reception for 2, Prime Dinner Seating for 8, Recognition in the program & invitation and 1 Scrolling Message'
+    -
+      value: 4
+      label: 'Prime Sponsorship ($1500) Includes 4 Admissions to the Private Reception, Prime Dinner Seating for 8, and 1 Scrolling Message'
+    -
+      value: 5
+      label: 'Host Committee ($1.000) Includes 2 VIP Reception and Dinner admissions, a $500 value and 2 Premium WCGOP Memberships, an $800 value'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

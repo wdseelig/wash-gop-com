@@ -1,0 +1,42 @@
+uuid: 3a2a41c6-b900-433b-92c1-db18c8088dde
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.membershipitemdisplay
+    - field.field.commerce_product.membershipitemdisplay.body
+  module:
+    - commerce_product
+    - text
+id: commerce_product.membershipitemdisplay.default
+targetEntityType: commerce_product
+bundle: membershipitemdisplay
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 11
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  variations:
+    type: commerce_add_to_cart
+    weight: 10
+    region: content
+    label: above
+    settings:
+      combine: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  stores: true
+  uid: true

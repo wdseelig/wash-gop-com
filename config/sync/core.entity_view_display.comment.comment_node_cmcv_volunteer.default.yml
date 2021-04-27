@@ -1,0 +1,27 @@
+uuid: f970ed3c-37b0-4234-8cb7-47136acd0011
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_cmcv_volunteer
+    - field.field.comment.comment_node_cmcv_volunteer.comment_body
+  module:
+    - text
+id: comment.comment_node_cmcv_volunteer.default
+targetEntityType: comment
+bundle: comment_node_cmcv_volunteer
+mode: default
+content:
+  comment_body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

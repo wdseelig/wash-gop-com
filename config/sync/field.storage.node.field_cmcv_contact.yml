@@ -1,0 +1,19 @@
+uuid: c66004bb-4bf8-453d-9c62-fdb78a4b5d68
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_cmcv_contact
+field_name: field_cmcv_contact
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,14 @@
+uuid: 4ac360c9-845a-42d5-8464-58cc890f00d3
+name: 'Washtenaw County Republicans'
+mail: admin@wash-gop.com
+slogan: '"You cannot help the wage earner by tearing down the wage payer "-- Abraham Lincoln'
+page:
+  403: /
+  404: /
+  front: /frontpage
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE

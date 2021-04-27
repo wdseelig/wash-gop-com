@@ -1,0 +1,8 @@
+uuid: 76ef0b1b-7371-4393-b2e8-13b5b9f7698c
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_webform
+label: 'Webform comment'
+target_entity_type_id: node
+description: null

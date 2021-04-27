@@ -1,0 +1,28 @@
+uuid: 2a09aab2-d61b-4fd4-b7ae-83370a8fde24
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.basicpetition.body
+    - node.type.basicpetition
+  module:
+    - text
+    - user
+id: node.basicpetition.default
+targetEntityType: node
+bundle: basicpetition
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

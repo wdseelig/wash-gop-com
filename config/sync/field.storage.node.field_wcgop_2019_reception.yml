@@ -1,0 +1,19 @@
+uuid: cc1396a2-6c62-42e6-85c9-b1a4b9f96ff1
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_wcgop_2019_reception
+field_name: field_wcgop_2019_reception
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

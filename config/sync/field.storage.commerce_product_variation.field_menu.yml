@@ -1,0 +1,33 @@
+uuid: bb2b4483-abcf-4b88-a31d-482a792e1c9c
+langcode: und
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - options
+id: commerce_product_variation.field_menu
+field_name: field_menu
+entity_type: commerce_product_variation
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 0
+      label: 'Beef Medallion and Grilled Chicken'
+    -
+      value: 1
+      label: 'Beef Tenderloin and Salmon'
+    -
+      value: 2
+      label: 'Grilled Chicken'
+    -
+      value: 3
+      label: Vegetarian
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

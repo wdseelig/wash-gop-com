@@ -1,0 +1,30 @@
+uuid: e898552a-bb8c-4ec1-807e-c522588d5aa6
+langcode: und
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - options
+id: commerce_product_variation.field_forummenu
+field_name: field_forummenu
+entity_type: commerce_product_variation
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 0
+      label: 'Non-Member Forum Admission ($10)'
+    -
+      value: 1
+      label: 'Member Forum Admission (FREE!)'
+    -
+      value: 2
+      label: 'WCGOP Membership ($40)'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

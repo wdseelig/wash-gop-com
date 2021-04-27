@@ -1,0 +1,27 @@
+uuid: d4b077b2-b228-4b11-9100-bccffdebde28
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_forumitemdisplayv2
+    - field.field.comment.comment_node_forumitemdisplayv2.comment_body
+  module:
+    - text
+id: comment.comment_node_forumitemdisplayv2.default
+targetEntityType: comment
+bundle: comment_node_forumitemdisplayv2
+mode: default
+content:
+  comment_body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

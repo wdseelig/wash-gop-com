@@ -1,0 +1,30 @@
+uuid: 72bbbafa-e205-49a4-9486-f103cd22268e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.wcgop2020dinner.body
+    - node.type.wcgop2020dinner
+  module:
+    - text
+    - user
+id: node.wcgop2020dinner.teaser
+targetEntityType: node
+bundle: wcgop2020dinner
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

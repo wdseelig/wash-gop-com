@@ -1,0 +1,36 @@
+uuid: 15d177ec-ce0d-4074-a155-eb08ffdeb100
+langcode: und
+status: true
+dependencies:
+  module:
+    - options
+    - profile
+id: profile.field_where_did_you_hear_about_t
+field_name: field_where_did_you_hear_about_t
+entity_type: profile
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 1
+      label: Facebook
+    -
+      value: 2
+      label: Twitter
+    -
+      value: 3
+      label: EMail
+    -
+      value: 4
+      label: 'Word of Mouth'
+    -
+      value: 5
+      label: Other
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,28 @@
+uuid: 76155caf-bfae-4219-b528-90269f5f601e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.inaugurationparty.body
+    - node.type.inaugurationparty
+  module:
+    - text
+    - user
+id: node.inaugurationparty.default
+targetEntityType: node
+bundle: inaugurationparty
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

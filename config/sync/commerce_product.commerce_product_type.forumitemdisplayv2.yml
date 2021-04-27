@@ -1,0 +1,12 @@
+uuid: 9dd14c4f-8374-442c-92f7-9fe614da8f25
+langcode: en
+status: true
+dependencies: {  }
+id: forumitemdisplayv2
+label: ForumItemDisplayV2
+description: 'A second version of the "store front" for Forum Items'
+variationType: forumitem
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

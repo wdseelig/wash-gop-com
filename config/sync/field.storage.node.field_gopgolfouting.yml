@@ -1,0 +1,19 @@
+uuid: a7863e35-a84a-4899-9526-76067f44b613
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_gopgolfouting
+field_name: field_gopgolfouting
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

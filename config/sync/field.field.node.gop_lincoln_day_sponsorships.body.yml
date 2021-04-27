@@ -1,0 +1,23 @@
+uuid: e9851a16-074c-4cc3-aa8e-777781c7502c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.gop_lincoln_day_sponsorships
+  module:
+    - text
+id: node.gop_lincoln_day_sponsorships.body
+field_name: body
+entity_type: node
+bundle: gop_lincoln_day_sponsorships
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

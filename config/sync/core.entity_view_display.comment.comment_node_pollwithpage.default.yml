@@ -1,0 +1,27 @@
+uuid: 5c0bc511-bb90-4968-8c43-498c6b579472
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_pollwithpage
+    - field.field.comment.comment_node_pollwithpage.comment_body
+  module:
+    - text
+id: comment.comment_node_pollwithpage.default
+targetEntityType: comment
+bundle: comment_node_pollwithpage
+mode: default
+content:
+  comment_body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

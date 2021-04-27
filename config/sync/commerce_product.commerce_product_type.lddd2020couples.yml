@@ -1,0 +1,12 @@
+uuid: c505d39c-8631-49f8-a9d2-c10f90c36a42
+langcode: en
+status: true
+dependencies: {  }
+id: lddd2020couples
+label: LDDD2020Couples
+description: 'This is the display node for the Couples Meal Purchase'
+variationType: lddd2020couplemeal
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

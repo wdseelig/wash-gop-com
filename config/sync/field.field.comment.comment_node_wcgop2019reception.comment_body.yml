@@ -1,0 +1,21 @@
+uuid: aac342e3-e98a-40c4-bd6b-499adef6010c
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_wcgop2019reception
+    - field.storage.comment.comment_body
+  module:
+    - text
+id: comment.comment_node_wcgop2019reception.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: comment_node_wcgop2019reception
+label: Comment
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

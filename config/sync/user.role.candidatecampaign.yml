@@ -1,0 +1,19 @@
+uuid: 637ee5e6-1cdb-4026-9b96-2cd72b138f5b
+langcode: en
+status: true
+dependencies: {  }
+id: candidatecampaign
+label: CandidateCampaign
+weight: 4
+is_admin: null
+permissions:
+  - 'access ckeditor'
+  - 'access own imagepicker'
+  - 'administer ckeditor'
+  - 'administer pdfs'
+  - 'create blog content'
+  - 'create wcgopevent content'
+  - 'skip CAPTCHA'
+  - 'use imagepicker'
+  - 'use public imagepicker'
+  - 'view files'

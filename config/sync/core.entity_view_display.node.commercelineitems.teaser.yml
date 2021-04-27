@@ -1,0 +1,30 @@
+uuid: 412f0d58-1712-451c-ad1a-3dc01879936e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.commercelineitems.body
+    - node.type.commercelineitems
+  module:
+    - text
+    - user
+id: node.commercelineitems.teaser
+targetEntityType: node
+bundle: commercelineitems
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

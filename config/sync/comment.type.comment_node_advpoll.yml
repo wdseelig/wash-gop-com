@@ -1,0 +1,8 @@
+uuid: 1ce24d21-b7ef-4b21-ae15-42d4f5f7e285
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_advpoll
+label: 'Advanced Poll comment'
+target_entity_type_id: node
+description: null

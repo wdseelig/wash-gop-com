@@ -1,0 +1,23 @@
+uuid: 1792e50a-85f4-4181-85aa-1cd2cd7888c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.paypal_donate
+  module:
+    - text
+id: node.paypal_donate.body
+field_name: body
+entity_type: node
+bundle: paypal_donate
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

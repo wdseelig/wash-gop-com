@@ -139,8 +139,8 @@ filter_align, filter_caption, filter_htmlcorrector, filter_html_escape
     docker build -t wdseelig:latest .
     docker-compose up -d
  
- * In my config.yml file I changed the image: to wdseelig:latest [the one I 
- just built above] and the container name to WCGOP
+ * In my docker-compose.yml file I changed the image: to wdseelig:latest
+ [the one I just built above] and the container name to WCGOP
  
  * I added a second mysql container to hold the old Drupal 7 database. My
  docker-compose.yml file now creates 3 containers
@@ -155,7 +155,8 @@ filter_align, filter_caption, filter_htmlcorrector, filter_html_escape
  
 * Started with Jeff's Dockerfile and a docker-compose.yml file to create the
 Docker containers
-* Included the following additions:
+* Included the following additions (Note that these are in the Dockerfile
+that is used to create the container):
  	* installed xdebug and sshd server
  	* Wrote necessary xdebug configuration information to
  	/etc/php/7.4/mods-available/xdebug.ini file
@@ -163,5 +164,100 @@ Docker containers
  	* Wrote ssh key information to /root/.ssh/authorized_keys file
 * I spent a day and a half (!) trying to figure out how to start Apache and
 sshd automatically when I brought up my containers.  I eventually gave up on
-this and just created an alias, dssh, to start ssh service on my container. 
+this and just created an alias, dssh, to start ssh service on my container.
+
+Answering the above question about how drupal remembers migrations.  I spent a
+lot of time looking the the database and everywhere else I could think of to
+figure out where and how Drupal remembers which migrations have been created.
+The answer, I think, is in the file structure of the Drupal code. If the D8
+version of a module needs to bring data forward from D7, you put a .yml file
+with the necessary instructions as to how to do this in its migrations file.
+>modulename/migrations/modulemigration.yml
+
+If you are creating a migration that you want to hold in a configuration file so that you can export it, you put it in a different directory:
+>modulename/config/modulemigration.yml
+
  
+ 
+ **Installing Drupal**
+ 
+ Once you have all of the code loaded into the /var/html/www(/web) directory
+you install Drupal with this command:
+```
+docker-compose exec drupal bash -c 'drush site:install minimal 
+--db-url="mysql://drupal:$DRUPAL_DATABASE_PASSWORD@$DRUPAL_DATABASE_HOST/drupal"
+--site-name="WCGOP" --existing-config -y'
+```
+TODO: Add `--existing-config` once we have configuration dumped.
+
+
+NOTE THAT THIS COMMAND RE-INITIALIZES THE DRUPAL DATA BASE.  ANY MIGRATIONS
+THAT YOU HAVE DONE WILL BE LOST??  IF YOU HAVE EXPORTED THE --existing-config
+THEN I THINK THAT THOSE MIGRATIONS WILL BE IN `Structure->Migrations`, BUT THE
+RESULTS OF THOSE MIGRATIONS WILL NOT BE IN THE DATABASE, SO YOU WILL HAVE TO
+RE-RUN THEM. NOTE, ALSO, THAT RUNNING THIS COMMAND WILL PROBABLY DESTROY THE
+`settings.php` FILE.  SO HERE IT IS IN CASE WE NEED TO REDO IT:
+```
+$databases['default']['default'] = array (
+  'database' => 'drupal',
+  'username' => 'drupal',
+  'password' => 'drupal',
+  'prefix' => '',
+  'host' => 'mysql',
+  'port' => '',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
+$databases['migrate']['default'] = array (
+  'database' => 'washgopc_GOPV7V2',
+  'username' => 'gopdbadmin',
+  'password' => '18WMTNwcta65',
+  'prefix' => '',
+  'host' => 'docker.for.mac.localhost',
+  'port' => '3307',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
+$settings['trusted_host_patterns'] = ['^localhost$',];
+$settings['config_sync_directory'] = "../config/sync";
+``` 
+
+Note that $DRUPAL_DATABASE_PASSWORD and $DRUPAL_DATABASE_HOST are environmental
+variables that are defined in the docker-compose.yml file that creates the
+container.  The docker-compose command above is being run in that container,
+and so has access to these variables.
+
+Let's make sure we understand what this command does, and does not, do:
+1. It does not touch the codebase in any way
+1. It does not do any migrations, and therfore ...
+1. When you do a drush site:install, you lose any content that you have
+migrated into your site.  Example: If you have migrated in Page nodes, then the
+D8 node_body table will have the html that was in those fields in your D7 site.
+When you run the drush site:install command, all of that data will be lost
+and you will have to re-run that migration.
+1.  If you have saved your configuration data and if you have altered the
+settings.php file to tell drupal where configuration data is saved, I think
+that the site:install will re-import that configuration data.  This means that
+when you go to Structure->Migrations, you will see the migrations that you
+created earlier.  However, these migrations will not have been performed, so
+you will have to re-run them.
+1. I do not know whether configuration data will have been retained.  Example:
+will the new site still have your site slogan??
+1.  The broader nature of this question is "What information is in the database
+(this will be lost when you re-install the site), and what information is in
+the configuration (this will not be lost)?"
+
+I have two "helper" commands in my .zshrc file:
+1. `alias mywc='docker exec -it WCGOP bash'`
+1. `alias dssh='docker exec -d WCGOP` /etc/init.d/ssh start'
+
+**Composer memory limit problems**
+
+Composer frequently runs out of memory.  One solution to this is to put
+COMPOSER_MEMORY_LIMIT=-1 at the start of your composer command.  When even
+this fails [with a terse "Killed' message], you can sometimes fix it by 
+allowing more swap space for your system.  Docker make this easy, allowing you
+go into Preferences->Resources to set the amount of swap space you want to
+have.  So far, 2GB has worked for me.  This settings change takes place
+immediately, you don't even have to restart your containers.
+

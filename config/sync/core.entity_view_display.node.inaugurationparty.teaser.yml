@@ -1,0 +1,30 @@
+uuid: aec9969d-2335-44a6-8cbc-4abe077ed7d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.inaugurationparty.body
+    - node.type.inaugurationparty
+  module:
+    - text
+    - user
+id: node.inaugurationparty.teaser
+targetEntityType: node
+bundle: inaugurationparty
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

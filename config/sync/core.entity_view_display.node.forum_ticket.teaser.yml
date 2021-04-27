@@ -1,0 +1,30 @@
+uuid: 03a35600-f608-48d0-bef4-02959f87ca00
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.forum_ticket.body
+    - node.type.forum_ticket
+  module:
+    - text
+    - user
+id: node.forum_ticket.teaser
+targetEntityType: node
+bundle: forum_ticket
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,28 @@
+uuid: 0b7add8b-e108-41a6-b02e-7e82665c5707
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.forum_ticket.body
+    - node.type.forum_ticket
+  module:
+    - text
+    - user
+id: node.forum_ticket.default
+targetEntityType: node
+bundle: forum_ticket
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

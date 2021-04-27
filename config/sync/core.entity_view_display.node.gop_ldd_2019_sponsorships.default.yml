@@ -1,0 +1,28 @@
+uuid: 08b72764-c772-4059-bab6-ac1af4ae1817
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.gop_ldd_2019_sponsorships.body
+    - node.type.gop_ldd_2019_sponsorships
+  module:
+    - text
+    - user
+id: node.gop_ldd_2019_sponsorships.default
+targetEntityType: node
+bundle: gop_ldd_2019_sponsorships
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

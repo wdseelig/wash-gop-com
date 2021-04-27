@@ -1,0 +1,12 @@
+uuid: 69a11065-918a-4e47-a66b-f27abc1070b6
+langcode: en
+status: true
+dependencies: {  }
+id: wcgopevent
+label: WCGOPEvent
+description: 'A Washtenaw County Event'
+variationType: wcgopevent
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

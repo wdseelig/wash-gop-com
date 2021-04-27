@@ -3,7 +3,7 @@ version: '3'
 
 services:
   drupal:
-    image: wdseelig:latest
+    image: wdseelig:originald8
     container_name: WCGOP
     environment:
       DRUPAL_DATABASE_HOST: 'mysql'
@@ -48,7 +48,7 @@ services:
     ports:
       - "3307:3306"
     volumes:
-      - ./May2020Dump.sql:/docker-entrypoint-initdb.d/May2020Dump.sql
+      - ./April2021Dump.sql:/docker-entrypoint-initdb.d/April2021Dump.sql
 
   
       

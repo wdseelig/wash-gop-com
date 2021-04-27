@@ -1,0 +1,20 @@
+uuid: fd193433-20a6-4bc6-8e0a-1b0783126325
+langcode: en
+status: true
+dependencies: {  }
+name: photoessay_gallery_thumbnail
+label: photoessay_gallery_thumbnail
+effects:
+  d0bfd91d-e4a7-4c10-88f9-9dfcb8b12533:
+    uuid: d0bfd91d-e4a7-4c10-88f9-9dfcb8b12533
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 40
+      height: 40
+      anchor: center-center
+  59854b5b-3fba-44ff-b4c5-5bad7ceef365:
+    uuid: 59854b5b-3fba-44ff-b4c5-5bad7ceef365
+    id: image_desaturate
+    weight: 2
+    data: {  }

@@ -1,0 +1,14 @@
+uuid: 79a823c3-0a41-4958-8cc2-00bfce3bb834
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.administer_contacts
+  module:
+    - user
+id: user_remove_role_action.administer_contacts
+label: 'Remove the Administer Contacts role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: administer_contacts

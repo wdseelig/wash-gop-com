@@ -1,0 +1,12 @@
+uuid: de5c5302-96b4-42fb-a476-29e7a9f5f31d
+langcode: en
+status: true
+dependencies: {  }
+id: lddd2020tablefor10
+label: lddd2020tablefor10
+description: ''
+variationType: lddd2020tablefor10
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

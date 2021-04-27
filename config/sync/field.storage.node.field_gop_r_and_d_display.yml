@@ -1,0 +1,19 @@
+uuid: 0b3e734a-d9f4-4417-84cc-9b0d0a3eb8b9
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_gop_r_and_d_display
+field_name: field_gop_r_and_d_display
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

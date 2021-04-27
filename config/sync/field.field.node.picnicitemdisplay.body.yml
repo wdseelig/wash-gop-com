@@ -1,0 +1,23 @@
+uuid: 82aea09c-3eac-4695-ab75-6efbe57a27b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.picnicitemdisplay
+  module:
+    - text
+id: node.picnicitemdisplay.body
+field_name: body
+entity_type: node
+bundle: picnicitemdisplay
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

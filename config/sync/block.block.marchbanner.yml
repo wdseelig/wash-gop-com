@@ -1,0 +1,25 @@
+uuid: 1b8a22b5-c20a-491e-9c2b-f2a82b14c822
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c1bbc150-54a9-4b4f-b1d8-a253775ffe4e'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: marchbanner
+theme: bartik
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:c1bbc150-54a9-4b4f-b1d8-a253775ffe4e'
+settings:
+  id: 'block_content:c1bbc150-54a9-4b4f-b1d8-a253775ffe4e'
+  label: MarchBanner
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

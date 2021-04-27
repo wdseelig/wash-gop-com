@@ -1,0 +1,28 @@
+uuid: da19d2bc-c758-4afd-951d-786ca59373ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.forum_admission.body
+    - node.type.forum_admission
+  module:
+    - text
+    - user
+id: node.forum_admission.default
+targetEntityType: node
+bundle: forum_admission
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

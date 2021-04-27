@@ -1,0 +1,23 @@
+uuid: 1101c544-6099-4997-a058-b9cda5874393
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.pollwithpage
+  module:
+    - text
+id: node.pollwithpage.body
+field_name: body
+entity_type: node
+bundle: pollwithpage
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

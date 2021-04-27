@@ -1,0 +1,23 @@
+uuid: dc5fc459-d7cd-43af-92cd-36485d0134ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.product_display
+  module:
+    - text
+id: node.product_display.body
+field_name: body
+entity_type: node
+bundle: product_display
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,28 @@
+uuid: 4ea99286-7083-4828-8382-4617c0d923a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.commercelineitems.body
+    - node.type.commercelineitems
+  module:
+    - text
+    - user
+id: node.commercelineitems.default
+targetEntityType: node
+bundle: commercelineitems
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

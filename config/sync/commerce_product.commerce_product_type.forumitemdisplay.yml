@@ -1,0 +1,12 @@
+uuid: 15894182-6aaa-4e83-a4d9-44b4b8eda41c
+langcode: en
+status: true
+dependencies: {  }
+id: forumitemdisplay
+label: ForumitemDisplay
+description: ''
+variationType: forumitem
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

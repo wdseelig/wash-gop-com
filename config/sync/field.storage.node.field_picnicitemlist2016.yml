@@ -1,0 +1,19 @@
+uuid: 43e3803f-3f80-4bf7-a2aa-3bd31b7a0e8f
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_picnicitemlist2016
+field_name: field_picnicitemlist2016
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

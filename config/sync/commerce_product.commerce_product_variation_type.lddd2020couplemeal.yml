@@ -1,0 +1,10 @@
+uuid: 7b9c9684-d233-4c8e-8162-3225e8e4c960
+langcode: en
+status: true
+dependencies: {  }
+id: lddd2020couplemeal
+label: LDDD2020CoupleMeal
+orderItemType: couple
+generateTitle: false
+traits: {  }
+locked: false

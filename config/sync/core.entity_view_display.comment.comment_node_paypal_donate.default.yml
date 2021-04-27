@@ -1,0 +1,27 @@
+uuid: 871e2449-1f37-4ce0-9854-7f4f06dcf94e
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_paypal_donate
+    - field.field.comment.comment_node_paypal_donate.comment_body
+  module:
+    - text
+id: comment.comment_node_paypal_donate.default
+targetEntityType: comment
+bundle: comment_node_paypal_donate
+mode: default
+content:
+  comment_body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

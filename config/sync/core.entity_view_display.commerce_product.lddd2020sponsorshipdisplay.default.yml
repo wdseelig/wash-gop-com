@@ -1,0 +1,42 @@
+uuid: 10eda6c2-99b4-4026-b8ac-5a2dc850350a
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.lddd2020sponsorshipdisplay
+    - field.field.commerce_product.lddd2020sponsorshipdisplay.body
+  module:
+    - commerce_product
+    - text
+id: commerce_product.lddd2020sponsorshipdisplay.default
+targetEntityType: commerce_product
+bundle: lddd2020sponsorshipdisplay
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 11
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  variations:
+    type: commerce_add_to_cart
+    weight: 10
+    region: content
+    label: above
+    settings:
+      combine: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  stores: true
+  uid: true

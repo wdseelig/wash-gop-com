@@ -1,0 +1,21 @@
+uuid: 02c57686-104e-459e-86b7-e4e8fa6a1a2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.profile_school_district
+  module:
+    - text
+    - user
+id: user.user.profile_school_district
+field_name: profile_school_district
+entity_type: user
+bundle: user
+label: 'School District'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

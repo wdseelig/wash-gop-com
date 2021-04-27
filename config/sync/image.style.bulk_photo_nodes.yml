@@ -1,0 +1,15 @@
+uuid: 057e44de-cfdf-4372-a960-e4357d2a93b6
+langcode: en
+status: true
+dependencies: {  }
+name: bulk_photo_nodes
+label: bulk_photo_nodes
+effects:
+  2a732869-22ac-4692-b82b-877ca3ba873d:
+    uuid: 2a732869-22ac-4692-b82b-877ca3ba873d
+    id: image_scale
+    weight: 0
+    data:
+      width: 150
+      height: 150
+      upscale: true

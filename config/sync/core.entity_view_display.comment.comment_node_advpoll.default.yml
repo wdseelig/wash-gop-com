@@ -1,0 +1,27 @@
+uuid: edfb6706-94fa-4f06-9d68-56ad08f39e93
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_advpoll
+    - field.field.comment.comment_node_advpoll.comment_body
+  module:
+    - text
+id: comment.comment_node_advpoll.default
+targetEntityType: comment
+bundle: comment_node_advpoll
+mode: default
+content:
+  comment_body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

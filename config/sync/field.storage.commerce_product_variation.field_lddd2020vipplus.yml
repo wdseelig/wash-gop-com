@@ -1,0 +1,20 @@
+uuid: 5f4a80ac-5796-43d8-b00a-cb495846894f
+langcode: und
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - node
+id: commerce_product_variation.field_lddd2020vipplus
+field_name: field_lddd2020vipplus
+entity_type: commerce_product_variation
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

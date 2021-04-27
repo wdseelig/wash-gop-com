@@ -1,0 +1,18 @@
+uuid: e87abb6f-5a89-4430-bac0-dcd652f2a0da
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main-menu
+    parent: 'main-menu:0:'
+name: 'Membership Products'
+type: membership_products
+description: 'This content type is used to display WCGOP Membership products'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

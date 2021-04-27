@@ -1,0 +1,8 @@
+uuid: 786c690d-80ce-47ea-a5df-56c7a3cdbdfe
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_feed_item
+label: 'Feed item comment'
+target_entity_type_id: node
+description: null

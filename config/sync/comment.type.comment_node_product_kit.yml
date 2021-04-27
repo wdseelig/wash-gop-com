@@ -1,0 +1,8 @@
+uuid: c8ef9944-038f-4fff-8e83-bf22d4a5d456
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_product_kit
+label: 'Product kit comment'
+target_entity_type_id: node
+description: null

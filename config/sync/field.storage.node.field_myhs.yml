@@ -1,0 +1,20 @@
+uuid: dc53e8eb-32dc-45c5-8ead-ff8f1a37a6f2
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_myhs
+field_name: field_myhs
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,12 @@
+uuid: 4fccae03-b51c-4744-ace2-7d0e39f5bce7
+langcode: en
+status: true
+dependencies: {  }
+id: contact_the_washtenaw_gop
+label: 'Contact the Washtenaw GOP'
+recipients:
+  - comcentral@wash-gop.com
+reply: 'Thank you for contacting the Washtenaw County Republican Committee!'
+weight: 0
+message: null
+redirect: null

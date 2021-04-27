@@ -1,0 +1,27 @@
+uuid: cc66ebac-01e3-4d85-a50a-cada440f1f79
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_forum_ticket
+    - field.field.comment.comment_node_forum_ticket.comment_body
+  module:
+    - text
+id: comment.comment_node_forum_ticket.default
+targetEntityType: comment
+bundle: comment_node_forum_ticket
+mode: default
+content:
+  comment_body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

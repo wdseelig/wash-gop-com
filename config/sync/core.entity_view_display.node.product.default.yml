@@ -1,0 +1,28 @@
+uuid: ec44df39-1a12-4d2c-ac52-00d851037383
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.product.body
+    - node.type.product
+  module:
+    - text
+    - user
+id: node.product.default
+targetEntityType: node
+bundle: product
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,12 @@
+uuid: 400fc044-0896-45a5-be04-d8e8994d7bd1
+langcode: en
+status: true
+dependencies: {  }
+id: adminaccounti
+label: Adminaccounti
+display_label: null
+multiple: false
+registration: false
+roles: {  }
+allow_revisions: false
+new_revision: false

@@ -1,0 +1,37 @@
+uuid: b8b78a3f-8cff-46ca-bd74-d5a3fd320981
+langcode: en
+status: true
+dependencies: {  }
+id: event_admin
+label: 'event admin'
+weight: 5
+is_admin: null
+permissions:
+  - 'access all webform results'
+  - 'access content overview'
+  - 'access dashboard'
+  - 'access own imagepicker'
+  - 'access own webform submissions'
+  - 'administer pdfs'
+  - 'cancel own signups'
+  - 'create blog content'
+  - 'create event content'
+  - 'create wcgopevent content'
+  - 'delete any event content'
+  - 'delete any webform content'
+  - 'delete own event content'
+  - 'delete own page content'
+  - 'edit any event content'
+  - 'edit any page content'
+  - 'edit any story content'
+  - 'edit any wcgopevent content'
+  - 'edit any webform content'
+  - 'edit own comments'
+  - 'edit own event content'
+  - 'revert revisions'
+  - 'sign up for content'
+  - 'skip CAPTCHA'
+  - 'use imagepicker'
+  - 'use public imagepicker'
+  - 'view files'
+  - 'view revisions'

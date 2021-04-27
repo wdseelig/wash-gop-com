@@ -1,0 +1,27 @@
+uuid: 96893e45-d4e5-49de-adf2-613813248c24
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_wcgopevent
+    - field.field.comment.comment_node_wcgopevent.comment_body
+  module:
+    - text
+id: comment.comment_node_wcgopevent.default
+targetEntityType: comment
+bundle: comment_node_wcgopevent
+mode: default
+content:
+  comment_body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

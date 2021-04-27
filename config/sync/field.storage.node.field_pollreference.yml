@@ -1,0 +1,19 @@
+uuid: 5664906e-33c4-4f3a-ac13-fee0b7cbdf85
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_pollreference
+field_name: field_pollreference
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

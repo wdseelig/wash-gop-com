@@ -1,0 +1,23 @@
+uuid: a93a3945-2250-4d55-9a3c-2d0a22810a0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.pagewithadvancedpoll
+  module:
+    - text
+id: node.pagewithadvancedpoll.body
+field_name: body
+entity_type: node
+bundle: pagewithadvancedpoll
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

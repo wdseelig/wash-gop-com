@@ -1,0 +1,23 @@
+uuid: a4728e07-0219-4a9e-97cb-9e178c525bce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.forumadmissionselection
+  module:
+    - text
+id: node.forumadmissionselection.body
+field_name: body
+entity_type: node
+bundle: forumadmissionselection
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

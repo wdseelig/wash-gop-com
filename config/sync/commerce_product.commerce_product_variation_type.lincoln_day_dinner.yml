@@ -1,0 +1,10 @@
+uuid: 5959da6a-cec6-42e3-a6e5-70e215ac0b79
+langcode: en
+status: true
+dependencies: {  }
+id: lincoln_day_dinner
+label: 'Lincoln Day Dinner'
+orderItemType: default
+generateTitle: false
+traits: {  }
+locked: false

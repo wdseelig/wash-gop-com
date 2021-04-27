@@ -1,0 +1,14 @@
+uuid: 93e29f0f-cda1-4423-b3dc-56666276737c
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.blogger_auto_post
+  module:
+    - user
+id: user_remove_role_action.blogger_auto_post
+label: 'Remove the blogger - auto post role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: blogger_auto_post

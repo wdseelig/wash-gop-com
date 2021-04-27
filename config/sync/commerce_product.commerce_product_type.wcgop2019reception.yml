@@ -1,0 +1,12 @@
+uuid: 1f54f460-6912-4801-94da-bdcc28a959fa
+langcode: en
+status: true
+dependencies: {  }
+id: wcgop2019reception
+label: WCGOP2019Reception
+description: 'The VIP reception for the 2019 Lincoln Day Dinner'
+variationType: lddr2019
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

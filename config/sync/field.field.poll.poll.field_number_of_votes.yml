@@ -1,0 +1,28 @@
+uuid: a5f101bf-9a1c-4d6b-8942-63aefea931ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.poll.field_number_of_votes
+  module:
+    - poll
+_core:
+  default_config_hash: pBlZ5bC8PLxZ2o9WIPFharU6-bcEOX39FVyTYL18wys
+id: poll.poll.field_number_of_votes
+field_name: field_number_of_votes
+entity_type: poll
+bundle: poll
+label: 'Number of Votes'
+description: 'Only applies to vote choices which allow more than one vote at a time. Should not exceed number of available vote choices and should be less that total choices.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer
