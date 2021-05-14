@@ -261,3 +261,27 @@ go into Preferences->Resources to set the amount of swap space you want to
 have.  So far, 2GB has worked for me.  This settings change takes place
 immediately, you don't even have to restart your containers.
 
+On May 11th I deleted all of the files in /var/www/html/config/sync so that I
+could start over.  Also on that date I re-ran the drush minimal install and
+used the drush migrate-upgrade to create the migrations that we'll need.
+
+On May 12th I ran the users migration.  It worked [took an hour!] and after it
+I couldn't see the migrations any more.  This is because the migration changed
+user 1 from admin to gopadmin, and also changed the password.  It turns out
+that there is a migrations permission, and when I enabled that for me
+[wdseelig] I could see the migrations again.  I used Drupal Console to reset
+the user1 1 password.  Also on May 12th I ran the Page content migration.  It,
+too, worked.
+
+On May 13th I enabled [I think installed is the right word] several modules:
+
+	* CKEditor
+	* Path [for URL aliases]
+	* Toolbar [for the admin toolbar]
+	
+Also on May 13th, I spent several hours trying to enable Razorsql to "see"
+databases within a Docker container.  I eventually got this to work by
+modifying the mysqld.cnf file [/etc/mysql/mysql.conf.d/mysqld.cnf] to
+change the bind-address to 0.0.0.0.  This change instructs mysql to accept
+remote connections.
+
