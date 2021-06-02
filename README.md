@@ -285,3 +285,43 @@ modifying the mysqld.cnf file [/etc/mysql/mysql.conf.d/mysqld.cnf] to
 change the bind-address to 0.0.0.0.  This change instructs mysql to accept
 remote connections.
 
+As of June 1st, the folowing modules are to be enabled whenever restart:
+
+  * Block
+  * Breakpoint
+  * CKEditor
+  * Contextual Links
+  * Custom Block
+  * Database Logging
+  * Field
+  * Filter
+  * Internal Dynamic Page Cache
+  * Internal Page Cache
+  * Node
+  * Path
+  * System
+  * Text Editor
+  * Toolbar
+  * Update Manager
+  * User
+  
+Within the Field types group:
+
+  * File
+  * Options
+  * Text
+  
+Within the Migration Group
+
+  * Drupal Upgrade
+  * Migrate Drupal
+  * Migrate Drupal UI
+  * Migrate Plus
+  * Migrate Tools
+  
+Within the Voting group
+
+  * Voting API
+  
+
+
