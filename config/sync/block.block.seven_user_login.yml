@@ -1,0 +1,25 @@
+uuid: b5ddbbd4-b30e-40e4-9c95-f38775b603e4
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - user
+  theme:
+    - seven
+id: seven_user_login
+theme: seven
+region: content
+weight: -18
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: ''
+  provider: user
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: /July4SignUp

@@ -1,0 +1,20 @@
+uuid: e156168b-feb8-4ad1-83f4-c02777c6215a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bartik
+id: marinelli_system_main
+theme: bartik
+region: content
+weight: -27
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: ''
+  provider: system
+  label_display: '0'
+visibility: {  }

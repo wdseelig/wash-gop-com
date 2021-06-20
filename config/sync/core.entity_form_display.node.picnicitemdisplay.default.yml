@@ -1,4 +1,4 @@
-uuid: 9e37c2b1-4807-408a-bfb0-38fce073b1a3
+uuid: ab99147d-f0d1-403a-b449-fd76b8ae77fe
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.picnicitemdisplay.body
     - node.type.picnicitemdisplay
   module:
-    - path
     - text
 id: node.picnicitemdisplay.default
 targetEntityType: node
@@ -26,12 +25,6 @@ content:
   created:
     type: datetime_timestamp
     weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  path:
-    type: path
-    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }

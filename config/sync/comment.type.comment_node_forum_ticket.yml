@@ -1,8 +1,0 @@
-uuid: 503b4771-212e-4128-9fff-54be736a9a1c
-langcode: en
-status: true
-dependencies: {  }
-id: comment_node_forum_ticket
-label: 'Forum Ticket comment'
-target_entity_type_id: node
-description: null

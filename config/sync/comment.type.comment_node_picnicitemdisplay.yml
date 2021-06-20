@@ -1,8 +1,0 @@
-uuid: 85a00263-31c0-47e3-bcaa-6df87598f60d
-langcode: en
-status: true
-dependencies: {  }
-id: comment_node_picnicitemdisplay
-label: 'PicnicItemDisplay comment'
-target_entity_type_id: node
-description: null

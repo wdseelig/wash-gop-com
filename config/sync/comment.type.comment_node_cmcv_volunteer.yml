@@ -1,8 +1,0 @@
-uuid: b52745df-146b-4f81-8691-196211314568
-langcode: en
-status: true
-dependencies: {  }
-id: comment_node_cmcv_volunteer
-label: 'Volunteer Opportunity comment'
-target_entity_type_id: node
-description: null

@@ -1,4 +1,4 @@
-uuid: a5f4110c-e650-416c-be4b-1c9d7ca788f8
+uuid: d89b9568-37ce-4026-a6b5-23943b13116e
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.story.body
     - node.type.story
   module:
-    - path
     - text
 id: node.story.default
 targetEntityType: node
@@ -26,12 +25,6 @@ content:
   created:
     type: datetime_timestamp
     weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  path:
-    type: path
-    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }

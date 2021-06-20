@@ -1,4 +1,4 @@
-uuid: 07f5da9e-1f5c-4158-847f-c290d6c18535
+uuid: b074c7e0-1296-45fb-963e-92542d8bbedf
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.ldrad2020display.body
     - node.type.ldrad2020display
   module:
-    - path
     - text
 id: node.ldrad2020display.default
 targetEntityType: node
@@ -26,12 +25,6 @@ content:
   created:
     type: datetime_timestamp
     weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  path:
-    type: path
-    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }

@@ -1,4 +1,4 @@
-uuid: 4ebe1459-3c9e-4b34-b898-9c6142ab071a
+uuid: 24122ff7-62d8-454f-bc91-7134138c4278
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.node_gallery_item.body
     - node.type.node_gallery_item
   module:
-    - path
     - text
 id: node.node_gallery_item.default
 targetEntityType: node
@@ -26,12 +25,6 @@ content:
   created:
     type: datetime_timestamp
     weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  path:
-    type: path
-    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }

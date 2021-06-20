@@ -1,8 +1,0 @@
-uuid: 718157a9-e274-417b-a15d-2de5f8c2104a
-langcode: en
-status: true
-dependencies: {  }
-id: comment_node_donation_display
-label: 'Donation Display comment'
-target_entity_type_id: node
-description: null

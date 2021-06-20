@@ -1,0 +1,18 @@
+uuid: 580bae41-b99b-4bf9-9976-922b77a3bd20
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main-menu
+    parent: 'main-menu:0:'
+name: 'WCGOP Store'
+type: wcgop_store
+description: 'This is the place where the WCGOP sells products and services to its members'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

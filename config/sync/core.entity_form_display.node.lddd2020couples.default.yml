@@ -1,4 +1,4 @@
-uuid: 02f6d90b-1b16-427a-a6d7-ba128aea7a25
+uuid: 935eebef-7bfa-4aba-9f0a-ee9ded723fd6
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.lddd2020couples.body
     - node.type.lddd2020couples
   module:
-    - path
     - text
 id: node.lddd2020couples.default
 targetEntityType: node
@@ -26,12 +25,6 @@ content:
   created:
     type: datetime_timestamp
     weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  path:
-    type: path
-    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }

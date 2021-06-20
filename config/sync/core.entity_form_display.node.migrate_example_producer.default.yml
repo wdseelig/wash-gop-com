@@ -1,4 +1,4 @@
-uuid: 250a4737-0896-487e-a027-0dae53020ad8
+uuid: 11c2f22e-5da9-4eeb-a1eb-7d78dd13d726
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.migrate_example_producer.body
     - node.type.migrate_example_producer
   module:
-    - path
     - text
 id: node.migrate_example_producer.default
 targetEntityType: node
@@ -26,12 +25,6 @@ content:
   created:
     type: datetime_timestamp
     weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  path:
-    type: path
-    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }

@@ -1,8 +1,0 @@
-uuid: d9ed1757-8b18-4329-bfa1-352da72a1ebb
-langcode: en
-status: true
-dependencies: {  }
-id: comment_node_blogauto
-label: 'Blog entry - auto publish comment'
-target_entity_type_id: node
-description: null

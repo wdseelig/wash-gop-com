@@ -1,8 +1,0 @@
-uuid: 9b703055-90bf-4858-9766-3bd232414f94
-langcode: en
-status: true
-dependencies: {  }
-id: comment_node_ldrad2020display
-label: 'LDRAD2020Display comment'
-target_entity_type_id: node
-description: null

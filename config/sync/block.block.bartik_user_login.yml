@@ -1,0 +1,25 @@
+uuid: ea743307-cb92-45cb-ac78-6908357a717b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - user
+  theme:
+    - bartik
+id: bartik_user_login
+theme: bartik
+region: sidebar_second
+weight: -18
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: ''
+  provider: user
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: /July4SignUp

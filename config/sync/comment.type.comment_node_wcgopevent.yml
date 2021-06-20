@@ -1,8 +1,0 @@
-uuid: 0ed9d64a-9cb0-4018-bb7b-fb630444b397
-langcode: en
-status: true
-dependencies: {  }
-id: comment_node_wcgopevent
-label: 'WCGOPEvent comment'
-target_entity_type_id: node
-description: null

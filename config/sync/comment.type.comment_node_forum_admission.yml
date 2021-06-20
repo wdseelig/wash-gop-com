@@ -1,8 +1,0 @@
-uuid: 3d697f70-e213-40bb-be47-26b0ff3fd2db
-langcode: en
-status: true
-dependencies: {  }
-id: comment_node_forum_admission
-label: 'Forum Admission comment'
-target_entity_type_id: node
-description: null

@@ -1,4 +1,4 @@
-uuid: 03aa011d-1737-4f30-9918-176f0245ae44
+uuid: 6ad84b50-5b54-4fdd-9719-ca697fc7aaaa
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.product_kit.body
     - node.type.product_kit
   module:
-    - path
     - text
 id: node.product_kit.default
 targetEntityType: node
@@ -26,12 +25,6 @@ content:
   created:
     type: datetime_timestamp
     weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  path:
-    type: path
-    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }

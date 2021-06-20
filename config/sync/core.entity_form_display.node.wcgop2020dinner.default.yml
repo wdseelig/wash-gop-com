@@ -1,4 +1,4 @@
-uuid: 56483007-9184-4e3d-bd96-f9c4a517d9b3
+uuid: 39547599-1b7d-49af-aebc-2226ad7458cc
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.wcgop2020dinner.body
     - node.type.wcgop2020dinner
   module:
-    - path
     - text
 id: node.wcgop2020dinner.default
 targetEntityType: node
@@ -26,12 +25,6 @@ content:
   created:
     type: datetime_timestamp
     weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  path:
-    type: path
-    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }

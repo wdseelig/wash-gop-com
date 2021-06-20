@@ -1,4 +1,4 @@
-uuid: 55314cdb-4895-4215-8170-4c26842031f6
+uuid: deeffc39-388d-4b80-b965-f6969e747cb7
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.cmcv_volunteer.body
     - node.type.cmcv_volunteer
   module:
-    - path
     - text
 id: node.cmcv_volunteer.default
 targetEntityType: node
@@ -26,12 +25,6 @@ content:
   created:
     type: datetime_timestamp
     weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  path:
-    type: path
-    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }

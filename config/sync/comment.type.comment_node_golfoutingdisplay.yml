@@ -1,8 +1,0 @@
-uuid: 221c1f59-1cdb-4905-8c3b-227d0fbae3d1
-langcode: en
-status: true
-dependencies: {  }
-id: comment_node_golfoutingdisplay
-label: 'GolfOutingDisplay comment'
-target_entity_type_id: node
-description: null

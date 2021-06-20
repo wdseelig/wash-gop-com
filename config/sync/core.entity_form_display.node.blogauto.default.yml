@@ -1,4 +1,4 @@
-uuid: 985040cf-c204-4151-aa0f-df49c0064db6
+uuid: 9bbc8aff-5b74-4930-985e-6284a1b53a7d
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.blogauto.body
     - node.type.blogauto
   module:
-    - path
     - text
 id: node.blogauto.default
 targetEntityType: node
@@ -26,12 +25,6 @@ content:
   created:
     type: datetime_timestamp
     weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  path:
-    type: path
-    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }

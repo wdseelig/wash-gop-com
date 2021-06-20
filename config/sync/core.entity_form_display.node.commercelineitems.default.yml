@@ -1,4 +1,4 @@
-uuid: 09a0f180-136d-4974-a5d0-2b31122edf58
+uuid: 890d9308-ccb8-481e-ab2a-047bbacbea2a
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.commercelineitems.body
     - node.type.commercelineitems
   module:
-    - path
     - text
 id: node.commercelineitems.default
 targetEntityType: node
@@ -26,12 +25,6 @@ content:
   created:
     type: datetime_timestamp
     weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  path:
-    type: path
-    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }

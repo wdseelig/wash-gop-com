@@ -1,4 +1,4 @@
-uuid: 9142b157-c0b9-4b6b-91c9-150a933f79f3
+uuid: b3df2053-edd5-4997-80d3-9d64e7626c34
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.gop_lincoln_day_reception_and_di.body
     - node.type.gop_lincoln_day_reception_and_di
   module:
-    - path
     - text
 id: node.gop_lincoln_day_reception_and_di.default
 targetEntityType: node
@@ -26,12 +25,6 @@ content:
   created:
     type: datetime_timestamp
     weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  path:
-    type: path
-    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }

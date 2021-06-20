@@ -1,4 +1,4 @@
-uuid: 8c524eac-375a-4a4a-b58f-58ff668a8e17
+uuid: 033bffe6-85f8-4214-9882-2d0c9fd4b97b
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.wcgop2019reception.body
     - node.type.wcgop2019reception
   module:
-    - path
     - text
 id: node.wcgop2019reception.default
 targetEntityType: node
@@ -26,12 +25,6 @@ content:
   created:
     type: datetime_timestamp
     weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  path:
-    type: path
-    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }

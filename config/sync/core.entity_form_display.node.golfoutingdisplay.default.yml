@@ -1,4 +1,4 @@
-uuid: ac320667-f0d6-4dc6-938b-2ca3fe1e7a9d
+uuid: 6113bc7f-f1e9-4231-af85-70b48a234886
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.golfoutingdisplay.body
     - node.type.golfoutingdisplay
   module:
-    - path
     - text
 id: node.golfoutingdisplay.default
 targetEntityType: node
@@ -26,12 +25,6 @@ content:
   created:
     type: datetime_timestamp
     weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  path:
-    type: path
-    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }

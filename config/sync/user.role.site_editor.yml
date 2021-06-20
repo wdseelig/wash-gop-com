@@ -1,4 +1,4 @@
-uuid: 505373ab-5700-4767-ba76-1b3a51681b57
+uuid: 265ed880-4cb9-4e3a-952c-e8e49e741c12
 langcode: en
 status: true
 dependencies: {  }
@@ -7,6 +7,8 @@ label: 'Site editor'
 weight: 8
 is_admin: null
 permissions:
+  - 'access administration menu'
+  - 'access administration pages'
   - 'access all webform results'
   - 'access ckeditor link'
   - 'access content overview'
@@ -35,15 +37,19 @@ permissions:
   - 'administer imce'
   - 'administer line item types'
   - 'administer line items'
+  - 'administer migrations'
   - 'administer module missing message fixer'
   - 'administer multifield'
   - 'administer nodes'
   - 'administer open social sharing'
+  - 'administer page theme'
+  - 'administer pdf reader'
   - 'administer phpmailer settings'
   - 'administer polls'
   - 'administer product types'
   - 'administer rules'
   - 'administer sharethis'
+  - 'administer themes'
   - 'administer voting api'
   - 'administer wcgopindividualinfo content'
   - 'administer webform stripe'
@@ -54,6 +60,7 @@ permissions:
   - 'cancel own vote'
   - 'clone node'
   - 'configure store'
+  - 'create advpoll content'
   - 'create bulk photo nodes'
   - 'create commerce_customer_profile entities of bundle billing'
   - 'create commerce_customer_profile entities of bundle non_paying_cu'
@@ -86,6 +93,7 @@ permissions:
   - 'create wcgopevent content'
   - 'create webform content'
   - 'delete all webform submissions'
+  - 'delete any advpoll content'
   - 'delete any crm_core_contact entity of bundle household'
   - 'delete any crm_core_contact entity of bundle individual'
   - 'delete any crm_core_contact entity of bundle organization'
@@ -104,6 +112,7 @@ permissions:
   - 'delete any relation entity of bundle is_a_neighbor_of'
   - 'delete any relation entity of bundle knows'
   - 'delete any webform content'
+  - 'delete own advpoll content'
   - 'delete own event content'
   - 'delete own membership_products content'
   - 'delete own node_gallery_gallery content'
@@ -114,6 +123,7 @@ permissions:
   - 'download any image files'
   - 'download any video files'
   - 'edit all webform submissions'
+  - 'edit any advpoll content'
   - 'edit any commerce_customer_profile entity of bundle non_paying_cu'
   - 'edit any commerce_product entity'
   - 'edit any commerce_product entity of bundle forumitem'
@@ -144,6 +154,7 @@ permissions:
   - 'edit field_workflow'
   - 'edit javascript per block'
   - 'edit javascript per node'
+  - 'edit own advpoll content'
   - 'edit own comments'
   - 'edit own commerce_customer_profile entities of bundle billing'
   - 'edit own commerce_customer_profile entities of bundle non_paying_cu'

@@ -1,15 +1,14 @@
-uuid: cfc9ec85-b3ca-4fe6-a319-4e2390367d82
+uuid: 002a3d0c-ba11-4111-b28f-078aa18c0a11
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
 id: authenticated
 label: 'authenticated user'
 weight: 1
 is_admin: false
 permissions:
-  - 'access administration pages'
   - 'access checkout'
   - 'access comments'
   - 'access content'
@@ -23,10 +22,12 @@ permissions:
   - 'access user contact forms'
   - 'add write-ins'
   - 'administer commerce_order entities'
+  - 'bypass pages password protection'
   - 'cancel account'
   - 'cancel own signups'
   - 'cancel own vote'
   - 'change own username'
+  - conventionloggedin
   - 'create blog content'
   - 'create commerce_customer_profile entities of bundle member'
   - 'create commerce_order entities'
@@ -70,7 +71,6 @@ permissions:
   - 'use advanced search'
   - 'use text format 1'
   - 'use text format simpleinput'
-  - 'use text format site_editor'
   - 'view any commerce_product entity of bundle golf_outing'
   - 'view any commerce_product entity of bundle ldd2017'
   - 'view any commerce_product entity of bundle picnic_item'

@@ -1,4 +1,4 @@
-uuid: 3e26919d-a4af-404b-92cc-33c696e51597
+uuid: a93a6518-4653-4ec0-bcea-2fb8d0167814
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.volunteertimesloteventday.body
     - node.type.volunteertimesloteventday
   module:
-    - path
     - text
 id: node.volunteertimesloteventday.default
 targetEntityType: node
@@ -26,12 +25,6 @@ content:
   created:
     type: datetime_timestamp
     weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  path:
-    type: path
-    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }

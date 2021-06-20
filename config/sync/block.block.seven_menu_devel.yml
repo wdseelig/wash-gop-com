@@ -1,0 +1,18 @@
+uuid: 0d881e84-7a3d-4125-97bb-c91fa0024bef
+langcode: en
+status: true
+dependencies:
+  theme:
+    - seven
+id: seven_menu_devel
+theme: seven
+region: content
+weight: -18
+provider: null
+plugin: 'system_menu_block:devel'
+settings:
+  id: broken
+  label: ''
+  provider: core
+  label_display: '0'
+visibility: {  }

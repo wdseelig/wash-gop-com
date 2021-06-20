@@ -1,0 +1,23 @@
+uuid: 94ecaf95-efd4-4cf2-a2c5-13486dd9117c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.wcgop_store
+  module:
+    - text
+id: node.wcgop_store.body
+field_name: body
+entity_type: node
+bundle: wcgop_store
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,8 +1,0 @@
-uuid: 8094d3a2-4e5d-474f-be01-3b2c927403d6
-langcode: en
-status: true
-dependencies: {  }
-id: comment_node_forumitemdisplayv2
-label: 'ForumItemDisplayV2 comment'
-target_entity_type_id: node
-description: null

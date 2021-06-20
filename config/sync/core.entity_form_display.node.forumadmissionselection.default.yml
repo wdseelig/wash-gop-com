@@ -1,4 +1,4 @@
-uuid: db69e3ac-6944-4b11-8119-a920835fcc85
+uuid: d6b04e5e-89c0-4efc-b9b4-1fde77fbd73d
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.forumadmissionselection.body
     - node.type.forumadmissionselection
   module:
-    - path
     - text
 id: node.forumadmissionselection.default
 targetEntityType: node
@@ -26,12 +25,6 @@ content:
   created:
     type: datetime_timestamp
     weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  path:
-    type: path
-    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }

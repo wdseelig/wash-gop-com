@@ -1,4 +1,4 @@
-uuid: ff0db85c-bf6b-44d0-b509-e93fbf19b448
+uuid: bcc06972-0203-4b02-8fff-9d9040a78831
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.lddd2020vipplusdisplay.body
     - node.type.lddd2020vipplusdisplay
   module:
-    - path
     - text
 id: node.lddd2020vipplusdisplay.default
 targetEntityType: node
@@ -26,12 +25,6 @@ content:
   created:
     type: datetime_timestamp
     weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  path:
-    type: path
-    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }

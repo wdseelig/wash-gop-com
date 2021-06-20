@@ -1,8 +1,0 @@
-uuid: f0838774-5db9-4443-8870-e9408af9d361
-langcode: en
-status: true
-dependencies: {  }
-id: comment_node_basicpetition
-label: 'Basic Petition comment'
-target_entity_type_id: node
-description: null

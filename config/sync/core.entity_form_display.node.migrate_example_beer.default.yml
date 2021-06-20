@@ -1,4 +1,4 @@
-uuid: 2c5ea5a6-feec-4bba-a671-f60a554d1409
+uuid: 215fa21e-7f1c-45e9-a38a-900bbd637655
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.migrate_example_beer.body
     - node.type.migrate_example_beer
   module:
-    - path
     - text
 id: node.migrate_example_beer.default
 targetEntityType: node
@@ -26,12 +25,6 @@ content:
   created:
     type: datetime_timestamp
     weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  path:
-    type: path
-    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }

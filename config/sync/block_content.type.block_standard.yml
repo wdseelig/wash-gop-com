@@ -1,0 +1,8 @@
+uuid: 8f2dc060-ecc7-4426-9c17-9415cc06c788
+langcode: en
+status: true
+dependencies: {  }
+id: block_standard
+label: block_standard
+revision: 0
+description: 'This is just a standard block'

@@ -1,8 +1,0 @@
-uuid: b433aff4-8ce8-4860-9d62-e13c888639c6
-langcode: en
-status: true
-dependencies: {  }
-id: comment_node_product_display
-label: 'Product Display comment'
-target_entity_type_id: node
-description: null

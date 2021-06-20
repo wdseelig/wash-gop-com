@@ -1,8 +1,0 @@
-uuid: 8ffd0251-2b43-46d9-8785-00e4acc5ea6e
-langcode: en
-status: true
-dependencies: {  }
-id: comment_node_feed
-label: 'Feed comment'
-target_entity_type_id: node
-description: null

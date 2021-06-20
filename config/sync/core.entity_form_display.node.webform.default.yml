@@ -1,4 +1,4 @@
-uuid: 1a8deec9-3af4-4b0f-b955-365cb93087eb
+uuid: c731c253-45e9-4d8a-82a8-c0a5d456ca77
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.webform.body
     - node.type.webform
   module:
-    - path
     - text
 id: node.webform.default
 targetEntityType: node
@@ -26,12 +25,6 @@ content:
   created:
     type: datetime_timestamp
     weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  path:
-    type: path
-    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }

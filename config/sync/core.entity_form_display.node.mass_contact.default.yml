@@ -1,4 +1,4 @@
-uuid: 6fb35a21-3a5e-44da-9965-591feff68f6b
+uuid: 7d3563e6-be63-46d4-b3b6-cd5de6ff4e72
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.mass_contact.body
     - node.type.mass_contact
   module:
-    - path
     - text
 id: node.mass_contact.default
 targetEntityType: node
@@ -26,12 +25,6 @@ content:
   created:
     type: datetime_timestamp
     weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  path:
-    type: path
-    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }

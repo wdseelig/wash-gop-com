@@ -1,4 +1,4 @@
-uuid: ed7fab86-56c2-406a-93ba-c06848df71d1
+uuid: 7839240f-1502-4e8d-bfc3-9525df974648
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.basicpetition.body
     - node.type.basicpetition
   module:
-    - path
     - text
 id: node.basicpetition.default
 targetEntityType: node
@@ -26,12 +25,6 @@ content:
   created:
     type: datetime_timestamp
     weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  path:
-    type: path
-    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }

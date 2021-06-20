@@ -1,4 +1,4 @@
-uuid: ba937967-a1cc-4bc6-a4b4-09f9fa8d0fe4
+uuid: e260f428-a457-43a8-9dfd-0b32cebca730
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.donation_display.body
     - node.type.donation_display
   module:
-    - path
     - text
 id: node.donation_display.default
 targetEntityType: node
@@ -26,12 +25,6 @@ content:
   created:
     type: datetime_timestamp
     weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  path:
-    type: path
-    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }

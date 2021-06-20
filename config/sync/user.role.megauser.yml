@@ -1,4 +1,4 @@
-uuid: a297a6bf-bcec-4f58-abe4-cada95b34d32
+uuid: 3d515c61-103a-4553-b455-345684789d76
 langcode: en
 status: true
 dependencies: {  }
@@ -15,6 +15,7 @@ permissions:
   - 'access content'
   - 'access content overview'
   - 'access electoral list'
+  - 'access library reports'
   - 'access news feeds'
   - 'access own webform results'
   - 'access site in maintenance mode'

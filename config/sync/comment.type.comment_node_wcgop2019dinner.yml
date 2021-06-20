@@ -1,8 +1,0 @@
-uuid: caca9414-af7b-4a31-952e-7502eec67b40
-langcode: en
-status: true
-dependencies: {  }
-id: comment_node_wcgop2019dinner
-label: 'WCGOP2019Dinner comment'
-target_entity_type_id: node
-description: null

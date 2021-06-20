@@ -1,8 +1,0 @@
-uuid: 838e3506-adae-47b2-ad92-351c5e4ea04d
-langcode: en
-status: true
-dependencies: {  }
-id: comment_node_commercelineitems
-label: 'CommerceLineItems comment'
-target_entity_type_id: node
-description: null

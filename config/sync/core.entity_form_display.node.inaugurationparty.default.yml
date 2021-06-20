@@ -1,4 +1,4 @@
-uuid: 23ec0024-a25f-4335-b42d-df547f6d7dd7
+uuid: 8c1b9970-3d11-476c-a9d1-72229cf2d1ac
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.inaugurationparty.body
     - node.type.inaugurationparty
   module:
-    - path
     - text
 id: node.inaugurationparty.default
 targetEntityType: node
@@ -26,12 +25,6 @@ content:
   created:
     type: datetime_timestamp
     weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  path:
-    type: path
-    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }

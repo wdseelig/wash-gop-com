@@ -1,4 +1,4 @@
-uuid: 2919dffd-8aac-4ab5-bbb6-e84397462969
+uuid: 3842cd0c-5d1e-4900-bfb4-0c22eb03023d
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.gop_lincoln_day_sponsorships.body
     - node.type.gop_lincoln_day_sponsorships
   module:
-    - path
     - text
 id: node.gop_lincoln_day_sponsorships.default
 targetEntityType: node
@@ -26,12 +25,6 @@ content:
   created:
     type: datetime_timestamp
     weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  path:
-    type: path
-    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }

@@ -1,11 +1,10 @@
-uuid: 7c0e690f-88ad-4590-99c6-71016595f643
+uuid: 34be58a0-b94e-4d18-bd7a-780ffbdde8b4
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.gop_lincoln_day_dinners.body
-    - field.field.node.gop_lincoln_day_dinners.field_gopdinnertextfield
     - node.type.gop_lincoln_day_dinners
   module:
     - text
@@ -28,5 +27,4 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden:
-  field_gopdinnertextfield: true
+hidden: {  }

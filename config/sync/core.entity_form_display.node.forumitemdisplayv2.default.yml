@@ -1,4 +1,4 @@
-uuid: c2253088-5b0b-4cd9-9e9d-78fe15f4e08e
+uuid: 34c9de3c-fbf9-44c3-84fe-256b41bbefe7
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.forumitemdisplayv2.body
     - node.type.forumitemdisplayv2
   module:
-    - path
     - text
 id: node.forumitemdisplayv2.default
 targetEntityType: node
@@ -26,12 +25,6 @@ content:
   created:
     type: datetime_timestamp
     weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  path:
-    type: path
-    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }

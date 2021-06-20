@@ -1,8 +1,0 @@
-uuid: 34d83237-4b3a-4991-a5de-e797c3da3dc8
-langcode: en
-status: true
-dependencies: {  }
-id: comment_node_inaugurationparty
-label: 'InaugurationParty comment'
-target_entity_type_id: node
-description: null

@@ -1,4 +1,4 @@
-uuid: 67d9b78e-bec2-4656-ba33-3c12be004c67
+uuid: 8c68203d-2503-4eb5-8300-4c45f1d37a48
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.lddd2020sponsorshipdisplay.body
     - node.type.lddd2020sponsorshipdisplay
   module:
-    - path
     - text
 id: node.lddd2020sponsorshipdisplay.default
 targetEntityType: node
@@ -26,12 +25,6 @@ content:
   created:
     type: datetime_timestamp
     weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  path:
-    type: path
-    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }

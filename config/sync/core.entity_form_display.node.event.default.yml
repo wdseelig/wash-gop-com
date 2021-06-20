@@ -1,4 +1,4 @@
-uuid: 99ffadb8-c287-4845-98a1-88421b24ea04
+uuid: 98349064-e5db-4335-ab0a-030c8547dfd7
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.event.body
     - node.type.event
   module:
-    - path
     - text
 id: node.event.default
 targetEntityType: node
@@ -26,12 +25,6 @@ content:
   created:
     type: datetime_timestamp
     weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  path:
-    type: path
-    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }

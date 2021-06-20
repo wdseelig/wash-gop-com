@@ -1,0 +1,162 @@
+uuid: 2dace21b-358f-4fea-8fd2-0d1b40fe040d
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_node_revision_page
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Node revisions (Page)'
+source:
+  plugin: d7_node_revision
+  node_type: page
+process:
+  nid:
+    -
+      plugin: get
+      source: nid
+  vid:
+    -
+      plugin: get
+      source: vid
+  langcode:
+    -
+      plugin: default_value
+      source: language
+      default_value: und
+  title:
+    -
+      plugin: get
+      source: title
+  uid:
+    -
+      plugin: get
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: changed
+  promote:
+    -
+      plugin: get
+      source: promote
+  sticky:
+    -
+      plugin: get
+      source: sticky
+  revision_uid:
+    -
+      plugin: get
+      source: revision_uid
+  revision_log:
+    -
+      plugin: get
+      source: log
+  revision_timestamp:
+    -
+      plugin: get
+      source: timestamp
+  comment_node_page/0/status:
+    -
+      plugin: get
+      source: comment
+  body:
+    -
+      plugin: get
+      source: body
+  upload:
+    -
+      plugin: sub_process
+      source: upload
+      process:
+        target_id: fid
+        display: display
+        description: description
+  field_pdf:
+    -
+      plugin: sub_process
+      source: field_pdf
+      process:
+        target_id: fid
+        display: display
+        description: description
+  field_widepdf:
+    -
+      plugin: sub_process
+      source: field_widepdf
+      process:
+        target_id: fid
+        display: display
+        description: description
+destination:
+  plugin: 'entity_revision:node'
+  default_bundle: page
+migration_dependencies:
+  required:
+    - upgrade_d7_node_page
+    - upgrade_d7_node_story
+    - upgrade_d7_node_blogauto
+    - upgrade_d7_node_poll
+    - upgrade_d7_node_feed
+    - upgrade_d7_node_event
+    - upgrade_d7_node_advpoll
+    - upgrade_d7_node_pollwithpage
+    - upgrade_d7_node_blog
+    - upgrade_d7_node_basicpetition
+    - upgrade_d7_node_webform
+    - upgrade_d7_node_mass_contact
+    - upgrade_d7_node_wcgopevent
+    - upgrade_d7_node_paypal_donate
+    - upgrade_d7_node_feed_item
+    - upgrade_d7_node_node_gallery_gallery
+    - upgrade_d7_node_node_gallery_item
+    - upgrade_d7_node_inaugurationparty
+    - upgrade_d7_node_pagewithadvancedpoll
+    - upgrade_d7_node_volunteertimeslotevent
+    - upgrade_d7_node_volunteertimesloteventday
+    - upgrade_d7_node_wcgop_store
+    - upgrade_d7_node_gop_lincoln_day_sponsorships
+    - upgrade_d7_node_gop_lincoln_day_dinners
+    - upgrade_d7_node_donation_display
+    - upgrade_d7_node_gop_lincoln_day_reception_and_di
+    - upgrade_d7_node_commercelineitems
+    - upgrade_d7_node_membership_products
+    - upgrade_d7_node_picnicitemdisplay
+    - upgrade_d7_node_membershipitemdisplay
+    - upgrade_d7_node_forum_admission
+    - upgrade_d7_node_forumadmissionselection
+    - upgrade_d7_node_forum_ticket
+    - upgrade_d7_node_forumitemdisplay
+    - upgrade_d7_node_forumitemdisplayv2
+    - upgrade_d7_node_migrate_example_beer
+    - upgrade_d7_node_migrate_example_wine
+    - upgrade_d7_node_migrate_example_producer
+    - upgrade_d7_node_cmcv_volunteer
+    - upgrade_d7_node_golfoutingdisplay
+    - upgrade_d7_node_product_display
+    - upgrade_d7_node_genericproductdisplay
+    - upgrade_d7_node_trialproductdisplay
+    - upgrade_d7_node_gop_ldd_2019_sponsorships
+    - upgrade_d7_node_wcgop2019reception
+    - upgrade_d7_node_wcgop2019dinner
+    - upgrade_d7_node_product
+    - upgrade_d7_node_product_kit
+    - upgrade_d7_node_wcgop2020dinner
+    - upgrade_d7_node_lddd2020couples
+    - upgrade_d7_node_lddd2020tablefor10
+    - upgrade_d7_node_lddd2020sponsorshipdisplay
+    - upgrade_d7_node_ldrad2020display
+    - upgrade_d7_node_lddd2020vipplusdisplay
+  optional: {  }

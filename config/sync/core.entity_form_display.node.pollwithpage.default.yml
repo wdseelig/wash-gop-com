@@ -1,4 +1,4 @@
-uuid: 9168d831-e0d7-4bab-8c03-089f2535cb8c
+uuid: 8371fabe-70ae-4dbd-9e6a-0d49a6978352
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.pollwithpage.body
     - node.type.pollwithpage
   module:
-    - path
     - text
 id: node.pollwithpage.default
 targetEntityType: node
@@ -26,12 +25,6 @@ content:
   created:
     type: datetime_timestamp
     weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  path:
-    type: path
-    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }

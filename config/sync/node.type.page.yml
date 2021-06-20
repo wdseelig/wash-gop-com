@@ -1,4 +1,4 @@
-uuid: 69caa03c-d721-4066-9c87-bd594cd70bf6
+uuid: 38700cf2-5f0b-48cd-bffc-d016b90913a4
 langcode: en
 status: true
 dependencies:
@@ -9,8 +9,6 @@ third_party_settings:
     available_menus:
       - navigation
     parent: 'navigation:0:'
-_core:
-  default_config_hash: KuyA4NHPXcmKAjRtwa0vQc2ZcyrUJy6IlS2TAyMNRbc
 name: Page
 type: page
 description: 'If you want to add a static page, like a contact page or an about page, use a page.'

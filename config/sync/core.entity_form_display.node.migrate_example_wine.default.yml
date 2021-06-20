@@ -1,4 +1,4 @@
-uuid: 66bccb8e-2955-4f34-b60a-68a6275df817
+uuid: f66bf3d8-7596-4b71-b1bc-714efca11110
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.migrate_example_wine.body
     - node.type.migrate_example_wine
   module:
-    - path
     - text
 id: node.migrate_example_wine.default
 targetEntityType: node
@@ -26,12 +25,6 @@ content:
   created:
     type: datetime_timestamp
     weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  path:
-    type: path
-    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }

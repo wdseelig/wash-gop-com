@@ -1,10 +1,9 @@
-uuid: 3ad7094f-9975-4ab0-88d0-c5325fd19bbd
+uuid: 8da9c8fd-6837-49cc-b71b-61f3b3e80f36
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.node.gop_lincoln_day_dinners.body
-    - field.field.node.gop_lincoln_day_dinners.field_gopdinnertextfield
     - node.type.gop_lincoln_day_dinners
   module:
     - text
@@ -20,13 +19,6 @@ content:
     weight: 101
     settings: {  }
     third_party_settings: {  }
-    region: content
-  field_gopdinnertextfield:
-    weight: 103
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
     region: content
   links:
     weight: 100

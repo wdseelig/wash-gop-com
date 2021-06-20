@@ -1,8 +1,0 @@
-uuid: 51501924-17fc-43bf-a637-c9999bc61ffd
-langcode: en
-status: true
-dependencies: {  }
-id: comment_node_pollwithpage
-label: 'PollWithPage comment'
-target_entity_type_id: node
-description: null

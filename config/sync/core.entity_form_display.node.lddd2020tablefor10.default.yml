@@ -1,4 +1,4 @@
-uuid: 331728bb-705d-4d37-a7c0-ee6c6d4b613b
+uuid: 6705434c-5197-4b29-a4ed-014e8a267715
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.lddd2020tablefor10.body
     - node.type.lddd2020tablefor10
   module:
-    - path
     - text
 id: node.lddd2020tablefor10.default
 targetEntityType: node
@@ -26,12 +25,6 @@ content:
   created:
     type: datetime_timestamp
     weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  path:
-    type: path
-    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }

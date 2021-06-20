@@ -1,0 +1,8 @@
+uuid: 7bf82405-379f-4a3a-819d-805946f20c1e
+langcode: en
+status: true
+dependencies: {  }
+name: SiteEditor
+format: site_editor
+weight: 0
+filters: {  }
