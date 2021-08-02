@@ -1,0 +1,38 @@
+uuid: ccb62c52-d241-4f24-9337-b8417a53afbc
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 10
+template: false
+archive: false
+id: webform_2046
+title: 'October 2019 Barbecue'
+description: null
+category: null
+elements: "paywithstripe:\n  '#title': 'PayWithStripe' \n  '#description': \"\"\nfieldset_choices:\n  '#type': fieldset\n  '#open': true\n  '#title': 'Choices' \n  '#description': \"Attendance Choices\"\n  adults_20_5:\n    '#type': textfield\n    '#size': \n    '#title': 'Adults ($20)' \n    '#description': \"\"\n  children_15_5:\n    '#type': textfield\n    '#size': \n    '#title': 'Children ($15)' \n    '#description': \"children\"\n  family_75_5:\n    '#type': textfield\n    '#size': \n    '#title': 'Family ($75)' \n    '#description': \"\"\n"
+css: ''
+javascript: ''
+settings:
+  page: true
+  form_submit_label: ''
+  wizard_progress_bar: true
+  wizard_complete: 1
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

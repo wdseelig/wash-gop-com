@@ -1,0 +1,8 @@
+uuid: 2e146adf-67c4-49ee-8463-430e97e15cfa
+langcode: en
+status: true
+dependencies: {  }
+id: menu-wcgop
+label: 'GOP Site Menu'
+description: 'Menu for intra-site navigation'
+locked: false

@@ -1,0 +1,38 @@
+uuid: 1be07676-df2b-4d67-96c4-987d6fc1c960
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 10
+template: false
+archive: false
+id: webform_2079
+title: SeventhDistrictDelegation
+description: null
+category: null
+elements: "do_you_support_the_slate:\n  '#type': radios\n  '#options':\n    1: 'Yes, I support the motion.'\n    2: 'No, I do not support the motion.'\n  '#title': 'On the question of selecting a 7th District April 2020 State Convention Delegation, I cast my vote as follows:' \n  '#description': \"\"\n  '#required': true\n"
+css: ''
+javascript: ''
+settings:
+  page: true
+  form_submit_label: 'Submit My Vote'
+  wizard_progress_bar: true
+  wizard_complete: 1
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

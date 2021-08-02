@@ -1,0 +1,190 @@
+uuid: 8d92828e-85f1-452b-8f15-1dc77c6d300c
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 1
+template: false
+archive: false
+id: webform_1327
+title: 'Ronald Reagan Brunch 2013'
+description: null
+category: null
+elements: "name:\n  '#type': textfield\n  '#size': \n  '#title': 'Name' \n  '#description': \"Your name\"\n  '#required': true\naddress:\n  '#type': textfield\n  '#size': \n  '#title': 'Address' \n  '#description': \"Your home or business address\"\n  '#required': true\ncity:\n  '#type': textfield\n  '#title': 'City' \n  '#description': \"Your city of residence.\"\n  '#required': true\nstate:\n  '#type': textfield\n  '#default_value': 'MI' \n  '#title': 'State' \n  '#description': \"State Abreviation\"\n  '#required': true\nzip_code:\n  '#type': textfield\n  '#title': 'Zip Code' \n  '#description': \"\"\n  '#required': true\nphone_number:\n  '#type': textfield\n  '#size': \n  '#title': 'Phone Number' \n  '#description': \"A number at which we can reach you\"\n  '#required': true\ne_mail_address:\n  '#type': email\n  '#size': 20\n  '#title': 'e-mail address' \n  '#description': \"An e-mail address at which we can reach you\"\n  '#required': true\noccupation:\n  '#type': textfield\n  '#size': \n  '#title': 'Occupation' \n  '#description': \"The field in which you work\"\n  '#required': true\nnumber_in_party:\n  '#type': textfield\n  '#size': 20\n  '#min': \n  '#max': 100\n  '#step': 1\n  '#unique': false\n  '#title': 'Number in party' \n  '#description': \"The number of people in your party\"\n  '#required': true\nattendees:\n  '#type': textarea\n  '#title': 'Attendees' \n  '#description': \"Please provide the full names of all those in your party, including your own, precisely how you'd like them to appear on your name tag(s).\"\n  '#required': true\nemployer:\n  '#type': textfield\n  '#size': \n  '#title': 'Employer' \n  '#description': \"Your employer\"\n  '#required': true\nemployers_address:\n  '#type': textfield\n  '#size': \n  '#title': 'Employer\"s Address' \n  '#description': \"The address of your employer\"\n  '#required': true\nnote:\n  '#type': processed_text\n  '#format': full_html\n  '#text': \"<div style='font-family: nyala; color: black; font-size: 18PX; text-align: left;'><p>Federal law requires that we collect most of the information above.</p></div>\"\n  '#title': 'NOTE:' \n  '#description': \"\"\n"
+css: ''
+javascript: ''
+settings:
+  page: true
+  form_submit_label: RSVP
+  wizard_progress_bar: true
+  wizard_complete: 1
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: url
+  confirmation_url: RRBPurchase
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    label: 'Email 1'
+    notes: ''
+    handler_id: email_1
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      to_mail: volunteer@wash-gop.com
+      from_mail: _default
+      from_name: _default
+      subject: _default
+      body: _default
+      html: true
+      attachments: false
+      excluded_elements:
+        note: note
+      states:
+        - completed
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_options: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
+      parameters: {  }
+  email_2:
+    id: email
+    label: 'Email 2'
+    notes: ''
+    handler_id: email_2
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      to_mail: dcschlotz@comcast.net
+      from_mail: _default
+      from_name: _default
+      subject: _default
+      body: _default
+      html: true
+      attachments: false
+      excluded_elements:
+        note: note
+      states:
+        - completed
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_options: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
+      parameters: {  }
+  email_3:
+    id: email
+    label: 'Email 3'
+    notes: ''
+    handler_id: email_3
+    status: true
+    conditions: {  }
+    weight: 3
+    settings:
+      to_mail: wcgopchair@gmail.com
+      from_mail: _default
+      from_name: _default
+      subject: _default
+      body: _default
+      html: true
+      attachments: false
+      excluded_elements:
+        note: note
+      states:
+        - completed
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_options: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
+      parameters: {  }
+  email_4:
+    id: email
+    label: 'Email 4'
+    notes: ''
+    handler_id: email_4
+    status: true
+    conditions: {  }
+    weight: 4
+    settings:
+      to_mail: mchockley@rc.net
+      from_mail: _default
+      from_name: _default
+      subject: _default
+      body: _default
+      html: true
+      attachments: false
+      excluded_elements:
+        note: note
+      states:
+        - completed
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_options: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
+      parameters: {  }
+variants: {  }

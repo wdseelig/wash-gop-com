@@ -1,0 +1,74 @@
+uuid: 5c32938b-a3cc-4b78-951b-db96c729a535
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 10
+template: false
+archive: false
+id: webform_230
+title: 'Summer Picnic 2014 RSVP'
+description: null
+category: null
+elements: "text002:\n  '#type': textfield\n  '#size': \n  '#title': 'Name' \n  '#description': \"\"\n  '#required': true\ntext003:\n  '#type': email\n  '#size': 20\n  '#default_value': '[current-user:mail]' \n  '#title': 'E-Mail address' \n  '#description': \"An e-mail address where we can get in touch with you about the picnic\"\ntext001:\n  '#type': textfield\n  '#size': \n  '#title': 'Please tell us how many people will be in your party' \n  '#description': \"Number of people in my party\"\nfield001:\n  '#type': radios\n  '#options':\n    0: 'Yes, I am coming to the picnic!'\n    1: 'No, I will not be able to make it to the picnic'\n  '#title': 'Please tell us whether you will be able to make it to our picnic' \n  '#description': \"\"\n  '#required': true\n"
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  wizard_complete: 1
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: 'Thanks for registering for our picnic!&nbsp; We look forward to seeing you there.'
+  limit_total: null
+  limit_user: null
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    label: 'Email 1'
+    notes: ''
+    handler_id: email_1
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      to_mail: volunteer@wash-gop.com
+      from_mail: '[webform_submission:values:text003:raw]'
+      from_name: '[webform_submission:values:text002:raw]'
+      subject: '[webform_submission:values:text001:raw]'
+      body: _default
+      html: false
+      attachments: false
+      excluded_elements: {  }
+      states:
+        - completed
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_options: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
+      parameters: {  }
+variants: {  }

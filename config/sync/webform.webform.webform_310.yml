@@ -1,0 +1,75 @@
+uuid: 5660f248-09f2-4673-b09b-ccf5263b8e3a
+langcode: en
+status: closed
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 158
+template: false
+archive: false
+id: webform_310
+title: '2014 Executive Committee Candidate Registration'
+description: null
+category: null
+elements: "txt_name:\n  '#type': textfield\n  '#size': \n  '#title': 'Your Name' \n  '#description': \"<p>This is the candidate&#39;s name</p>\\n\"\n  '#required': true\ntxt_email_address:\n  '#type': email\n  '#size': 20\n  '#title': 'Your E-mail Address' \n  '#description': \"<p>This is the candidate&#39;s e-mail address</p>\\n\"\n  '#required': true\nphone:\n  '#type': textfield\n  '#title': 'Phone' \n  '#description': \"\"\n  '#required': true\ntxt_candidate_statement:\n  '#type': textarea\n  '#title': 'Candidate Statement -- 80 Words Maximum' \n  '#description': \"<p>Candidates may enter their campaign statement in the area above.</p>\\n\"\ntxt_statement:\n  '#title': 'Statement' \n  '#description': \"\"\n"
+css: ''
+javascript: ''
+settings:
+  page: true
+  form_submit_label: ''
+  wizard_progress_bar: true
+  wizard_complete: 1
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: 'Thank you for registering as a candidate for the Executive Committee.'
+  limit_total: null
+  limit_user: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    label: 'Email 1'
+    notes: ''
+    handler_id: email_1
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      to_mail: comcentral@wash-gop.com
+      from_mail: '[webform_submission:values:txt_email_address:raw]'
+      from_name: _default
+      subject: _default
+      body: _default
+      html: false
+      attachments: false
+      excluded_elements: {  }
+      states:
+        - completed
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_options: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
+      parameters: {  }
+variants: {  }

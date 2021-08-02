@@ -94,6 +94,8 @@ process:
           image_plain: image
           image_nodelink: image
           image_imagelink: image
+        datetime:
+          date_default: datetime_default
         entityreference:
           entityreference_label: entity_reference_label
           entityreference_entity_id: entity_reference_entity_id

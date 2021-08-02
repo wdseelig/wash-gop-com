@@ -4,8 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_page_sequence
+    - field.field.node.page.field_pdf
     - node.type.page
   module:
+    - pdf_reader
     - text
     - user
 id: node.page.default
@@ -16,13 +19,36 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 101
+    weight: 2
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_page_sequence:
+    weight: 4
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: false
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_pdf:
+    weight: 1
+    label: above
+    settings:
+      pdf_width: 480
+      pdf_height: 624
+      renderer: embed
+      embed_view_fit: Fit
+      embed_hide_toolbar: true
+      link_placement: bottom
+      download: false
+    third_party_settings: {  }
+    type: FieldPdfReaderFields
     region: content
   links:
-    weight: 100
+    weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden: {  }

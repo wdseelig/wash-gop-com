@@ -1,0 +1,8 @@
+uuid: 06e3a839-97e8-4891-bf9a-967037c63ee0
+langcode: en
+status: true
+dependencies: {  }
+id: crm-core-menu
+label: 'CRM Core'
+description: 'Provides access to various features and functions within CRM Core.'
+locked: false

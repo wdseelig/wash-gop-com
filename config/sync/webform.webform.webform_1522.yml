@@ -1,0 +1,75 @@
+uuid: 5bbb66d3-07f2-4687-ad12-c1289a029c84
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 158
+template: false
+archive: false
+id: webform_1522
+title: 'Fair Coordinator Contact Form'
+description: null
+category: null
+elements: "full_name:\n  '#type': textfield\n  '#default_value': '[current-user:name]' \n  '#title': 'Full Name' \n  '#description': \"\"\n  '#required': true\nemail_address:\n  '#type': email\n  '#size': 20\n  '#default_value': '[current-user:mail]' \n  '#title': 'Email Address' \n  '#description': \"\"\n  '#required': true\nphone:\n  '#type': textfield\n  '#title': 'Phone' \n  '#description': \"\"\n  '#required': true\nfair:\n  '#type': checkboxes\n  '#options':\n    ann_arbor: 'Ann Arbor Art Fair'\n    dexter: 'Dexter Daze'\n    chelsea: 'Chelsea Summerfest'\n    ypsilanti: 'Ypsilanti Heritage Festival'\n    saline: 'Saline Community Fair'\n  '#multiple': true\n  '#title': 'Fair' \n  '#description': \"<b>Please tell us which fair(s) you'd like to help with.</b>\"\n  '#required': true\n"
+css: ''
+javascript: ''
+settings:
+  page: true
+  form_submit_label: ''
+  wizard_progress_bar: true
+  wizard_complete: 1
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: 'Thank you for volunteering to help with our summer fairs. A coordinator will be in contact with you shortly. Please be ready to let the coordinator know which days/times you can help out with.'
+  limit_total: null
+  limit_user: null
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    label: 'Email 1'
+    notes: ''
+    handler_id: email_1
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      to_mail: 'treynhout@gmail.com,dave.parker.4343@gmail.com,dcschlotz@comcast.net,wdseelig@gmail.com,giantcatfish@gmail.com,cdrkmcg@aol.com,wcgopchair@gmail.com'
+      from_mail: _default
+      from_name: _default
+      subject: _default
+      body: _default
+      html: true
+      attachments: false
+      excluded_elements: {  }
+      states:
+        - completed
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_options: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
+      parameters: {  }
+variants: {  }

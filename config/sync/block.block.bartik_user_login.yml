@@ -1,4 +1,4 @@
-uuid: ea743307-cb92-45cb-ac78-6908357a717b
+uuid: cb3200da-c39a-4199-80ec-b3953d20f214
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ dependencies:
 id: bartik_user_login
 theme: bartik
 region: sidebar_second
-weight: -18
+weight: -3
 provider: null
 plugin: user_login_block
 settings:

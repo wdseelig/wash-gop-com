@@ -1,11 +1,11 @@
 uuid: 2f28fe3b-22dd-4403-b589-40b08d5cb719
-name: WCGOP
+name: 'The Washtenaw County Republican Party'
 mail: admin@wash-gop.com
-slogan: 'You cannot lift the wage earner up by pulling the wage payer down'
+slogan: 'Standing up for the 55,000 conservative voters in Washtenaw County'
 page:
   403: ''
   404: ''
-  front: /node/2152
+  front: /frontpage
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en

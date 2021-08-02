@@ -1,0 +1,20 @@
+uuid: a828e8e8-144e-439d-823b-adb570992ac5
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - professional_theme
+id: professional_theme_marinelli_system_main
+theme: professional_theme
+region: content
+weight: -27
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: ''
+  provider: system
+  label_display: '0'
+visibility: {  }

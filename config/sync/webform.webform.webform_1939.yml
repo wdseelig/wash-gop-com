@@ -1,0 +1,38 @@
+uuid: e8be5576-d193-46f3-934f-b3fc69501768
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 10
+template: false
+archive: false
+id: webform_1939
+title: 'Printing in our Office'
+description: null
+category: null
+elements: "black_and_white_sheets_month:\n  '#type': textfield\n  '#size': \n  '#title_display': inline\n  '#title': 'Black and white (sheets/month)' \n  '#description': \"\"\nmulti_color_sheets_month:\n  '#type': textfield\n  '#size': \n  '#title_display': inline\n  '#title': 'Multi-color (sheets/month)' \n  '#description': \"\"\ncomments:\n  '#type': textarea\n  '#title': 'Comments' \n  '#description': \"\"\nwcgop_ec_member_name:\n  '#type': textfield\n  '#size': \n  '#title_display': inline\n  '#title': 'WCGOP EC Member Name' \n  '#description': \"\"\n  '#required': true\n"
+css: ''
+javascript: ''
+settings:
+  page: true
+  form_submit_label: ''
+  wizard_progress_bar: true
+  wizard_complete: 1
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

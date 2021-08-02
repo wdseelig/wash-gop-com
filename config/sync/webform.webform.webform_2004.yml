@@ -1,0 +1,75 @@
+uuid: 09002f50-feb9-4f36-a165-97b73274f33b
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 158
+template: false
+archive: false
+id: webform_2004
+title: '2019 Executive Committee Candidate Registration'
+description: null
+category: null
+elements: "txt_name:\n  '#type': textfield\n  '#size': \n  '#title': 'Your Name' \n  '#description': \"<p>This is the candidate&#39;s name</p>\\n\"\n  '#required': true\ntxt_email_address:\n  '#type': email\n  '#size': 20\n  '#title': 'Your E-mail Address' \n  '#description': \"<p>This is the candidate&#39;s e-mail address</p>\\n\"\n  '#required': true\nphone:\n  '#type': textfield\n  '#title': 'Phone' \n  '#description': \"\"\n  '#required': true\ntxt_candidate_statement:\n  '#type': textarea\n  '#title': 'Candidate Statement -- 300 Words Maximum' \n  '#description': \"<p>Candidates may enter their campaign statement in the area above.</p>\\n\"\n"
+css: ''
+javascript: ''
+settings:
+  page: true
+  form_submit_label: ''
+  wizard_progress_bar: true
+  wizard_complete: 1
+  preview: 0
+  draft: '1'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: "<p>\r\n\tThank you for registering as a candidate for the Executive Committee and your willingness to serve your county Republican Party.\r\n</p>\r\n"
+  limit_total: null
+  limit_user: null
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    label: 'Email 1'
+    notes: ''
+    handler_id: email_1
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      to_mail: comcentral@wash-gop.org
+      from_mail: '[webform_submission:values:txt_email_address:raw]'
+      from_name: _default
+      subject: _default
+      body: _default
+      html: false
+      attachments: false
+      excluded_elements: {  }
+      states:
+        - completed
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_options: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
+      parameters: {  }
+variants: {  }

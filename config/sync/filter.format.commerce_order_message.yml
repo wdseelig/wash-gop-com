@@ -1,0 +1,17 @@
+uuid: be3e4f88-a282-4897-bc1a-454ee8ea6f03
+langcode: en
+status: true
+dependencies: {  }
+name: 'Commerce Order Message'
+format: commerce_order_message
+weight: 0
+filters:
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: true
+    weight: 1
+    settings:
+      allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd>'
+      filter_html_help: true
+      filter_html_nofollow: false

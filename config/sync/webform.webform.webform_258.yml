@@ -1,0 +1,74 @@
+uuid: fbc787e4-209a-4e79-ac1a-cbfba0865380
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 10
+template: false
+archive: false
+id: webform_258
+title: 'Lincoln Day Dinner'
+description: null
+category: null
+elements: "txt00:\n  '#type': textfield\n  '#size': \n  '#title': 'Name' \n  '#description': \"\"\n  '#required': true\ntxt01:\n  '#type': textfield\n  '#size': \n  '#title': 'Address' \n  '#description': \"\"\n  '#required': true\ntxt02:\n  '#type': textfield\n  '#size': \n  '#title': 'Phone Number' \n  '#description': \"\"\n  '#required': true\nemail01:\n  '#type': email\n  '#size': 20\n  '#title': 'E-Mail Address' \n  '#description': \"\"\ntxt05a:\n  '#type': textfield\n  '#size': \n  '#title': 'Occupation' \n  '#description': \"\"\n  '#required': true\ntxt04:\n  '#type': textfield\n  '#size': \n  '#title': 'Number in party' \n  '#description': \"\"\ntxt05:\n  '#type': textfield\n  '#size': \n  '#title': 'Employer' \n  '#description': \"\"\n  '#required': true\ntxt06:\n  '#type': textfield\n  '#size': \n  '#title': 'Employer\"s Address' \n  '#description': \"\"\n  '#required': true\ntxt09:\n  '#type': textarea\n  '#default_value': 'Federal law requires that we collect the information in the asterisked (*) fields' \n  '#title': 'NOTE' \n  '#description': \"\"\n"
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  wizard_complete: 1
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: url
+  confirmation_url: LDayPurchase
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    label: 'Email 1'
+    notes: ''
+    handler_id: email_1
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      to_mail: volunteer@wash-gop.com
+      from_mail: '[webform_submission:values:email01:raw]'
+      from_name: '[webform_submission:values:txt00:raw]'
+      subject: _default
+      body: _default
+      html: false
+      attachments: false
+      excluded_elements: {  }
+      states:
+        - completed
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_options: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
+      parameters: {  }
+variants: {  }

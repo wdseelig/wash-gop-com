@@ -1,0 +1,75 @@
+uuid: 8822b6c0-f8d5-4556-9441-12dc27811ff6
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 158
+template: false
+archive: false
+id: webform_2014
+title: 'Appreciation Dinner'
+description: null
+category: null
+elements: "1348010869:\n  '#type': textfield\n  '#size': \n  '#title': 'Name' \n  '#description': \"\"\n  '#required': true\n1348011083:\n  '#type': email\n  '#size': 20\n  '#default_value': '[current-user:mail]' \n  '#title': 'Email Address' \n  '#description': \"An e-mail address where we can get in touch with you about this event\"\n  '#required': true\nphone_number:\n  '#type': textfield\n  '#title': 'Phone Number' \n  '#description': \"Please let us know the best number to reach you at if necessary.\"\n  '#required': true\n1348010992:\n  '#type': textfield\n  '#size': \n  '#title': 'Please tell us how many people will be atending' \n  '#description': \"Number of people in my party\"\n  '#required': true\n1348011170:\n  '#type': radios\n  '#options':\n    0: 'Yes, I am coming!'\n    1: 'I might be able to attend.'\n    2: 'No, I will not be able to make it.'\n  '#title': 'Please tell us whether you will be able to make it to this event' \n  '#description': \"\"\n  '#required': true\n"
+css: ''
+javascript: ''
+settings:
+  page: true
+  form_submit_label: ''
+  wizard_progress_bar: true
+  wizard_complete: 1
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: "<p class=\"rtecenter\" style=\"font-family: verdana; color: darkblue; line-height: 24px; font-size: 18px;\">\r\n\t<b>Thank you for registering for our Appreciation Dinner.</b>\r\n</p>\r\n\r\n<p class=\"rtecenter\" style=\"font-family: verdana; color: darkblue; line-height: 24px; font-size: 18px;\">\r\n\t<b>We look forward to sharing this time with you!</b>\r\n</p>\r\n\r\n<p class=\"rtecenter\" style=\"font-family: verdana; color: darkblue; line-height: 24px; font-size: 18px;\">\r\n\t&nbsp;\r\n</p>\r\n\r\n<p style=\"font-family: verdana; color: red; line-height: 24px; font-size: 18PX; text-align: left;\">\r\n\t&nbsp;\r\n</p>\r\n"
+  limit_total: null
+  limit_user: null
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    label: 'Email 1'
+    notes: ''
+    handler_id: email_1
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      to_mail: 'comcentral@wash-gop.org,akennedy885@gmail.com'
+      from_mail: '[webform_submission:values:1348011083:raw]'
+      from_name: '[webform_submission:values:1348010869:raw]'
+      subject: _default
+      body: _default
+      html: false
+      attachments: false
+      excluded_elements: {  }
+      states:
+        - completed
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_options: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
+      parameters: {  }
+variants: {  }

@@ -1,0 +1,33 @@
+uuid: a6208484-052c-4ca5-8cce-26eee3619eb0
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7330e494-8265-4cdb-b7d5-06885a99b262'
+  module:
+    - block_content
+    - node
+  theme:
+    - professional_theme
+id: thewcgopelectionintegrityproject_2
+theme: professional_theme
+region: right_side
+weight: 0
+provider: null
+plugin: 'block_content:7330e494-8265-4cdb-b7d5-06885a99b262'
+settings:
+  id: 'block_content:7330e494-8265-4cdb-b7d5-06885a99b262'
+  label: 'The WCGOP Election Integrity Project'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

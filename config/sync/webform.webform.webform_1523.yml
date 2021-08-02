@@ -1,0 +1,75 @@
+uuid: ed511ef7-4fdf-449d-b028-7be595004d3d
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 158
+template: false
+archive: false
+id: webform_1523
+title: '2014 Fall State Convention - Delegate Registration'
+description: null
+category: null
+elements: "txt_name:\n  '#type': textfield\n  '#size': \n  '#title': 'Name' \n  '#description': \"This is your name\"\n  '#required': true\ntxt_email_address:\n  '#type': email\n  '#size': 20\n  '#title': 'E-Mail Address' \n  '#description': \"This is an e-mail address at which we can reach you\"\n  '#required': true\ntxt_precinct:\n  '#type': textfield\n  '#size': \n  '#title': 'Precinct' \n  '#description': \"This is the precinct in which you reside [Examples:  Pittsfield Township Precinct 5, Ypslianti City Ward 2 Precinct 3]\"\n  '#required': true\ncongressional_district:\n  '#type': radios\n  '#options':\n    7: 'District 7'\n    12: 'District 12'\n  '#title': 'Congressional District' \n  '#description': \"Please indicate which Congressional District you reside in.\"\n  '#required': true\n"
+css: ''
+javascript: ''
+settings:
+  page: true
+  form_submit_label: ''
+  wizard_progress_bar: true
+  wizard_complete: 1
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: 'Thank you for your interest in attending the Michigan Republican Party''s convention!'
+  limit_total: null
+  limit_user: null
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    label: 'Email 1'
+    notes: ''
+    handler_id: email_1
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      to_mail: 'wcgopchair@gmail.com,dcschlotz@comcast.net,mchockley@rc.net,dave@retireontime.net'
+      from_mail: '[webform_submission:values:txt_email_address:raw]'
+      from_name: _default
+      subject: _default
+      body: _default
+      html: false
+      attachments: false
+      excluded_elements: {  }
+      states:
+        - completed
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_options: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
+      parameters: {  }
+variants: {  }

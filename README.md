@@ -73,8 +73,8 @@ machine.  This was a fairly straightforward process:
 ```
 $databases['migrate']['default'] = array (
   'database' => 'washgopc_GOPV7V2',
-  'username' => 'gopdbadmin',
-  'password' => '18WMTNwcta65',
+  'username' => 'xxxxxxxxxxx',
+  'password' => 'yyyyyyyyyyy',
   'prefix' => '',
   'host' => 'localhost',
   'port' => '3306',
@@ -210,8 +210,8 @@ $databases['default']['default'] = array (
 );
 $databases['migrate']['default'] = array (
   'database' => 'washgopc_GOPV7V2',
-  'username' => 'gopdbadmin',
-  'password' => '18WMTNwcta65',
+  'username' => 'xxxxxxxxxxxx',
+  'password' => 'yyyyyyyyyyyy',
   'prefix' => '',
   'host' => 'docker.for.mac.localhost',
   'port' => '3307',

@@ -1,0 +1,75 @@
+uuid: eb842ff0-ed14-4e43-92e6-aea703da5ad6
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 158
+template: false
+archive: false
+id: webform_1795
+title: 'Precinct Delegate Engagement'
+description: null
+category: null
+elements: "1348010869:\n  '#type': textfield\n  '#size': \n  '#title': 'Name' \n  '#description': \"\"\n  '#required': true\n1348011083:\n  '#type': email\n  '#size': 20\n  '#default_value': '[current-user:mail]' \n  '#title': 'Email Address' \n  '#description': \"An e-mail address where we can get in touch with you about this event\"\n  '#required': true\n1348010992:\n  '#type': textfield\n  '#size': \n  '#title': 'Please tell us how many people will be atending' \n  '#description': \"Number of people in my party\"\n  '#required': true\n1348011170:\n  '#type': radios\n  '#options':\n    0: 'Yes, I am coming!'\n    1: 'I might be able to attend.'\n    2: 'No, I will not be able to make it.'\n  '#title': 'Please tell us whether you will be able to make it to this event' \n  '#description': \"\"\n  '#required': true\n"
+css: ''
+javascript: ''
+settings:
+  page: true
+  form_submit_label: ''
+  wizard_progress_bar: true
+  wizard_complete: 1
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: "Thank you for registering for our February 13th Precinct Delegate, we'll look forward to seeing you!\r\n\r\nHere again is the event details:\r\n\r\nSaturday, February 13, 2016\r\n\r\n9:00 AM to 2:00 PM\r\nNCMS Building\r\n3025 Boardwalk\r\nAnn Arbor, MI 48108"
+  limit_total: null
+  limit_user: null
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    label: 'Email 1'
+    notes: ''
+    handler_id: email_1
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      to_mail: 'wcgopchair@gmail.com,samkcollier@gmail.com,dcschlotz@comcast.net'
+      from_mail: '[webform_submission:values:1348011083:raw]'
+      from_name: '[webform_submission:values:1348010869:raw]'
+      subject: _default
+      body: _default
+      html: false
+      attachments: false
+      excluded_elements: {  }
+      states:
+        - completed
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_options: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
+      parameters: {  }
+variants: {  }

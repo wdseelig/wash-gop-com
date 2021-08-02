@@ -1,0 +1,20 @@
+uuid: 02b55562-bfa0-4065-89e9-9eb30d06cc07
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_vtsslots
+field_name: field_vtsslots
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,75 @@
+uuid: cb467a36-24e4-4891-921a-e0bf0784d05a
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 10
+template: false
+archive: false
+id: webform_2047
+title: 'NRA Event Sign Up'
+description: null
+category: null
+elements: "payatthedoor:\n  '#type': processed_text\n  '#format': full_html\n  '#text': \"<h3>\\n\t<a href='https://www.wash-gop.com/NRAPayAtDoor'><strong><font color='blue'>Click HERE to pay by check at the door</font></strong></a>\\n</h3>\\n\"\n  '#title': 'PayAtTheDoor' \n  '#description': \"\"\nplease_register_below:\n  '#type': processed_text\n  '#format': full_html\n  '#text': \"<h3>\\n\t<strong><font color='blue'>If you wish to pay by credit card, please use the form&nbsp;&nbsp;below. </font></strong>\\n</h3>\\n\"\n  '#title': 'Please Register Below' \n  '#description': \"\"\nfull_name:\n  '#type': textfield\n  '#title': 'Full Name' \n  '#description': \"\"\n  '#required': true\naddress:\n  '#type': textfield\n  '#title': 'Address' \n  '#description': \"\"\n  '#required': true\ncity:\n  '#type': textfield\n  '#title': 'City' \n  '#description': \"\"\n  '#required': true\nstate:\n  '#type': textfield\n  '#title': 'State' \n  '#description': \"\"\n  '#required': true\nzip_code:\n  '#type': textfield\n  '#title': 'Zip Code' \n  '#description': \"\"\n  '#required': true\nphone:\n  '#type': textfield\n  '#title': 'Phone' \n  '#description': \"Please provide the best number to reach you at in case we need to contact you about this event.\"\n  '#required': true\nemail_address:\n  '#type': email\n  '#size': 20\n  '#default_value': '[current-user:mail]' \n  '#title': 'Email Address' \n  '#description': \"\"\n  '#required': true\noccupation:\n  '#type': textfield\n  '#title': 'Occupation' \n  '#description': \"\"\nemployer:\n  '#type': textfield\n  '#title': 'Employer' \n  '#description': \"If you do not have an employer simply enter NA\"\n  '#required': true\nemployer_address:\n  '#type': textfield\n  '#title': 'Employer Address' \n  '#description': \"If you do not have an employer simply enter NA\"\n  '#required': true\ninfo:\n  '#type': textarea\n  '#default_value': 'Election law requires us to collect and report the name and mailing address of each contributor, and in addition, the occupation, name of employer, and business address for individuals whose contributions exceed $100 during a calendar year. Contributions from corporations, joint stock companies, labor organizations, Indian tribes, Casino interest holders, and foreign nationals without permanent residency status are prohibited.' \n  '#title': 'info' \n  '#description': \"\"\nnumber_of_attendees:\n  '#type': textfield\n  '#title': 'Number of Attendees' \n  '#description': \"Please tell us how many adults and children will be attending.\"\n  '#required': true\nonline_payment_break:\n  '#type': processed_text\n  '#format': full_html\n  '#text': \"<h4>\\n\t&nbsp;\\n</h4>\\n\\n<h3>\\n\t<strong><font color='blue'>Use the following&nbsp;fields to make a secure online payment using a credit card.</font></strong>\\n</h3>\\n\"\n  '#title': 'Online Payment Break' \n  '#description': \"\"\nq1:\n  '#type': textfield\n  '#size': 20\n  '#min': \n  '#max': 99\n  '#step': \n  '#unique': false\n  '#title': 'Adults ($25)' \n  '#description': \"\"\nq2:\n  '#type': textfield\n  '#size': 20\n  '#min': \n  '#max': 99\n  '#step': \n  '#unique': false\n  '#title': 'Children Under 18 ($15)' \n  '#description': \"\"\nq3:\n  '#type': textfield\n  '#size': 20\n  '#min': \n  '#max': 99\n  '#step': \n  '#unique': false\n  '#title': 'Families' \n  '#description': \"\"\ntotal:\n  '#default_value': '{q1}*25 + {q2}*15 + {q3}*75' \n  '#field_prefix': $\n  '#title': 'Total' \n  '#description': \"\"\npaywithstripe:\n  '#title': 'PayWithStripe' \n  '#description': \"\"\n"
+css: ''
+javascript: ''
+settings:
+  page: true
+  form_submit_label: ''
+  wizard_progress_bar: true
+  wizard_complete: 1
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: "<h3>\r\n\t<strong>Thank you for registering for this wonderful event, we look forward to seeing you there!</strong>\r\n</h3>\r\n\r\n<p>\r\n\t<img alt=\"\" src=\"/files/images/site_editors/invitationv4.png\" style=\"margin: 5px; float: left; width: 529px; height: 529px;\" />\r\n</p>\r\n"
+  limit_total: null
+  limit_user: null
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    label: 'Email 1'
+    notes: ''
+    handler_id: email_1
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      to_mail: comcentral@wash-gop.org
+      from_mail: _default
+      from_name: _default
+      subject: '[webform_submission:values:number_of_attendees:raw]'
+      body: _default
+      html: true
+      attachments: false
+      excluded_elements: {  }
+      states:
+        - completed
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_options: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
+      parameters: {  }
+variants: {  }

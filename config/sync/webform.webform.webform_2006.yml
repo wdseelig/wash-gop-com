@@ -1,0 +1,152 @@
+uuid: e9660ecc-b2f0-4d65-bb09-fce01907bab6
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 10
+template: false
+archive: false
+id: webform_2006
+title: 'Membership Form'
+description: null
+category: null
+elements: "paywithstripe:\n  '#title': 'PayWithStripe' \n  '#description': \"\"\nmembershipoptions:\n  '#type': radios\n  '#options':\n    student: 'Student - $10.00'\n    military: 'Military - $20.00'\n    single: 'Single - $40.00'\n    couple: 'Couple - $60.00'\n    premium: 'Premium - $400.00'\n    elite: 'Elite - $1000.00'\n  '#title': 'Membership Options' \n  '#description': \"Select your membership options.\"\n  '#required': true\nnotifyemail:\n  '#type': hidden\n  '#default_value': '[current-user:mail]' \n  '#title': 'NotifyEmail' \n  '#description': \"\"\nanonusernotificatin:\n  '#type': hidden\n  '#title': 'AnonUserNotification' \n  '#description': \"\"\nemail:\n  '#type': textfield\n  '#size': \n  '#title': 'Please enter your email address' \n  '#description': \"\"\n  '#required': true\nfullname:\n  '#type': textfield\n  '#title': 'Full Name' \n  '#description': \"Please enter your name as you would like it displayed on your name badge.\"\n  '#required': true\nsecondname:\n  '#type': textfield\n  '#title': 'Second Name' \n  '#description': \"If applying for a Couple or Elite membership please enter the name for your second name badge.\"\naddress:\n  '#type': textfield\n  '#title': 'Address' \n  '#description': \"Your mailing address.\"\n  '#required': true\ncity:\n  '#type': textfield\n  '#title': 'City' \n  '#description': \"Your mailing address city.\"\n  '#required': true\nstate:\n  '#type': textfield\n  '#default_value': 'Michigan' \n  '#title': 'State' \n  '#description': \"\"\n  '#required': true\nzipcode:\n  '#type': textfield\n  '#title': 'Zip Code' \n  '#description': \"\"\n  '#required': true\nphone:\n  '#type': textfield\n  '#title': 'Phone ' \n  '#description': \"The best phone number to reach you at if need be.\"\n  '#required': true\noccupation:\n  '#type': textfield\n  '#title': 'Occupation' \n  '#description': \"\"\n  '#required': true\nemployer:\n  '#type': textfield\n  '#title': 'Employer' \n  '#description': \"If you do not have an employer simply enter: n/a\"\n  '#required': true\nemployeraddress:\n  '#type': textfield\n  '#title': 'Employer Address' \n  '#description': \"If you do not have an employer simply enter: n/a\"\n  '#required': true\ninfo:\n  '#type': textarea\n  '#default_value': 'Election law requires us to collect and report the name and mailing address of each contributor, and in addition, the occupation, name of employer, and business address for individuals whose contributions exceed $100 during a calendar year. Contributions from corporations, joint stock companies, labor organizations, Indian tribes, Casino interest holders, and foreign nationals without permanent residency status are prohibited.' \n  '#title_display': invisible\n  '#title': 'Info' \n  '#description': \"\"\n"
+css: ''
+javascript: ''
+settings:
+  page: true
+  form_submit_label: 'Pay for your Membership'
+  wizard_progress_bar: true
+  wizard_complete: 1
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: url
+  confirmation_url: 'http://www.wash-gop.com/PurchaseCompletion'
+  confirmation_message: "<p style=\"font-family: verdana; color: darkblue; font-size: 15px; text-align: left;\">\r\n\t&nbsp;\r\n</p>\r\n\r\n<p style=\"font-family: verdana; color: darkblue; font-size: 15px; text-align: left;\">\r\n\t<strong>Thank you for supporting&nbsp;the&nbsp;WCGOP Executive Committee your membership has been approved!</strong>\r\n</p>\r\n\r\n<p>\r\n\t<img alt=\"\" src=\"/files/images/site_editors/WCGOP%20Logo%20small%20-%20final.png\" style=\"width: 150px; height: 151px;\" />\r\n</p>\r\n"
+  limit_total: null
+  limit_user: null
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_2:
+    id: email
+    label: 'Email 2'
+    notes: ''
+    handler_id: email_2
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      to_mail: '[webform_submission:values:notifyemail:raw]'
+      from_mail: _default
+      from_name: _default
+      subject: 'Purchase Notification'
+      body: _default
+      html: true
+      attachments: false
+      excluded_elements: {  }
+      states:
+        - completed
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_options: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
+      parameters: {  }
+  email_3:
+    id: email
+    label: 'Email 3'
+    notes: ''
+    handler_id: email_3
+    status: true
+    conditions: {  }
+    weight: 3
+    settings:
+      to_mail: '[webform_submission:values:anonusernotificatin:raw]'
+      from_mail: _default
+      from_name: _default
+      subject: 'Anonymous User Purchase Notification'
+      body: "<p>Submitted ON [webform_submission:date:long]<br><br></p>\n<p>Submitted by user: [webform_submission:user]<br><br></p>\n<p>Webform Serial Number (Member ID): [webform_submission:serial]<br><br></p>\n<p>Submitted values are:<br><br></p>\n[webform_submission:values]<br><br>\n\n<p>The results of this submission may be viewed at:<br><br></p>\n<p>[webform_submission:url]</p>"
+      html: true
+      attachments: false
+      excluded_elements: {  }
+      states:
+        - completed
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_options: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
+      parameters: {  }
+  email_4:
+    id: email
+    label: 'Email 4'
+    notes: ''
+    handler_id: email_4
+    status: true
+    conditions: {  }
+    weight: 4
+    settings:
+      to_mail: 'comcentral@wash-gop.org,akennedy885@gmail.com'
+      from_mail: _default
+      from_name: _default
+      subject: _default
+      body: _default
+      html: true
+      attachments: false
+      excluded_elements:
+        paywithstripe: paywithstripe
+        notifyemail: notifyemail
+        anonusernotificatin: anonusernotificatin
+      states:
+        - completed
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_options: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
+      parameters: {  }
+variants: {  }

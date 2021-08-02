@@ -1,0 +1,8 @@
+uuid: 69eea897-000a-42ff-bbe7-541879f1bc8e
+langcode: en
+status: true
+dependencies: {  }
+id: accountmenu
+label: 'Account menu'
+description: 'Account menu links.'
+locked: false

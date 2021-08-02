@@ -1,0 +1,75 @@
+uuid: bfe1b057-6cf8-408e-8932-1e81a049d41d
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 158
+template: false
+archive: false
+id: webform_1353
+title: 'Washtenaw County Republicans welcome Ruth Johnson'
+description: null
+category: null
+elements: "name:\n  '#type': textfield\n  '#title': 'Name' \n  '#description': \"\"\n  '#required': true\nemail_address:\n  '#type': textfield\n  '#default_value': '[current-user:mail]' \n  '#title': 'Email Address' \n  '#description': \"An e-mail address where we can get in touch with you about this event\"\n  '#required': true\nplease_tell_us_how_many_people_will_be_atending:\n  '#type': textfield\n  '#title': 'Please tell us how many people will be attending' \n  '#description': \"Number of people in my party\"\n  '#required': true\nplease_tell_us_whether_you_will_be_able_to_make_it_to_this_event:\n  '#type': radios\n  '#options':\n    0: 'Yes, I am coming!'\n    1: 'I might be able to attend.'\n    2: 'No, I will not be able to make it.'\n  '#title': 'Please tell us whether you will be able to make it to this event' \n  '#description': \"\"\n  '#required': true\n"
+css: ''
+javascript: ''
+settings:
+  page: true
+  form_submit_label: ''
+  wizard_progress_bar: true
+  wizard_complete: 1
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    label: 'Email 1'
+    notes: ''
+    handler_id: email_1
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      to_mail: 'DCSchlotz@comcast.net,mchockley@rc.net,JenniferAHelmer@gmail.com,wcgopchair@gmail.com'
+      from_mail: _default
+      from_name: _default
+      subject: _default
+      body: _default
+      html: true
+      attachments: false
+      excluded_elements: {  }
+      states:
+        - completed
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_options: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
+      parameters: {  }
+variants: {  }

@@ -1,0 +1,20 @@
+uuid: 4c63b839-425d-46c0-8493-95738109365d
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.advpoll_max_choices
+field_name: advpoll_max_choices
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

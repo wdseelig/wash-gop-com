@@ -1,0 +1,21 @@
+uuid: 2e462e57-e495-424e-846b-10d960491e79
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: aboutpagejs
+label: AboutPagejs
+code: "jQuery(document).ready(function($){\n  $(\".T68fnw\").hide();\n});"
+conditions_require_all: true
+conditions:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+contexts: {  }
+header: true
+preprocess: true
+jquery: true
+noscript: ''
+noscriptRegion: {  }

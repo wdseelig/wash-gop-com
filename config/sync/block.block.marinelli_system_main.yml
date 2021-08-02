@@ -9,7 +9,7 @@ dependencies:
 id: marinelli_system_main
 theme: bartik
 region: content
-weight: -27
+weight: -3
 provider: null
 plugin: system_main_block
 settings:

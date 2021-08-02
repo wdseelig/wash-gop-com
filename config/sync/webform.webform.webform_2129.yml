@@ -1,0 +1,112 @@
+uuid: 8da0a723-fb63-4ef9-ac6b-17fff1566287
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 10
+template: false
+archive: false
+id: webform_2129
+title: '2021 State Convention Delegate Registration'
+description: null
+category: null
+elements: "congressional_district:\n  '#type': radios\n  '#options':\n    7: '7'\n    12: '12'\n  '#title': 'Congressional District' \n  '#description': \"The Congressional District in which you reside\"\n  '#required': true\ncounty:\n  '#type': textfield\n  '#default_value': 'Washtenaw' \n  '#title': 'County' \n  '#description': \"\"\n  '#required': true\ntxt_name:\n  '#type': textfield\n  '#size': \n  '#title': 'First Name' \n  '#description': \"\"\n  '#required': true\nlast_name:\n  '#type': textfield\n  '#title': 'Last Name' \n  '#description': \"\"\n  '#required': true\naddress:\n  '#type': textfield\n  '#title': 'Address' \n  '#description': \"\"\n  '#required': true\naddress_2:\n  '#type': textfield\n  '#title': 'Address 2' \n  '#description': \"If required\"\ncity:\n  '#type': textfield\n  '#title': 'City' \n  '#description': \"\"\n  '#required': true\nzip_code:\n  '#type': textfield\n  '#title': 'Zip Code' \n  '#description': \"\"\n  '#required': true\nphone:\n  '#type': textfield\n  '#title': 'Phone' \n  '#description': \"Please provide the best phone number where you may be reached.\"\n  '#required': true\ntxt_email_address:\n  '#type': email\n  '#size': 20\n  '#title': 'E-Mail Address' \n  '#description': \"This is an e-mail address at which we can reach you\"\n  '#required': true\nwill_attend_cc:\n  '#type': radios\n  '#options':\n    yes: 'Yes'\n    no: 'No'\n    maybe: 'Maybe'\n  '#title': 'Will Attend County Convention' \n  '#description': \"Tell us whether you will attend the County Convention\"\n  '#required': true\nstate_convention_delegate:\n  '#type': radios\n  '#options':\n    yes: 'Yes'\n    no: 'No'\n  '#title': 'Wish to be a delegate to the State Convention' \n  '#description': \"I would like to be a delegate to the State Convention\"\n  '#required': true\n"
+css: ''
+javascript: ''
+settings:
+  page: true
+  form_submit_label: ''
+  wizard_progress_bar: true
+  wizard_complete: 1
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: 'Thank you for your interest in attending the Michigan Republican Party''s State convention!'
+  limit_total: null
+  limit_user: null
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    label: 'Email 1'
+    notes: ''
+    handler_id: email_1
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      to_mail: comcentral@wash-gop.org
+      from_mail: '[webform_submission:values:txt_email_address:raw]'
+      from_name: _default
+      subject: _default
+      body: _default
+      html: false
+      attachments: false
+      excluded_elements: {  }
+      states:
+        - completed
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_options: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
+      parameters: {  }
+  email_2:
+    id: email
+    label: 'Email 2'
+    notes: ''
+    handler_id: email_2
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      to_mail: '[webform_submission:values:txt_email_address:raw]'
+      from_mail: _default
+      from_name: _default
+      subject: '2019 State Delegate Registration'
+      body: "<p>\n\t<img alt=\"Image\" class=\"imgp_img\" height=\"201\" src=\"https://wash-gop.com/news/attachments/WCGOP%20Logo%20small%20-%20final.png\" style=\"font-family: 'Lucida Grande', 'Lucida Sans Unicode', helvetica, verdana, arial, sans-serif; font-size: 0.8em; line-height: 1.125em; text-align: left; margin: 10px; float: right;\" width=\"200\" />\n</p>\n<p style=\"font-family: verdana; color: black; font-size: 16PX; text-align: left;\">Thank you for your interest in becoming a Delegate or Alternate to the Michigan State Republican Convention. You are now registered to be a candidate at the Washtenaw County Convention on February 7th</p><br />\n\n<p style=\"font-family: verdana; color: black; font-size: 16PX; text-align: left;\">The results of this submission may be viewed at:</p><br />\n<p style=\"font-family: verdana; color: black; font-size: 16PX; text-align: left;\"><strong><a href=\"[webform_submission:url]\">[webform_submission:url]</a></strong></p>"
+      html: true
+      attachments: false
+      excluded_elements: {  }
+      states:
+        - completed
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_options: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
+      parameters: {  }
+variants: {  }

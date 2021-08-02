@@ -41,8 +41,7 @@ id_rsa.pub
 /robots.txt
 /update.php
 /web.config
-/May2020Dump.sql
 /Vagrantcode/
-/April2021Dump.sql
+*.sql
 /GoodKey.gpg
 /August12settings.php

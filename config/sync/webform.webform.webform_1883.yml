@@ -1,0 +1,75 @@
+uuid: 39055646-b851-4af2-8eb5-568062ee074d
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 158
+template: false
+archive: false
+id: webform_1883
+title: 'Becoming a Poll Challenger'
+description: null
+category: null
+elements: "first_name:\n  '#type': textfield\n  '#title': 'First Name' \n  '#description': \"\"\n  '#required': true\nlast_name:\n  '#type': textfield\n  '#size': \n  '#title': 'Last Name' \n  '#description': \"\"\n  '#required': true\nregistered_voter:\n  '#type': radios\n  '#options':\n    yes: 'Yes'\n    no: 'No'\n  '#title': 'Registered Voter?' \n  '#description': \"\"\n  '#required': true\nphone:\n  '#type': textfield\n  '#title': 'Phone' \n  '#description': \"\"\n  '#required': true\nemail_address:\n  '#type': email\n  '#size': 20\n  '#default_value': '[current-user:mail]' \n  '#title': 'Email Address' \n  '#description': \"\"\n  '#required': true\n"
+css: ''
+javascript: ''
+settings:
+  page: true
+  form_submit_label: ''
+  wizard_progress_bar: true
+  wizard_complete: 1
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: "<div style=\"font-family: verdana; color: black; font-size: 15PX; text-align: left;\">\r\n\t<p>\r\n\t\tThank you for registering for our Poll Challenger&nbsp;training and your willingness to serve during the upcoming election.\r\n\t</p>\r\n\r\n\t<p>\r\n\t\t<strong>Training Details:</strong>\r\n\t</p>\r\n\r\n\t<p>\r\n\t\tSaturday October 29th, 2016\r\n\t</p>\r\n\r\n\t<p>\r\n\t\t11:00 AM - 12:00 Noon\r\n\t</p>\r\n\r\n\t<p>\r\n\t\tWashtenaw County Republican Committee<br />\r\n\t\tNCMS Building<br />\r\n\t\t3025 Boardwalk<br />\r\n\t\tAnn Arbor, MI 48108\r\n\t</p>\r\n\r\n\t<p>\r\n\t\tFeel free to contact us at <a href=\"mailto:comcentral@wash-gop.org\">comcentral@wash-gop.org</a> if you have any questions.\r\n\t</p>\r\n\r\n\t<p>\r\n\t\t&nbsp;\r\n\t</p>\r\n</div>\r\n"
+  limit_total: null
+  limit_user: null
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    label: 'Email 1'
+    notes: ''
+    handler_id: email_1
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      to_mail: comcentral@wash-gop.org
+      from_mail: _default
+      from_name: _default
+      subject: _default
+      body: _default
+      html: true
+      attachments: false
+      excluded_elements: {  }
+      states:
+        - completed
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_options: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
+      parameters: {  }
+variants: {  }

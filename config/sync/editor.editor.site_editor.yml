@@ -25,13 +25,14 @@ settings:
         -
           name: Lists
           items:
+            - DrupalImage
             - BulletedList
             - NumberedList
         -
           name: Media
           items:
+            - ImceImage
             - Blockquote
-            - DrupalImage
         -
           name: Tools
           items:

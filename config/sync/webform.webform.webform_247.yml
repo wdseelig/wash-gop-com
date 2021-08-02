@@ -1,0 +1,74 @@
+uuid: da39e4e0-bb5a-4b34-8ed7-be99df1e044b
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 10
+template: false
+archive: false
+id: webform_247
+title: 'DC Trip'
+description: null
+category: null
+elements: "text001:\n  '#type': textfield\n  '#size': \n  '#title': 'Name' \n  '#description': \"Please tell us your name\"\n  '#required': true\nemail001:\n  '#type': email\n  '#size': 20\n  '#title': 'E-Mail address' \n  '#description': \"Please enter your e-mail address so that we will be able to get in touch with you\"\n  '#required': true\ntext002:\n  '#type': textfield\n  '#size': \n  '#title': 'Party size' \n  '#description': \"The number of people in your party\"\n  '#required': true\nselect001:\n  '#type': radios\n  '#options':\n    Caravan: 'The Caravan method'\n    Tour: 'The Tour Method'\n    None: 'I don\"t want to go on this trip'\n  '#title': 'Trip type ' \n  '#description': \"The kind of trip you want to take\"\n  '#required': true\n"
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  wizard_complete: 1
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: 'Thank you for signing up for the trip.&nbsp; We''ll get back to you soon to firm up details with you.'
+  limit_total: null
+  limit_user: null
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    label: 'Email 1'
+    notes: ''
+    handler_id: email_1
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      to_mail: wdseelig@gmail.com
+      from_mail: '[webform_submission:values:email001:raw]'
+      from_name: '[webform_submission:values:text001:raw]'
+      subject: '[webform_submission:values:text002:raw]'
+      body: _default
+      html: false
+      attachments: false
+      excluded_elements: {  }
+      states:
+        - completed
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_options: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
+      parameters: {  }
+variants: {  }

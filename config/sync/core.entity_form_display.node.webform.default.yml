@@ -1,12 +1,17 @@
-uuid: c731c253-45e9-4d8a-82a8-c0a5d456ca77
+uuid: 71053112-2b56-468f-8655-5b45939fce9e
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.node.webform.body
+    - field.field.node.webform.webform
     - node.type.webform
   module:
+    - path
     - text
+    - webform
+_core:
+  default_config_hash: A3evv2pt6d-bKCPcgjXA5VGTemXWOxG3lSXvWiRWcck
 id: node.webform.default
 targetEntityType: node
 bundle: webform
@@ -14,27 +19,32 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 121
+    weight: 0
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
-      show_summary: false
     third_party_settings: {  }
     region: content
   created:
     type: datetime_timestamp
     weight: 10
-    region: content
     settings: {  }
     third_party_settings: {  }
+    region: content
+  path:
+    type: path
+    weight: 30
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   promote:
     type: boolean_checkbox
     settings:
       display_label: true
     weight: 15
-    region: content
     third_party_settings: {  }
+    region: content
   status:
     type: boolean_checkbox
     settings:
@@ -47,16 +57,16 @@ content:
     settings:
       display_label: true
     weight: 16
-    region: content
     third_party_settings: {  }
+    region: content
   title:
     type: string_textfield
     weight: -5
-    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+    region: content
   uid:
     type: entity_reference_autocomplete
     weight: 5
@@ -65,6 +75,12 @@ content:
       size: 60
       placeholder: ''
       match_limit: 10
-    region: content
     third_party_settings: {  }
+    region: content
+  webform:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: webform_entity_reference_select
+    region: content
 hidden: {  }

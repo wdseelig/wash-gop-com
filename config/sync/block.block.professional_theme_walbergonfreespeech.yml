@@ -1,0 +1,33 @@
+uuid: 7c8527de-ea5a-4817-bf52-b6c9156ac4c6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b82101bc-2e12-4464-8a4e-f5f2b531a2b8'
+  module:
+    - block_content
+    - node
+  theme:
+    - professional_theme
+id: professional_theme_walbergonfreespeech
+theme: professional_theme
+region: left_side
+weight: -3
+provider: null
+plugin: 'block_content:b82101bc-2e12-4464-8a4e-f5f2b531a2b8'
+settings:
+  id: 'block_content:b82101bc-2e12-4464-8a4e-f5f2b531a2b8'
+  label: 'Walberg on free speech'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

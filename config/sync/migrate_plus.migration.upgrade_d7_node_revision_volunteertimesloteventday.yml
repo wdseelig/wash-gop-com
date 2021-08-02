@@ -82,12 +82,24 @@ process:
       source: field_vtsevent
   field_vtsstarttime:
     -
-      plugin: get
+      plugin: sub_process
       source: field_vtsstarttime
+      process:
+        value:
+          plugin: format_date
+          from_format: U
+          to_format: U
+          source: value
   field_vtsendtime:
     -
-      plugin: get
+      plugin: sub_process
       source: field_vtsendtime
+      process:
+        value:
+          plugin: format_date
+          from_format: U
+          to_format: U
+          source: value
   field_vtsinterval:
     -
       plugin: get

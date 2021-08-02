@@ -9,11 +9,10 @@ cck_plugin_method: null
 migration_tags:
   - 'Drupal 7'
   - Configuration
-migration_group: migration_group1
+migration_group: migrate_drupal_7
 label: Blocks
 source:
   plugin: block
-  bundle: block
 process:
   status:
     -
@@ -66,10 +65,6 @@ process:
       method: row
   theme:
     -
-      plugin: static_map
-      source: theme
-      map:
-        marinelli:  bartik
       plugin: block_theme
       source:
         - theme
@@ -117,8 +112,8 @@ process:
       skip_php: true
 destination:
   plugin: 'entity:block'
-  default_bundle:  content
 migration_dependencies:
   optional:
+    - upgrade_d7_custom_block
     - upgrade_d7_user_role
   required: {  }

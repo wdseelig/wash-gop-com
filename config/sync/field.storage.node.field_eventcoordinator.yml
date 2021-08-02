@@ -1,0 +1,21 @@
+uuid: 98d93526-94e1-4907-af3c-4f9a87a215e3
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_eventcoordinator
+field_name: field_eventcoordinator
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

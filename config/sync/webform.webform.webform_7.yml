@@ -1,0 +1,74 @@
+uuid: dd148355-9cae-4a9c-8e5d-58287da9e015
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 1
+template: false
+archive: false
+id: webform_7
+title: 'Volunteer for the Washtenaw GOP!'
+description: null
+category: null
+elements: "first_name:\n  '#type': textfield\n  '#title': 'First Name' \n  '#description': \"\"\n  '#required': true\nlast_name:\n  '#type': textfield\n  '#title': 'Last Name' \n  '#description': \"\"\n  '#required': true\nphone:\n  '#type': textfield\n  '#title': 'Phone' \n  '#description': \"\"\n  '#required': true\nemail:\n  '#type': email\n  '#size': 20\n  '#default_value': '[current-user:mail]' \n  '#title': 'Email' \n  '#description': \"\"\n  '#required': true\naddress:\n  '#type': textfield\n  '#title': 'Address' \n  '#description': \"\"\nstate:\n  '#type': textfield\n  '#title': 'State' \n  '#description': \"\"\ncity:\n  '#type': textfield\n  '#title': 'City' \n  '#description': \"\"\nzip:\n  '#type': textfield\n  '#title': 'Zip Code' \n  '#description': \"\"\nvolunteer_fieldset:\n  '#type': fieldset\n  '#open': true\n  '#title': 'How do you want to help?' \n  '#description': \"\"\n  volunteer_options_5:\n    '#type': checkboxes\n    '#options':\n      phone_calls: 'Make Phone Calls'\n      event_help: 'Help with Events'\n      yardsign_home: 'Have a yard sign at home'\n      yardsign_deploy: 'Put up yard signs'\n      bumper_sticker: 'Have a bumper sticker on my car'\n      raise_money: 'Raise Money'\n      f2f_cards: 'Send Friend to Friend postcards'\n      door_to_door: 'Go Door to Door'\n    '#multiple': true\n    '#title': 'Options' \n    '#description': \"\"\ncoalition_fieldset:\n  '#type': fieldset\n  '#open': true\n  '#title': 'What coalitions do you associate with?' \n  '#description': \"\"\n  coalition_options_7:\n    '#type': checkboxes\n    '#options':\n      conservatives: 'Conservatives'\n      women: 'Women'\n      sportsmen: 'Sportsmen'\n      farmers: 'Farmers'\n      safety: 'Safety & Security'\n    '#multiple': true\n    '#title': 'Coalitions' \n    '#description': \"\"\nissue_fieldset:\n  '#type': fieldset\n  '#open': true\n  '#title': 'What issues are you interested in?' \n  '#description': \"\"\n  issue_options_8:\n    '#type': checkboxes\n    '#options':\n      taxes: 'Taxes'\n      fiscal_discipline: 'Fiscal Discipline'\n      environment: 'The Environment'\n      social_welfare: 'Social Welfare'\n      iraq: 'Iraq'\n      education: 'Education'\n      abortion: 'Abortion'\n      energy: 'Energy'\n      social_issues: 'Social Issues'\n    '#multiple': true\n    '#title': 'Issues' \n    '#description': \"\"\n"
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  wizard_complete: 1
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: url
+  confirmation_url: node/8
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    label: 'Email 1'
+    notes: ''
+    handler_id: email_1
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      to_mail: volunteer@wash-gop.org
+      from_mail: _default
+      from_name: _default
+      subject: _default
+      body: _default
+      html: false
+      attachments: false
+      excluded_elements: {  }
+      states:
+        - completed
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_options: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
+      parameters: {  }
+variants: {  }

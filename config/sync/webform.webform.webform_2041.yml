@@ -1,0 +1,75 @@
+uuid: 964351f4-f61b-4dbf-ae6f-4c6d8bf0a9a4
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 158
+template: false
+archive: false
+id: webform_2041
+title: 'Summer Picnic 2019 RSVP'
+description: null
+category: null
+elements: "text002:\n  '#type': textfield\n  '#size': \n  '#title': 'Name' \n  '#description': \"\"\n  '#required': true\ntext003:\n  '#type': email\n  '#size': 20\n  '#default_value': '[current-user:mail]' \n  '#title': 'E-Mail address' \n  '#description': \"An e-mail address where we can get in touch with you about the picnic\"\n  '#required': true\ntext001:\n  '#type': textfield\n  '#size': \n  '#title': 'Please tell us how many people will be attending' \n  '#description': \"Number of people in my party\"\n  '#required': true\nphone_number:\n  '#type': textfield\n  '#title': 'Phone Number' \n  '#description': \"Please enter your phone number in case we need to contact you.\"\n  '#required': true\ndish_to_pass:\n  '#type': textfield\n  '#title': 'Dish to Pass' \n  '#description': \"This is a Pot-Luck with the main course provided. If you know now, tell us what item you might like to bring.\"\n"
+css: ''
+javascript: ''
+settings:
+  page: true
+  form_submit_label: 'Send my RSVP'
+  wizard_progress_bar: true
+  wizard_complete: 1
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: "<p>\r\n\tThanks for registering for our picnic!&nbsp; We look forward to seeing you there.\r\n</p>\r\n"
+  limit_total: null
+  limit_user: null
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    label: 'Email 1'
+    notes: ''
+    handler_id: email_1
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      to_mail: comcentral@wash-gop.org
+      from_mail: '[webform_submission:values:text003:raw]'
+      from_name: '[webform_submission:values:text002:raw]'
+      subject: '[webform_submission:values:text001:raw]'
+      body: _default
+      html: false
+      attachments: false
+      excluded_elements: {  }
+      states:
+        - completed
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_options: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
+      parameters: {  }
+variants: {  }

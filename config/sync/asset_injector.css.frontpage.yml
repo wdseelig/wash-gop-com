@@ -1,0 +1,18 @@
+uuid: 0b9f8bb6-04e7-482a-8f8c-17bf187f0e30
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: frontpage
+label: frontpage
+code: ".node--view-mode-teaser > h2 {\n  display: none;\n}\n.node-readmore a {\n  display:  none;\n}\n.region-sidebar-first {\n  background-color: #b3eeff;\n  box-shadow: 0 0 0 20px #b3eeff;\n}\n.contextual-region.block div p img {\n  display:  block;\n  margin-left:  auto;\n  margin-right: auto;\n  width:  65%;\n}\n.region-sidebar-first h2 {\n  color:  red;\n  text-align: center;\n  font-size:  18px;\n}\n.region-sidebar-second h2 {\n  color:  red;\n  text-align: center;\n  font-size:  18px;\n}\n#sidebar-second {\n  background-color: #ffff00;\n  border-radius:  10px 10px 10px 10px;\n  width:  15%;\n}\nhr {\n    height: 5px;\n    background: blue;\n}\n.region-sidebar-second {\n  background-color: #ffff00;\n  padding-left: 0px;\n  border-left: 20px solid #ffff00;\n  border-top: 20px solid #ffff00;\n  margin-left: -15px;\n/*  box-shadow: -16px -20px 0 #ffff00; */\n}\n\n.leftsidebar .region-sidebar-first{\n  box-shadow: 0 0 0 20px #b3eeff;\n}\n.rightsidebar .region-sidebar-second{\n  box-shadow: -16px -20px 0 #ffff00;\n}\n.region-sidebar-second .block {\n  background-color: transparent;\n}\n.region-header img {\n  text-align: center;\n}\n#content .section {\n  background-color: #b3eeff;\n}\n#main.layout-main {\n  margin-top: 0px;\n}\n.main-menuwrap {\n  margin-bottom:  0px;\n}\n.region.region-content {\n  margin-top: 0px;\n}\nh2.node__title {\n  display: none;\n}\n.region-header .block {\n  margin-top: 20px;\n  width:  1140px;\n}\n.col-md-6 {\n  background-color: #b3eeff;\n}\n.col-md-3 {\n  padding-right: 0px;\n}\ndiv.coOrvg {\n  display: none;\n}\ndiv.content {\n  margin-top: 0px;\n}\n.region.region-content {\n  margin-top: -10px;\n}\n.social-media {\n  display:  none;\n}\n.site-branding__slogan {\n  color:  #ffff00;\n}\n.site-branding__name a {\n  color:  #ff0000;\n  font-family: \"Apple Chancery\";\n  line-height:  150%;\n}\n.site-branding__slogan {\n  color:  #ffff00;\n  \n}\n.site-branding__logo img {\n  max-width:  60%;\n  \n}\n#main-menu a:link,\n#main-menu a:visited{\n  color:  #ffff00;\n}\n#main-menu a:hover {\n  color:  #fc0fc0;\n}\n.region-footer-first {\n  background-color: #34eb7d;\n  height: 200px;\n  border: 30px solid green;\n  margin-right: -20px;\n}\n.region-footer-second {\n  background-color: #34eb7d;\n  height: 200px;\n   border: 30px solid green;\n  margin-left: -30px;\n  margin-right: -20px;\n}\n.region-footer-third {\n  background-color: #34eb7d;\n  height: 200px;\n   border: 30px solid green;\n  margin-left: -30px;\n}\n.copyright .container {\n  display: none;\n}\nbody:not(.user-logged-in) .ExecutiveCommitteeMembers {\n  display: none;\n}\n"
+conditions_require_all: true
+conditions:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/About"
+    negate: false
+contexts: {  }
+media: all
+preprocess: true

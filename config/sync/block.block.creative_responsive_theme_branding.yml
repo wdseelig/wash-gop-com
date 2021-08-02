@@ -1,0 +1,25 @@
+uuid: 9e9e35af-711d-4393-851f-fccf1bce56dc
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - creative_responsive_theme
+_core:
+  default_config_hash: UOc1JR94blJQjul9ylyOuWm21IjfhByUwiVMsEOOhC4
+id: creative_responsive_theme_branding
+theme: creative_responsive_theme
+region: header
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

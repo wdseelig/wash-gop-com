@@ -1,0 +1,75 @@
+uuid: 6f2136ba-3e03-483a-9043-42fd32038612
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 158
+template: false
+archive: false
+id: webform_1982
+title: '2018 August State Convention Delegate Registration'
+description: null
+category: null
+elements: "txt_name:\n  '#type': textfield\n  '#size': \n  '#title': 'Name' \n  '#description': \"This is your name\"\n  '#required': true\ntxt_email_address:\n  '#type': email\n  '#size': 20\n  '#title': 'E-Mail Address' \n  '#description': \"This is an e-mail address at which we can reach you\"\n  '#required': true\ncongressional_district:\n  '#type': radios\n  '#options':\n    7: '7'\n    12: '12'\n  '#title': 'Congressional District' \n  '#description': \"The Congressional District in which you reside\"\n  '#required': true\nvoting_jurisdiction:\n  '#type': select\n  '#options':\n    a2: 'Ann Arbor'\n    chel: 'Chelsea'\n    dex: 'Dexter'\n    mila: 'Milan'\n    sali: 'Saline'\n    yps: 'Ypsilanti'\n    ann_twp: 'Ann Arbor Township'\n    aug_twp: 'Augusta Township'\n    brid_twp: 'Bridgewater Township'\n    dex_twp: 'Dexter Township'\n    free_twp: 'Freedom Township'\n    lima_twp: 'Lima Township'\n    loi_twp: 'Lodi Township'\n    lynd_twp: 'Lyndon Township'\n    manc_twp: 'Manchester Township'\n    nort_twp: 'Northfield Township'\n    pitt_twp: 'Pittsfield Township'\n    sale_twp: 'Salem Township'\n    sali_twp: 'Saline Township'\n    scio_tep: 'Scio Township'\n    shar_twp: 'Sharon Township'\n    supe_twp: 'Superior Township'\n    sylv_twp: 'Sylvan Township'\n    webs_twp: 'Webster Township'\n    york_twp: 'York Township'\n    yps_twp: 'Ypsilanti Township'\n  '#title': 'Voting Jurisdiction (City or Township)' \n  '#description': \"This is the City or Township where you vote (may not be the same as your mailing address)\"\n  '#required': true\ntxt_precinct:\n  '#type': textfield\n  '#size': \n  '#title': 'Ward and/or Precinct' \n  '#description': \"This is the precinct in which you vote [Examples:  Ward 2,  Precinct 3]\"\n  '#required': true\nphone:\n  '#type': textfield\n  '#title': 'Phone' \n  '#description': \"Please provide the best phone number where you may be reached.\"\n  '#required': true\nphone_type:\n  '#type': radios\n  '#options':\n    mobile: 'Mobile'\n    land: 'Land Line'\n  '#title': 'Phone Type' \n  '#description': \"\"\n  '#required': true\nprecinct_delegate:\n  '#type': radios\n  '#options':\n    yes: 'Yes'\n    no: 'No'\n  '#title': 'Precinct Delegate Candidate?' \n  '#description': \"I am a precinct delegate candidate on the ballot in the August Primary\"\n  '#required': true\nwill_attend_cc:\n  '#type': radios\n  '#options':\n    yes: 'Yes'\n    no: 'No'\n    maybe: 'Maybe'\n  '#title': 'Will Attend County Convention' \n  '#description': \"Tell us whether you will attend the County Convention on January 26th\"\n  '#required': true\n"
+css: ''
+javascript: ''
+settings:
+  page: true
+  form_submit_label: ''
+  wizard_progress_bar: true
+  wizard_complete: 1
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: "<p>\r\n\tThank you for your interest in becoming a delegate or alternate to the Michigan Republican Party&#39;s State convention!\r\n</p>\r\n"
+  limit_total: null
+  limit_user: null
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    label: 'Email 1'
+    notes: ''
+    handler_id: email_1
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      to_mail: comcentral@wash-gop.org
+      from_mail: '[webform_submission:values:txt_email_address:raw]'
+      from_name: _default
+      subject: _default
+      body: _default
+      html: false
+      attachments: false
+      excluded_elements: {  }
+      states:
+        - completed
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_options: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
+      parameters: {  }
+variants: {  }

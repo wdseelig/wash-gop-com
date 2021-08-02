@@ -1,0 +1,75 @@
+uuid: 64f011cc-5a06-4a72-a48b-7b4c80e3bd3a
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 158
+template: false
+archive: false
+id: webform_1279
+title: 'Precinct Delegate Candidates'
+description: null
+category: null
+elements: "full_name:\n  '#type': textfield\n  '#size': \n  '#title': 'Full Name' \n  '#description': \"\"\n  '#required': true\naddress:\n  '#type': textfield\n  '#size': \n  '#title': 'Address' \n  '#description': \"\"\n  '#required': true\ncity:\n  '#type': textfield\n  '#title': 'City' \n  '#description': \"\"\n  '#required': true\nstate:\n  '#type': textfield\n  '#default_value': 'MI' \n  '#title': 'State' \n  '#description': \"\"\n  '#required': true\nzip_code:\n  '#type': textfield\n  '#title': 'Zip Code' \n  '#description': \"\"\n  '#required': true\njurisdiction:\n  '#type': textfield\n  '#title': 'Jurisdiction' \n  '#description': \"<p>Please enter the city, township or village that you vote in (may differ from your mailing address).</p>\\n\"\n  '#required': true\nward:\n  '#type': textfield\n  '#title': 'Ward' \n  '#description': \"<p>Please enter your voting ward if known.</p>\\n\"\n  '#required': true\nprecinct:\n  '#type': textfield\n  '#title': 'Precinct' \n  '#description': \"<p>Please enter your voting precinct if known.</p>\\n\"\n  '#required': true\nphone:\n  '#type': textfield\n  '#title': 'Phone' \n  '#description': \"\"\n  '#required': true\nemail_address:\n  '#type': email\n  '#size': 20\n  '#default_value': '[current-user:mail]' \n  '#title': 'Email Address' \n  '#description': \"\"\n  '#required': true\ncandidate_statement:\n  '#type': textarea\n  '#title': 'Candidate Statement' \n  '#description': \"<p>Please enter a candidate statement of up to 300 words. </p>\\n\"\n  '#required': true\n"
+css: ''
+javascript: ''
+settings:
+  page: true
+  form_submit_label: ''
+  wizard_progress_bar: true
+  wizard_complete: 1
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    label: 'Email 1'
+    notes: ''
+    handler_id: email_1
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      to_mail: comcentral@wash-gop.org
+      from_mail: _default
+      from_name: _default
+      subject: _default
+      body: _default
+      html: true
+      attachments: false
+      excluded_elements: {  }
+      states:
+        - completed
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_options: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
+      parameters: {  }
+variants: {  }

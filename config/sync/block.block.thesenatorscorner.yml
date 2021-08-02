@@ -1,0 +1,31 @@
+uuid: 312cf2f7-86eb-4e13-8256-29c2cd280737
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a33b5947-90de-411f-82e9-48118a878896'
+  module:
+    - block_content
+    - system
+  theme:
+    - creative_responsive_theme
+id: thesenatorscorner
+theme: creative_responsive_theme
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'block_content:a33b5947-90de-411f-82e9-48118a878896'
+settings:
+  id: 'block_content:a33b5947-90de-411f-82e9-48118a878896'
+  label: 'Our Senator Speaks'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

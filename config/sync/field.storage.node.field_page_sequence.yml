@@ -1,0 +1,20 @@
+uuid: 4077ef6c-403d-413f-a0b8-49e14c898634
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_page_sequence
+field_name: field_page_sequence
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

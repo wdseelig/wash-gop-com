@@ -1,14 +1,17 @@
-uuid: 2ea3ea13-df64-40b9-be32-8983b83ccb3f
+uuid: c4d29e14-5ab1-4830-a8b1-54a553fbf099
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.webform.body
+    - field.field.node.webform.webform
     - node.type.webform
   module:
     - text
     - user
+_core:
+  default_config_hash: Ls5l3Xs7-YstJnurxFLKj38Exqr2JMZs1j9YeX1Kh2o
 id: node.webform.teaser
 targetEntityType: node
 bundle: webform
@@ -27,4 +30,5 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  webform: true

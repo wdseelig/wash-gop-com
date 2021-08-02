@@ -1,0 +1,75 @@
+uuid: 109b9cc7-1beb-43c3-8aa8-7769b6906a2f
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 158
+template: false
+archive: false
+id: webform_1815
+title: 'Volunteer Election Day'
+description: null
+category: null
+elements: "first_name:\n  '#type': textfield\n  '#title': 'First Name' \n  '#description': \"\"\n  '#required': true\nlast_name:\n  '#type': textfield\n  '#size': \n  '#title': 'Last Name' \n  '#description': \"\"\n  '#required': true\nelection_position:\n  '#type': radios\n  '#options':\n    poll_chal: 'Poll Challenger'\n    phone_calling: 'Phone Operations'\n  '#title': 'Election Position' \n  '#description': \"Please select the position you would like to serve in for upcoming elections.\"\n  '#required': true\naddress:\n  '#type': textfield\n  '#size': \n  '#title': 'Address' \n  '#description': \"\"\n  '#required': true\ncity:\n  '#type': textfield\n  '#title': 'City' \n  '#description': \"\"\n  '#required': true\nstate:\n  '#type': textfield\n  '#default_value': 'MI' \n  '#title': 'State' \n  '#description': \"\"\n  '#required': true\nzip_code:\n  '#type': textfield\n  '#title': 'Zip Code' \n  '#description': \"\"\n  '#required': true\njurisdiction:\n  '#type': textfield\n  '#title': 'Voting Jurisdiction' \n  '#description': \"<p>Please enter the city, township or village that you vote in (may differ from your mailing address).</p>\\n\"\n  '#required': true\nward:\n  '#type': textfield\n  '#title': 'Ward' \n  '#description': \"<p>Please enter your voting ward if known.</p>\\n\"\n  '#required': true\nprecinct:\n  '#type': textfield\n  '#title': 'Precinct' \n  '#description': \"<p>Please enter your voting precinct if known.</p>\\n\"\n  '#required': true\nphone:\n  '#type': textfield\n  '#title': 'Phone' \n  '#description': \"\"\n  '#required': true\nemail_address:\n  '#type': email\n  '#size': 20\n  '#default_value': '[current-user:mail]' \n  '#title': 'Email Address' \n  '#description': \"\"\n  '#required': true\nbest_time_to_contact_you:\n  '#type': checkboxes\n  '#options':\n    morning: 'Morning'\n    day: 'Day'\n    evening: 'Evening'\n  '#multiple': true\n  '#title': 'Best Time to Contact You' \n  '#description': \"\"\n  '#required': true\nwhat_is_the_best_time_for_volunteering_on_november_6_2018:\n  '#type': radios\n  '#options':\n    morning: 'Morning (7:00 - 2 ;00)'\n    afternoon: 'Afternoon (2:00 - 8:00)'\n    allday: 'All Day'\n  '#title': 'What is the best time for volunteering on November 6, 2018?' \n  '#description': \"\"\n  '#required': true\n"
+css: ''
+javascript: ''
+settings:
+  page: true
+  form_submit_label: ''
+  wizard_progress_bar: true
+  wizard_complete: 1
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: "<p style=\"font-family: verdana; color: black; font-size: 16PX; text-align: CENTER;\">\r\n\tThank you for your willingness to assist us this election.<br />\r\n\tOne of our team members&nbsp;will contact you shortly.\r\n</p>\r\n\r\n<p style=\"font-family: verdana; color: black; font-size: 14PX; text-align: CENTER;\">\r\n\t<img alt=\"\" src=\"/files/images/site_editors/WCGOP%20Logo%20small%20-%20final.png\" style=\"margin: 5px; width: 150px; height: 151px;\" />\r\n</p>\r\n"
+  limit_total: null
+  limit_user: null
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    label: 'Email 1'
+    notes: ''
+    handler_id: email_1
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      to_mail: comcentral@wash-gop.org
+      from_mail: _default
+      from_name: _default
+      subject: _default
+      body: _default
+      html: true
+      attachments: false
+      excluded_elements: {  }
+      states:
+        - completed
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_options: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
+      parameters: {  }
+variants: {  }

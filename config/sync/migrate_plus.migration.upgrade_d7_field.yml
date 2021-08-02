@@ -43,6 +43,10 @@ process:
           d7_text: d7_text
         file:
           file: file
+        datetime:
+          datetime: datetime
+        list:
+          list: list
         entityreference:
           entityreference: entityreference
         number_default:

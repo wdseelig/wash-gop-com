@@ -78,6 +78,10 @@ process:
         taxonomy_autocomplete: entity_reference_autocomplete
         d7_text: d7_text_default
         filefield_widget: file_generic
+        date: datetime_default
+        datetime: datetime_default
+        datestamp: datetime_timestamp
+        list: list_default
         entityreference: entityreference_default
         number_default: number_default_default
   options/settings:

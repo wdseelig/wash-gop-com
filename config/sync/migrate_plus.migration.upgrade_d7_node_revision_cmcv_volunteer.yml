@@ -82,8 +82,14 @@ process:
       source: field_cmcv_contact
   field_cmcv_date:
     -
-      plugin: get
+      plugin: sub_process
       source: field_cmcv_date
+      process:
+        value:
+          plugin: format_date
+          from_format: U
+          to_format: U
+          source: value
   field_cmcv_location:
     -
       plugin: get

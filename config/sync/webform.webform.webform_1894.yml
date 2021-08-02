@@ -1,0 +1,75 @@
+uuid: 139f4bcc-5c24-40e0-af9e-d145372c9025
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 158
+template: false
+archive: false
+id: webform_1894
+title: '2016 Christmas/Hanukkah Party'
+description: null
+category: null
+elements: "name:\n  '#type': textfield\n  '#title': 'Name' \n  '#description': \"\"\n  '#required': true\nemail_address:\n  '#type': textfield\n  '#default_value': '[current-user:mail]' \n  '#title': 'Email Address' \n  '#description': \"An e-mail address where we can get in touch with you about this event\"\n  '#required': true\nplease_tell_us_how_many_people_will_be_atending:\n  '#type': textfield\n  '#title': 'Please tell us how many people will be atending' \n  '#description': \"Number of people in my party\"\n  '#required': true\nphone:\n  '#type': textfield\n  '#title': 'Phone' \n  '#description': \"Please provide a phone number where we can reach you if it becomes necessary.\"\n  '#required': true\n"
+css: ''
+javascript: ''
+settings:
+  page: true
+  form_submit_label: ''
+  wizard_progress_bar: true
+  wizard_complete: 1
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: 'Thank you for registering for our Annual Christmas Party. It will be a pleasure seeing you!'
+  limit_total: null
+  limit_user: null
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    label: 'Email 1'
+    notes: ''
+    handler_id: email_1
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      to_mail: 'DCSchlotz@comcast.net,wcgopchair@gmail.com, '
+      from_mail: _default
+      from_name: _default
+      subject: _default
+      body: _default
+      html: false
+      attachments: false
+      excluded_elements: {  }
+      states:
+        - completed
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_options: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
+      parameters: {  }
+variants: {  }
