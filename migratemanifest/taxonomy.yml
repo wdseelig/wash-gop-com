@@ -1,0 +1,4 @@
+#	WDS manifest file for taxonomy migrations
+- d7_taxonomy_vocabulary
+- d7_taxonomy_term
+
