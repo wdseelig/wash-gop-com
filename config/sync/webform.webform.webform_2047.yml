@@ -12,28 +12,300 @@ id: webform_2047
 title: 'NRA Event Sign Up'
 description: null
 category: null
-elements: "payatthedoor:\n  '#type': processed_text\n  '#format': full_html\n  '#text': \"<h3>\\n\t<a href='https://www.wash-gop.com/NRAPayAtDoor'><strong><font color='blue'>Click HERE to pay by check at the door</font></strong></a>\\n</h3>\\n\"\n  '#title': 'PayAtTheDoor' \n  '#description': \"\"\nplease_register_below:\n  '#type': processed_text\n  '#format': full_html\n  '#text': \"<h3>\\n\t<strong><font color='blue'>If you wish to pay by credit card, please use the form&nbsp;&nbsp;below. </font></strong>\\n</h3>\\n\"\n  '#title': 'Please Register Below' \n  '#description': \"\"\nfull_name:\n  '#type': textfield\n  '#title': 'Full Name' \n  '#description': \"\"\n  '#required': true\naddress:\n  '#type': textfield\n  '#title': 'Address' \n  '#description': \"\"\n  '#required': true\ncity:\n  '#type': textfield\n  '#title': 'City' \n  '#description': \"\"\n  '#required': true\nstate:\n  '#type': textfield\n  '#title': 'State' \n  '#description': \"\"\n  '#required': true\nzip_code:\n  '#type': textfield\n  '#title': 'Zip Code' \n  '#description': \"\"\n  '#required': true\nphone:\n  '#type': textfield\n  '#title': 'Phone' \n  '#description': \"Please provide the best number to reach you at in case we need to contact you about this event.\"\n  '#required': true\nemail_address:\n  '#type': email\n  '#size': 20\n  '#default_value': '[current-user:mail]' \n  '#title': 'Email Address' \n  '#description': \"\"\n  '#required': true\noccupation:\n  '#type': textfield\n  '#title': 'Occupation' \n  '#description': \"\"\nemployer:\n  '#type': textfield\n  '#title': 'Employer' \n  '#description': \"If you do not have an employer simply enter NA\"\n  '#required': true\nemployer_address:\n  '#type': textfield\n  '#title': 'Employer Address' \n  '#description': \"If you do not have an employer simply enter NA\"\n  '#required': true\ninfo:\n  '#type': textarea\n  '#default_value': 'Election law requires us to collect and report the name and mailing address of each contributor, and in addition, the occupation, name of employer, and business address for individuals whose contributions exceed $100 during a calendar year. Contributions from corporations, joint stock companies, labor organizations, Indian tribes, Casino interest holders, and foreign nationals without permanent residency status are prohibited.' \n  '#title': 'info' \n  '#description': \"\"\nnumber_of_attendees:\n  '#type': textfield\n  '#title': 'Number of Attendees' \n  '#description': \"Please tell us how many adults and children will be attending.\"\n  '#required': true\nonline_payment_break:\n  '#type': processed_text\n  '#format': full_html\n  '#text': \"<h4>\\n\t&nbsp;\\n</h4>\\n\\n<h3>\\n\t<strong><font color='blue'>Use the following&nbsp;fields to make a secure online payment using a credit card.</font></strong>\\n</h3>\\n\"\n  '#title': 'Online Payment Break' \n  '#description': \"\"\nq1:\n  '#type': textfield\n  '#size': 20\n  '#min': \n  '#max': 99\n  '#step': \n  '#unique': false\n  '#title': 'Adults ($25)' \n  '#description': \"\"\nq2:\n  '#type': textfield\n  '#size': 20\n  '#min': \n  '#max': 99\n  '#step': \n  '#unique': false\n  '#title': 'Children Under 18 ($15)' \n  '#description': \"\"\nq3:\n  '#type': textfield\n  '#size': 20\n  '#min': \n  '#max': 99\n  '#step': \n  '#unique': false\n  '#title': 'Families' \n  '#description': \"\"\ntotal:\n  '#default_value': '{q1}*25 + {q2}*15 + {q3}*75' \n  '#field_prefix': $\n  '#title': 'Total' \n  '#description': \"\"\npaywithstripe:\n  '#title': 'PayWithStripe' \n  '#description': \"\"\n"
+elements: |
+  payatthedoor:
+    '#type': processed_text
+    '#format': full_html
+    '#text': "<h3>\n	<a href='https://www.wash-gop.com/NRAPayAtDoor'><strong><font color='blue'>Click HERE to pay by check at the door</font></strong></a>\n</h3>\n"
+    '#title': 'PayAtTheDoor' 
+    '#description': ""
+  please_register_below:
+    '#type': processed_text
+    '#format': full_html
+    '#text': "<h3>\n	<strong><font color='blue'>If you wish to pay by credit card, please use the form&nbsp;&nbsp;below. </font></strong>\n</h3>\n"
+    '#title': 'Please Register Below' 
+    '#description': ""
+  full_name:
+    '#type': textfield
+    '#title': 'Full Name' 
+    '#description': ""
+    '#required': true
+  address:
+    '#type': textfield
+    '#title': 'Address' 
+    '#description': ""
+    '#required': true
+  city:
+    '#type': textfield
+    '#title': 'City' 
+    '#description': ""
+    '#required': true
+  state:
+    '#type': textfield
+    '#title': 'State' 
+    '#description': ""
+    '#required': true
+  zip_code:
+    '#type': textfield
+    '#title': 'Zip Code' 
+    '#description': ""
+    '#required': true
+  phone:
+    '#type': textfield
+    '#title': 'Phone' 
+    '#description': "Please provide the best number to reach you at in case we need to contact you about this event."
+    '#required': true
+  email_address:
+    '#type': email
+    '#size': 20
+    '#default_value': '[current-user:mail]' 
+    '#title': 'Email Address' 
+    '#description': ""
+    '#required': true
+  occupation:
+    '#type': textfield
+    '#title': 'Occupation' 
+    '#description': ""
+  employer:
+    '#type': textfield
+    '#title': 'Employer' 
+    '#description': "If you do not have an employer simply enter NA"
+    '#required': true
+  employer_address:
+    '#type': textfield
+    '#title': 'Employer Address' 
+    '#description': "If you do not have an employer simply enter NA"
+    '#required': true
+  info:
+    '#type': textarea
+    '#default_value': 'Election law requires us to collect and report the name and mailing address of each contributor, and in addition, the occupation, name of employer, and business address for individuals whose contributions exceed $100 during a calendar year. Contributions from corporations, joint stock companies, labor organizations, Indian tribes, Casino interest holders, and foreign nationals without permanent residency status are prohibited.' 
+    '#title': 'info' 
+    '#description': ""
+  number_of_attendees:
+    '#type': textfield
+    '#title': 'Number of Attendees' 
+    '#description': "Please tell us how many adults and children will be attending."
+    '#required': true
+  online_payment_break:
+    '#type': processed_text
+    '#format': full_html
+    '#text': "<h4>\n	&nbsp;\n</h4>\n\n<h3>\n	<strong><font color='blue'>Use the following&nbsp;fields to make a secure online payment using a credit card.</font></strong>\n</h3>\n"
+    '#title': 'Online Payment Break' 
+    '#description': ""
+  q1:
+    '#type': textfield
+    '#size': 20
+    '#min': 
+    '#max': 99
+    '#step': 
+    '#unique': false
+    '#title': 'Adults ($25)' 
+    '#description': ""
+  q2:
+    '#type': textfield
+    '#size': 20
+    '#min': 
+    '#max': 99
+    '#step': 
+    '#unique': false
+    '#title': 'Children Under 18 ($15)' 
+    '#description': ""
+  q3:
+    '#type': textfield
+    '#size': 20
+    '#min': 
+    '#max': 99
+    '#step': 
+    '#unique': false
+    '#title': 'Families' 
+    '#description': ""
+  total:
+    '#default_value': '{q1}*25 + {q2}*15 + {q3}*75' 
+    '#field_prefix': $
+    '#title': 'Total' 
+    '#description': ""
+  paywithstripe:
+    '#title': 'PayWithStripe' 
+    '#description': ""
 css: ''
 javascript: ''
 settings:
+  ajax: false
+  ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
   page: true
-  form_submit_label: ''
+  page_submit_path: ''
+  page_confirm_path: ''
+  page_theme_name: ''
+  form_title: both
+  form_submit_once: false
+  form_exception_message: ''
+  form_open_message: ''
+  form_close_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_disable_remote_addr: false
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_reset: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
+  submission_label: ''
+  submission_log: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
   wizard_progress_bar: true
-  wizard_complete: 1
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: false
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
   preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
   draft: '0'
+  draft_multiple: false
   draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
   confirmation_type: page
-  confirmation_url: ''
+  confirmation_title: ''
   confirmation_message: "<h3>\r\n\t<strong>Thank you for registering for this wonderful event, we look forward to seeing you there!</strong>\r\n</h3>\r\n\r\n<p>\r\n\t<img alt=\"\" src=\"/files/images/site_editors/invitationv4.png\" style=\"margin: 5px; float: left; width: 529px; height: 529px;\" />\r\n</p>\r\n"
+  confirmation_url: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
   limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
   limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+  token_delete: false
+  serial_disabled: false
+  form_submit_label: ''
+  wizard_complete: 1
 access:
   create:
     roles:
       - anonymous
       - authenticated
     users: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
 handlers:
   email_1:
     id: email
@@ -44,26 +316,26 @@ handlers:
     conditions: {  }
     weight: 1
     settings:
-      to_mail: comcentral@wash-gop.org
-      from_mail: _default
-      from_name: _default
-      subject: '[webform_submission:values:number_of_attendees:raw]'
-      body: _default
-      html: true
-      attachments: false
-      excluded_elements: {  }
       states:
         - completed
+      to_mail: comcentral@wash-gop.org
       to_options: {  }
       cc_mail: ''
       cc_options: {  }
       bcc_mail: ''
       bcc_options: {  }
+      from_mail: _default
       from_options: {  }
+      from_name: _default
+      subject: '[webform_submission:values:number_of_attendees:raw]'
+      body: _default
+      excluded_elements: {  }
       ignore_access: false
       exclude_empty: true
       exclude_empty_checkbox: false
       exclude_attachments: false
+      html: true
+      attachments: false
       twig: false
       debug: false
       reply_to: ''

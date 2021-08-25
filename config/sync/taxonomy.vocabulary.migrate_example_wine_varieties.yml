@@ -1,0 +1,8 @@
+uuid: 2f3fcba2-30a0-4f87-88ab-f2ecaa015be3
+langcode: en
+status: true
+dependencies: {  }
+name: 'Migrate Example Wine Varieties'
+vid: migrate_example_wine_varieties
+description: 'Wine varieties'
+weight: 0

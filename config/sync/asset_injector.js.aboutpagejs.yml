@@ -6,7 +6,10 @@ dependencies:
     - system
 id: aboutpagejs
 label: AboutPagejs
-code: "jQuery(document).ready(function($){\n  $(\".T68fnw\").hide();\n});"
+code: |-
+  jQuery(document).ready(function($){
+    $(".T68fnw").hide();
+  });
 conditions_require_all: true
 conditions:
   request_path:

@@ -16,9 +16,12 @@
     ],
     "require": {
         "composer/installers": "^2",
+        "drupal/admin_toolbar": "^3.0",
         "drupal/advpoll": "1.x-dev",
         "drupal/asset_injector": "^2.7",
         "drupal/commerce": "^2.20",
+        "drupal/commerce_migrate": "^3.1@alpha",
+        "drupal/commerce_stripe": "^1.0@RC",
         "drupal/config_update": "^1.7",
         "drupal/core-composer-scaffold": "^9.2.0",
         "drupal/core-project-message": "^9.2.0",
@@ -27,6 +30,8 @@
         "drupal/erd": "^1.0",
         "drupal/gdoc_field": "^1.1",
         "drupal/imce": "^2.4",
+        "drupal/libraries": "^3.0@beta",
+        "drupal/migrate_manifest": "^3.0",
         "drupal/migrate_plus": "^5.0",
         "drupal/migrate_tools": "^4.5",
         "drupal/migrate_upgrade": "^3.2",
@@ -52,7 +57,13 @@
         "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"
-            }
+            },
+	    "file-mapping": {
+		    "[web-root]/sites/default/default.services.yml": false
+	    },
+	    "file-mapping": {
+                   "[web-root]/sites/default/default.settings.php": false
+	    }
         },
         "installer-paths": {
             "web/core": [

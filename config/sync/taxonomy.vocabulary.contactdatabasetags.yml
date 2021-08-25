@@ -1,0 +1,8 @@
+uuid: 8066a51f-5f95-4ad2-b45f-7016f2eff6b3
+langcode: en
+status: true
+dependencies: {  }
+name: ContactDataBaseTags
+vid: contactdatabasetags
+description: 'The individual tags that we apply to contacts'
+weight: 0

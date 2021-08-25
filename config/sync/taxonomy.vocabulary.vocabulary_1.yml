@@ -1,0 +1,8 @@
+uuid: fcc6d6be-f583-4a3b-af36-58f043c67ce4
+langcode: en
+status: true
+dependencies: {  }
+name: Event
+vid: vocabulary_1
+description: Event
+weight: 0

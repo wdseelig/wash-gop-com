@@ -12,28 +12,273 @@ id: webform_1815
 title: 'Volunteer Election Day'
 description: null
 category: null
-elements: "first_name:\n  '#type': textfield\n  '#title': 'First Name' \n  '#description': \"\"\n  '#required': true\nlast_name:\n  '#type': textfield\n  '#size': \n  '#title': 'Last Name' \n  '#description': \"\"\n  '#required': true\nelection_position:\n  '#type': radios\n  '#options':\n    poll_chal: 'Poll Challenger'\n    phone_calling: 'Phone Operations'\n  '#title': 'Election Position' \n  '#description': \"Please select the position you would like to serve in for upcoming elections.\"\n  '#required': true\naddress:\n  '#type': textfield\n  '#size': \n  '#title': 'Address' \n  '#description': \"\"\n  '#required': true\ncity:\n  '#type': textfield\n  '#title': 'City' \n  '#description': \"\"\n  '#required': true\nstate:\n  '#type': textfield\n  '#default_value': 'MI' \n  '#title': 'State' \n  '#description': \"\"\n  '#required': true\nzip_code:\n  '#type': textfield\n  '#title': 'Zip Code' \n  '#description': \"\"\n  '#required': true\njurisdiction:\n  '#type': textfield\n  '#title': 'Voting Jurisdiction' \n  '#description': \"<p>Please enter the city, township or village that you vote in (may differ from your mailing address).</p>\\n\"\n  '#required': true\nward:\n  '#type': textfield\n  '#title': 'Ward' \n  '#description': \"<p>Please enter your voting ward if known.</p>\\n\"\n  '#required': true\nprecinct:\n  '#type': textfield\n  '#title': 'Precinct' \n  '#description': \"<p>Please enter your voting precinct if known.</p>\\n\"\n  '#required': true\nphone:\n  '#type': textfield\n  '#title': 'Phone' \n  '#description': \"\"\n  '#required': true\nemail_address:\n  '#type': email\n  '#size': 20\n  '#default_value': '[current-user:mail]' \n  '#title': 'Email Address' \n  '#description': \"\"\n  '#required': true\nbest_time_to_contact_you:\n  '#type': checkboxes\n  '#options':\n    morning: 'Morning'\n    day: 'Day'\n    evening: 'Evening'\n  '#multiple': true\n  '#title': 'Best Time to Contact You' \n  '#description': \"\"\n  '#required': true\nwhat_is_the_best_time_for_volunteering_on_november_6_2018:\n  '#type': radios\n  '#options':\n    morning: 'Morning (7:00 - 2 ;00)'\n    afternoon: 'Afternoon (2:00 - 8:00)'\n    allday: 'All Day'\n  '#title': 'What is the best time for volunteering on November 6, 2018?' \n  '#description': \"\"\n  '#required': true\n"
+elements: |
+  first_name:
+    '#type': textfield
+    '#title': 'First Name' 
+    '#description': ""
+    '#required': true
+  last_name:
+    '#type': textfield
+    '#size': 
+    '#title': 'Last Name' 
+    '#description': ""
+    '#required': true
+  election_position:
+    '#type': radios
+    '#options':
+      poll_chal: 'Poll Challenger'
+      phone_calling: 'Phone Operations'
+    '#title': 'Election Position' 
+    '#description': "Please select the position you would like to serve in for upcoming elections."
+    '#required': true
+  address:
+    '#type': textfield
+    '#size': 
+    '#title': 'Address' 
+    '#description': ""
+    '#required': true
+  city:
+    '#type': textfield
+    '#title': 'City' 
+    '#description': ""
+    '#required': true
+  state:
+    '#type': textfield
+    '#default_value': 'MI' 
+    '#title': 'State' 
+    '#description': ""
+    '#required': true
+  zip_code:
+    '#type': textfield
+    '#title': 'Zip Code' 
+    '#description': ""
+    '#required': true
+  jurisdiction:
+    '#type': textfield
+    '#title': 'Voting Jurisdiction' 
+    '#description': "<p>Please enter the city, township or village that you vote in (may differ from your mailing address).</p>\n"
+    '#required': true
+  ward:
+    '#type': textfield
+    '#title': 'Ward' 
+    '#description': "<p>Please enter your voting ward if known.</p>\n"
+    '#required': true
+  precinct:
+    '#type': textfield
+    '#title': 'Precinct' 
+    '#description': "<p>Please enter your voting precinct if known.</p>\n"
+    '#required': true
+  phone:
+    '#type': textfield
+    '#title': 'Phone' 
+    '#description': ""
+    '#required': true
+  email_address:
+    '#type': email
+    '#size': 20
+    '#default_value': '[current-user:mail]' 
+    '#title': 'Email Address' 
+    '#description': ""
+    '#required': true
+  best_time_to_contact_you:
+    '#type': checkboxes
+    '#options':
+      morning: 'Morning'
+      day: 'Day'
+      evening: 'Evening'
+    '#multiple': true
+    '#title': 'Best Time to Contact You' 
+    '#description': ""
+    '#required': true
+  what_is_the_best_time_for_volunteering_on_november_6_2018:
+    '#type': radios
+    '#options':
+      morning: 'Morning (7:00 - 2 ;00)'
+      afternoon: 'Afternoon (2:00 - 8:00)'
+      allday: 'All Day'
+    '#title': 'What is the best time for volunteering on November 6, 2018?' 
+    '#description': ""
+    '#required': true
 css: ''
 javascript: ''
 settings:
+  ajax: false
+  ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
   page: true
-  form_submit_label: ''
+  page_submit_path: ''
+  page_confirm_path: ''
+  page_theme_name: ''
+  form_title: both
+  form_submit_once: false
+  form_exception_message: ''
+  form_open_message: ''
+  form_close_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_disable_remote_addr: false
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_reset: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
+  submission_label: ''
+  submission_log: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
   wizard_progress_bar: true
-  wizard_complete: 1
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: false
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
   preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
   draft: '0'
+  draft_multiple: false
   draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
   confirmation_type: page
-  confirmation_url: ''
+  confirmation_title: ''
   confirmation_message: "<p style=\"font-family: verdana; color: black; font-size: 16PX; text-align: CENTER;\">\r\n\tThank you for your willingness to assist us this election.<br />\r\n\tOne of our team members&nbsp;will contact you shortly.\r\n</p>\r\n\r\n<p style=\"font-family: verdana; color: black; font-size: 14PX; text-align: CENTER;\">\r\n\t<img alt=\"\" src=\"/files/images/site_editors/WCGOP%20Logo%20small%20-%20final.png\" style=\"margin: 5px; width: 150px; height: 151px;\" />\r\n</p>\r\n"
+  confirmation_url: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
   limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
   limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+  token_delete: false
+  serial_disabled: false
+  form_submit_label: ''
+  wizard_complete: 1
 access:
   create:
     roles:
       - anonymous
       - authenticated
     users: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
 handlers:
   email_1:
     id: email
@@ -44,26 +289,26 @@ handlers:
     conditions: {  }
     weight: 1
     settings:
-      to_mail: comcentral@wash-gop.org
-      from_mail: _default
-      from_name: _default
-      subject: _default
-      body: _default
-      html: true
-      attachments: false
-      excluded_elements: {  }
       states:
         - completed
+      to_mail: comcentral@wash-gop.org
       to_options: {  }
       cc_mail: ''
       cc_options: {  }
       bcc_mail: ''
       bcc_options: {  }
+      from_mail: _default
       from_options: {  }
+      from_name: _default
+      subject: _default
+      body: _default
+      excluded_elements: {  }
       ignore_access: false
       exclude_empty: true
       exclude_empty_checkbox: false
       exclude_attachments: false
+      html: true
+      attachments: false
       twig: false
       debug: false
       reply_to: ''

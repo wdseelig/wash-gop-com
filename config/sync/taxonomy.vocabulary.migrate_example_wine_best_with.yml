@@ -1,0 +1,8 @@
+uuid: d0ecab66-5102-4c63-ad4e-2481c7f166b6
+langcode: en
+status: true
+dependencies: {  }
+name: 'Migrate Example Wine Best With'
+vid: migrate_example_wine_best_with
+description: 'Foods the wine goes best with'
+weight: 0
