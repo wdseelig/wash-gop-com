@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.body
+    - field.field.node.page.field_commentsonpage
     - field.field.node.page.field_page_sequence
     - field.field.node.page.field_pdf
     - node.type.page
@@ -30,5 +31,6 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_commentsonpage: true
   field_page_sequence: true
   field_pdf: true
