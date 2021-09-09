@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
-    - field.field.node.page.field_commentsonpage
+    - field.field.node.page.field_newcomment
     - field.field.node.page.field_page_sequence
     - field.field.node.page.field_pdf
     - node.type.page
@@ -34,7 +34,7 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_commentsonpage:
+  field_newcomment:
     weight: 125
     settings: {  }
     third_party_settings: {  }

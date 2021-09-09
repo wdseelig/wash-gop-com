@@ -1,0 +1,10 @@
+uuid: 22b50dac-42b7-406c-a9ee-5c24d8df0d1d
+langcode: en
+status: true
+dependencies: {  }
+id: simple
+label: Simple
+orderItemType: default
+generateTitle: false
+traits: {  }
+locked: false

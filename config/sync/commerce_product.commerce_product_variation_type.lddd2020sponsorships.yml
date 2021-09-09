@@ -1,0 +1,10 @@
+uuid: 1baf2929-2426-4033-b575-4369c4a74519
+langcode: en
+status: true
+dependencies: {  }
+id: lddd2020sponsorships
+label: LDDD2020Sponsorships
+orderItemType: default
+generateTitle: false
+traits: {  }
+locked: false

@@ -1,0 +1,12 @@
+uuid: d4bbe167-ca94-428e-8f54-f800cb1d5adc
+langcode: en
+status: true
+dependencies: {  }
+id: ldrad2020display
+label: LDRAD2020Display
+description: 'This is the display node template for Lincoln Day 2020 VIP Reception and Dinners'
+variationType: ldrad2020
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

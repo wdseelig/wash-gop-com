@@ -9,7 +9,7 @@ id: default
 workflow: order_default
 numberPattern: order_default
 refresh_mode: customer
-refresh_frequency: 300
+refresh_frequency: 15
 sendReceipt: true
 receiptBcc: ''
 traits: {  }

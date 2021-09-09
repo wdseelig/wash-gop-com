@@ -1,0 +1,12 @@
+uuid: c26716e2-66cb-423d-894c-8f1cc0332cf0
+langcode: en
+status: true
+dependencies: {  }
+id: trialproductdisplay
+label: TrialProductDisplay
+description: 'This is an experimental product display content type'
+variationType: default
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

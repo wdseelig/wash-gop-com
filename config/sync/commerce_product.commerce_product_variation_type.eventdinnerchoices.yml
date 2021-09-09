@@ -1,0 +1,10 @@
+uuid: b4b7682a-df8a-4d3b-a144-3b93c7a4308f
+langcode: en
+status: true
+dependencies: {  }
+id: eventdinnerchoices
+label: EventDinnerChoices
+orderItemType: eventdinner
+generateTitle: true
+traits: {  }
+locked: false

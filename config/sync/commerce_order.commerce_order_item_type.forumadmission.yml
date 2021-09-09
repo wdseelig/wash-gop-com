@@ -1,0 +1,10 @@
+uuid: d3009a97-be5c-47e0-a0ad-ec635c26267c
+langcode: en
+status: true
+dependencies: {  }
+label: forumadmission
+id: forumadmission
+purchasableEntityType: commerce_product_variation
+orderType: default
+traits: {  }
+locked: false

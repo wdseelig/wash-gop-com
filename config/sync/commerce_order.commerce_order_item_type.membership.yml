@@ -1,0 +1,10 @@
+uuid: a33d6c90-9a40-4937-b53a-e4145d188804
+langcode: en
+status: true
+dependencies: {  }
+label: membership
+id: membership
+purchasableEntityType: commerce_product_variation
+orderType: default
+traits: {  }
+locked: false

@@ -1,0 +1,10 @@
+uuid: bfeba47d-0738-46a3-83dd-569a5de84386
+langcode: en
+status: true
+dependencies: {  }
+id: sponsorship2017
+label: sponsorship2019
+orderItemType: default
+generateTitle: false
+traits: {  }
+locked: false

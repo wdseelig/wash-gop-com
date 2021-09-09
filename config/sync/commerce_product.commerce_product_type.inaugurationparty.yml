@@ -1,0 +1,12 @@
+uuid: d9e15fe7-e034-4299-b5dc-2b5e1fa2df14
+langcode: en
+status: true
+dependencies: {  }
+id: inaugurationparty
+label: InaugurationParty
+description: ''
+variationType: product
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

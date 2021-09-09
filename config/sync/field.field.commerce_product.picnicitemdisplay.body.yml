@@ -1,0 +1,23 @@
+uuid: 9eb471ce-312b-4618-90bf-1127cafff52f
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.picnicitemdisplay
+    - field.storage.commerce_product.body
+  module:
+    - text
+id: commerce_product.picnicitemdisplay.body
+field_name: body
+entity_type: commerce_product
+bundle: picnicitemdisplay
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: null
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

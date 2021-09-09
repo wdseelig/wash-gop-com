@@ -1,0 +1,10 @@
+uuid: 9a03e740-ca27-4882-8f67-083f1c25eec1
+langcode: en
+status: true
+dependencies: {  }
+id: ldd
+label: LDD
+orderItemType: default
+generateTitle: false
+traits: {  }
+locked: false

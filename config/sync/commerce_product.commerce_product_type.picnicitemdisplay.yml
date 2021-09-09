@@ -1,0 +1,12 @@
+uuid: 531cf145-c603-410b-921b-d4a9a790ba28
+langcode: en
+status: true
+dependencies: {  }
+id: picnicitemdisplay
+label: PicnicItemDisplay
+description: 'These are the items for sale at our picnic'
+variationType: picnic_item
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

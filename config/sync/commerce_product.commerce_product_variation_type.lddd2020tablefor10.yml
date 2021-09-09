@@ -1,0 +1,10 @@
+uuid: fd432dac-f851-45b7-bd7c-c9c18c0676b6
+langcode: en
+status: true
+dependencies: {  }
+id: lddd2020tablefor10
+label: LDDD2020TableFor10
+orderItemType: tablefor10
+generateTitle: false
+traits: {  }
+locked: false

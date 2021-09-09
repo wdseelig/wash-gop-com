@@ -1,0 +1,10 @@
+uuid: 3f1e2993-1a9a-4bac-a07f-4d474fa65a12
+langcode: en
+status: true
+dependencies: {  }
+id: sponsorship
+label: Sponsorship
+orderItemType: default
+generateTitle: false
+traits: {  }
+locked: false

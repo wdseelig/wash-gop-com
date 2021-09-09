@@ -10,14 +10,18 @@ module:
   comment: 0
   commerce: 0
   commerce_cart: 0
+  commerce_checkout: 0
   commerce_migrate: 0
+  commerce_migrate_commerce: 0
   commerce_number_pattern: 0
   commerce_order: 0
   commerce_payment: 0
   commerce_price: 0
   commerce_product: 0
+  commerce_promotion: 0
   commerce_store: 0
   commerce_stripe: 0
+  commerce_tax: 0
   config: 0
   contextual: 0
   datetime: 0
@@ -80,6 +84,7 @@ theme:
   bartik: 0
   seven: 0
   creative_responsive_theme: 0
+  claro: 0
 profile: minimal
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc

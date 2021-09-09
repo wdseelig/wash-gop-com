@@ -1,0 +1,22 @@
+uuid: 912de7ef-0e17-4cc0-8579-29d1dfb6d845
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: commerceproductsale
+label: commerceproductsale
+code: |-
+  div.views-field-title {
+    font-weight:  bold;
+    color:  red;
+  }
+conditions_require_all: true
+conditions:
+  request_path:
+    id: request_path
+    pages: '/*lincolndaydinner*'
+    negate: false
+contexts: {  }
+media: all
+preprocess: true

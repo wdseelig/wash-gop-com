@@ -46,7 +46,6 @@ permissions:
   - 'view any commerce_product entity of bundle picnic_item'
   - 'view any commerce_product entity of bundle receptionanddinner2017'
   - 'view any commerce_product entity of bundle sponsorship2017'
-  - 'view commerce_product'
   - 'view field_wcgopmember'
   - 'view own commerce_customer_profile entities'
   - 'view own commerce_customer_profile entities of bundle member'

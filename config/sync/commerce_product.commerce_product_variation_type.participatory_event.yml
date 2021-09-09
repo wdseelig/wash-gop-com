@@ -1,0 +1,10 @@
+uuid: 7ab99f3b-3975-4411-a52f-1f150023a95b
+langcode: en
+status: true
+dependencies: {  }
+id: participatory_event
+label: 'Participatory Event'
+orderItemType: default
+generateTitle: false
+traits: {  }
+locked: false

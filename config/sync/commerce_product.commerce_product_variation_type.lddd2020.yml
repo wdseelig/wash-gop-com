@@ -1,0 +1,10 @@
+uuid: 6c773b18-bf70-4566-be2e-6bc9943acb1e
+langcode: en
+status: true
+dependencies: {  }
+id: lddd2020
+label: LDDD2020
+orderItemType: default
+generateTitle: false
+traits: {  }
+locked: false

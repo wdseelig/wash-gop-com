@@ -1,0 +1,12 @@
+uuid: 0c77c62e-96b1-4502-9a8d-8ec09b05c675
+langcode: en
+status: true
+dependencies: {  }
+id: membership_products
+label: 'Membership Products'
+description: 'This content type is used to display WCGOP Membership products'
+variationType: product
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

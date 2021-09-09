@@ -1,0 +1,10 @@
+uuid: c8c22b40-a713-45f8-812a-e6708118ee37
+langcode: en
+status: true
+dependencies: {  }
+label: tablefor10
+id: tablefor10
+purchasableEntityType: commerce_product_variation
+orderType: default
+traits: {  }
+locked: false

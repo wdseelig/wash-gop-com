@@ -37,7 +37,6 @@ permissions:
   - 'administer imce'
   - 'administer line item types'
   - 'administer line items'
-  - 'administer migrations'
   - 'administer module missing message fixer'
   - 'administer multifield'
   - 'administer nodes'

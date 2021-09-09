@@ -1,0 +1,10 @@
+uuid: 777addd8-eefa-451e-8716-e46844df477c
+langcode: en
+status: true
+dependencies: {  }
+id: picnic_item
+label: 'Picnic Item'
+orderItemType: default
+generateTitle: false
+traits: {  }
+locked: false

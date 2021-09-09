@@ -1,0 +1,12 @@
+uuid: 94610e1c-a80d-4145-852c-8c4acccd1404
+langcode: en
+status: true
+dependencies: {  }
+id: non_paying_cu
+label: Non_paying_cu
+display_label: null
+multiple: false
+registration: false
+roles: {  }
+allow_revisions: false
+new_revision: false

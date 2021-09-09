@@ -1,0 +1,10 @@
+uuid: 93639197-0f36-4dc7-bea3-3dc7306be29e
+langcode: en
+status: true
+dependencies: {  }
+id: donation
+label: Donation
+orderItemType: default
+generateTitle: false
+traits: {  }
+locked: false

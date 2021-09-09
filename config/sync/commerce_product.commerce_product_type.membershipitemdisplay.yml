@@ -1,0 +1,12 @@
+uuid: db90fb72-28d9-4903-bf28-573790885613
+langcode: en
+status: true
+dependencies: {  }
+id: membershipitemdisplay
+label: MembershipItemDisplay
+description: 'This is the content type that display GOP Membership Items'
+variationType: gop_membership
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

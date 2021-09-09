@@ -1,0 +1,19 @@
+# WDS commerce migration
+- commerce1_message
+- commerce1_order
+- commerce1_order_item
+- commerce1_order_item_type
+- commerce1_cart_settings
+- commerce1_payment
+- commerce1_payment_gateway
+- commerce1_product
+- commerce1_product_attribute
+- commerce1_product_type
+- commerce1_product_variation
+- commerce1_product_variation_type
+- commerce1_profile
+- commerce1_profile_revision
+- commerce1_profile_type
+- commerce1_shipping_flat_rate
+- commerce1_store
+- commerce1_tax_type

@@ -1,0 +1,12 @@
+uuid: 09c9010e-e842-4f6d-ac2a-1cb7679540eb
+langcode: en
+status: true
+dependencies: {  }
+id: wcgop_store
+label: 'WCGOP Store'
+description: 'This is the place where the WCGOP sells products and services to its members'
+variationType: default
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

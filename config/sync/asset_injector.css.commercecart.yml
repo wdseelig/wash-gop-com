@@ -1,0 +1,28 @@
+uuid: bba70e72-2516-4414-a144-d43923edcfab
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: commercecart
+label: commercecart
+code: |-
+  .unitprice, .orderquantity, .orderentree, .ordername {
+    padding-right: 10px;
+  }
+  .orderitemtitle, .ordertotal {
+    padding-right: 40px;
+    color:  red;
+  }
+  th[id^='view-'] {
+    text-align: center;
+  }
+conditions_require_all: true
+conditions:
+  request_path:
+    id: request_path
+    pages: /cart
+    negate: false
+contexts: {  }
+media: all
+preprocess: true

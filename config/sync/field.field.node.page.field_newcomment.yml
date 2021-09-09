@@ -1,17 +1,17 @@
-uuid: c14f6cd4-0b71-4022-b6be-243ef62a4f30
+uuid: cc60159b-1370-46c7-a31d-d1c306b9946c
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_commentsonpage
+    - field.storage.node.field_newcomment
     - node.type.page
   module:
     - comment
-id: node.page.field_commentsonpage
-field_name: field_commentsonpage
+id: node.page.field_newcomment
+field_name: field_newcomment
 entity_type: node
 bundle: page
-label: CommentsonPage
+label: NewComment
 description: ''
 required: false
 translatable: false
@@ -27,7 +27,7 @@ default_value_callback: ''
 settings:
   default_mode: 1
   per_page: 50
-  form_location: true
   anonymous: 0
+  form_location: true
   preview: 1
 field_type: comment

@@ -1,0 +1,10 @@
+uuid: 630fa8aa-58f0-4a3d-8316-eabc762c5131
+langcode: en
+status: true
+dependencies: {  }
+id: dinner_for_lincoln_day_event
+label: 'Dinner for Lincoln Day Event'
+orderItemType: eventdinner
+generateTitle: false
+traits: {  }
+locked: false

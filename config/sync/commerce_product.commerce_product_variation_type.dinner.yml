@@ -1,0 +1,10 @@
+uuid: 4cde6483-1087-4dde-861d-51bfbac4260c
+langcode: en
+status: true
+dependencies: {  }
+id: dinner
+label: Dinner
+orderItemType: default
+generateTitle: false
+traits: {  }
+locked: false
