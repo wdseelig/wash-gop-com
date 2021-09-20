@@ -7,36 +7,22 @@ dependencies:
     - field.field.commerce_product.lincoln_day_dinner_5_00_.body
   module:
     - commerce_product
-    - text
 id: commerce_product.lincoln_day_dinner_5_00_.default
 targetEntityType: commerce_product
 bundle: lincoln_day_dinner_5_00_
 mode: default
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 11
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  title:
-    label: hidden
-    type: string
-    weight: -5
-    region: content
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
   variations:
     type: commerce_add_to_cart
-    weight: 10
+    weight: 0
     region: content
-    label: above
+    label: hidden
     settings:
       combine: true
     third_party_settings: {  }
 hidden:
+  body: true
   created: true
   stores: true
+  title: true
   uid: true

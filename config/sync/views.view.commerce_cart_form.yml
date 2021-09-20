@@ -669,7 +669,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: "<h2 style=\"text-align:center;font-weight:bold\">Shopping Cart Review</h2>\r\n<p style=font-size:14px>Please review your shopping cart below, and if it is correct continue\r\nthe purchase process by clicking on the \"Checkout\" button.</p>\r\n<p style=font-size:14px>If you wish to change this purchase, you may remove items from the\r\ncart and return to the store by clicking the \"Back to Store\" button. (NOT YET IMPLEMENTED)</p>"
+            value: "<h2 style=\"text-align:center;font-weight:bold\">Shopping Cart Review</h2>\r\n<p style=font-size:14px>Please review your shopping cart below, and if it is correct continue\r\nthe purchase process by clicking on the \"Checkout\" button.</p>\r\n<p style=font-size:14px>If you wish to change this purchase, you may remove items from the\r\ncart and return to the store by clicking the \"Return to Shopping\" link just below the logo above.</p>"
             format: '3'
           plugin_id: text
       footer:

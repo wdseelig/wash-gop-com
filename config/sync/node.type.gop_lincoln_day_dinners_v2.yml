@@ -1,0 +1,18 @@
+uuid: 89482fbb-03ca-4944-8f22-d76588a9de4b
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'GOP Lincoln Day Dinners V2'
+type: gop_lincoln_day_dinners_v2
+description: 'This is a second view of Lincoln Day Dinner products'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

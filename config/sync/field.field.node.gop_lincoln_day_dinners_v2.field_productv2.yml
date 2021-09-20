@@ -1,0 +1,39 @@
+uuid: 5b621ab3-162b-4590-940c-5ee055756943
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.lincoln_day_dinner_5_00_
+    - field.storage.node.field_productv2
+    - node.type.gop_lincoln_day_dinners_v2
+  content:
+    - 'commerce_product:lincoln_day_dinner_5_00_:4cf99860-bc0e-46b3-922a-ab0c17eb66ab'
+    - 'commerce_product:lincoln_day_dinner_5_00_:5698e643-927e-4272-91d2-9ed625cd6e7c'
+    - 'commerce_product:lincoln_day_dinner_5_00_:884f9e64-7e48-4a9f-b187-8640496998a1'
+id: node.gop_lincoln_day_dinners_v2.field_productv2
+field_name: field_productv2
+entity_type: node
+bundle: gop_lincoln_day_dinners_v2
+label: ProductV2
+description: 'This field references products'
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: 4cf99860-bc0e-46b3-922a-ab0c17eb66ab
+  -
+    target_uuid: 884f9e64-7e48-4a9f-b187-8640496998a1
+  -
+    target_uuid: 5698e643-927e-4272-91d2-9ed625cd6e7c
+default_value_callback: ''
+settings:
+  handler: 'default:commerce_product'
+  handler_settings:
+    target_bundles:
+      lincoln_day_dinner_5_00_: lincoln_day_dinner_5_00_
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

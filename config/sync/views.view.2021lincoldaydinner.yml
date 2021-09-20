@@ -4,10 +4,13 @@ status: true
 dependencies:
   config:
     - commerce_product.commerce_product_type.lincoln_day_dinner_5_00_
+    - core.entity_view_mode.node.teaser
     - field.storage.commerce_product.body
+    - field.storage.node.field_product
   module:
     - commerce
     - commerce_product
+    - node
     - text
 id: 2021lincoldaydinner
 label: 2021LincolDayDinner
@@ -261,6 +264,185 @@ display:
           entity_type: commerce_product
           entity_field: variations
           plugin_id: field
+        rendered_entity:
+          id: rendered_entity
+          table: node
+          field: rendered_entity
+          relationship: reverse__node__field_product
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          view_mode: teaser
+          entity_type: node
+          plugin_id: rendered_entity
+        field_product:
+          id: field_product
+          table: node__field_product
+          field: field_product
+          relationship: reverse__node__field_product
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: true
+            path: 'https://www.ncms.org'
+            absolute: true
+            external: true
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_entity_view
+          settings:
+            view_mode: default
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        variations_target_id:
+          id: variations_target_id
+          table: commerce_product__variations
+          field: variations_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: true
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: commerce_product
+          entity_field: variations
+          plugin_id: field
       filters:
         status:
           value: '1'
@@ -323,7 +505,17 @@ display:
       header: {  }
       footer: {  }
       empty: {  }
-      relationships: {  }
+      relationships:
+        reverse__node__field_product:
+          id: reverse__node__field_product
+          table: commerce_product_field_data
+          field: reverse__node__field_product
+          relationship: none
+          group_type: group
+          admin_label: field_product
+          required: false
+          entity_type: commerce_product
+          plugin_id: entity_reverse
       arguments: {  }
       display_extenders: {  }
       filter_groups:
@@ -337,7 +529,112 @@ display:
         - 'languages:language_interface'
         - url.query_args
       tags:
+        - 'config:core.entity_view_display.node.advpoll.default'
+        - 'config:core.entity_view_display.node.advpoll.teaser'
+        - 'config:core.entity_view_display.node.basicpetition.default'
+        - 'config:core.entity_view_display.node.basicpetition.teaser'
+        - 'config:core.entity_view_display.node.blog.default'
+        - 'config:core.entity_view_display.node.blog.teaser'
+        - 'config:core.entity_view_display.node.blogauto.default'
+        - 'config:core.entity_view_display.node.blogauto.teaser'
+        - 'config:core.entity_view_display.node.cmcv_volunteer.default'
+        - 'config:core.entity_view_display.node.cmcv_volunteer.teaser'
+        - 'config:core.entity_view_display.node.commercelineitems.default'
+        - 'config:core.entity_view_display.node.commercelineitems.teaser'
+        - 'config:core.entity_view_display.node.donation_display.default'
+        - 'config:core.entity_view_display.node.donation_display.teaser'
+        - 'config:core.entity_view_display.node.event.default'
+        - 'config:core.entity_view_display.node.event.teaser'
+        - 'config:core.entity_view_display.node.feed.default'
+        - 'config:core.entity_view_display.node.feed.teaser'
+        - 'config:core.entity_view_display.node.forum_admission.default'
+        - 'config:core.entity_view_display.node.forum_admission.teaser'
+        - 'config:core.entity_view_display.node.forum_ticket.default'
+        - 'config:core.entity_view_display.node.forum_ticket.teaser'
+        - 'config:core.entity_view_display.node.forumadmissionselection.default'
+        - 'config:core.entity_view_display.node.forumadmissionselection.teaser'
+        - 'config:core.entity_view_display.node.forumitemdisplay.default'
+        - 'config:core.entity_view_display.node.forumitemdisplay.teaser'
+        - 'config:core.entity_view_display.node.forumitemdisplayv2.default'
+        - 'config:core.entity_view_display.node.forumitemdisplayv2.teaser'
+        - 'config:core.entity_view_display.node.genericproductdisplay.default'
+        - 'config:core.entity_view_display.node.genericproductdisplay.teaser'
+        - 'config:core.entity_view_display.node.golfoutingdisplay.default'
+        - 'config:core.entity_view_display.node.golfoutingdisplay.teaser'
+        - 'config:core.entity_view_display.node.gop_ldd_2019_sponsorships.default'
+        - 'config:core.entity_view_display.node.gop_ldd_2019_sponsorships.teaser'
+        - 'config:core.entity_view_display.node.gop_lincoln_day_dinners.default'
+        - 'config:core.entity_view_display.node.gop_lincoln_day_dinners.teaser'
+        - 'config:core.entity_view_display.node.gop_lincoln_day_reception_and_di.default'
+        - 'config:core.entity_view_display.node.gop_lincoln_day_reception_and_di.teaser'
+        - 'config:core.entity_view_display.node.gop_lincoln_day_sponsorships.default'
+        - 'config:core.entity_view_display.node.gop_lincoln_day_sponsorships.teaser'
+        - 'config:core.entity_view_display.node.inaugurationparty.default'
+        - 'config:core.entity_view_display.node.inaugurationparty.teaser'
+        - 'config:core.entity_view_display.node.lddd2020couples.default'
+        - 'config:core.entity_view_display.node.lddd2020couples.teaser'
+        - 'config:core.entity_view_display.node.lddd2020sponsorshipdisplay.default'
+        - 'config:core.entity_view_display.node.lddd2020sponsorshipdisplay.teaser'
+        - 'config:core.entity_view_display.node.lddd2020tablefor10.default'
+        - 'config:core.entity_view_display.node.lddd2020tablefor10.teaser'
+        - 'config:core.entity_view_display.node.lddd2020vipplusdisplay.default'
+        - 'config:core.entity_view_display.node.lddd2020vipplusdisplay.teaser'
+        - 'config:core.entity_view_display.node.ldrad2020display.default'
+        - 'config:core.entity_view_display.node.ldrad2020display.teaser'
+        - 'config:core.entity_view_display.node.mass_contact.default'
+        - 'config:core.entity_view_display.node.mass_contact.teaser'
+        - 'config:core.entity_view_display.node.membership_products.default'
+        - 'config:core.entity_view_display.node.membership_products.teaser'
+        - 'config:core.entity_view_display.node.membershipitemdisplay.default'
+        - 'config:core.entity_view_display.node.membershipitemdisplay.teaser'
+        - 'config:core.entity_view_display.node.migrate_example_beer.default'
+        - 'config:core.entity_view_display.node.migrate_example_beer.teaser'
+        - 'config:core.entity_view_display.node.migrate_example_producer.default'
+        - 'config:core.entity_view_display.node.migrate_example_producer.teaser'
+        - 'config:core.entity_view_display.node.migrate_example_wine.default'
+        - 'config:core.entity_view_display.node.migrate_example_wine.teaser'
+        - 'config:core.entity_view_display.node.node_gallery_gallery.default'
+        - 'config:core.entity_view_display.node.node_gallery_gallery.teaser'
+        - 'config:core.entity_view_display.node.node_gallery_item.default'
+        - 'config:core.entity_view_display.node.node_gallery_item.teaser'
+        - 'config:core.entity_view_display.node.page.default'
+        - 'config:core.entity_view_display.node.page.teaser'
+        - 'config:core.entity_view_display.node.pagewithadvancedpoll.default'
+        - 'config:core.entity_view_display.node.pagewithadvancedpoll.teaser'
+        - 'config:core.entity_view_display.node.paypal_donate.default'
+        - 'config:core.entity_view_display.node.paypal_donate.teaser'
+        - 'config:core.entity_view_display.node.picnicitemdisplay.default'
+        - 'config:core.entity_view_display.node.picnicitemdisplay.teaser'
+        - 'config:core.entity_view_display.node.pollwithpage.default'
+        - 'config:core.entity_view_display.node.pollwithpage.teaser'
+        - 'config:core.entity_view_display.node.product.default'
+        - 'config:core.entity_view_display.node.product.teaser'
+        - 'config:core.entity_view_display.node.product_display.default'
+        - 'config:core.entity_view_display.node.product_display.teaser'
+        - 'config:core.entity_view_display.node.product_kit.default'
+        - 'config:core.entity_view_display.node.product_kit.teaser'
+        - 'config:core.entity_view_display.node.story.default'
+        - 'config:core.entity_view_display.node.story.teaser'
+        - 'config:core.entity_view_display.node.trialproductdisplay.default'
+        - 'config:core.entity_view_display.node.trialproductdisplay.teaser'
+        - 'config:core.entity_view_display.node.volunteertimeslotevent.default'
+        - 'config:core.entity_view_display.node.volunteertimeslotevent.teaser'
+        - 'config:core.entity_view_display.node.volunteertimesloteventday.default'
+        - 'config:core.entity_view_display.node.volunteertimesloteventday.teaser'
+        - 'config:core.entity_view_display.node.wcgop2019dinner.default'
+        - 'config:core.entity_view_display.node.wcgop2019dinner.teaser'
+        - 'config:core.entity_view_display.node.wcgop2019reception.default'
+        - 'config:core.entity_view_display.node.wcgop2019reception.teaser'
+        - 'config:core.entity_view_display.node.wcgop2020dinner.default'
+        - 'config:core.entity_view_display.node.wcgop2020dinner.teaser'
+        - 'config:core.entity_view_display.node.wcgop_store.default'
+        - 'config:core.entity_view_display.node.wcgop_store.teaser'
+        - 'config:core.entity_view_display.node.wcgopevent.default'
+        - 'config:core.entity_view_display.node.wcgopevent.teaser'
+        - 'config:core.entity_view_display.node.webform.default'
+        - 'config:core.entity_view_display.node.webform.teaser'
         - 'config:field.storage.commerce_product.body'
+        - 'config:field.storage.node.field_product'
   page_1:
     display_plugin: page
     id: page_1
@@ -353,4 +650,109 @@ display:
         - 'languages:language_interface'
         - url.query_args
       tags:
+        - 'config:core.entity_view_display.node.advpoll.default'
+        - 'config:core.entity_view_display.node.advpoll.teaser'
+        - 'config:core.entity_view_display.node.basicpetition.default'
+        - 'config:core.entity_view_display.node.basicpetition.teaser'
+        - 'config:core.entity_view_display.node.blog.default'
+        - 'config:core.entity_view_display.node.blog.teaser'
+        - 'config:core.entity_view_display.node.blogauto.default'
+        - 'config:core.entity_view_display.node.blogauto.teaser'
+        - 'config:core.entity_view_display.node.cmcv_volunteer.default'
+        - 'config:core.entity_view_display.node.cmcv_volunteer.teaser'
+        - 'config:core.entity_view_display.node.commercelineitems.default'
+        - 'config:core.entity_view_display.node.commercelineitems.teaser'
+        - 'config:core.entity_view_display.node.donation_display.default'
+        - 'config:core.entity_view_display.node.donation_display.teaser'
+        - 'config:core.entity_view_display.node.event.default'
+        - 'config:core.entity_view_display.node.event.teaser'
+        - 'config:core.entity_view_display.node.feed.default'
+        - 'config:core.entity_view_display.node.feed.teaser'
+        - 'config:core.entity_view_display.node.forum_admission.default'
+        - 'config:core.entity_view_display.node.forum_admission.teaser'
+        - 'config:core.entity_view_display.node.forum_ticket.default'
+        - 'config:core.entity_view_display.node.forum_ticket.teaser'
+        - 'config:core.entity_view_display.node.forumadmissionselection.default'
+        - 'config:core.entity_view_display.node.forumadmissionselection.teaser'
+        - 'config:core.entity_view_display.node.forumitemdisplay.default'
+        - 'config:core.entity_view_display.node.forumitemdisplay.teaser'
+        - 'config:core.entity_view_display.node.forumitemdisplayv2.default'
+        - 'config:core.entity_view_display.node.forumitemdisplayv2.teaser'
+        - 'config:core.entity_view_display.node.genericproductdisplay.default'
+        - 'config:core.entity_view_display.node.genericproductdisplay.teaser'
+        - 'config:core.entity_view_display.node.golfoutingdisplay.default'
+        - 'config:core.entity_view_display.node.golfoutingdisplay.teaser'
+        - 'config:core.entity_view_display.node.gop_ldd_2019_sponsorships.default'
+        - 'config:core.entity_view_display.node.gop_ldd_2019_sponsorships.teaser'
+        - 'config:core.entity_view_display.node.gop_lincoln_day_dinners.default'
+        - 'config:core.entity_view_display.node.gop_lincoln_day_dinners.teaser'
+        - 'config:core.entity_view_display.node.gop_lincoln_day_reception_and_di.default'
+        - 'config:core.entity_view_display.node.gop_lincoln_day_reception_and_di.teaser'
+        - 'config:core.entity_view_display.node.gop_lincoln_day_sponsorships.default'
+        - 'config:core.entity_view_display.node.gop_lincoln_day_sponsorships.teaser'
+        - 'config:core.entity_view_display.node.inaugurationparty.default'
+        - 'config:core.entity_view_display.node.inaugurationparty.teaser'
+        - 'config:core.entity_view_display.node.lddd2020couples.default'
+        - 'config:core.entity_view_display.node.lddd2020couples.teaser'
+        - 'config:core.entity_view_display.node.lddd2020sponsorshipdisplay.default'
+        - 'config:core.entity_view_display.node.lddd2020sponsorshipdisplay.teaser'
+        - 'config:core.entity_view_display.node.lddd2020tablefor10.default'
+        - 'config:core.entity_view_display.node.lddd2020tablefor10.teaser'
+        - 'config:core.entity_view_display.node.lddd2020vipplusdisplay.default'
+        - 'config:core.entity_view_display.node.lddd2020vipplusdisplay.teaser'
+        - 'config:core.entity_view_display.node.ldrad2020display.default'
+        - 'config:core.entity_view_display.node.ldrad2020display.teaser'
+        - 'config:core.entity_view_display.node.mass_contact.default'
+        - 'config:core.entity_view_display.node.mass_contact.teaser'
+        - 'config:core.entity_view_display.node.membership_products.default'
+        - 'config:core.entity_view_display.node.membership_products.teaser'
+        - 'config:core.entity_view_display.node.membershipitemdisplay.default'
+        - 'config:core.entity_view_display.node.membershipitemdisplay.teaser'
+        - 'config:core.entity_view_display.node.migrate_example_beer.default'
+        - 'config:core.entity_view_display.node.migrate_example_beer.teaser'
+        - 'config:core.entity_view_display.node.migrate_example_producer.default'
+        - 'config:core.entity_view_display.node.migrate_example_producer.teaser'
+        - 'config:core.entity_view_display.node.migrate_example_wine.default'
+        - 'config:core.entity_view_display.node.migrate_example_wine.teaser'
+        - 'config:core.entity_view_display.node.node_gallery_gallery.default'
+        - 'config:core.entity_view_display.node.node_gallery_gallery.teaser'
+        - 'config:core.entity_view_display.node.node_gallery_item.default'
+        - 'config:core.entity_view_display.node.node_gallery_item.teaser'
+        - 'config:core.entity_view_display.node.page.default'
+        - 'config:core.entity_view_display.node.page.teaser'
+        - 'config:core.entity_view_display.node.pagewithadvancedpoll.default'
+        - 'config:core.entity_view_display.node.pagewithadvancedpoll.teaser'
+        - 'config:core.entity_view_display.node.paypal_donate.default'
+        - 'config:core.entity_view_display.node.paypal_donate.teaser'
+        - 'config:core.entity_view_display.node.picnicitemdisplay.default'
+        - 'config:core.entity_view_display.node.picnicitemdisplay.teaser'
+        - 'config:core.entity_view_display.node.pollwithpage.default'
+        - 'config:core.entity_view_display.node.pollwithpage.teaser'
+        - 'config:core.entity_view_display.node.product.default'
+        - 'config:core.entity_view_display.node.product.teaser'
+        - 'config:core.entity_view_display.node.product_display.default'
+        - 'config:core.entity_view_display.node.product_display.teaser'
+        - 'config:core.entity_view_display.node.product_kit.default'
+        - 'config:core.entity_view_display.node.product_kit.teaser'
+        - 'config:core.entity_view_display.node.story.default'
+        - 'config:core.entity_view_display.node.story.teaser'
+        - 'config:core.entity_view_display.node.trialproductdisplay.default'
+        - 'config:core.entity_view_display.node.trialproductdisplay.teaser'
+        - 'config:core.entity_view_display.node.volunteertimeslotevent.default'
+        - 'config:core.entity_view_display.node.volunteertimeslotevent.teaser'
+        - 'config:core.entity_view_display.node.volunteertimesloteventday.default'
+        - 'config:core.entity_view_display.node.volunteertimesloteventday.teaser'
+        - 'config:core.entity_view_display.node.wcgop2019dinner.default'
+        - 'config:core.entity_view_display.node.wcgop2019dinner.teaser'
+        - 'config:core.entity_view_display.node.wcgop2019reception.default'
+        - 'config:core.entity_view_display.node.wcgop2019reception.teaser'
+        - 'config:core.entity_view_display.node.wcgop2020dinner.default'
+        - 'config:core.entity_view_display.node.wcgop2020dinner.teaser'
+        - 'config:core.entity_view_display.node.wcgop_store.default'
+        - 'config:core.entity_view_display.node.wcgop_store.teaser'
+        - 'config:core.entity_view_display.node.wcgopevent.default'
+        - 'config:core.entity_view_display.node.wcgopevent.teaser'
+        - 'config:core.entity_view_display.node.webform.default'
+        - 'config:core.entity_view_display.node.webform.teaser'
         - 'config:field.storage.commerce_product.body'
+        - 'config:field.storage.node.field_product'

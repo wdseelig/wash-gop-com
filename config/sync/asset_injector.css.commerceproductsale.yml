@@ -6,16 +6,40 @@ dependencies:
     - system
 id: commerceproductsale
 label: commerceproductsale
-code: |-
+code: |
   div.views-field-title {
     font-weight:  bold;
     color:  red;
+  }
+
+  .productdescription article.contextual-region > div > div:first-of-type{
+    display:  none;
+  }
+  .productdescription article.contextual-region >div:first-of-type {
+    display:  none;
+  }
+  div#edit-field-name-badge-wrapper {
+    position: relative;
+    top:  -140px;
+    left: 350px;
+  }
+  div#edit-field-name-badge-wrapper label{
+    position: relative;
+    top:  -45px;
+  }
+  div#edit-field-name-badge-wrapper input {
+    position: relative;
+    left: -120px;
+  }
+  input#edit-submit {
+    position: relative;
+    top:  -100px;
   }
 conditions_require_all: true
 conditions:
   request_path:
     id: request_path
-    pages: '/*lincolndaydinner*'
+    pages: '/*lincolnday*'
     negate: false
 contexts: {  }
 media: all

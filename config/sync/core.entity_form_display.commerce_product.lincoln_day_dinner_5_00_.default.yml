@@ -7,7 +7,6 @@ dependencies:
     - field.field.commerce_product.lincoln_day_dinner_5_00_.body
   module:
     - commerce
-    - commerce_product
     - path
     - text
 id: commerce_product.lincoln_day_dinner_5_00_.default
@@ -72,10 +71,5 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  variations:
-    type: commerce_product_single_variation
-    weight: 2
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-hidden: {  }
+hidden:
+  variations: true

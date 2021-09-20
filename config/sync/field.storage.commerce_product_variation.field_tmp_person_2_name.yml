@@ -1,0 +1,21 @@
+uuid: d209a99c-52ba-45da-96ed-94826bd29912
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: commerce_product_variation.field_tmp_person_2_name
+field_name: field_tmp_person_2_name
+entity_type: commerce_product_variation
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

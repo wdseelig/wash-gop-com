@@ -1,0 +1,397 @@
+root@0790b220b520:/var/www/html# drush migrate-manifest --legacy-db-key='migrate'  /var/www/html/migratemanifest/commerce.yml
+ [notice] Running commerce1_product_variation_type
+ [notice] Running commerce1_product_variation:dinner
+ [notice] Running commerce1_product_variation:donation
+ [notice] Running commerce1_product_variation:forumitem
+ [notice] Running commerce1_product_variation:golf_outing
+ [notice] Running commerce1_product_variation:gop_membership
+ [notice] Running commerce1_product_variation:ldd
+ [notice] Running commerce1_product_variation:ldd2017
+ [notice] Running commerce1_product_variation:ldd2018
+ [notice] Running commerce1_product_variation:lddd2019
+ [notice] Running commerce1_product_variation:lddd2020
+ [notice] Running commerce1_product_variation:lddd2020couplemeal
+ [notice] Running commerce1_product_variation:lddd2020sponsorships
+ [notice] Running commerce1_product_variation:lddd2020tablefor10
+ [notice] Running commerce1_product_variation:lddd2020vipplus
+ [notice] Running commerce1_product_variation:lddr2019
+ [notice] Running commerce1_product_variation:ldrad2020
+ [notice] Running commerce1_product_variation:lincoln_day_dinner
+ [notice] Running commerce1_product_variation:membership
+ [notice] Running commerce1_product_variation:participatory_event
+ [notice] Running commerce1_product_variation:picnic_item
+ [notice] Running commerce1_product_variation:product
+ [notice] Running commerce1_product_variation:receptionanddinner
+ [notice] Running commerce1_product_variation:receptionanddinner2017
+ [notice] Running commerce1_product_variation:receptionanddinner2018
+ [notice] Running commerce1_product_variation:sponsorship
+ [notice] Running commerce1_product_variation:sponsorship2017
+ [notice] Running d7_user_role
+ [notice] Running d7_user
+ [error]  Drupal\Core\Database\IntegrityConstraintViolationException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'uri' cannot be null: UPDATE "file_managed" SET "uuid"=:db_update_placeholder_0, "langcode"=:db_update_placeholder_1, "uid"=:db_update_placeholder_2, "filename"=:db_update_placeholder_3, "uri"=:db_update_placeholder_4, "filemime"=:db_update_placeholder_5, "filesize"=:db_update_placeholder_6, "status"=:db_update_placeholder_7, "created"=:db_update_placeholder_8, "changed"=:db_update_placeholder_9
+WHERE "fid" = :db_condition_placeholder_0; Array
+(
+    [:db_update_placeholder_0] => 9feee063-586f-4d07-813e-f428cefc110a
+    [:db_update_placeholder_1] => en
+    [:db_update_placeholder_2] =>
+    [:db_update_placeholder_3] =>
+    [:db_update_placeholder_4] =>
+    [:db_update_placeholder_5] =>
+    [:db_update_placeholder_6] => 0
+    [:db_update_placeholder_7] =>
+    [:db_update_placeholder_8] =>
+    [:db_update_placeholder_9] =>
+    [:db_condition_placeholder_0] => 60
+)
+ in Drupal\Core\Database\Driver\mysql\ExceptionHandler->handleExecutionException() (line 50 of /var/www/html/web/core/lib/Drupal/Core/Database/Driver/mysql/ExceptionHandler.php).
+ [error]  Drupal\Core\Database\IntegrityConstraintViolationException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'uri' cannot be null: UPDATE "file_managed" SET "uuid"=:db_update_placeholder_0, "langcode"=:db_update_placeholder_1, "uid"=:db_update_placeholder_2, "filename"=:db_update_placeholder_3, "uri"=:db_update_placeholder_4, "filemime"=:db_update_placeholder_5, "filesize"=:db_update_placeholder_6, "status"=:db_update_placeholder_7, "created"=:db_update_placeholder_8, "changed"=:db_update_placeholder_9
+WHERE "fid" = :db_condition_placeholder_0; Array
+(
+    [:db_update_placeholder_0] => aad34b00-83e5-4776-af98-e9a35b28e2b2
+    [:db_update_placeholder_1] => en
+    [:db_update_placeholder_2] =>
+    [:db_update_placeholder_3] =>
+    [:db_update_placeholder_4] =>
+    [:db_update_placeholder_5] =>
+    [:db_update_placeholder_6] => 0
+    [:db_update_placeholder_7] =>
+    [:db_update_placeholder_8] =>
+    [:db_update_placeholder_9] =>
+    [:db_condition_placeholder_0] => 106
+)
+ in Drupal\Core\Database\Driver\mysql\ExceptionHandler->handleExecutionException() (line 50 of /var/www/html/web/core/lib/Drupal/Core/Database/Driver/mysql/ExceptionHandler.php).
+ [error]  Drupal\Core\Database\IntegrityConstraintViolationException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'uri' cannot be null: UPDATE "file_managed" SET "uuid"=:db_update_placeholder_0, "langcode"=:db_update_placeholder_1, "uid"=:db_update_placeholder_2, "filename"=:db_update_placeholder_3, "uri"=:db_update_placeholder_4, "filemime"=:db_update_placeholder_5, "filesize"=:db_update_placeholder_6, "status"=:db_update_placeholder_7, "created"=:db_update_placeholder_8, "changed"=:db_update_placeholder_9
+WHERE "fid" = :db_condition_placeholder_0; Array
+(
+    [:db_update_placeholder_0] => b42a8391-2c41-4af2-b58f-3cd5e4c6c92d
+    [:db_update_placeholder_1] => en
+    [:db_update_placeholder_2] =>
+    [:db_update_placeholder_3] =>
+    [:db_update_placeholder_4] =>
+    [:db_update_placeholder_5] =>
+    [:db_update_placeholder_6] => 0
+    [:db_update_placeholder_7] =>
+    [:db_update_placeholder_8] =>
+    [:db_update_placeholder_9] =>
+    [:db_condition_placeholder_0] => 50
+)
+ in Drupal\Core\Database\Driver\mysql\ExceptionHandler->handleExecutionException() (line 50 of /var/www/html/web/core/lib/Drupal/Core/Database/Driver/mysql/ExceptionHandler.php).
+ [error]  Drupal\Core\Database\IntegrityConstraintViolationException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'uri' cannot be null: UPDATE "file_managed" SET "uuid"=:db_update_placeholder_0, "langcode"=:db_update_placeholder_1, "uid"=:db_update_placeholder_2, "filename"=:db_update_placeholder_3, "uri"=:db_update_placeholder_4, "filemime"=:db_update_placeholder_5, "filesize"=:db_update_placeholder_6, "status"=:db_update_placeholder_7, "created"=:db_update_placeholder_8, "changed"=:db_update_placeholder_9
+WHERE "fid" = :db_condition_placeholder_0; Array
+(
+    [:db_update_placeholder_0] => 8df0b82a-7d7b-4544-b7e2-dc545b10172a
+    [:db_update_placeholder_1] => en
+    [:db_update_placeholder_2] =>
+    [:db_update_placeholder_3] =>
+    [:db_update_placeholder_4] =>
+    [:db_update_placeholder_5] =>
+    [:db_update_placeholder_6] => 0
+    [:db_update_placeholder_7] =>
+    [:db_update_placeholder_8] =>
+    [:db_update_placeholder_9] =>
+    [:db_condition_placeholder_0] => 210
+)
+ in Drupal\Core\Database\Driver\mysql\ExceptionHandler->handleExecutionException() (line 50 of /var/www/html/web/core/lib/Drupal/Core/Database/Driver/mysql/ExceptionHandler.php).
+ [error]  Drupal\Core\Database\IntegrityConstraintViolationException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'uri' cannot be null: UPDATE "file_managed" SET "uuid"=:db_update_placeholder_0, "langcode"=:db_update_placeholder_1, "uid"=:db_update_placeholder_2, "filename"=:db_update_placeholder_3, "uri"=:db_update_placeholder_4, "filemime"=:db_update_placeholder_5, "filesize"=:db_update_placeholder_6, "status"=:db_update_placeholder_7, "created"=:db_update_placeholder_8, "changed"=:db_update_placeholder_9
+WHERE "fid" = :db_condition_placeholder_0; Array
+(
+    [:db_update_placeholder_0] => 94cb3ecd-225d-4803-8798-4f805d1661b8
+    [:db_update_placeholder_1] => en
+    [:db_update_placeholder_2] =>
+    [:db_update_placeholder_3] =>
+    [:db_update_placeholder_4] =>
+    [:db_update_placeholder_5] =>
+    [:db_update_placeholder_6] => 0
+    [:db_update_placeholder_7] =>
+    [:db_update_placeholder_8] =>
+    [:db_update_placeholder_9] =>
+    [:db_condition_placeholder_0] => 62
+)
+ in Drupal\Core\Database\Driver\mysql\ExceptionHandler->handleExecutionException() (line 50 of /var/www/html/web/core/lib/Drupal/Core/Database/Driver/mysql/ExceptionHandler.php).
+ [error]  Drupal\Core\Database\IntegrityConstraintViolationException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'uri' cannot be null: UPDATE "file_managed" SET "uuid"=:db_update_placeholder_0, "langcode"=:db_update_placeholder_1, "uid"=:db_update_placeholder_2, "filename"=:db_update_placeholder_3, "uri"=:db_update_placeholder_4, "filemime"=:db_update_placeholder_5, "filesize"=:db_update_placeholder_6, "status"=:db_update_placeholder_7, "created"=:db_update_placeholder_8, "changed"=:db_update_placeholder_9
+WHERE "fid" = :db_condition_placeholder_0; Array
+(
+    [:db_update_placeholder_0] => 0c77b438-0f4d-48d7-bd0d-5f7b0b4a8c23
+    [:db_update_placeholder_1] => en
+    [:db_update_placeholder_2] =>
+    [:db_update_placeholder_3] =>
+    [:db_update_placeholder_4] =>
+    [:db_update_placeholder_5] =>
+    [:db_update_placeholder_6] => 0
+    [:db_update_placeholder_7] =>
+    [:db_update_placeholder_8] =>
+    [:db_update_placeholder_9] =>
+    [:db_condition_placeholder_0] => 117
+)
+ in Drupal\Core\Database\Driver\mysql\ExceptionHandler->handleExecutionException() (line 50 of /var/www/html/web/core/lib/Drupal/Core/Database/Driver/mysql/ExceptionHandler.php).
+ [error]  Drupal\Core\Database\IntegrityConstraintViolationException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'uri' cannot be null: UPDATE "file_managed" SET "uuid"=:db_update_placeholder_0, "langcode"=:db_update_placeholder_1, "uid"=:db_update_placeholder_2, "filename"=:db_update_placeholder_3, "uri"=:db_update_placeholder_4, "filemime"=:db_update_placeholder_5, "filesize"=:db_update_placeholder_6, "status"=:db_update_placeholder_7, "created"=:db_update_placeholder_8, "changed"=:db_update_placeholder_9
+WHERE "fid" = :db_condition_placeholder_0; Array
+(
+    [:db_update_placeholder_0] => ca5142f2-003a-42b6-a23a-45ae336167b9
+    [:db_update_placeholder_1] => en
+    [:db_update_placeholder_2] =>
+    [:db_update_placeholder_3] =>
+    [:db_update_placeholder_4] =>
+    [:db_update_placeholder_5] =>
+    [:db_update_placeholder_6] => 0
+    [:db_update_placeholder_7] =>
+    [:db_update_placeholder_8] =>
+    [:db_update_placeholder_9] =>
+    [:db_condition_placeholder_0] => 226
+)
+ in Drupal\Core\Database\Driver\mysql\ExceptionHandler->handleExecutionException() (line 50 of /var/www/html/web/core/lib/Drupal/Core/Database/Driver/mysql/ExceptionHandler.php).
+ [error]  Drupal\Core\Database\IntegrityConstraintViolationException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'uri' cannot be null: UPDATE "file_managed" SET "uuid"=:db_update_placeholder_0, "langcode"=:db_update_placeholder_1, "uid"=:db_update_placeholder_2, "filename"=:db_update_placeholder_3, "uri"=:db_update_placeholder_4, "filemime"=:db_update_placeholder_5, "filesize"=:db_update_placeholder_6, "status"=:db_update_placeholder_7, "created"=:db_update_placeholder_8, "changed"=:db_update_placeholder_9
+WHERE "fid" = :db_condition_placeholder_0; Array
+(
+    [:db_update_placeholder_0] => 2f6fa8a8-4168-4ed6-98be-44070d3528a1
+    [:db_update_placeholder_1] => en
+    [:db_update_placeholder_2] =>
+    [:db_update_placeholder_3] =>
+    [:db_update_placeholder_4] =>
+    [:db_update_placeholder_5] =>
+    [:db_update_placeholder_6] => 0
+    [:db_update_placeholder_7] =>
+    [:db_update_placeholder_8] =>
+    [:db_update_placeholder_9] =>
+    [:db_condition_placeholder_0] => 201
+)
+ in Drupal\Core\Database\Driver\mysql\ExceptionHandler->handleExecutionException() (line 50 of /var/www/html/web/core/lib/Drupal/Core/Database/Driver/mysql/ExceptionHandler.php).
+ [error]  Drupal\Core\Database\IntegrityConstraintViolationException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'uri' cannot be null: UPDATE "file_managed" SET "uuid"=:db_update_placeholder_0, "langcode"=:db_update_placeholder_1, "uid"=:db_update_placeholder_2, "filename"=:db_update_placeholder_3, "uri"=:db_update_placeholder_4, "filemime"=:db_update_placeholder_5, "filesize"=:db_update_placeholder_6, "status"=:db_update_placeholder_7, "created"=:db_update_placeholder_8, "changed"=:db_update_placeholder_9
+WHERE "fid" = :db_condition_placeholder_0; Array
+(
+    [:db_update_placeholder_0] => 560abf37-87ab-4ca1-b9ee-ae2055ce3055
+    [:db_update_placeholder_1] => en
+    [:db_update_placeholder_2] =>
+    [:db_update_placeholder_3] =>
+    [:db_update_placeholder_4] =>
+    [:db_update_placeholder_5] =>
+    [:db_update_placeholder_6] => 0
+    [:db_update_placeholder_7] =>
+    [:db_update_placeholder_8] =>
+    [:db_update_placeholder_9] =>
+    [:db_condition_placeholder_0] => 202
+)
+ in Drupal\Core\Database\Driver\mysql\ExceptionHandler->handleExecutionException() (line 50 of /var/www/html/web/core/lib/Drupal/Core/Database/Driver/mysql/ExceptionHandler.php).
+ [error]  Drupal\Core\Database\IntegrityConstraintViolationException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'uri' cannot be null: UPDATE "file_managed" SET "uuid"=:db_update_placeholder_0, "langcode"=:db_update_placeholder_1, "uid"=:db_update_placeholder_2, "filename"=:db_update_placeholder_3, "uri"=:db_update_placeholder_4, "filemime"=:db_update_placeholder_5, "filesize"=:db_update_placeholder_6, "status"=:db_update_placeholder_7, "created"=:db_update_placeholder_8, "changed"=:db_update_placeholder_9
+WHERE "fid" = :db_condition_placeholder_0; Array
+(
+    [:db_update_placeholder_0] => 79db7b5a-f3b2-407a-a031-c08b4d34d482
+    [:db_update_placeholder_1] => en
+    [:db_update_placeholder_2] =>
+    [:db_update_placeholder_3] =>
+    [:db_update_placeholder_4] =>
+    [:db_update_placeholder_5] =>
+    [:db_update_placeholder_6] => 0
+    [:db_update_placeholder_7] =>
+    [:db_update_placeholder_8] =>
+    [:db_update_placeholder_9] =>
+    [:db_condition_placeholder_0] => 659
+)
+ in Drupal\Core\Database\Driver\mysql\ExceptionHandler->handleExecutionException() (line 50 of /var/www/html/web/core/lib/Drupal/Core/Database/Driver/mysql/ExceptionHandler.php).
+ [error]  Drupal\Core\Database\IntegrityConstraintViolationException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'uri' cannot be null: UPDATE "file_managed" SET "uuid"=:db_update_placeholder_0, "langcode"=:db_update_placeholder_1, "uid"=:db_update_placeholder_2, "filename"=:db_update_placeholder_3, "uri"=:db_update_placeholder_4, "filemime"=:db_update_placeholder_5, "filesize"=:db_update_placeholder_6, "status"=:db_update_placeholder_7, "created"=:db_update_placeholder_8, "changed"=:db_update_placeholder_9
+WHERE "fid" = :db_condition_placeholder_0; Array
+(
+    [:db_update_placeholder_0] => 75d1659c-0754-494f-9524-4d71c0db2d29
+    [:db_update_placeholder_1] => en
+    [:db_update_placeholder_2] =>
+    [:db_update_placeholder_3] =>
+    [:db_update_placeholder_4] =>
+    [:db_update_placeholder_5] =>
+    [:db_update_placeholder_6] => 0
+    [:db_update_placeholder_7] =>
+    [:db_update_placeholder_8] =>
+    [:db_update_placeholder_9] =>
+    [:db_condition_placeholder_0] => 527
+)
+ in Drupal\Core\Database\Driver\mysql\ExceptionHandler->handleExecutionException() (line 50 of /var/www/html/web/core/lib/Drupal/Core/Database/Driver/mysql/ExceptionHandler.php).
+ [error]  Drupal\Core\Database\IntegrityConstraintViolationException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'uri' cannot be null: UPDATE "file_managed" SET "uuid"=:db_update_placeholder_0, "langcode"=:db_update_placeholder_1, "uid"=:db_update_placeholder_2, "filename"=:db_update_placeholder_3, "uri"=:db_update_placeholder_4, "filemime"=:db_update_placeholder_5, "filesize"=:db_update_placeholder_6, "status"=:db_update_placeholder_7, "created"=:db_update_placeholder_8, "changed"=:db_update_placeholder_9
+WHERE "fid" = :db_condition_placeholder_0; Array
+(
+    [:db_update_placeholder_0] => 82ce0c06-bd8b-4a13-91b2-8d58977acb46
+    [:db_update_placeholder_1] => en
+    [:db_update_placeholder_2] =>
+    [:db_update_placeholder_3] =>
+    [:db_update_placeholder_4] =>
+    [:db_update_placeholder_5] =>
+    [:db_update_placeholder_6] => 0
+    [:db_update_placeholder_7] =>
+    [:db_update_placeholder_8] =>
+    [:db_update_placeholder_9] =>
+    [:db_condition_placeholder_0] => 728
+)
+ in Drupal\Core\Database\Driver\mysql\ExceptionHandler->handleExecutionException() (line 50 of /var/www/html/web/core/lib/Drupal/Core/Database/Driver/mysql/ExceptionHandler.php).
+ [error]  Drupal\Core\Database\IntegrityConstraintViolationException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'uri' cannot be null: UPDATE "file_managed" SET "uuid"=:db_update_placeholder_0, "langcode"=:db_update_placeholder_1, "uid"=:db_update_placeholder_2, "filename"=:db_update_placeholder_3, "uri"=:db_update_placeholder_4, "filemime"=:db_update_placeholder_5, "filesize"=:db_update_placeholder_6, "status"=:db_update_placeholder_7, "created"=:db_update_placeholder_8, "changed"=:db_update_placeholder_9
+WHERE "fid" = :db_condition_placeholder_0; Array
+(
+    [:db_update_placeholder_0] => acb3c561-31d4-4f05-939d-128ccaf4c881
+    [:db_update_placeholder_1] => en
+    [:db_update_placeholder_2] =>
+    [:db_update_placeholder_3] =>
+    [:db_update_placeholder_4] =>
+    [:db_update_placeholder_5] =>
+    [:db_update_placeholder_6] => 0
+    [:db_update_placeholder_7] =>
+    [:db_update_placeholder_8] =>
+    [:db_update_placeholder_9] =>
+    [:db_condition_placeholder_0] => 735
+)
+ in Drupal\Core\Database\Driver\mysql\ExceptionHandler->handleExecutionException() (line 50 of /var/www/html/web/core/lib/Drupal/Core/Database/Driver/mysql/ExceptionHandler.php).
+ [error]  Drupal\Core\Database\IntegrityConstraintViolationException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'uri' cannot be null: UPDATE "file_managed" SET "uuid"=:db_update_placeholder_0, "langcode"=:db_update_placeholder_1, "uid"=:db_update_placeholder_2, "filename"=:db_update_placeholder_3, "uri"=:db_update_placeholder_4, "filemime"=:db_update_placeholder_5, "filesize"=:db_update_placeholder_6, "status"=:db_update_placeholder_7, "created"=:db_update_placeholder_8, "changed"=:db_update_placeholder_9
+WHERE "fid" = :db_condition_placeholder_0; Array
+(
+    [:db_update_placeholder_0] => ddb7f925-9b7e-4e47-84f8-2f07ec8a21fe
+    [:db_update_placeholder_1] => en
+    [:db_update_placeholder_2] =>
+    [:db_update_placeholder_3] =>
+    [:db_update_placeholder_4] =>
+    [:db_update_placeholder_5] =>
+    [:db_update_placeholder_6] => 0
+    [:db_update_placeholder_7] =>
+    [:db_update_placeholder_8] =>
+    [:db_update_placeholder_9] =>
+    [:db_condition_placeholder_0] => 734
+)
+ in Drupal\Core\Database\Driver\mysql\ExceptionHandler->handleExecutionException() (line 50 of /var/www/html/web/core/lib/Drupal/Core/Database/Driver/mysql/ExceptionHandler.php).
+ [error]  Drupal\Core\Database\IntegrityConstraintViolationException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'uri' cannot be null: UPDATE "file_managed" SET "uuid"=:db_update_placeholder_0, "langcode"=:db_update_placeholder_1, "uid"=:db_update_placeholder_2, "filename"=:db_update_placeholder_3, "uri"=:db_update_placeholder_4, "filemime"=:db_update_placeholder_5, "filesize"=:db_update_placeholder_6, "status"=:db_update_placeholder_7, "created"=:db_update_placeholder_8, "changed"=:db_update_placeholder_9
+WHERE "fid" = :db_condition_placeholder_0; Array
+(
+    [:db_update_placeholder_0] => 6643a0fe-a312-44db-aba2-b6a1540a9962
+    [:db_update_placeholder_1] => en
+    [:db_update_placeholder_2] =>
+    [:db_update_placeholder_3] =>
+    [:db_update_placeholder_4] =>
+    [:db_update_placeholder_5] =>
+    [:db_update_placeholder_6] => 0
+    [:db_update_placeholder_7] =>
+    [:db_update_placeholder_8] =>
+    [:db_update_placeholder_9] =>
+    [:db_condition_placeholder_0] => 824
+)
+ in Drupal\Core\Database\Driver\mysql\ExceptionHandler->handleExecutionException() (line 50 of /var/www/html/web/core/lib/Drupal/Core/Database/Driver/mysql/ExceptionHandler.php).
+ [error]  Drupal\Core\Database\IntegrityConstraintViolationException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'uri' cannot be null: UPDATE "file_managed" SET "uuid"=:db_update_placeholder_0, "langcode"=:db_update_placeholder_1, "uid"=:db_update_placeholder_2, "filename"=:db_update_placeholder_3, "uri"=:db_update_placeholder_4, "filemime"=:db_update_placeholder_5, "filesize"=:db_update_placeholder_6, "status"=:db_update_placeholder_7, "created"=:db_update_placeholder_8, "changed"=:db_update_placeholder_9
+WHERE "fid" = :db_condition_placeholder_0; Array
+(
+    [:db_update_placeholder_0] => ff45aafe-7de8-4df4-9e44-0577293e4200
+    [:db_update_placeholder_1] => en
+    [:db_update_placeholder_2] =>
+    [:db_update_placeholder_3] =>
+    [:db_update_placeholder_4] =>
+    [:db_update_placeholder_5] =>
+    [:db_update_placeholder_6] => 0
+    [:db_update_placeholder_7] =>
+    [:db_update_placeholder_8] =>
+    [:db_update_placeholder_9] =>
+    [:db_condition_placeholder_0] => 898
+)
+ in Drupal\Core\Database\Driver\mysql\ExceptionHandler->handleExecutionException() (line 50 of /var/www/html/web/core/lib/Drupal/Core/Database/Driver/mysql/ExceptionHandler.php).
+ [notice] Running commerce1_currency
+ [notice] Running commerce1_store
+ [notice] Running commerce1_order_item_type
+ [notice] Running commerce1_order_item:couple
+ [notice] Running commerce1_order_item:forumadmission
+ [notice] Running commerce1_order_item:forumitem
+ [notice] Running commerce1_order_item:golfoutinglineitem
+ [notice] Running commerce1_order_item:inaugurationadmission
+ [notice] Running commerce1_order_item:matchinggiftprogram
+ [notice] Running commerce1_order_item:membership
+ [notice] Running commerce1_order_item:membershiplineitem
+ [notice] Running commerce1_order_item:product
+ [warning] Invalid argument supplied for foreach() OrderItemDiscountAdjustment.php:119
+ [warning] Invalid argument supplied for foreach() OrderItemDiscountAdjustment.php:119
+ [warning] Invalid argument supplied for foreach() OrderItemDiscountAdjustment.php:119
+ [warning] Invalid argument supplied for foreach() OrderItemDiscountAdjustment.php:119
+ [warning] Invalid argument supplied for foreach() OrderItemDiscountAdjustment.php:119
+ [warning] Invalid argument supplied for foreach() OrderItemDiscountAdjustment.php:119
+ [warning] Invalid argument supplied for foreach() OrderItemDiscountAdjustment.php:119
+ [warning] Invalid argument supplied for foreach() OrderItemDiscountAdjustment.php:119
+ [warning] Invalid argument supplied for foreach() OrderItemDiscountAdjustment.php:119
+ [warning] Invalid argument supplied for foreach() OrderItemDiscountAdjustment.php:119
+ [warning] Invalid argument supplied for foreach() OrderItemDiscountAdjustment.php:119
+ [warning] Invalid argument supplied for foreach() OrderItemDiscountAdjustment.php:119
+ [warning] Invalid argument supplied for foreach() OrderItemDiscountAdjustment.php:119
+ [warning] Invalid argument supplied for foreach() OrderItemDiscountAdjustment.php:119
+ [warning] Invalid argument supplied for foreach() OrderItemDiscountAdjustment.php:119
+ [warning] Invalid argument supplied for foreach() OrderItemDiscountAdjustment.php:119
+ [warning] Invalid argument supplied for foreach() OrderItemDiscountAdjustment.php:119
+ [warning] Invalid argument supplied for foreach() OrderItemDiscountAdjustment.php:119
+ [warning] Invalid argument supplied for foreach() OrderItemDiscountAdjustment.php:119
+ [notice] Running commerce1_order_item:tablefor10
+ [notice] Running commerce1_profile_type
+ [notice] Running commerce1_profile:adminaccounti
+ [notice] Running commerce1_profile:billing
+ [notice] Running commerce1_profile:guest
+ [notice] Running commerce1_profile:member
+ [notice] Running commerce1_profile:non_paying_cu
+ [notice] Running commerce1_order
+ [notice] Running commerce1_message
+ [error]  Migration commerce1_message did not meet the requirements. Destination plugin &#039;null&#039; did not meet the requirements
+ [notice] Running commerce1_cart_settings
+ [notice] Running commerce1_payment_gateway
+ [notice] Running commerce1_payment
+ [notice] Running commerce1_product_type
+ [notice] Running commerce1_product:donation_display
+ [error]  Migration commerce1_product:donation_display did not meet the requirements. Missing migrations commerce1_product_type. requirements: commerce1_product_type.
+ [notice] Running commerce1_product:forum_admission
+ [error]  Migration commerce1_product:forum_admission did not meet the requirements. Missing migrations commerce1_product_type. requirements: commerce1_product_type.
+ [notice] Running commerce1_product:forumitemdisplay
+ [error]  Migration commerce1_product:forumitemdisplay did not meet the requirements. Missing migrations commerce1_product_type. requirements: commerce1_product_type.
+ [notice] Running commerce1_product:forumitemdisplayv2
+ [error]  Migration commerce1_product:forumitemdisplayv2 did not meet the requirements. Missing migrations commerce1_product_type. requirements: commerce1_product_type.
+ [notice] Running commerce1_product:genericproductdisplay
+ [error]  Migration commerce1_product:genericproductdisplay did not meet the requirements. Missing migrations commerce1_product_type. requirements: commerce1_product_type.
+ [notice] Running commerce1_product:golfoutingdisplay
+ [error]  Migration commerce1_product:golfoutingdisplay did not meet the requirements. Missing migrations commerce1_product_type. requirements: commerce1_product_type.
+ [notice] Running commerce1_product:gop_ldd_2019_sponsorships
+ [error]  Migration commerce1_product:gop_ldd_2019_sponsorships did not meet the requirements. Missing migrations commerce1_product_type. requirements: commerce1_product_type.
+ [notice] Running commerce1_product:gop_lincoln_day_dinners
+ [error]  Migration commerce1_product:gop_lincoln_day_dinners did not meet the requirements. Missing migrations commerce1_product_type. requirements: commerce1_product_type.
+ [notice] Running commerce1_product:gop_lincoln_day_reception_and_di
+ [error]  Migration commerce1_product:gop_lincoln_day_reception_and_di did not meet the requirements. Missing migrations commerce1_product_type. requirements: commerce1_product_type.
+ [notice] Running commerce1_product:gop_lincoln_day_sponsorships
+ [error]  Migration commerce1_product:gop_lincoln_day_sponsorships did not meet the requirements. Missing migrations commerce1_product_type. requirements: commerce1_product_type.
+ [notice] Running commerce1_product:inaugurationparty
+ [error]  Migration commerce1_product:inaugurationparty did not meet the requirements. Missing migrations commerce1_product_type. requirements: commerce1_product_type.
+ [notice] Running commerce1_product:lddd2020couples
+ [error]  Migration commerce1_product:lddd2020couples did not meet the requirements. Missing migrations commerce1_product_type. requirements: commerce1_product_type.
+ [notice] Running commerce1_product:lddd2020sponsorshipdisplay
+ [error]  Migration commerce1_product:lddd2020sponsorshipdisplay did not meet the requirements. Missing migrations commerce1_product_type. requirements: commerce1_product_type.
+ [notice] Running commerce1_product:lddd2020tablefor10
+ [error]  Migration commerce1_product:lddd2020tablefor10 did not meet the requirements. Missing migrations commerce1_product_type. requirements: commerce1_product_type.
+ [notice] Running commerce1_product:lddd2020vipplusdisplay
+ [error]  Migration commerce1_product:lddd2020vipplusdisplay did not meet the requirements. Missing migrations commerce1_product_type. requirements: commerce1_product_type.
+ [notice] Running commerce1_product:ldrad2020display
+ [error]  Migration commerce1_product:ldrad2020display did not meet the requirements. Missing migrations commerce1_product_type. requirements: commerce1_product_type.
+ [notice] Running commerce1_product:membership_products
+ [error]  Migration commerce1_product:membership_products did not meet the requirements. Missing migrations commerce1_product_type. requirements: commerce1_product_type.
+ [notice] Running commerce1_product:membershipitemdisplay
+ [error]  Migration commerce1_product:membershipitemdisplay did not meet the requirements. Missing migrations commerce1_product_type. requirements: commerce1_product_type.
+ [notice] Running commerce1_product:picnicitemdisplay
+ [error]  Migration commerce1_product:picnicitemdisplay did not meet the requirements. Missing migrations commerce1_product_type. requirements: commerce1_product_type.
+ [notice] Running commerce1_product:product_display
+ [error]  Migration commerce1_product:product_display did not meet the requirements. Missing migrations commerce1_product_type. requirements: commerce1_product_type.
+ [notice] Running commerce1_product:trialproductdisplay
+ [error]  Migration commerce1_product:trialproductdisplay did not meet the requirements. Missing migrations commerce1_product_type. requirements: commerce1_product_type.
+ [notice] Running commerce1_product:wcgop2019dinner
+ [error]  Migration commerce1_product:wcgop2019dinner did not meet the requirements. Missing migrations commerce1_product_type. requirements: commerce1_product_type.
+ [notice] Running commerce1_product:wcgop2019reception
+ [error]  Migration commerce1_product:wcgop2019reception did not meet the requirements. Missing migrations commerce1_product_type. requirements: commerce1_product_type.
+ [notice] Running commerce1_product:wcgop2020dinner
+ [error]  Migration commerce1_product:wcgop2020dinner did not meet the requirements. Missing migrations commerce1_product_type. requirements: commerce1_product_type.
+ [notice] Running commerce1_product:wcgop_store
+ [error]  Migration commerce1_product:wcgop_store did not meet the requirements. Missing migrations commerce1_product_type. requirements: commerce1_product_type.
+ [notice] Running commerce1_product:wcgopevent
+ [error]  Migration commerce1_product:wcgopevent did not meet the requirements. Missing migrations commerce1_product_type. requirements: commerce1_product_type.
+ [notice] Running d7_field
+ [error]  Migration d7_field did not meet the requirements. Missing migrations commerce1_product_type. requirements: commerce1_product_type.
+ [notice] Running commerce1_product_attribute
+ [error]  Migration commerce1_product_attribute did not meet the requirements. Missing migrations d7_field. requirements: d7_field.
+ [notice] Running commerce1_profile_revision:adminaccounti
+ [notice] Running commerce1_profile_revision:billing
+ [notice] Running commerce1_profile_revision:guest
+ [notice] Running commerce1_profile_revision:member
+ [notice] Running commerce1_profile_revision:non_paying_cu
+ [notice] Running commerce1_shipping_flat_rate
+ [error]  Migration commerce1_shipping_flat_rate did not meet the requirements. Destination plugin &#039;null&#039; did not meet the requirements
+ [notice] Running commerce1_tax_type
+ [error]  Migration commerce1_tax_type did not meet the requirements. The module commerce_tax is not enabled in the source site. source_module: commerce_tax.
+root@0790b220b520:/var/www/html# drush cr

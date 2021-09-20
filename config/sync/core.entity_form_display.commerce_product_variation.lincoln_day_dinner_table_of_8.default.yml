@@ -1,0 +1,60 @@
+uuid: aef51557-0f5a-4560-b077-5f52658b662d
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.lincoln_day_dinner_table_of_8
+    - field.field.commerce_product_variation.lincoln_day_dinner_table_of_8.field_tmp_person_2_name
+  module:
+    - commerce_price
+id: commerce_product_variation.lincoln_day_dinner_table_of_8.default
+targetEntityType: commerce_product_variation
+bundle: lincoln_day_dinner_table_of_8
+mode: default
+content:
+  field_tmp_person_2_name:
+    weight: 91
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  list_price:
+    type: commerce_list_price
+    weight: -1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  price:
+    type: commerce_price_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sku:
+    type: string_textfield
+    weight: -4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 90
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  uid: true

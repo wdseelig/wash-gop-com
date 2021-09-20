@@ -1,17 +1,17 @@
-uuid: 36634127-48d4-4667-a6de-df154f0ea514
+uuid: 0ea3b2a1-d062-44dc-94d7-d1ef3b25615c
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.gop_lincoln_day_dinners.body
-    - field.field.node.gop_lincoln_day_dinners.field_product
-    - node.type.gop_lincoln_day_dinners
+    - field.field.node.gop_lincoln_day_dinners_v2.body
+    - field.field.node.gop_lincoln_day_dinners_v2.field_productv2
+    - node.type.gop_lincoln_day_dinners_v2
   module:
     - path
     - text
-id: node.gop_lincoln_day_dinners.default
+id: node.gop_lincoln_day_dinners_v2.default
 targetEntityType: node
-bundle: gop_lincoln_day_dinners
+bundle: gop_lincoln_day_dinners_v2
 mode: default
 content:
   body:
@@ -30,7 +30,7 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_product:
+  field_productv2:
     weight: 122
     settings:
       match_operator: CONTAINS
