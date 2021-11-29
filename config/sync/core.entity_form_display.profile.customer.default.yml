@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.profile.customer.address
+    - field.field.profile.customer.field_first_name
     - field.field.profile.customer.tax_number
     - profile.type.customer
   enforced:
@@ -20,9 +21,17 @@ mode: default
 content:
   address:
     type: address_default
-    weight: 0
+    weight: 1
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_first_name:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
 hidden:
   is_default: true

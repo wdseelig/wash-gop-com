@@ -1,5 +1,0 @@
-name: My First Custom Module
-type: module
-core_version_requirement: '^8.8 || ^9'
-package: WCGOPCode
-description: 'My First Drupal Module'

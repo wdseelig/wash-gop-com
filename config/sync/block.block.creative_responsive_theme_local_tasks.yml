@@ -9,7 +9,7 @@ _core:
 id: creative_responsive_theme_local_tasks
 theme: creative_responsive_theme
 region: content
-weight: -7
+weight: -14
 provider: null
 plugin: local_tasks_block
 settings:

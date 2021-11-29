@@ -1,0 +1,51 @@
+uuid: 5e7a3312-b30c-4a83-a211-24e3b86de480
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.profile.wcgop_customer
+    - field.field.profile.wcgop_customer.address
+    - field.field.profile.wcgop_customer.field_first_name
+    - field.field.profile.wcgop_customer.field_intro_text
+    - field.field.profile.wcgop_customer.field_last_name
+    - profile.type.wcgop_customer
+  module:
+    - address
+    - text
+id: profile.wcgop_customer.wcgop_customer
+targetEntityType: profile
+bundle: wcgop_customer
+mode: wcgop_customer
+content:
+  address:
+    weight: 28
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_first_name:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_intro_text:
+    weight: 29
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_last_name:
+    weight: 27
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  is_default: true

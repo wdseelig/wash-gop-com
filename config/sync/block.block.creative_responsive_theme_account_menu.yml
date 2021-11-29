@@ -13,7 +13,7 @@ _core:
 id: creative_responsive_theme_account_menu
 theme: creative_responsive_theme
 region: auto_hidden_block
-weight: 11
+weight: -14
 provider: null
 plugin: 'system_menu_block:account'
 settings:

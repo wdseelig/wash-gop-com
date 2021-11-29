@@ -1,0 +1,10 @@
+uuid: c0972c3d-0695-477f-a800-f273384f1786
+langcode: en
+status: true
+dependencies: {  }
+id: lincoln_day_dinner_vip
+label: 'Lincoln Day Dinner -- VIP'
+orderItemType: couple
+generateTitle: null
+traits: {  }
+locked: false

@@ -1,0 +1,5 @@
+name: wcgop_commerce
+type: module
+description: A module to tailor Drupal commerce to suit our needs
+package: WCGOPCode
+core_version_requirement: ^8 || ^9

@@ -19,8 +19,14 @@ settings:
   provider: user
   label_display: visible
 visibility:
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
   request_path:
     id: request_path
-    pages: '<front>'
-    negate: true
-    context_mapping: {  }
+    pages: /user
+    negate: false

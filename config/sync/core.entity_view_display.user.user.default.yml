@@ -1,0 +1,27 @@
+uuid: 373d80a7-4017-48c8-a64f-ca2d79058aca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.commerce_remote_id
+  module:
+    - user
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  member_for:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  adminaccounti_profiles: true
+  billing_profiles: true
+  commerce_remote_id: true
+  customer_profiles: true
+  guest_profiles: true
+  member_profiles: true
+  non_paying_cu_profiles: true
+  wcgop_customer_profiles: true

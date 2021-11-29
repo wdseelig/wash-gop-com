@@ -1,0 +1,21 @@
+uuid: b2545579-24b3-417a-8995-10fff2636cad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_intro_text
+    - profile.type.wcgop_customer
+  module:
+    - text
+id: profile.wcgop_customer.field_intro_text
+field_name: field_intro_text
+entity_type: profile
+bundle: wcgop_customer
+label: 'intro text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

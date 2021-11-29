@@ -1,0 +1,4 @@
+administer wcgop_commerce configuration:
+  title: 'Administer wcgop_commerce configuration'
+  description: 'Optional description.'
+  restrict access: true

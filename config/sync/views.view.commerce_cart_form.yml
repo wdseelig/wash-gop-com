@@ -2,9 +2,6 @@ uuid: e22bbc20-4d8c-4fc3-85d4-4084ad9b6315
 langcode: en
 status: true
 dependencies:
-  config:
-    - field.storage.commerce_order_item.field_entree2
-    - field.storage.commerce_order_item.field_name_badge
   enforced:
     module:
       - commerce_cart
@@ -14,7 +11,7 @@ dependencies:
     - commerce_order
     - commerce_price
     - commerce_product
-    - options
+    - views_secondary_row
 _core:
   default_config_hash: 5aCvI0j7w2fKsWcMEiLXM1CWuaKm5ndfOnCATVUMPGM
 id: commerce_cart_form
@@ -60,28 +57,113 @@ display:
         options:
           offset: 0
       style:
-        type: table
+        type: views_secondary_row_table
         options:
           grouping: {  }
           row_class: ''
           default_row_class: true
-          override: true
-          sticky: false
+          override: 1
+          sticky: 0
           caption: ''
           summary: ''
           description: ''
           columns:
-            order_number: order_number
+            title: title
+            purchased_entity: purchased_entity
+            edit_quantity: edit_quantity
+            unit_price__number: unit_price__number
+            total_price__number: total_price__number
+            type: type
+            remove_button: remove_button
+            order_item_id: order_item_id
+            nothing: nothing
           info:
-            order_number:
-              sortable: false
+            title:
+              sortable: 0
               default_sort_order: asc
               align: ''
               separator: ''
-              empty_column: false
+              empty_column: 0
               responsive: ''
+              break2: ''
+              separator2: ''
+              colspan2: ''
+            purchased_entity:
+              sortable: 0
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: 0
+              responsive: ''
+              break2: ''
+              separator2: ''
+              colspan2: ''
+            edit_quantity:
+              align: ''
+              separator: ''
+              empty_column: 0
+              responsive: ''
+              break2: ''
+              separator2: ''
+              colspan2: ''
+            unit_price__number:
+              sortable: 0
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: 0
+              responsive: ''
+              break2: ''
+              separator2: ''
+              colspan2: ''
+            total_price__number:
+              sortable: 0
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: 0
+              responsive: ''
+              break2: ''
+              separator2: ''
+              colspan2: ''
+            type:
+              sortable: 0
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: 0
+              responsive: ''
+              break2: ''
+              separator2: ''
+              colspan2: ''
+            remove_button:
+              align: ''
+              separator: ''
+              empty_column: 0
+              responsive: ''
+              break2: ''
+              separator2: ''
+              colspan2: ''
+            order_item_id:
+              sortable: 0
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: 0
+              responsive: ''
+              break2: ''
+              separator2: ''
+              colspan2: ''
+            nothing:
+              align: ''
+              separator: ''
+              empty_column: 0
+              responsive: ''
+              break2: title
+              separator2: ''
+              colspan2: ''
           default: '-1'
-          empty_table: false
+          empty_table: 0
       row:
         type: fields
         options:
@@ -90,14 +172,80 @@ display:
           hide_empty: false
           default_field_elements: true
       fields:
+        order_id:
+          id: order_id
+          table: commerce_order
+          field: order_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ID
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: number_integer
+          settings:
+            thousand_separator: ''
+            prefix_suffix: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: commerce_order
+          entity_field: order_id
+          plugin_id: field
         title:
           id: title
           table: commerce_order_item
           field: title
-          relationship: order_items
+          relationship: reverse__commerce_order_item__order_id
           group_type: group
           admin_label: ''
-          label: 'Item Title'
+          label: 'Item TITLE'
           exclude: false
           alter:
             alter_text: false
@@ -158,7 +306,7 @@ display:
           id: purchased_entity
           table: commerce_order_item
           field: purchased_entity
-          relationship: order_items
+          relationship: reverse__commerce_order_item__order_id
           group_type: group
           admin_label: ''
           label: Itempurchased
@@ -219,11 +367,62 @@ display:
           entity_type: commerce_order_item
           entity_field: purchased_entity
           plugin_id: field
+        edit_quantity:
+          id: edit_quantity
+          table: commerce_order_item
+          field: edit_quantity
+          relationship: reverse__commerce_order_item__order_id
+          group_type: group
+          admin_label: ''
+          label: Quantity
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          allow_decimal: false
+          entity_type: commerce_order_item
+          plugin_id: commerce_order_item_edit_quantity
         unit_price__number:
           id: unit_price__number
           table: commerce_order_item
           field: unit_price__number
-          relationship: order_items
+          relationship: reverse__commerce_order_item__order_id
           group_type: group
           admin_label: ''
           label: Price
@@ -285,66 +484,15 @@ display:
           entity_type: commerce_order_item
           entity_field: unit_price
           plugin_id: field
-        edit_quantity:
-          id: edit_quantity
-          table: commerce_order_item
-          field: edit_quantity
-          relationship: order_items
-          group_type: group
-          admin_label: ''
-          label: Quantity
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: .orderquantity
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          allow_decimal: false
-          entity_type: commerce_order_item
-          plugin_id: commerce_order_item_edit_quantity
         total_price__number:
           id: total_price__number
           table: commerce_order_item
           field: total_price__number
-          relationship: order_items
+          relationship: reverse__commerce_order_item__order_id
           group_type: group
           admin_label: ''
           label: 'Item Total'
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -468,138 +616,14 @@ display:
           entity_type: commerce_product_variation
           entity_field: type
           plugin_id: commerce_entity_bundle
-        field_entree2:
-          id: field_entree2
-          table: commerce_order_item__field_entree2
-          field: field_entree2
-          relationship: order_items
-          group_type: group
-          admin_label: ''
-          label: Entree
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: .orderentree
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: list_default
-          settings: {  }
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        field_name_badge:
-          id: field_name_badge
-          table: commerce_order_item__field_name_badge
-          field: field_name_badge
-          relationship: order_items
-          group_type: group
-          admin_label: ''
-          label: 'Name Badge'
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: .ordername
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          settings: {  }
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
         remove_button:
           id: remove_button
           table: commerce_order_item
           field: remove_button
-          relationship: order_items
+          relationship: reverse__commerce_order_item__order_id
           group_type: group
           admin_label: ''
-          label: Remove
+          label: ''
           exclude: false
           alter:
             alter_text: false
@@ -632,7 +656,7 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -642,13 +666,128 @@ display:
           hide_alter_empty: true
           entity_type: commerce_order_item
           plugin_id: commerce_order_item_remove_button
+        order_item_id:
+          id: order_item_id
+          table: commerce_order_item
+          field: order_item_id
+          relationship: reverse__commerce_order_item__order_id
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: number_integer
+          settings:
+            thousand_separator: ''
+            prefix_suffix: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: commerce_order_item
+          entity_field: order_item_id
+          plugin_id: field
+        nothing:
+          id: nothing
+          table: views
+          field: nothing
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: 'Custom text'
+          exclude: false
+          alter:
+            alter_text: true
+            text: "{% set orderitemid = order_item_id %}\r\n{{drupal_view('orderitemtypefieldsv2','block_1',orderitemid)}}"
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ordertypefields
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: false
+          plugin_id: custom
       filters: {  }
       sorts:
         order_item_id:
           id: order_item_id
           table: commerce_order_item
           field: order_item_id
-          relationship: order_items
+          relationship: reverse__commerce_order_item__order_id
           group_type: group
           admin_label: ''
           order: ASC
@@ -669,7 +808,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: "<h2 style=\"text-align:center;font-weight:bold\">Shopping Cart Review</h2>\r\n<p style=font-size:14px>Please review your shopping cart below, and if it is correct continue\r\nthe purchase process by clicking on the \"Checkout\" button.</p>\r\n<p style=font-size:14px>If you wish to change this purchase, you may remove items from the\r\ncart and return to the store by clicking the \"Return to Shopping\" link just below the logo above.</p>"
+            value: "<h2 style=\"text-align:center;font-weight:bold\">Shopping Cart Review</h2>\r\n<p style=font-size:18px>Please review your shopping cart below, and if it is correct continue\r\nthe purchase process by clicking on the \"Checkout\" button.</p>\r\n<p style=font-size:18px>If you wish to change this purchase, you may remove items from the\r\ncart and return to the store by clicking the \"Continue Shopping\" link just below the logo above.</p>"
             format: '3'
           plugin_id: text
       footer:
@@ -684,25 +823,24 @@ display:
           plugin_id: commerce_order_total
       empty: {  }
       relationships:
-        order_items:
-          id: order_items
-          table: commerce_order__order_items
-          field: order_items_target_id
+        reverse__commerce_order_item__order_id:
+          id: reverse__commerce_order_item__order_id
+          table: commerce_order
+          field: reverse__commerce_order_item__order_id
           relationship: none
           group_type: group
-          admin_label: 'order_items: Order Item'
-          required: true
+          admin_label: 'Order item'
+          required: false
           entity_type: commerce_order
-          entity_field: order_items
           plugin_id: standard
         commerce_product_variation:
           id: commerce_product_variation
           table: commerce_order_item
           field: commerce_product_variation
-          relationship: order_items
+          relationship: reverse__commerce_order_item__order_id
           group_type: group
           admin_label: 'Product variation'
-          required: true
+          required: false
           entity_type: commerce_order_item
           plugin_id: standard
       arguments:
@@ -744,12 +882,12 @@ display:
           entity_field: order_id
           plugin_id: numeric
       display_extenders: {  }
+      show_admin_links: true
+      hide_attachment_summary: false
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
-      tags:
-        - 'config:field.storage.commerce_order_item.field_entree2'
-        - 'config:field.storage.commerce_order_item.field_name_badge'
+      tags: {  }

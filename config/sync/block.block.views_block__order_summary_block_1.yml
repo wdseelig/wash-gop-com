@@ -1,0 +1,25 @@
+uuid: 4ad72614-cec0-49f4-8f2c-b45ee837fcf7
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.order_summary
+  module:
+    - views
+  theme:
+    - creative_responsive_theme
+id: views_block__order_summary_block_1
+theme: creative_responsive_theme
+region: auto_hidden_block
+weight: -12
+provider: null
+plugin: 'views_block:order_summary-block_1'
+settings:
+  id: 'views_block:order_summary-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility: {  }

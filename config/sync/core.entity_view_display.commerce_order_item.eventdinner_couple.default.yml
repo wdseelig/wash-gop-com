@@ -1,0 +1,38 @@
+uuid: f0f90f42-c7c5-4553-bb1d-add71a269ef5
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_order.commerce_order_item_type.eventdinner_couple
+    - field.field.commerce_order_item.eventdinner_couple.field_entrees
+    - field.field.commerce_order_item.eventdinner_couple.field_namebadge
+  module:
+    - options
+id: commerce_order_item.eventdinner_couple.default
+targetEntityType: commerce_order_item
+bundle: eventdinner_couple
+mode: default
+content:
+  field_entrees:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_namebadge:
+    weight: 4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  adjustments: true
+  commerce_webform_order_submission: true
+  created: true
+  purchased_entity: true
+  quantity: true
+  total_price: true
+  unit_price: true

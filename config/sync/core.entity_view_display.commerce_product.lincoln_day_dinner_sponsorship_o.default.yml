@@ -1,0 +1,42 @@
+uuid: 504638b3-5cc1-4cf6-b210-7cef0bcd164f
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.lincoln_day_dinner_sponsorship_o
+    - field.field.commerce_product.lincoln_day_dinner_sponsorship_o.body
+  module:
+    - commerce_product
+    - text
+id: commerce_product.lincoln_day_dinner_sponsorship_o.default
+targetEntityType: commerce_product
+bundle: lincoln_day_dinner_sponsorship_o
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 11
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  variations:
+    type: commerce_add_to_cart
+    weight: 10
+    region: content
+    label: above
+    settings:
+      combine: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  stores: true
+  uid: true

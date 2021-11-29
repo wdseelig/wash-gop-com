@@ -1,0 +1,10 @@
+cartitems:
+  version: 1.x
+  header: true
+  js:
+    js/cartitems.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupalSettings
+    - core/drupal
+

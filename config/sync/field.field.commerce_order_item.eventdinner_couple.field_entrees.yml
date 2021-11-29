@@ -1,0 +1,21 @@
+uuid: 9270ca8b-bebd-4b9f-b4bc-11a5a12793cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_order.commerce_order_item_type.eventdinner_couple
+    - field.storage.commerce_order_item.field_entrees
+  module:
+    - options
+id: commerce_order_item.eventdinner_couple.field_entrees
+field_name: field_entrees
+entity_type: commerce_order_item
+bundle: eventdinner_couple
+label: 'Entree Choice'
+description: 'Meal choice'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

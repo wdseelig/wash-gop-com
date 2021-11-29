@@ -1,0 +1,12 @@
+uuid: 3848f1fb-2ebc-40cf-b72e-03ca9853d09d
+langcode: en
+status: true
+dependencies: {  }
+id: lincoln_day_dinner_couple
+label: 'Lincoln Day Dinner -- Couple'
+description: 'This is an attempt to create a product type (Lincoln Day Dinner) with no attributes.'
+variationType: lincoln_day_dinner_couple
+multipleVariations: true
+injectVariationFields: false
+traits: {  }
+locked: false

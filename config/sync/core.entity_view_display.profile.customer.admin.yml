@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.profile.admin
     - field.field.profile.customer.address
+    - field.field.profile.customer.field_first_name
     - field.field.profile.customer.tax_number
     - profile.type.customer
   enforced:
@@ -35,4 +36,5 @@ content:
     label: above
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  field_first_name: true

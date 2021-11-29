@@ -1,0 +1,23 @@
+uuid: 5d3b287c-1630-42c7-b12c-80eea976a7d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.lincoln_day_dinner_table_for_8
+    - field.storage.commerce_product.body
+  module:
+    - text
+id: commerce_product.lincoln_day_dinner_table_for_8.body
+field_name: body
+entity_type: commerce_product
+bundle: lincoln_day_dinner_table_for_8
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: null
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

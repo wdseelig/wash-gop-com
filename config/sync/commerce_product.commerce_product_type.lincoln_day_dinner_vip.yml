@@ -1,0 +1,12 @@
+uuid: 2c551f1d-0da7-4df2-b2b5-55a3dbb1157c
+langcode: en
+status: true
+dependencies: {  }
+id: lincoln_day_dinner_vip
+label: 'Lincoln Day Dinner -- VIP'
+description: 'Includes Reception with Special Guests'
+variationType: lincoln_day_dinner_vip
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

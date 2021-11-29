@@ -22,10 +22,14 @@ module:
   commerce_store: 0
   commerce_stripe: 0
   commerce_tax: 0
+  commerce_variation_cart_form: 0
+  commerce_webform_order: 0
   config: 0
   contextual: 0
   datetime: 0
   dblog: 0
+  devel: 0
+  devel_generate: 0
   dynamic_page_cache: 0
   editor: 0
   entity: 0
@@ -59,18 +63,23 @@ module:
   pdf_reader: 0
   profile: 0
   settings_tray: 0
+  smtp: 0
   state_machine: 0
+  stripe: 0
   system: 0
   taxonomy: 0
   telephone: 0
   text: 0
   token: 0
   toolbar: 0
+  twig_tweak: 0
   update: 0
   upgrade_status: 0
   user: 0
+  views_secondary_row: 0
   views_ui: 0
   votingapi: 0
+  wcgop_commerce: 0
   webform: 0
   webform_migrate: 0
   webform_node: 0

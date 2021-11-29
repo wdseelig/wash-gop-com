@@ -1,0 +1,10 @@
+uuid: 82ce9330-3b39-4a78-997c-602c796c9e27
+langcode: en
+status: true
+dependencies: {  }
+id: lincoln_day_dinner_sponsorship_o
+label: 'Lincoln Day Dinner -- Sponsorship Options'
+orderItemType: couple
+generateTitle: null
+traits: {  }
+locked: false

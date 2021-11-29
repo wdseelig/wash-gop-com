@@ -13,7 +13,7 @@ dependencies:
 id: loggedinuserdirecttohome
 theme: creative_responsive_theme
 region: content
-weight: -8
+weight: -15
 provider: null
 plugin: 'block_content:21058a47-1a58-478a-93dc-75d98770caf8'
 settings:

@@ -7,6 +7,6 @@ label: 'Lincoln Day Dinner'
 description: 'This is an attempt to create a product type (Lincoln Day Dinner) with no attributes.'
 variationType: lincoln_day_dinner_5_00_
 multipleVariations: true
-injectVariationFields: true
+injectVariationFields: false
 traits: {  }
 locked: false

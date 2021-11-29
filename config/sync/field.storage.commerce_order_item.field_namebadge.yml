@@ -1,0 +1,21 @@
+uuid: 435582e8-1f18-41f6-afb1-2d41fdc29e45
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_order
+id: commerce_order_item.field_namebadge
+field_name: field_namebadge
+entity_type: commerce_order_item
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 10
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

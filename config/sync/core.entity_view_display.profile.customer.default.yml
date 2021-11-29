@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.profile.customer.address
+    - field.field.profile.customer.field_first_name
     - field.field.profile.customer.tax_number
     - profile.type.customer
   enforced:
@@ -25,6 +26,14 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_first_name:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
     region: content
   tax_number:
     type: commerce_tax_number_default

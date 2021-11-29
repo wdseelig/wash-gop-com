@@ -13,15 +13,37 @@ code: |-
   .orderitemtitle, .ordertotal {
     padding-right: 40px;
     color:  red;
+    text-align: center;
   }
   th[id^='view-'] {
     text-align: center;
+  }
+  #block-wcgopcommerceblock a {
+    color:  #ffff00;
+    font-size:  14px;
+  }
+  .cols-7 {
+    padding: 0px 5px 0px 5px;
+  }
+  .ordertypefields table {
+    width:  600px;
+    margin-left:  30px;
+    border-spacing:  20px;
+  }
+  .views-field-field-name-badge {
+    width:  25%;
+  }
+  .views-field-field-entree2 {
+    width:  75%;
+  }
+  td.views-field ul {
+    list-style-type:  none;
   }
 conditions_require_all: true
 conditions:
   request_path:
     id: request_path
-    pages: /cart
+    pages: "/cart\r\n/wcgopcartreview*"
     negate: false
 contexts: {  }
 media: all

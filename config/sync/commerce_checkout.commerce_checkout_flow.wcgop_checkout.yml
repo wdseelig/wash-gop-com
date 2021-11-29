@@ -1,0 +1,59 @@
+uuid: 55e488f6-a282-4496-8407-2f0c3bf8e429
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_payment
+    - commerce_promotion
+    - commerce_stripe
+    - wcgop_commerce
+id: wcgop_checkout
+label: wcgop_checkout
+plugin: multistep_default
+configuration:
+  display_checkout_progress: true
+  display_checkout_progress_breadcrumb_links: true
+  panes:
+    wcgop_commerce_checkout_pane:
+      step: login
+      weight: 0
+    payment_information:
+      step: order_information
+      weight: 1
+    stripe_review:
+      button_id: edit-actions-next
+      step: review
+      weight: 2
+    payment_process:
+      capture: true
+      step: payment
+      weight: 3
+    completion_message:
+      message:
+        value: "<p style=\"color:blue\"><strong>Thank you very much for supporting our Lincoln Day Dinner on Wednesday, May 11, 2022.</strong></p>\r\n\r\n<p style=\"color:red\">If you have any questions about the event, please feel free to call our event coordinator, Deborah Lilly at (312)-345-7722</p>\r\n"
+        format: '3'
+      step: complete
+      weight: 4
+    order_summary:
+      view: ''
+      step: _disabled
+      weight: 5
+    contact_information:
+      double_entry: false
+      step: _disabled
+      weight: 6
+    review:
+      step: _disabled
+      weight: 7
+    login:
+      allow_guest_checkout: true
+      allow_registration: false
+      step: _disabled
+      weight: 8
+    coupon_redemption:
+      allow_multiple: false
+      step: _disabled
+      weight: 9
+    completion_register:
+      step: _disabled
+      weight: 10

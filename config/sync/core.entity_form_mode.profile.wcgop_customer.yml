@@ -1,0 +1,10 @@
+uuid: 273d4f90-4f0e-4505-93cb-c99e1531b815
+langcode: en
+status: true
+dependencies:
+  module:
+    - profile
+id: profile.wcgop_customer
+label: 'WCGOP Customer'
+targetEntityType: profile
+cache: true

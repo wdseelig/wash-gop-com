@@ -1,0 +1,5 @@
+services:
+  commerce_cart.cart_manager:
+    class: Drupal\commerce_cart\CartManager
+    arguments: ['@entity_type.manager', '@commerce_cart.order_item_matcher', '@event_dispatcher']
+

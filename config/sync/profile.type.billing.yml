@@ -2,10 +2,13 @@ uuid: a756554e-576d-4824-bcfd-ae3bd5f89a40
 langcode: en
 status: true
 dependencies: {  }
+third_party_settings:
+  commerce_order:
+    customer_profile_type: true
 id: billing
 label: Billing
-display_label: null
-multiple: false
+display_label: ''
+multiple: true
 registration: false
 roles: {  }
 allow_revisions: false

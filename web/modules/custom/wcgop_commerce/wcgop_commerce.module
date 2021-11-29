@@ -1,0 +1,132 @@
+<?php /** @noinspection SpellCheckingInspection */
+use \Drupal\commerce_product\Entity\ProductInterface;
+use \Drupal\Core\Ajax\AjaxResponse;
+use \Drupal\views\Views;
+/**
+ * @file
+ * Primary module hooks for wcgop_commerce module.
+ *
+ */
+/**
+ * @param $form
+ * @param \Drupal\Core\Form\FormStateInterface $form_state
+ * @param $form_id
+ *
+ *
+ */
+function wcgop_commerce_form_alter (&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if( strpos($form_id, 'commerce_checkout_flow_multistep_default') !== false) {
+    $stepid = $form["#step_id"];
+    if ($stepid == 'order_information') {
+      $form['body'] = array(
+        '#markup' => "<p>Please enter your credit card information in the space provided below<br>
+            When you have finished entering your data, click on the 'Review Your Order' button</p>",
+        '#weight' => -5,
+      );
+      $form['submit'] = array(
+        '#type' => 'submit',
+        '#value' => 'Review Your Order',
+        '#weight' => 10,
+      );
+      $form['actions']['submit']['#submit'][] = 'wcgop_commerce_completepurhase_submit';
+      return $form;
+    } elseif ($stepid == 'review'){
+      $form['body'] = array(
+        '#markup' => "<p>Please review your order below and if it is correct click on the
+            'Complete Your Purchase' button</p>",
+      );
+      /* @var $order \Drupal\commerce_order\Entity\OrderInterface */
+      $order = \Drupal::routeMatch()->getParameter('commerce_order');
+      $orderid = $order->get('order_id')->getValue();
+      $orderid = [$orderid[0]['value']];
+      /* @var $view \Drupal\views\ViewExecutable */
+      $view = Views::getView('order_summary');
+      $view->setArguments($orderid);
+      $view->execute();
+      $result = \Drupal::service('renderer')->render($view->render());
+     $form['body2'] = array(
+       '#markup'  => $result,
+     );
+
+      $form['submit'] = array(
+        '#type' => 'submit',
+        '#value' => 'Complete Your Purchase',
+        '#weight' => 10,
+      );
+    }
+  }
+}
+/**
+ * @param $cart
+ * @param $orderitem \Drupal\commerce_order\Entity\OrderItemInterface
+ * @param $webform \Drupal\webform\WebformSubmissionInterface
+ * @param $myentity \Drupal\commerce\PurchasableEntityInterface
+ *
+ *
+ * This hook is made available by the commerce_webform_order module.  It is used to
+ * connect the additional fields defined in the Order Item Type with the fields
+ * defined in the front-end Webform
+ */
+function wcgop_commerce_commerce_webform_order_handler_postsave_alter($cart, $orderitem, $webform) {
+  $myentity = $orderitem->getPurchasedEntity();
+  $webdata = $webform->getData();
+  foreach ($webdata as $key => $value){
+    if (is_array($value)) {
+      if (count($value)) {
+        $product_id = $value;
+        break;
+      }
+    }
+  }
+
+  $product_id = reset($product_id);
+  // Starting with the product id get the product variation id (Assumes that we want the first variation)
+  $product_variation_id = reset(\Drupal\commerce_product\Entity\Product::load($product_id)->getVariations())->id();
+  // @TODO: refactor me!
+  $productvariation = \Drupal\commerce_product\Entity\ProductVariation::load($product_variation_id);
+  $orderitem->set('purchased_entity', $product_variation_id);
+  $orderitem->setUnitPrice($productvariation->getPrice());
+  // Insert switch here to add in the extra data if it is a meal (badge name and meal choice)
+  $entreearray = array();
+  $namearray = array();
+  switch ($product_id) {
+    case 4:
+      foreach ($webdata as $key => $value) {
+        if (strpos($key, 'entree_tf1') !== false) {
+          $entreearray[] = $value ? $value : 0;
+        } elseif (strpos($key, 'badge_tf1') !== false) {
+          $namearray[] = $value ? $value : "Guest";
+        }
+      }
+      break;
+    case 8:
+      foreach ($webdata as $key => $value) {
+        if (strpos($key, 'entree_tf2') !== false) {
+          $entreearray[] = $value ? $value : 0;
+        } elseif (strpos($key, 'badge_tf2') !== false) {
+          $namearray[] = $value ? $value : "Guest";
+        }
+      }
+      break;
+  }
+  $orderitem->set("field_entrees", $entreearray);
+  $orderitem->set('field_namebadge', $namearray);
+  $orderitem->save();
+  // This gets the token for an editing link
+  $updatetoken = \Drupal::service('webform.token_manager');
+  $myupdateurl = $updatetoken->replace('[webform_submission:token-update-url]', $webform);
+  $session = \Drupal::request()->getSession();
+  $session->set('shoppingurl', $myupdateurl);
+}
+function wcgop_commerce_page_attachments(&$page) {
+  $path = \Drupal::service('path.current')->getPath();
+  //TODO: Replace this with a simple strpos looking for the alias (trial in the trial version)
+  if ( Drupal::service('path.matcher')->matchPath($path, '/webform/trial_webform_ii')){
+    $page['#attached']['library'][] = 'wcgop_commerce/cartitems';
+    $trialvar = ["foo" => "bar"];
+    $page['#attached']['drupalSettings']['trialvar'] = $trialvar;
+    $x = 1;
+  }
+}
+
+

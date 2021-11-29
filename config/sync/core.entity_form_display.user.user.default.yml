@@ -1,0 +1,46 @@
+uuid: a3d0e2dd-4157-4a26-9ca9-880edc7c272e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.commerce_remote_id
+  module:
+    - user
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  account:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  language:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  timezone:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  wcgop_customer_profiles:
+    type: entity_reference_autocomplete
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  adminaccounti_profiles: true
+  billing_profiles: true
+  commerce_remote_id: true
+  customer_profiles: true
+  guest_profiles: true
+  member_profiles: true
+  non_paying_cu_profiles: true

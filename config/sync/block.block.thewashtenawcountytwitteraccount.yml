@@ -12,7 +12,7 @@ dependencies:
 id: thewashtenawcountytwitteraccount
 theme: creative_responsive_theme
 region: sidebar_first
-weight: 0
+weight: -8
 provider: null
 plugin: 'block_content:56797707-ddb9-4851-9dda-716d3a1beb0a'
 settings:

@@ -6,7 +6,16 @@ dependencies:
     - system
 id: commerceproductsale
 label: commerceproductsale
-code: |
+code: |-
+  .webform-submission-form {
+    background-color: #7aeff5;
+  }
+  .form-item label {
+    margin-left:  25px;
+  }
+  .namebadgeelement {
+    max-width:  400px;
+  }
   div.views-field-title {
     font-weight:  bold;
     color:  red;
@@ -18,28 +27,36 @@ code: |
   .productdescription article.contextual-region >div:first-of-type {
     display:  none;
   }
-  div#edit-field-name-badge-wrapper {
-    position: relative;
-    top:  -140px;
-    left: 350px;
+  .productpackage div {
+    display:  table;
   }
-  div#edit-field-name-badge-wrapper label{
-    position: relative;
-    top:  -45px;
+  .productpackage .prodpkg {
+    display:  table-cell;
+    padding:  20px;
   }
-  div#edit-field-name-badge-wrapper input {
-    position: relative;
-    left: -120px;
+  .fieldset-wrapper .form-checkboxes label {
+    font-weight:  bold;
   }
-  input#edit-submit {
-    position: relative;
-    top:  -100px;
+  .webform-entity-checkboxes--wrapper legend{
+    display: none;
+  }
+  hr {
+    height: 5px;
+    background: blue;
+  }
+  #block-wcgopcommercegotocartblock a {
+    font-weight:  bold;
+    color:  #ffff00;
+    font-size:  16px;
+  }
+  #user-login-form {
+    display: none;
   }
 conditions_require_all: true
 conditions:
   request_path:
     id: request_path
-    pages: '/*lincolnday*'
+    pages: /trial
     negate: false
 contexts: {  }
 media: all

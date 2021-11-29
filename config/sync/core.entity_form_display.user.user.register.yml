@@ -1,0 +1,51 @@
+uuid: c1849603-da46-473c-b7e3-edb0c95a86b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.user.register
+    - field.field.user.user.commerce_remote_id
+  module:
+    - profile
+    - user
+id: user.user.register
+targetEntityType: user
+bundle: user
+mode: register
+content:
+  account:
+    weight: -10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  customer_profiles:
+    type: profile_form
+    weight: 90
+    settings:
+      form_mode: default
+    third_party_settings: {  }
+    region: content
+  language:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  timezone:
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  wcgop_customer_profiles:
+    type: profile_form
+    weight: 90
+    settings:
+      form_mode: wcgop_customer
+    third_party_settings: {  }
+    region: content
+hidden:
+  adminaccounti_profiles: true
+  billing_profiles: true
+  commerce_remote_id: true
+  guest_profiles: true
+  member_profiles: true
+  non_paying_cu_profiles: true
