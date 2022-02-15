@@ -1,0 +1,8 @@
+uuid: 6db6b295-57e4-4fc4-aeea-35b15f5c2d9d
+langcode: en
+status: true
+dependencies: {  }
+name: TagSource
+vid: tagsource
+description: 'The source of the tag information'
+weight: 0

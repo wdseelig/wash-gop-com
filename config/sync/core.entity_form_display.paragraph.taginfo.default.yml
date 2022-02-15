@@ -1,0 +1,51 @@
+uuid: 2433a882-fa6f-40c1-b0d2-6b6da525e057
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.taginfo.field_tag
+    - field.field.paragraph.taginfo.field_tagsource
+    - paragraphs.paragraphs_type.taginfo
+  module:
+    - field_group
+third_party_settings:
+  field_group:
+    group_taginfo:
+      children:
+        - field_tagsource
+        - field_tag
+      parent_name: ''
+      weight: 0
+      format_type: fieldset
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: group2
+        description: ''
+        required_fields: true
+      label: taginfo
+id: paragraph.taginfo.default
+targetEntityType: paragraph
+bundle: taginfo
+mode: default
+content:
+  field_tag:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_tagsource:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 40
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,30 @@
+uuid: f6f283be-9c26-45fd-987f-66a900dfa744
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.gop_ldd_2019_sponsorships.body
+    - node.type.gop_ldd_2019_sponsorships
+  module:
+    - text
+    - user
+id: node.gop_ldd_2019_sponsorships.teaser
+targetEntityType: node
+bundle: gop_ldd_2019_sponsorships
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

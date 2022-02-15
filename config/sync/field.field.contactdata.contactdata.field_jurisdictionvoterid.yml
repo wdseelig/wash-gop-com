@@ -1,0 +1,20 @@
+uuid: 3ca17657-e3b2-463e-8d2e-eaba683b0156
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.contactdata.field_jurisdictionvoterid
+  module:
+    - contactdata
+id: contactdata.contactdata.field_jurisdictionvoterid
+field_name: field_jurisdictionvoterid
+entity_type: contactdata
+bundle: contactdata
+label: JurisdictionVoterId
+description: 'Some kind of RNC id number'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

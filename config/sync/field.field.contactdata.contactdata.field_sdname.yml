@@ -1,0 +1,20 @@
+uuid: c027b9b7-48b9-43d0-9e1c-d2607c800c3a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.contactdata.field_sdname
+  module:
+    - contactdata
+id: contactdata.contactdata.field_sdname
+field_name: field_sdname
+entity_type: contactdata
+bundle: contactdata
+label: SDName
+description: 'The contact''s State Senate District'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,18 @@
+uuid: 2be572f7-8a57-4492-94c6-75cfef8fbd95
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main-menu
+    parent: 'main-menu:0:'
+name: PollWithPage
+type: pollwithpage
+description: 'This is a page with a poll inside of the page content.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,50 @@
+uuid: e35f29d3-7d0a-4432-869b-8ed4727c4bf3
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: contactdataedit
+label: contactdataedit
+code: |-
+  .fieldset__wrapper {
+    display:  grid;
+    width:  600px;
+    grid-template-columns:  auto auto auto;
+    grid-auto-rows: minmax(0px, 100px);
+  }
+  .form-wrapper {
+    padding:  0px;
+    margin: 0px;
+    border: 0px;
+    
+  }
+  .js-form-wrapper label {
+    display:  block;
+    text-align: center;
+  }
+  .checkboxes div.js-form-wrapper {
+    display:  inline-block;
+  }
+  .itemclass {
+    color:  red;
+    text-align: center;
+  }
+  .voteaddress legend {
+    display:  none;
+  }
+  .voteaddress {
+    background-color: #FFCB05;
+  }
+  .contactdata-edit-form {
+    background-color: #FFCB05;
+  }
+conditions_require_all: true
+conditions:
+  request_path:
+    id: request_path
+    pages: '/admin/content/contactdata/*/edit'
+    negate: false
+contexts: {  }
+media: all
+preprocess: true

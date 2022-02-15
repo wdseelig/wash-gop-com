@@ -1,0 +1,10 @@
+votersearch.content:
+  path: '/myvotersearch/{fromform}/{firstname}/{lastname}/{address}'
+  defaults:
+    _controller: '\Drupal\myvotersearch\Controller\VoterGateway::content'
+    fromform: 'NO'
+    firstname:  'alpha'
+    lastname: 'beta'
+    address: 'gamma'
+  requirements:
+    _permission: 'access content'

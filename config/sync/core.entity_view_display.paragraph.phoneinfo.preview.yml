@@ -1,0 +1,53 @@
+uuid: a4b6bb20-cea8-4581-8c67-d78e89dd317e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.phoneinfo.field_phonenumber
+    - field.field.paragraph.phoneinfo.field_phonesourceandtype
+    - paragraphs.paragraphs_type.phoneinfo
+  module:
+    - field_group
+    - layout_builder
+third_party_settings:
+  field_group:
+    group_phoneinfodisplay:
+      children:
+        - field_phonesourceandtype
+        - field_phonenumber
+      parent_name: ''
+      weight: 0
+      format_type: fieldset
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: group2
+        description: ''
+      label: PhoneInfoDisplay
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: paragraph.phoneinfo.preview
+targetEntityType: paragraph
+bundle: phoneinfo
+mode: preview
+content:
+  field_phonenumber:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_phonesourceandtype:
+    weight: 1
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

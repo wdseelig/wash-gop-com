@@ -1,0 +1,4 @@
+myvotersearch.assets:
+  header: true
+  dependencies:
+    - core/jquery

@@ -1,0 +1,20 @@
+uuid: 8ab46385-071f-4df1-9e04-0d2b6ceb07c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.contactdata.field_hhrecid
+  module:
+    - contactdata
+id: contactdata.contactdata.field_hhrecid
+field_name: field_hhrecid
+entity_type: contactdata
+bundle: contactdata
+label: HHRecId
+description: 'Household record number (used in mailings)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

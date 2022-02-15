@@ -1,0 +1,15 @@
+# Custom module library for general purposes.
+admincontacts:
+  js:
+    js/admincontacts.js:  {}
+  css:
+    theme:
+      css/admincontacts-layout.css: {}
+    component:
+      css/admincontacts.css: {}
+      css/aceditform.css: {}
+  dependencies:
+    - core/drupalSettings
+    - jquery_ui_accordion/accordion
+
+

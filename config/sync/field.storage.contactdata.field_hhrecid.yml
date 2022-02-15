@@ -1,0 +1,21 @@
+uuid: 1ed58c9a-032c-41e0-accc-11d25ff421d8
+langcode: en
+status: true
+dependencies:
+  module:
+    - contactdata
+id: contactdata.field_hhrecid
+field_name: field_hhrecid
+entity_type: contactdata
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,23 @@
+uuid: 6a58bfd0-9c30-44f1-8b64-1c485c18ab41
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.ldrad2020display
+  module:
+    - text
+id: node.ldrad2020display.body
+field_name: body
+entity_type: node
+bundle: ldrad2020display
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

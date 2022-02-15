@@ -1,0 +1,23 @@
+uuid: 9be5590b-c1ee-453f-b68f-ae2d8add81c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.basicpetition
+  module:
+    - text
+id: node.basicpetition.body
+field_name: body
+entity_type: node
+bundle: basicpetition
+label: 'Introductory Text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

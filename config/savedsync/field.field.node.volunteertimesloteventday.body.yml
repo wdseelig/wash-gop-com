@@ -1,0 +1,23 @@
+uuid: f6c40d74-a45a-4629-9cdc-ab25bf5467f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.volunteertimesloteventday
+  module:
+    - text
+id: node.volunteertimesloteventday.body
+field_name: body
+entity_type: node
+bundle: volunteertimesloteventday
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

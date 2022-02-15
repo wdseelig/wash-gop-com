@@ -1,0 +1,21 @@
+uuid: 5506861f-f539-4d9c-8ae6-1faa9341d888
+langcode: en
+status: true
+dependencies:
+  module:
+    - contactdata
+id: contactdata.field_cdname
+field_name: field_cdname
+entity_type: contactdata
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

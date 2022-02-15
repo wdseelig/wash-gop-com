@@ -1,0 +1,10 @@
+uuid: e9b2f8fc-88c7-41e9-9912-cb686c6497e9
+langcode: en
+status: true
+dependencies: {  }
+id: ldrad2020
+label: LDRAD2020
+orderItemType: default
+generateTitle: false
+traits: {  }
+locked: false

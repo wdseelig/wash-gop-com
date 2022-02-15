@@ -1,0 +1,12 @@
+uuid: 67d4c250-7f0b-4a17-8924-f3c8acfa074c
+langcode: en
+status: true
+dependencies: {  }
+id: wcgop2019dinner
+label: WCGOP2019Dinner
+description: 'Meal choices for the 2019 Lincoln Day Dinner'
+variationType: lddd2019
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

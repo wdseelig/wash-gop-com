@@ -1,0 +1,10 @@
+uuid: 94c160f9-0f3b-4d31-ab19-890191d5a5c8
+langcode: en
+status: true
+dependencies: {  }
+id: product
+label: Product
+orderItemType: product
+generateTitle: false
+traits: {  }
+locked: false

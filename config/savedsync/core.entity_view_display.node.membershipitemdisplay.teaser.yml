@@ -1,0 +1,30 @@
+uuid: 83643c4c-5feb-4a99-a88c-759bbb14db55
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.membershipitemdisplay.body
+    - node.type.membershipitemdisplay
+  module:
+    - text
+    - user
+id: node.membershipitemdisplay.teaser
+targetEntityType: node
+bundle: membershipitemdisplay
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,23 @@
+uuid: 4f0aa8a4-e29a-4f31-8210-69845da7526d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.forum_admission
+  module:
+    - text
+id: node.forum_admission.body
+field_name: body
+entity_type: node
+bundle: forum_admission
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

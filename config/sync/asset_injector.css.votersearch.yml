@@ -1,0 +1,31 @@
+uuid: 3ed9d9b1-c769-40eb-ac34-640f93affbd0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: votersearch
+label: votersearch
+code: |-
+  .js-form-type-textfield label {
+    display:  block;
+    text-align: center;
+  }
+  div.js-form-type-textfield {
+    display:  inline-block;
+  }
+  form.votersearch-voter-search {
+    background-color: lightblue;
+  }
+  .form-actions {
+    text-align: center;
+  }
+conditions_require_all: true
+conditions:
+  request_path:
+    id: request_path
+    pages: /myvotersearch
+    negate: false
+contexts: {  }
+media: all
+preprocess: true

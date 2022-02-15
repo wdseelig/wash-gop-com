@@ -1,0 +1,10 @@
+uuid: 3bd2ea74-ffe3-43aa-aef0-ec946c0ed9ce
+langcode: en
+status: true
+dependencies: {  }
+label: golfoutinglineitem
+id: golfoutinglineitem
+purchasableEntityType: commerce_product_variation
+orderType: default
+traits: {  }
+locked: false

@@ -1,0 +1,30 @@
+uuid: ddaba5b5-db2a-41a2-bab0-7e1842bdfcfd
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.migrate_example_producer.body
+    - node.type.migrate_example_producer
+  module:
+    - text
+    - user
+id: node.migrate_example_producer.teaser
+targetEntityType: node
+bundle: migrate_example_producer
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,24 @@
+uuid: 909d6493-4cd1-4fb1-87e2-96dbdf68c794
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.contactdata.field_middlename_admin
+  module:
+    - contactdata
+id: contactdata.contactdata.field_middlename_admin
+field_name: field_middlename_admin
+entity_type: contactdata
+bundle: contactdata
+label: MiddleName_admin
+description: 'Field controlled by contract administrators'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

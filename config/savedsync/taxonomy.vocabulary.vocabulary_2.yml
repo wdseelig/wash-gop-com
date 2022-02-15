@@ -1,0 +1,8 @@
+uuid: 585ca8de-a3ec-46dd-b097-133615a2189e
+langcode: en
+status: true
+dependencies: {  }
+name: WashGOPStore
+vid: vocabulary_2
+description: ''
+weight: 0

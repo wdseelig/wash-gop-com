@@ -1,0 +1,20 @@
+uuid: e9fb3404-c916-483c-877f-a4cac066c400
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.contactdata.field_primaryunitnumber
+  module:
+    - contactdata
+id: contactdata.contactdata.field_primaryunitnumber
+field_name: field_primaryunitnumber
+entity_type: contactdata
+bundle: contactdata
+label: PrimaryUnitNumber
+description: 'Dwelling number'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

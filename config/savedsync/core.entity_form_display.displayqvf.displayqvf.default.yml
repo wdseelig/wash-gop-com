@@ -1,0 +1,70 @@
+uuid: 92d7df65-a9cb-435a-9bb1-4a0708c108bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.displayqvf.displayqvf.field_firstname
+  module:
+    - displayqvf
+    - text
+id: displayqvf.displayqvf.default
+targetEntityType: displayqvf
+bundle: displayqvf
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  description:
+    type: text_textarea
+    weight: 10
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_firstname:
+    weight: 21
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  firstname:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: false
+    weight: 0
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    weight: 15
+    region: content
+    third_party_settings: {  }
+hidden: {  }

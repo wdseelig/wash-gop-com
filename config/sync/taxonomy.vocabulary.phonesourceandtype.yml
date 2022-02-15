@@ -1,0 +1,8 @@
+uuid: 498388eb-8ef9-4290-97d8-aa40d641ac58
+langcode: en
+status: true
+dependencies: {  }
+name: PhoneSourceAndType
+vid: phonesourceandtype
+description: ''
+weight: 0

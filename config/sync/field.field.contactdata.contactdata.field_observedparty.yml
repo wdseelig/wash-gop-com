@@ -1,0 +1,20 @@
+uuid: b3d972b9-9847-4ab6-a480-ebfa7c6f5543
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.contactdata.field_observedparty
+  module:
+    - contactdata
+id: contactdata.contactdata.field_observedparty
+field_name: field_observedparty
+entity_type: contactdata
+bundle: contactdata
+label: ObservedParty
+description: 'RNC field describing contact''s party'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

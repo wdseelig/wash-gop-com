@@ -1,0 +1,23 @@
+uuid: 32fbe1d2-bea2-444f-a4f5-58e3ee20458e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.mass_contact
+  module:
+    - text
+id: node.mass_contact.body
+field_name: body
+entity_type: node
+bundle: mass_contact
+label: 'Message Body'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

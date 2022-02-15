@@ -1,0 +1,12 @@
+uuid: 80c19030-bfa9-4dea-942d-8b5f40798be9
+langcode: en
+status: true
+dependencies: {  }
+id: lddd2020vipplusdisplay
+label: lddd2020VIPPLUSDisplay
+description: 'This is the content type that will display VIP Plus admissions'
+variationType: lddd2020vipplus
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

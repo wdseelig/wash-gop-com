@@ -1,0 +1,158 @@
+uuid: 9f739d12-7344-4e16-a9ec-6610a8283ded
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.profile.wcgop_customer.address
+    - field.field.profile.wcgop_customer.field_email_type
+    - field.field.profile.wcgop_customer.field_first_name
+    - field.field.profile.wcgop_customer.field_intro_text
+    - field.field.profile.wcgop_customer.field_last_name
+    - profile.type.wcgop_customer
+  module:
+    - address
+    - entity_reference_revisions
+    - layout_builder
+    - layout_discovery
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: SectionTopText
+          context_mapping: {  }
+        components:
+          abfad8dc-576e-47b9-bf68-b334b309864e:
+            uuid: abfad8dc-576e-47b9-bf68-b334b309864e
+            region: content
+            configuration:
+              id: 'block_content:ae3e6c8d-c536-4ce8-b9ec-21cfdeb29a7f'
+              label: FECCampaignFunding
+              provider: block_content
+              label_display: visible
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            additional: {  }
+            weight: 0
+          4927ca62-35d7-41a6-8054-e65c9aa74b21:
+            uuid: 4927ca62-35d7-41a6-8054-e65c9aa74b21
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:profile:wcgop_customer:address'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: address_default
+            additional: {  }
+            weight: 2
+          d43f015f-d76f-4b36-a930-c23b1afc125f:
+            uuid: d43f015f-d76f-4b36-a930-c23b1afc125f
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:profile:wcgop_customer:field_email_type'
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 3
+        third_party_settings: {  }
+      -
+        layout_id: layout_fourcol_section
+        layout_settings:
+          label: 'Section 01a'
+          context_mapping: {  }
+        components:
+          79d41a34-26c2-4a2b-9fac-7c2566f1958d:
+            uuid: 79d41a34-26c2-4a2b-9fac-7c2566f1958d
+            region: first
+            configuration:
+              id: 'field_block:profile:wcgop_customer:field_first_name'
+              label: 'First Name'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 1
+          570349ae-6447-4826-b327-14e6b953d463:
+            uuid: 570349ae-6447-4826-b327-14e6b953d463
+            region: second
+            configuration:
+              id: 'field_block:profile:wcgop_customer:field_last_name'
+              label: 'Last name'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+id: profile.wcgop_customer.default
+targetEntityType: profile
+bundle: wcgop_customer
+mode: default
+content:
+  address:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_email_type:
+    type: entity_reference_revisions_entity_view
+    weight: 3
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_first_name:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_last_name:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_intro_text: true

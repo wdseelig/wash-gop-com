@@ -1,0 +1,31 @@
+uuid: 54ca5335-1ad4-46d3-baa2-32686ec0a5eb
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5f942d6b-5d9d-46e9-bfd2-6129ecfe77f0'
+  module:
+    - block_content
+    - system
+  theme:
+    - acmain
+id: acmain_membershipform
+theme: acmain
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'block_content:5f942d6b-5d9d-46e9-bfd2-6129ecfe77f0'
+settings:
+  id: 'block_content:5f942d6b-5d9d-46e9-bfd2-6129ecfe77f0'
+  label: 'Membership Form'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

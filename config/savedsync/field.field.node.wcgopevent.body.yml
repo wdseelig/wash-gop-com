@@ -1,0 +1,23 @@
+uuid: 5e8a505d-8961-444c-b0d9-be21707cb770
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.wcgopevent
+  module:
+    - text
+id: node.wcgopevent.body
+field_name: body
+entity_type: node
+bundle: wcgopevent
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

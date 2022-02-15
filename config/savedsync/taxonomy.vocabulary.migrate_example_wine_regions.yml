@@ -1,0 +1,8 @@
+uuid: ebab758d-d470-4887-bb80-cdcc7bf0d2bd
+langcode: en
+status: true
+dependencies: {  }
+name: 'Migrate Example Wine Regions'
+vid: migrate_example_wine_regions
+description: 'Wine regions'
+weight: 0

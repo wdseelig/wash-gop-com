@@ -1,0 +1,25 @@
+uuid: 94516712-3e49-4c19-a048-3810c61145d8
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: commercereview
+label: commercereview
+code: |-
+  table {
+    border-collapse:  separate;
+    border-spacing: 15px;
+  }
+  td.views-field-title {
+    color:  red;
+  }
+conditions_require_all: true
+conditions:
+  request_path:
+    id: request_path
+    pages: '*/review'
+    negate: false
+contexts: {  }
+media: all
+preprocess: true

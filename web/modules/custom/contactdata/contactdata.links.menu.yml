@@ -1,0 +1,10 @@
+entity.contactdata.settings:
+  title: contactData
+  description: Configure a contactData entity type
+  route_name:  entity.contactdata.settings
+  parent: system.admin_structure
+entity.contactdata.collection:
+  title: contactDatas
+  description: List of contactdatas
+  route_name: entity.contactdata.collection
+  parent: system.admin_content

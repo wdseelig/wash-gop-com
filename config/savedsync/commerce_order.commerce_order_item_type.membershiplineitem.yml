@@ -1,0 +1,10 @@
+uuid: c1894a89-6af4-4997-9dd2-65aa900b5c62
+langcode: en
+status: true
+dependencies: {  }
+label: membershiplineitem
+id: membershiplineitem
+purchasableEntityType: commerce_product_variation
+orderType: default
+traits: {  }
+locked: false

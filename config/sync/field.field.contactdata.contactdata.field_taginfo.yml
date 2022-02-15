@@ -1,0 +1,37 @@
+uuid: 1e5ed52e-b777-4034-b87f-1a69a85057d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.contactdata.field_taginfo
+    - paragraphs.paragraphs_type.taginfo
+  module:
+    - contactdata
+    - entity_reference_revisions
+id: contactdata.contactdata.field_taginfo
+field_name: field_taginfo
+entity_type: contactdata
+bundle: contactdata
+label: TagInfo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      taginfo: taginfo
+    target_bundles_drag_drop:
+      emailinfo:
+        weight: 4
+        enabled: false
+      phoneinfo:
+        weight: 5
+        enabled: false
+      taginfo:
+        enabled: true
+        weight: 6
+field_type: entity_reference_revisions

@@ -1,0 +1,21 @@
+uuid: cbc8df29-a87d-408e-affe-2d2c9a850531
+langcode: en
+status: true
+dependencies:
+  module:
+    - contactdata
+id: contactdata.field_clientid
+field_name: field_clientid
+entity_type: contactdata
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

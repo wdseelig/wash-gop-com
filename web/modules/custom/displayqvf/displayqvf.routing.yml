@@ -1,0 +1,7 @@
+entity.displayqvf.settings:
+  path: 'admin/structure/displayqvf'
+  defaults:
+    _form: '\Drupal\displayqvf\Form\DisplayqvfSettingsForm'
+    _title: 'displayQVF'
+  requirements:
+    _permission: 'administer displayqvf'

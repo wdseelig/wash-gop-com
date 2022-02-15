@@ -1,0 +1,10 @@
+uuid: 0bf1a195-b147-4c9e-80ea-fafa0b13072e
+langcode: en
+status: true
+dependencies: {  }
+id: lddd2021
+label: LDDD2021
+orderItemType: default
+generateTitle: false
+traits: {  }
+locked: false

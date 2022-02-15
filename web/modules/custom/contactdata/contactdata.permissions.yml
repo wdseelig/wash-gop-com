@@ -1,0 +1,11 @@
+administer contactdata:
+  title: 'Administer contactdata settings'
+  restrict access: true
+access contactdata overview:
+  title: 'Access contactdata overview page'
+view contact data:
+  title: 'View contact data'
+edit contact data:
+  title:  'Edit the contacts database'
+  restrict access:  true
+

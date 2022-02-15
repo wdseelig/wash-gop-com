@@ -1,0 +1,20 @@
+uuid: 7c18433e-6f3c-4428-8313-f1d769e44dfc
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_vtsinterval
+field_name: field_vtsinterval
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

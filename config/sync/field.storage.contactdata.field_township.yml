@@ -1,0 +1,21 @@
+uuid: 33e035b5-b714-418c-8f7f-32c01928cad6
+langcode: en
+status: true
+dependencies:
+  module:
+    - contactdata
+id: contactdata.field_township
+field_name: field_township
+entity_type: contactdata
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

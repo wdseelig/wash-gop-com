@@ -1,0 +1,28 @@
+uuid: 2d26d32a-e2ea-48b5-b19e-f38df7fde037
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.lddd2020couples.body
+    - node.type.lddd2020couples
+  module:
+    - text
+    - user
+id: node.lddd2020couples.default
+targetEntityType: node
+bundle: lddd2020couples
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

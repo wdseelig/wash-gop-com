@@ -1,0 +1,19 @@
+uuid: 3d7f3c2e-862d-4568-8592-49fbda871a2c
+langcode: en
+status: true
+dependencies:
+  theme:
+    - seven
+id: seven_user_new
+theme: seven
+region: content
+weight: -47
+provider: null
+plugin: 'views_block:who_s_new-block_1'
+settings:
+  id: broken
+  label: ''
+  provider: core
+  label_display: '0'
+  items_per_page: 5
+visibility: {  }

@@ -1,0 +1,10 @@
+uuid: c3ff37db-4761-4750-9ef1-93e8a892345f
+langcode: en
+status: true
+dependencies: {  }
+id: lincoln_day_dinner_table_of_8
+label: 'Lincoln Day Dinner - Table of 8'
+orderItemType: eventdinner
+generateTitle: false
+traits: {  }
+locked: false

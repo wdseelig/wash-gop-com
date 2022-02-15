@@ -1,0 +1,26 @@
+uuid: ed44b89c-e462-4a84-a0f7-1712ea69c749
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_trialer
+    - node.type.aaacontact
+id: node.aaacontact.field_trialer
+field_name: field_trialer
+entity_type: node
+bundle: aaacontact
+label: TrialER
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:contactdata'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+field_type: entity_reference

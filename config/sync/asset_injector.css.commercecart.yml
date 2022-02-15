@@ -43,7 +43,7 @@ conditions_require_all: true
 conditions:
   request_path:
     id: request_path
-    pages: "/cart\r\n/wcgopcartreview*"
+    pages: "/cart\r\n/wcgopcartreview*\r\n"
     negate: false
 contexts: {  }
 media: all

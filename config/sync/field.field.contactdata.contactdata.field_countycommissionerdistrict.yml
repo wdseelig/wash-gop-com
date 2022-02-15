@@ -1,0 +1,20 @@
+uuid: 17cb42aa-df6f-4d30-afd2-fed2b73b5652
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.contactdata.field_countycommissionerdistrict
+  module:
+    - contactdata
+id: contactdata.contactdata.field_countycommissionerdistrict
+field_name: field_countycommissionerdistrict
+entity_type: contactdata
+bundle: contactdata
+label: CountyCommissionerDistrict
+description: 'The contact''s County Commissioner District'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

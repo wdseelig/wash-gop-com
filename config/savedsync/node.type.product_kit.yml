@@ -1,0 +1,11 @@
+uuid: c23b5763-db78-4b8f-81d1-9c8f07512dad
+langcode: en
+status: true
+dependencies: {  }
+name: 'Product kit'
+type: product_kit
+description: 'Use <em>product kits</em> to list two or more products together, presenting a logical and convenient grouping of items to the customer.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

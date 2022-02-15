@@ -1,0 +1,25 @@
+uuid: 1654be7c-a737-4866-8dda-af00be40e693
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.order_summary
+  module:
+    - views
+  theme:
+    - acmain
+id: acmain_views_block__order_summary_block_1
+theme: acmain
+region: sidebar_first
+weight: -12
+provider: null
+plugin: 'views_block:order_summary-block_1'
+settings:
+  id: 'views_block:order_summary-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility: {  }

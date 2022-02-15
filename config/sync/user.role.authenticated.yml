@@ -9,6 +9,7 @@ label: 'authenticated user'
 weight: 1
 is_admin: false
 permissions:
+  - 'access admincontacts page'
   - 'access checkout'
   - 'access comments'
   - 'access commerce_order overview'

@@ -1,0 +1,33 @@
+uuid: c8dff730-1418-4b84-b5f9-812132befce9
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: zebratable
+label: zebratable
+code: |-
+  tr {
+    background-color: #f2f2f2;
+  }
+  tr:nth-child(even) {
+    background-color: #d9d9d9;
+  }
+  th  {
+    background-color: #b3e0ff;
+    text-align: center;
+  }
+  table {
+    padding-right:  30px;
+    padding-left:   30px;
+    width:  30%;
+  }
+conditions_require_all: true
+conditions:
+  request_path:
+    id: request_path
+    pages: /wcgopcontactsmigrate/experiment
+    negate: false
+contexts: {  }
+media: all
+preprocess: true

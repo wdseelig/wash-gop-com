@@ -1,0 +1,25 @@
+uuid: 2a22a4ea-af05-4fc5-b2f1-a2c104c9be68
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - wcgop_commerce
+  theme:
+    - creative_responsive_theme
+id: wcgopcommerceblock
+theme: creative_responsive_theme
+region: primary_menu
+weight: 0
+provider: null
+plugin: wcgop_commerce_block
+settings:
+  id: wcgop_commerce_block
+  label: 'WCGOP Commerce Block'
+  provider: wcgop_commerce
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /cart
+    negate: false

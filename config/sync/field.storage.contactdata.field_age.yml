@@ -1,0 +1,20 @@
+uuid: 58c29030-b05e-4b93-8b28-1ca3bf1f62f8
+langcode: en
+status: true
+dependencies:
+  module:
+    - contactdata
+id: contactdata.field_age
+field_name: field_age
+entity_type: contactdata
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

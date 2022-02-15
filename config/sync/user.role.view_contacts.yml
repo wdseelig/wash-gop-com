@@ -1,0 +1,10 @@
+uuid: 01a02e78-dd52-40c7-b47e-35cbe4acb1ff
+langcode: en
+status: true
+dependencies: {  }
+id: view_contacts
+label: 'View Contacts'
+weight: 11
+is_admin: null
+permissions:
+  - 'view contact data'

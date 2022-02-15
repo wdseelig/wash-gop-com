@@ -1,0 +1,28 @@
+uuid: d2d7e407-8f55-4c3f-a35d-4a9d6633c85a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.migrate_example_beer.body
+    - node.type.migrate_example_beer
+  module:
+    - text
+    - user
+id: node.migrate_example_beer.default
+targetEntityType: node
+bundle: migrate_example_beer
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

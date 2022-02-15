@@ -1,0 +1,15 @@
+uuid: ba681438-32ea-4826-9a09-057809e0e9a0
+langcode: en
+status: true
+dependencies: {  }
+third_party_settings:
+  commerce_order:
+    customer_profile_type: false
+id: wcgop_customer
+label: 'WCGOP Customer'
+display_label: 'WCGOP Customer'
+multiple: true
+registration: true
+roles: {  }
+allow_revisions: true
+new_revision: false

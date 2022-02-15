@@ -1,0 +1,20 @@
+uuid: 1ab01a0b-d588-40e0-a798-57bfdfd07238
+langcode: en
+status: true
+dependencies:
+  theme:
+    - acmain
+_core:
+  default_config_hash: Vc_iBh-amT5wdaz_t8r-YQsiQzezZRw0ZEJB_036W6k
+id: acmain_local_actions
+theme: acmain
+region: sidebar_first
+weight: -13
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

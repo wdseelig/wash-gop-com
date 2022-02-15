@@ -1,0 +1,169 @@
+fieldset.group3 {
+  background-color: #FFCB05;
+}
+fieldset.group3 div.fieldset__wrapper {
+  display:  grid;
+  width:  950px;
+  grid-template-columns:  repeat(3,1fr);
+  grid-auto-rows: minmax(0px, 100px);
+  grid-column-gap:  0;
+  background-color: #FFCB05;
+}
+fieldset.group3a {
+  background-color: #FFCB05;
+}
+fieldset.group3a div.fieldset__wrapper {
+  display:  grid;
+  width:  950px;
+  grid-template-columns:  auto auto auto;
+  grid-auto-rows: minmax(0px, 100px);
+  grid-column-gap:  0;
+  background-color: #FFCB05;
+}
+fieldset.group4 {
+  background-color: #FFCB05;
+}
+fieldset.group4 div.fieldset__wrapper {
+  display: grid;
+  width: 950px;
+  grid-column-gap: 20px;
+  grid-template-columns:  auto auto auto auto;
+  grid-auto-rows: minmax(0px, 100px);
+  background-color: #FFCB05;
+}
+fieldset.group4a {
+  background-color: #FFCB05;
+}
+fieldset.group4a div.fieldset__wrapper {
+  display: grid;
+  width: 950px;
+  grid-column-gap: 20px;
+  grid-template-columns:  auto auto auto auto;
+  grid-auto-rows: minmax(0px, 100px);
+  background-color: #FFCB05;
+}
+fieldset.group2 {
+  background-color: #FFCB05;
+}
+fieldset.group2b {
+  background-color: #FFCB05;
+}
+fieldset.group2 div.fieldset__wrapper {
+  display:  grid;
+  width:  950px;
+  grid-column-gap: 20px;
+  grid-template-columns:  auto auto;
+  grid-auto-rows: max-content;
+  background-color: #FFCB05;
+}
+.paragraph-type-top {
+  background-color: #FFC805;
+}
+fieldset.group2a {
+  background-color: #FFCB05;
+}
+fieldset.group2a div.fieldset__wrapper {
+  display:  grid;
+  width:  950px;
+  grid-column-gap: 20px;
+  grid-template-columns:  auto auto;
+  grid-auto-rows: minmax(0px, 100px);
+  background-color: #FFCB05;
+}
+fieldset.group2 label {
+  text-align: left;
+}
+div.fieldset__wrapper {
+  margin-bottom:  0;
+}
+.form-wrapper {
+  padding:  0;
+  margin: 0;
+  border: 0;
+
+}
+.form-item {
+  margin-top: 0 !important;
+  margin-bottom:  0 !important;
+}
+.js-form-wrapper label {
+  display:  block;
+  text-align: center;
+}
+.checkboxes div.js-form-wrapper {
+  display:  inline-block;
+}
+.itemclass {
+  color:  red;
+  text-align: center;
+}
+.group2 legend {
+  display: none;
+}
+.group2a  legend {
+  display:  none;
+}
+.group2b  legend {
+  display:  none;
+}
+.field-group-accordion-item  .tabledrag-cell {
+  display: none;
+}
+
+.group3 legend {
+  display:  none;
+}
+.group3a legend {
+  display:  none;
+}
+.group4 legend {
+  display:  none;
+}
+.group4a legend {
+  display:  none;
+}
+.contactdata-edit-form {
+  background-color: #FFCB05;
+  float:  left;
+}
+table#field-phoneinfo-values td {
+  padding:  0 0 0 0;
+}
+table#field-phoneinfo-values {
+  float:  left;
+}
+table#field-emailinfo-values td {
+  padding:  0 0 0 0;
+}
+table#field-emailinfo-values {
+  float:  left;
+}
+
+/* Begin css for the contactdata entity display  */
+
+.contactdisplay h1 {
+  color:  red;
+  font-weight:  bolder;
+}
+.contactdisplay h2 {
+  color:  blue;
+}
+.contactdisplay {
+  background-color: #ccffcc;
+}
+
+.contactdisplay table {
+  padding-right:  30px;
+  padding-left:   30px;
+  height: 15px;
+  width:  50%;
+}
+.contactdisplay td, th {
+  height: 30px  !important;
+}
+td.phonesourcetype{
+  color:  red;
+}
+.phoneview th {
+  text-align: center  !important;
+}

@@ -1,0 +1,10 @@
+uuid: f18d30b5-cc22-4e8a-9bae-9c555d70f99a
+langcode: en
+status: true
+dependencies: {  }
+id: migration_group1
+label: migration_group1
+description: 'This is the first group of migrations that must be done'
+source_type: 'Drupal 7'
+module: null
+shared_configuration: null

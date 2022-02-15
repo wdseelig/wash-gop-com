@@ -1,0 +1,23 @@
+uuid: ddd0b19f-7f15-473e-882c-812acf24d159
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.simplecontent
+  module:
+    - text
+id: node.simplecontent.body
+field_name: body
+entity_type: node
+bundle: simplecontent
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

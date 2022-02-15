@@ -1,0 +1,10 @@
+uuid: edfa3346-93d7-4661-b6b2-2a5d558ccf24
+langcode: en
+status: true
+dependencies: {  }
+id: lincoln_day_dinner_couple
+label: 'Lincoln Day Dinner -- Couple'
+orderItemType: eventdinner_couple
+generateTitle: false
+traits: {  }
+locked: false

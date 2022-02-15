@@ -1,0 +1,22 @@
+uuid: dbdeabf1-2021-46b6-b407-8598522e6bcf
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - acmain
+_core:
+  default_config_hash: 4HEhetpv2ix0xFfAqD-jL6ggEsaW2skSV98mALGd0n0
+id: acmain_breadcrumbs
+theme: acmain
+region: breadcrumb
+weight: -11
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

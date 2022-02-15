@@ -1,0 +1,31 @@
+uuid: e825e95f-7fb5-4629-a6c6-adae3ab91924
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.profile.billing.address
+    - field.field.profile.billing.field_first_name
+    - profile.type.billing
+  module:
+    - address
+id: profile.billing.default
+targetEntityType: profile
+bundle: billing
+mode: default
+content:
+  address:
+    type: address_default
+    weight: 27
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_first_name:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  is_default: true

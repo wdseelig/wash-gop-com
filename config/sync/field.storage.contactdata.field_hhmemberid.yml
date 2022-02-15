@@ -1,0 +1,21 @@
+uuid: 666341c7-67b3-4afd-aa17-39662f8773ee
+langcode: en
+status: true
+dependencies:
+  module:
+    - contactdata
+id: contactdata.field_hhmemberid
+field_name: field_hhmemberid
+entity_type: contactdata
+type: string
+settings:
+  max_length: 15
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

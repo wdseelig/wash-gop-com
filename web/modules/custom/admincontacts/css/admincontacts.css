@@ -1,0 +1,42 @@
+.js-form-type-textfield label {
+  display:  block;
+  text-align: center;
+}
+div.js-form-type-textfield {
+  display:  inline-block;
+}
+form.admincontacts-voter-search {
+  background-color: lightblue;
+}
+.form-actions {
+  text-align: center;
+}
+
+div.region-content {
+  width:  100%;
+}
+tr {
+  background-color: #f2f2f2;
+  padding-top:  2px;
+  padding-bottom: 2px;
+}
+tr:nth-child(even) {
+  background-color: #d9d9d9;
+}
+th  {
+  background-color: #8080ff !important;
+  color:  yellow  !important;
+  text-align: center;
+}
+table {
+  padding-right:  30px;
+  padding-left:   30px;
+  width:  30%;
+  height:  15px;
+}
+td {
+  height: 20px  !important;
+}
+a.c-link {
+  color:  red !important;
+}

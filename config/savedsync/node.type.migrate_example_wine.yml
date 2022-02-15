@@ -1,0 +1,11 @@
+uuid: 2b66ce8d-8328-4b3b-8668-676454247902
+langcode: en
+status: true
+dependencies: {  }
+name: Wine
+type: migrate_example_wine
+description: 'Wine is what we drink.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

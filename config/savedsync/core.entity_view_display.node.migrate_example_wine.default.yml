@@ -1,0 +1,28 @@
+uuid: 043273cb-ca27-448c-8baf-bae6c9009a08
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.migrate_example_wine.body
+    - node.type.migrate_example_wine
+  module:
+    - text
+    - user
+id: node.migrate_example_wine.default
+targetEntityType: node
+bundle: migrate_example_wine
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,12 @@
+uuid: 8313c898-d0d4-44ef-ae8f-bf4d31cf6171
+langcode: en
+status: true
+dependencies: {  }
+id: lincoln_day_dinner_table_for_8
+label: 'Lincoln Day Dinner -- Table for 8'
+description: ''
+variationType: lincoln_day_dinner_table_for_8
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

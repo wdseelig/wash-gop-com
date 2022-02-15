@@ -1,0 +1,18 @@
+uuid: adab6c56-128b-4368-85f8-93f881d8eb9d
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - navigation
+    parent: 'navigation:0:'
+name: 'Mass Contact Message'
+type: mass_contact
+description: 'Archived copy of mass e-mails sent from this site.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,23 @@
+uuid: ef70dfb6-12f4-444c-9fd8-75213d2ee88b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.donation_display
+  module:
+    - text
+id: node.donation_display.body
+field_name: body
+entity_type: node
+bundle: donation_display
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

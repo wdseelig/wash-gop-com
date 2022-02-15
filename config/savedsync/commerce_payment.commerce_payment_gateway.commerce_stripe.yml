@@ -1,0 +1,19 @@
+uuid: d556e912-a98a-4bb6-bd6e-248270f9c692
+langcode: en
+status: true
+dependencies: {  }
+id: commerce_stripe
+label: commerce_stripe
+weight: null
+plugin: manual
+configuration:
+  instructions:
+    value: ''
+    format: plain_text
+  display_label: Manual
+  mode: n/a
+  payment_method_types:
+    - credit_card
+  collect_billing_information: true
+conditions: {  }
+conditionOperator: AND

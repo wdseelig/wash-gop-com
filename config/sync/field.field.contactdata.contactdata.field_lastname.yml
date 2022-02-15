@@ -1,0 +1,20 @@
+uuid: 78d30c35-22e8-43d5-9e88-f1902717c407
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.contactdata.field_lastname
+  module:
+    - contactdata
+id: contactdata.contactdata.field_lastname
+field_name: field_lastname
+entity_type: contactdata
+bundle: contactdata
+label: LastName
+description: 'The contact''s last (family) name'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

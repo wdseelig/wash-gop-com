@@ -1,0 +1,18 @@
+uuid: 0227a256-6305-497d-8697-4f949934364a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main-menu
+    parent: 'main-menu:0:'
+name: ForumitemDisplay
+type: forumitemdisplay
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

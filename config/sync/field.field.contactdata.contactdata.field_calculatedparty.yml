@@ -1,0 +1,20 @@
+uuid: 741e3560-ed16-4de8-a86e-8e5d43ef6ece
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.contactdata.field_calculatedparty
+  module:
+    - contactdata
+id: contactdata.contactdata.field_calculatedparty
+field_name: field_calculatedparty
+entity_type: contactdata
+bundle: contactdata
+label: CalculatedParty
+description: 'The RNC''s estimate of the party affiliation'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

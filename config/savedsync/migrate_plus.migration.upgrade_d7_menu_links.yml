@@ -1,0 +1,161 @@
+uuid: acdd9498-6782-4bc6-9092-aad11785c901
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_menu_links
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Menu links'
+source:
+  plugin: menu_link
+  constants:
+    bundle: menu_link_content
+process:
+  id:
+    -
+      plugin: get
+      source: mlid
+  bundle:
+    -
+      plugin: get
+      source: constants/bundle
+  title:
+    -
+      plugin: get
+      source: link_title
+  description:
+    -
+      plugin: get
+      source: description
+  menu_name:
+    -
+      plugin: migration_lookup
+      migration: upgrade_d7_menu
+      source: menu_name
+    -
+      plugin: skip_on_empty
+      method: row
+  link/uri:
+    -
+      plugin: link_uri
+      source: link_path
+  link/options:
+    -
+      plugin: get
+      source: options
+  route:
+    -
+      plugin: route
+      source:
+        - link_path
+        - options
+  route_name:
+    -
+      plugin: get
+      source: '@route/route_name'
+  route_parameters:
+    -
+      plugin: get
+      source: '@route/route_parameters'
+  url:
+    -
+      plugin: get
+      source: '@route/url'
+  options:
+    -
+      plugin: get
+      source: '@route/options'
+  external:
+    -
+      plugin: get
+      source: external
+  weight:
+    -
+      plugin: get
+      source: weight
+  expanded:
+    -
+      plugin: get
+      source: expanded
+  enabled:
+    -
+      plugin: get
+      source: enabled
+  parent:
+    -
+      plugin: menu_link_parent
+      source:
+        - plid
+        - '@menu_name'
+        - parent_link_path
+  changed:
+    -
+      plugin: get
+      source: updated
+destination:
+  plugin: 'entity:menu_link_content'
+  no_stub: true
+migration_dependencies:
+  required:
+    - upgrade_d7_menu
+  optional:
+    - upgrade_d7_node_page
+    - upgrade_d7_node_story
+    - upgrade_d7_node_blogauto
+    - upgrade_d7_node_poll
+    - upgrade_d7_node_feed
+    - upgrade_d7_node_event
+    - upgrade_d7_node_advpoll
+    - upgrade_d7_node_pollwithpage
+    - upgrade_d7_node_blog
+    - upgrade_d7_node_basicpetition
+    - upgrade_d7_node_webform
+    - upgrade_d7_node_mass_contact
+    - upgrade_d7_node_wcgopevent
+    - upgrade_d7_node_paypal_donate
+    - upgrade_d7_node_feed_item
+    - upgrade_d7_node_node_gallery_gallery
+    - upgrade_d7_node_node_gallery_item
+    - upgrade_d7_node_inaugurationparty
+    - upgrade_d7_node_pagewithadvancedpoll
+    - upgrade_d7_node_volunteertimeslotevent
+    - upgrade_d7_node_volunteertimesloteventday
+    - upgrade_d7_node_wcgop_store
+    - upgrade_d7_node_gop_lincoln_day_sponsorships
+    - upgrade_d7_node_gop_lincoln_day_dinners
+    - upgrade_d7_node_donation_display
+    - upgrade_d7_node_gop_lincoln_day_reception_and_di
+    - upgrade_d7_node_commercelineitems
+    - upgrade_d7_node_membership_products
+    - upgrade_d7_node_picnicitemdisplay
+    - upgrade_d7_node_membershipitemdisplay
+    - upgrade_d7_node_forum_admission
+    - upgrade_d7_node_forumadmissionselection
+    - upgrade_d7_node_forum_ticket
+    - upgrade_d7_node_forumitemdisplay
+    - upgrade_d7_node_forumitemdisplayv2
+    - upgrade_d7_node_migrate_example_beer
+    - upgrade_d7_node_migrate_example_wine
+    - upgrade_d7_node_migrate_example_producer
+    - upgrade_d7_node_cmcv_volunteer
+    - upgrade_d7_node_golfoutingdisplay
+    - upgrade_d7_node_product_display
+    - upgrade_d7_node_genericproductdisplay
+    - upgrade_d7_node_trialproductdisplay
+    - upgrade_d7_node_gop_ldd_2019_sponsorships
+    - upgrade_d7_node_wcgop2019reception
+    - upgrade_d7_node_wcgop2019dinner
+    - upgrade_d7_node_product
+    - upgrade_d7_node_product_kit
+    - upgrade_d7_node_wcgop2020dinner
+    - upgrade_d7_node_lddd2020couples
+    - upgrade_d7_node_lddd2020tablefor10
+    - upgrade_d7_node_lddd2020sponsorshipdisplay
+    - upgrade_d7_node_ldrad2020display
+    - upgrade_d7_node_lddd2020vipplusdisplay
+    - upgrade_d7_menu

@@ -1,0 +1,25 @@
+uuid: 703d85d0-42d0-4b19-be37-ac0609b82689
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - acmain
+_core:
+  default_config_hash: UOc1JR94blJQjul9ylyOuWm21IjfhByUwiVMsEOOhC4
+id: acmain_branding
+theme: acmain
+region: header
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

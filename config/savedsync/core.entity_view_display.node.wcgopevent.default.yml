@@ -1,0 +1,28 @@
+uuid: e44ad78f-8960-4a03-88bf-85923f987c39
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.wcgopevent.body
+    - node.type.wcgopevent
+  module:
+    - text
+    - user
+id: node.wcgopevent.default
+targetEntityType: node
+bundle: wcgopevent
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

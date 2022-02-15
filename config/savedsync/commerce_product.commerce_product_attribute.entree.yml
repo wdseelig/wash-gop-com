@@ -1,0 +1,7 @@
+uuid: 39ff065c-217e-4af5-984c-c9e3c657e9c6
+langcode: en
+status: true
+dependencies: {  }
+id: entree
+label: Entree
+elementType: select

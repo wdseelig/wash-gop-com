@@ -1,0 +1,30 @@
+uuid: bdd438dd-e117-48f5-a65a-7baa0c26041d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.ldrad2020display.body
+    - node.type.ldrad2020display
+  module:
+    - text
+    - user
+id: node.ldrad2020display.teaser
+targetEntityType: node
+bundle: ldrad2020display
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

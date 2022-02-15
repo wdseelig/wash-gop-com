@@ -1,0 +1,20 @@
+uuid: 686b553a-12e0-4f31-a3eb-d741642fc5e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.contactdata.field_firstname
+  module:
+    - contactdata
+id: contactdata.contactdata.field_firstname
+field_name: field_firstname
+entity_type: contactdata
+bundle: contactdata
+label: FirstName
+description: 'The contact''s first name'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

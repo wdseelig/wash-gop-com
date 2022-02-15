@@ -1,0 +1,20 @@
+uuid: 0350e0b6-4068-4857-a2f9-600fb8ba29b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.contactdata.field_clientid
+  module:
+    - contactdata
+id: contactdata.contactdata.field_clientid
+field_name: field_clientid
+entity_type: contactdata
+bundle: contactdata
+label: ClientID
+description: 'Some kind of RNC ID number'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

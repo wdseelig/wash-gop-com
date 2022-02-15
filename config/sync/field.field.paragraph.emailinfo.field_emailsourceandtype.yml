@@ -1,0 +1,29 @@
+uuid: fce6a076-a50d-4f9b-a06f-d8e9b1f9de49
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_emailsourceandtype
+    - paragraphs.paragraphs_type.emailinfo
+    - taxonomy.vocabulary.emailsourceandtype
+id: paragraph.emailinfo.field_emailsourceandtype
+field_name: field_emailsourceandtype
+entity_type: paragraph
+bundle: emailinfo
+label: EmailSourceAndType
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      emailsourceandtype: emailsourceandtype
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,30 @@
+uuid: 28577e20-7829-4d89-bd45-d577043b60e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.lddd2020sponsorshipdisplay.body
+    - node.type.lddd2020sponsorshipdisplay
+  module:
+    - text
+    - user
+id: node.lddd2020sponsorshipdisplay.teaser
+targetEntityType: node
+bundle: lddd2020sponsorshipdisplay
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

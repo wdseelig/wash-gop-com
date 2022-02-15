@@ -1,0 +1,28 @@
+uuid: 9df6e4d2-a807-49d7-850d-b88033f810cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.pollwithpage.body
+    - node.type.pollwithpage
+  module:
+    - text
+    - user
+id: node.pollwithpage.default
+targetEntityType: node
+bundle: pollwithpage
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

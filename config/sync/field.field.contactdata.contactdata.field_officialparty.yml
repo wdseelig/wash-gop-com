@@ -1,0 +1,20 @@
+uuid: 741bdc17-1fbc-431d-b2d1-421794384c6e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.contactdata.field_officialparty
+  module:
+    - contactdata
+id: contactdata.contactdata.field_officialparty
+field_name: field_officialparty
+entity_type: contactdata
+bundle: contactdata
+label: OfficialParty
+description: 'The "registered" party (if known)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,34 @@
+uuid: 43fab690-4bcc-48d5-bdca-2374ceea3926
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.contactdata.field_emailinfo
+    - paragraphs.paragraphs_type.emailinfo
+  module:
+    - contactdata
+    - entity_reference_revisions
+id: contactdata.contactdata.field_emailinfo
+field_name: field_emailinfo
+entity_type: contactdata
+bundle: contactdata
+label: EmailInfo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      emailinfo: emailinfo
+    target_bundles_drag_drop:
+      emailinfo:
+        enabled: true
+        weight: 3
+      phoneinfo:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

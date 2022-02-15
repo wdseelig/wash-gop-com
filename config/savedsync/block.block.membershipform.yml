@@ -1,0 +1,31 @@
+uuid: 83ccabc3-cca3-448d-b941-d3954cc2bec7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5f942d6b-5d9d-46e9-bfd2-6129ecfe77f0'
+  module:
+    - block_content
+    - system
+  theme:
+    - creative_responsive_theme
+id: membershipform
+theme: creative_responsive_theme
+region: footer_second
+weight: 0
+provider: null
+plugin: 'block_content:5f942d6b-5d9d-46e9-bfd2-6129ecfe77f0'
+settings:
+  id: 'block_content:5f942d6b-5d9d-46e9-bfd2-6129ecfe77f0'
+  label: 'Membership Form'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,30 @@
+uuid: 400b1f05-0be0-4aa6-935a-61ca8839ec2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.donation_display.body
+    - node.type.donation_display
+  module:
+    - text
+    - user
+id: node.donation_display.teaser
+targetEntityType: node
+bundle: donation_display
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

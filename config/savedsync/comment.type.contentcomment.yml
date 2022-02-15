@@ -1,0 +1,8 @@
+uuid: 82b8191d-0d52-4061-a2be-741219c6769a
+langcode: en
+status: true
+dependencies: {  }
+id: contentcomment
+label: ContentComment
+target_entity_type_id: node
+description: 'This is a comment for content'

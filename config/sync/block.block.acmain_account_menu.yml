@@ -1,0 +1,27 @@
+uuid: bc902380-9858-42cd-86ec-6a0faaab944b
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - acmain
+_core:
+  default_config_hash: 7TfIJlAyvTNC9JopTrJSmj1zXsgJHkd8r-wpLlvEBGA
+id: acmain_account_menu
+theme: acmain
+region: sidebar_first
+weight: -14
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 2
+  expand_all_items: false
+visibility: {  }

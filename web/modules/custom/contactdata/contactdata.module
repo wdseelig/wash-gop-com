@@ -1,0 +1,51 @@
+<?php
+
+/**
+ * @file
+ * Provides a contactdata entity type.
+ */
+
+use Drupal\Core\Render\Element;
+
+/**
+ * Implements hook_theme().
+ */
+function contactdata_theme() {
+  return [
+    'contactdata' => [
+      'render element' => 'elements',
+    ],
+  ];
+}
+
+/**
+ * Prepares variables for contactdata templates.
+ *
+ * Default template: contactdata.html.twig.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - elements: An associative array containing the contactdata information and any
+ *     fields attached to the entity.
+ *   - attributes: HTML attributes for the containing element.
+ */
+function template_preprocess_contactdata(array &$variables) {
+  foreach (Element::children($variables['elements']) as $key) {
+    $variables['content'][$key] = $variables['elements'][$key];
+  }
+}
+function contactdata_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id)
+{
+  $match = "contactdata_edit_form";
+  if (strpos($form_id, $match ) !== false){
+    $form['item'] = array(
+      '#markup' => "<h2 style=color:red;>WCGOP Contact Edit Form</h2>",
+      '#weight' => -5,
+      '#prefix' => '<span class="itemclass">',
+      '#suffix' => '</span>',
+    );
+
+
+
+}
+}

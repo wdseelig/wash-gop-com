@@ -1,0 +1,23 @@
+uuid: 24c681ef-db64-491f-ba2c-ee704c3584cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.trialproductdisplay
+  module:
+    - text
+id: node.trialproductdisplay.body
+field_name: body
+entity_type: node
+bundle: trialproductdisplay
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,28 @@
+uuid: 4c376587-e08c-4967-9226-c0dbaf5f71f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.forumitemdisplayv2.body
+    - node.type.forumitemdisplayv2
+  module:
+    - text
+    - user
+id: node.forumitemdisplayv2.default
+targetEntityType: node
+bundle: forumitemdisplayv2
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

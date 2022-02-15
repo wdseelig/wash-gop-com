@@ -1,0 +1,12 @@
+uuid: 61d655ca-7f25-46af-bea9-5fec527e8891
+langcode: en
+status: true
+dependencies: {  }
+id: lddd2020sponsorshipdisplay
+label: LDDD2020SponsorshipDisplay
+description: 'This is the display node for the display of ordinary sponsorships'
+variationType: lddd2020sponsorships
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

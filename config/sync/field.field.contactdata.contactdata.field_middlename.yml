@@ -1,0 +1,20 @@
+uuid: b9e84d0f-cc1b-4431-b774-8dde072c8382
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.contactdata.field_middlename
+  module:
+    - contactdata
+id: contactdata.contactdata.field_middlename
+field_name: field_middlename
+entity_type: contactdata
+bundle: contactdata
+label: MiddleName
+description: 'The contact''s middle name'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

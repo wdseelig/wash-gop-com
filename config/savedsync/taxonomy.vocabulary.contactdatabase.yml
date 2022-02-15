@@ -1,0 +1,8 @@
+uuid: 1aafdc6d-4eab-445d-b2c6-b4ffa12cab3d
+langcode: en
+status: true
+dependencies: {  }
+name: ContactDataBase
+vid: contactdatabase
+description: 'The Hierarchical Vocabulary for our Contacts Data Base'
+weight: 0

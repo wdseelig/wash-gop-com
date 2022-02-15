@@ -1,0 +1,20 @@
+uuid: e1eed414-98a5-40d4-81ba-4205a4b3047d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.contactdata.field_stateethnicity
+  module:
+    - contactdata
+id: contactdata.contactdata.field_stateethnicity
+field_name: field_stateethnicity
+entity_type: contactdata
+bundle: contactdata
+label: StateEthnicity
+description: 'State supplied racial information'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

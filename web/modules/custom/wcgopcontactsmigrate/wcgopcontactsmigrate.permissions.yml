@@ -1,0 +1,4 @@
+administer wcgopcontactsmigrate configuration:
+  title: 'Administer wcgopcontactsmigrate configuration'
+  description: 'Optional description.'
+  restrict access: true

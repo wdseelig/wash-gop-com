@@ -1,0 +1,25 @@
+uuid: cce475c4-7f8c-4fb9-bbb9-b8170a406064
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:block_standard:7d358440-1df6-4218-8ac5-a84954067b24'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: bannerforapril
+theme: bartik
+region: header
+weight: -5
+provider: null
+plugin: 'block_content:7d358440-1df6-4218-8ac5-a84954067b24'
+settings:
+  id: 'block_content:7d358440-1df6-4218-8ac5-a84954067b24'
+  label: 'Banner for April'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

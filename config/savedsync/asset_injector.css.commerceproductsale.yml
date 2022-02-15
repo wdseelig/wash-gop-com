@@ -1,0 +1,63 @@
+uuid: 912de7ef-0e17-4cc0-8579-29d1dfb6d845
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: commerceproductsale
+label: commerceproductsale
+code: |-
+  .webform-submission-form {
+    background-color: #7aeff5;
+  }
+  .form-item label {
+    margin-left:  25px;
+  }
+  .namebadgeelement {
+    max-width:  400px;
+  }
+  div.views-field-title {
+    font-weight:  bold;
+    color:  red;
+  }
+
+  .productdescription article.contextual-region > div > div:first-of-type{
+    display:  none;
+  }
+  .productdescription article.contextual-region >div:first-of-type {
+    display:  none;
+  }
+  .productpackage div {
+    display:  table;
+  }
+  .productpackage .prodpkg {
+    display:  table-cell;
+    padding:  20px;
+  }
+  .fieldset-wrapper .form-checkboxes label {
+    font-weight:  bold;
+  }
+  .webform-entity-checkboxes--wrapper legend{
+    display: none;
+  }
+  hr {
+    height: 5px;
+    background: blue;
+  }
+  #block-wcgopcommercegotocartblock a {
+    font-weight:  bold;
+    color:  #ffff00;
+    font-size:  16px;
+  }
+  #user-login-form {
+    display: none;
+  }
+conditions_require_all: true
+conditions:
+  request_path:
+    id: request_path
+    pages: /trial
+    negate: false
+contexts: {  }
+media: all
+preprocess: true

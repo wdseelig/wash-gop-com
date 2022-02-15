@@ -1,0 +1,10 @@
+uuid: a031bdcf-ddec-4293-98bd-6adb5ffe329e
+langcode: en
+status: true
+dependencies: {  }
+label: inaugurationadmission
+id: inaugurationadmission
+purchasableEntityType: commerce_product_variation
+orderType: default
+traits: {  }
+locked: false

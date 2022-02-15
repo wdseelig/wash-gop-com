@@ -1,0 +1,28 @@
+uuid: 0be32f8c-98a8-4346-a687-9a4bc7817a93
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.volunteertimeslotevent.body
+    - node.type.volunteertimeslotevent
+  module:
+    - text
+    - user
+id: node.volunteertimeslotevent.default
+targetEntityType: node
+bundle: volunteertimeslotevent
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

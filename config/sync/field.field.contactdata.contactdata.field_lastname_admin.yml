@@ -1,0 +1,24 @@
+uuid: 5695a7c8-d533-48e2-a969-efbff9bdd12c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.contactdata.field_lastname_admin
+  module:
+    - contactdata
+id: contactdata.contactdata.field_lastname_admin
+field_name: field_lastname_admin
+entity_type: contactdata
+bundle: contactdata
+label: LastName_admin
+description: 'Field controlled by contacts administrator'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

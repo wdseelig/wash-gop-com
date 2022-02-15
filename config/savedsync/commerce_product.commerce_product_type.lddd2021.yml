@@ -1,0 +1,12 @@
+uuid: 1226dfcd-f4a2-44fb-b958-f52cbf788eef
+langcode: en
+status: true
+dependencies: {  }
+id: lddd2021
+label: LDDD2021
+description: 'This is a Lincoln Day Dinner for 2021'
+variationType: eventdinnerchoices
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

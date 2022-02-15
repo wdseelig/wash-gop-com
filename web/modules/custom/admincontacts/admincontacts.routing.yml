@@ -1,0 +1,14 @@
+admincontacts.home:
+  path: '/admincontacts'
+  defaults:
+    _title: 'WCGOP Contacts System'
+    _controller: '\Drupal\admincontacts\Controller\AdmincontactsController::build'
+  requirements:
+    _permission: 'access content'
+admincontacts.acdisplay:
+  path: '/admincontacts/acdisplay/{nojs}/{cid}'
+  defaults:
+    _title: 'WCGOP Contact Display'
+    _controller: '\Drupal\admincontacts\Controller\AdmincontactsController::acdisplay'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,23 @@
+uuid: dccfd2b9-a1b7-40c5-8570-56c66c8798fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.inaugurationparty
+  module:
+    - text
+id: node.inaugurationparty.body
+field_name: body
+entity_type: node
+bundle: inaugurationparty
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

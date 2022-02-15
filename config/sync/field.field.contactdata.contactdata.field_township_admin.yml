@@ -1,0 +1,24 @@
+uuid: 1eba185a-4b49-4deb-a016-b989c39cc350
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.contactdata.field_township_admin
+  module:
+    - contactdata
+id: contactdata.contactdata.field_township_admin
+field_name: field_township_admin
+entity_type: contactdata
+bundle: contactdata
+label: Township_admin
+description: 'Field controlled by contacts admin'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

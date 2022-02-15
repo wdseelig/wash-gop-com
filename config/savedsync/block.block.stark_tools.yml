@@ -1,0 +1,35 @@
+uuid: c6aade77-b24e-4dc3-aad8-4b132cf6ffc1
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - node
+    - system
+  theme:
+    - stark
+_core:
+  default_config_hash: uUF2GYN2x5fcmOu26M-gwqUA-yVWMDD_MRmnYfmPzlM
+id: stark_tools
+theme: stark
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

@@ -1,0 +1,12 @@
+uuid: c5e90a6b-6731-4ab4-b053-a38e5cd1eaab
+langcode: en
+status: true
+dependencies: {  }
+id: golfoutingdisplay
+label: GolfOutingDisplay
+description: 'The is the "store front" for our May Golf Outing'
+variationType: golf_outing
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

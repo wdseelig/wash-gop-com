@@ -1,0 +1,91 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for admincontacts module.
+ *
+ * @DCG
+ * This file is no longer required in Drupal 8.
+ * @see https://www.drupal.org/node/2217931
+ */
+function admincontacts_page_attachments(&$page) {
+  $page['#attached']['library'][] =  'admincontacts/admincontacts';
+}
+function admincontacts_theme($existing, $type, $theme, $path) {
+  return [
+    'admincontacts_main' => [
+      'render_element' => 'children',
+      'path' => $path . '/templates',
+      'template' => 'admincontacts-main',
+      'variables' => [
+        'searchform' => 'Default search form value',
+      ],
+    ],
+  ];
+}
+function admincontacts_form_alter (&$form, \Drupal\Core\Form\FormStateInterface $formState, $form_id)
+{
+  $match = 'contactdata_edit_form';
+  if (strpos($form_id, $match) !== false) {
+    $form['field_taginfo']['widget'][0][] = [
+      '#chosen' => TRUE,
+    ];
+    $x = 1;
+  }
+}
+
+/**
+ * Implements hook_entity_display_build_alter().
+ */
+function admincontacts_entity_display_build_alter(&$build, $context)
+{
+  if (strpos($context['entity']->getEntityTypeId(), 'contactdata') !== false) {
+    $build = [];
+    $build['wrapper'] = array(
+      '#type' => 'item',
+      '#wrapper_attributes' => ['class' => 'contactdisplay'],
+    );
+    $build['wrapper']['contactname'] = [
+      '#type' => 'item',
+      '#markup' => '<h1>' . $context['entity']->field_lastname->getString() . ', ' .
+        $context['entity']->field_firstname->getString(). '</h1>',
+    ];
+    $build['wrapper']['contactaddress'] = [
+      '#type' => 'item',
+      '#markup' => '<h2>' . $context['entity']->field_primaryaddress1->getString() . '<br>' .
+        $context['entity']->field_primarycity->getString() .  ', ' .
+        $context['entity']->field_primaryzip->getString() . '<br>' .
+        $context['entity']->field_precinctname->getString(),
+    ];
+
+    $build['wrapper']['contactphonesview'] = [
+      '#prefix' => '<div class="phoneview">',
+      '#suffix' => '<br><br></div>',
+      '#type' => 'view',
+      '#name' => 'phoneview2',
+      '#arguments' => [$context['entity']->id->getString()],
+      '#embed' => TRUE,
+    ];
+
+    $build['wrapper']['contactemailview'] = [
+      '#prefix' => '<div class="emailview">',
+      '#suffix' => '<br><br></div>',
+      '#type' => 'view',
+      '#name' => 'emailview',
+      '#arguments' => [$context['entity']->id->getString()],
+      '#embed' => TRUE,
+    ];
+
+    $build['wrapper']['contacttagview'] = [
+      '#prefix' => '<div class="tagview">',
+      '#suffix' => '<br><br></div>',
+      '#type' => 'view',
+      '#name' => 'tagview',
+      '#arguments' => [$context['entity']->id->getString()],
+      '#embed' => TRUE,
+    ];
+    return $build;
+  }
+}
+
+

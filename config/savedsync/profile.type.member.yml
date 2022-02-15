@@ -1,0 +1,12 @@
+uuid: 37ed509f-0cbb-4728-a8bb-acb2924677a8
+langcode: en
+status: true
+dependencies: {  }
+id: member
+label: Member
+display_label: null
+multiple: false
+registration: false
+roles: {  }
+allow_revisions: false
+new_revision: false

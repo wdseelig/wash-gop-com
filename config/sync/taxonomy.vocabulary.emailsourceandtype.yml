@@ -1,0 +1,8 @@
+uuid: 7c1b3e5d-5018-492c-8662-99f44562aac6
+langcode: en
+status: true
+dependencies: {  }
+name: EmailSourceAndType
+vid: emailsourceandtype
+description: ''
+weight: 0

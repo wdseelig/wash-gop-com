@@ -1,0 +1,30 @@
+uuid: 3b437490-ee77-456e-9c14-10a8d05e3e1f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:edce0e95-cccf-442b-ae3b-98d839bcf7eb'
+  module:
+    - block_content
+    - system
+  theme:
+    - acmain
+id: acmain_shoppingcartlink
+theme: acmain
+region: primary_menu
+weight: -10
+provider: null
+plugin: 'block_content:edce0e95-cccf-442b-ae3b-98d839bcf7eb'
+settings:
+  id: 'block_content:edce0e95-cccf-442b-ae3b-98d839bcf7eb'
+  label: ShoppingCartLink
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /goplincolnday2021
+    negate: false

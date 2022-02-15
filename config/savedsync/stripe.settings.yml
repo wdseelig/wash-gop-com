@@ -1,0 +1,12 @@
+environment: test
+apikey:
+  test:
+    public: wcgop_admin
+    secret: wds217hhs1221
+    webhook: ''
+  live:
+    public: ''
+    secret: ''
+    webhook: ''
+_core:
+  default_config_hash: rvasJJkL462tLuGEfcTDUE_1ReQ_UkXB1gsCVJtCIPg

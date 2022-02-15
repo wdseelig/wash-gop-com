@@ -1,0 +1,10 @@
+uuid: 1bd4d904-4407-4a6a-b08a-59c5d9a9b69f
+langcode: en
+status: true
+dependencies: {  }
+id: fieldmigrations
+label: fieldmigrations
+description: 'Migrates fields and field instances'
+source_type: 'Drupal 7'
+module: null
+shared_configuration: null

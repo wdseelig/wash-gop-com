@@ -1,0 +1,23 @@
+uuid: 00df6d3f-4186-40c4-ba22-91fa0ccbed66
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.wcgop2019dinner
+  module:
+    - text
+id: node.wcgop2019dinner.body
+field_name: body
+entity_type: node
+bundle: wcgop2019dinner
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

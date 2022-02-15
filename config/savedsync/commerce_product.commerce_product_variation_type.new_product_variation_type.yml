@@ -1,0 +1,10 @@
+uuid: c11b258b-75c7-4498-be47-d6e86bc8fb5f
+langcode: en
+status: true
+dependencies: {  }
+id: new_product_variation_type
+label: 'New Product Variation Type'
+orderItemType: default
+generateTitle: false
+traits: {  }
+locked: false

@@ -1,0 +1,28 @@
+uuid: 8236fca0-fbd5-4a08-b9ee-b8906446cd2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.trialproductdisplay.body
+    - node.type.trialproductdisplay
+  module:
+    - text
+    - user
+id: node.trialproductdisplay.default
+targetEntityType: node
+bundle: trialproductdisplay
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,22 @@
+uuid: d2f2dbd8-31cb-4bbe-819f-03b3d6ea1332
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: contactdatasearch
+label: contactdatasearch
+code: |-
+  table {
+    width: 600px;
+    border-spacing: 20px;
+  }
+conditions_require_all: true
+conditions:
+  request_path:
+    id: request_path
+    pages: /contactdata
+    negate: false
+contexts: {  }
+media: all
+preprocess: true

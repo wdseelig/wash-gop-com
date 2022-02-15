@@ -1,0 +1,28 @@
+uuid: e136563a-eb6b-4faa-a7d2-4b108f26f05e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.paypal_donate.body
+    - node.type.paypal_donate
+  module:
+    - text
+    - user
+id: node.paypal_donate.default
+targetEntityType: node
+bundle: paypal_donate
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

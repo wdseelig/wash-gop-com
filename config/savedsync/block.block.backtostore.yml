@@ -1,0 +1,30 @@
+uuid: b777d187-d386-4b2f-b9c5-55259c3971ae
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7fbdd400-4ba9-4162-92f9-0e08824c98a9'
+  module:
+    - block_content
+    - system
+  theme:
+    - creative_responsive_theme
+id: backtostore
+theme: creative_responsive_theme
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'block_content:7fbdd400-4ba9-4162-92f9-0e08824c98a9'
+settings:
+  id: 'block_content:7fbdd400-4ba9-4162-92f9-0e08824c98a9'
+  label: BackToStore
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '/*goplincoln*'
+    negate: false

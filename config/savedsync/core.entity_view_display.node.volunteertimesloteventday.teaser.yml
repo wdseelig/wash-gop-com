@@ -1,0 +1,30 @@
+uuid: c483f7e1-fedd-412d-8f3c-55862b739c7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.volunteertimesloteventday.body
+    - node.type.volunteertimesloteventday
+  module:
+    - text
+    - user
+id: node.volunteertimesloteventday.teaser
+targetEntityType: node
+bundle: volunteertimesloteventday
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

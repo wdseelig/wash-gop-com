@@ -1,0 +1,29 @@
+uuid: 9cdfbc76-8176-4ab0-b813-5ed4effa7f64
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tag
+    - paragraphs.paragraphs_type.taginfo
+    - taxonomy.vocabulary.contactdatabase
+id: paragraph.taginfo.field_tag
+field_name: field_tag
+entity_type: paragraph
+bundle: taginfo
+label: Tag
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      contactdatabase: contactdatabase
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

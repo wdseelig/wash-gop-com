@@ -1,0 +1,547 @@
+uuid: d38982ac-c0b7-446e-af9f-f16e9efe713f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.contactdata.contactdata.field_age
+    - field.field.contactdata.contactdata.field_calculatedparty
+    - field.field.contactdata.contactdata.field_ccdistrict_admin
+    - field.field.contactdata.contactdata.field_cdname
+    - field.field.contactdata.contactdata.field_cdname_admin
+    - field.field.contactdata.contactdata.field_clientid
+    - field.field.contactdata.contactdata.field_countycommissionerdistrict
+    - field.field.contactdata.contactdata.field_countyname
+    - field.field.contactdata.contactdata.field_countyname_admin
+    - field.field.contactdata.contactdata.field_dob
+    - field.field.contactdata.contactdata.field_emailinfo
+    - field.field.contactdata.contactdata.field_firstname
+    - field.field.contactdata.contactdata.field_firstname_admin
+    - field.field.contactdata.contactdata.field_gender
+    - field.field.contactdata.contactdata.field_generalfrequency
+    - field.field.contactdata.contactdata.field_gop_id
+    - field.field.contactdata.contactdata.field_hhcode
+    - field.field.contactdata.contactdata.field_hhmemberid
+    - field.field.contactdata.contactdata.field_hhrecid
+    - field.field.contactdata.contactdata.field_jurisdictionvoterid
+    - field.field.contactdata.contactdata.field_lastname
+    - field.field.contactdata.contactdata.field_lastname_admin
+    - field.field.contactdata.contactdata.field_ldname
+    - field.field.contactdata.contactdata.field_ldname_admin
+    - field.field.contactdata.contactdata.field_middlename
+    - field.field.contactdata.contactdata.field_middlename_admin
+    - field.field.contactdata.contactdata.field_observedparty
+    - field.field.contactdata.contactdata.field_officialparty
+    - field.field.contactdata.contactdata.field_phoneinfo
+    - field.field.contactdata.contactdata.field_precinctname
+    - field.field.contactdata.contactdata.field_precinctname_admin
+    - field.field.contactdata.contactdata.field_precinctnumber
+    - field.field.contactdata.contactdata.field_primaryaddress1
+    - field.field.contactdata.contactdata.field_primaryaddress1_admin
+    - field.field.contactdata.contactdata.field_primarycity
+    - field.field.contactdata.contactdata.field_primarycity_admin
+    - field.field.contactdata.contactdata.field_primarystate
+    - field.field.contactdata.contactdata.field_primarystate_admin
+    - field.field.contactdata.contactdata.field_primaryunit
+    - field.field.contactdata.contactdata.field_primaryunit_admin
+    - field.field.contactdata.contactdata.field_primaryunitnumber
+    - field.field.contactdata.contactdata.field_primaryunitnumber_admin
+    - field.field.contactdata.contactdata.field_primaryzip
+    - field.field.contactdata.contactdata.field_primaryzip_admin
+    - field.field.contactdata.contactdata.field_rncregid
+    - field.field.contactdata.contactdata.field_sdname
+    - field.field.contactdata.contactdata.field_sdname_admin
+    - field.field.contactdata.contactdata.field_stateethnicity
+    - field.field.contactdata.contactdata.field_statevoterid
+    - field.field.contactdata.contactdata.field_taginfo
+    - field.field.contactdata.contactdata.field_township
+    - field.field.contactdata.contactdata.field_township_admin
+    - field.field.contactdata.contactdata.field_voterkey
+  module:
+    - contactdata
+    - entity_reference_revisions
+    - user
+id: contactdata.contactdata.default
+targetEntityType: contactdata
+bundle: contactdata
+mode: default
+content:
+  created:
+    label: above
+    type: timestamp
+    weight: 2
+    region: content
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+  field_age:
+    weight: 38
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_calculatedparty:
+    weight: 42
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_ccdistrict_admin:
+    weight: 54
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_cdname:
+    weight: 24
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_cdname_admin:
+    weight: 25
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_clientid:
+    weight: 50
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_countycommissionerdistrict:
+    weight: 30
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_countyname:
+    weight: 34
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_countyname_admin:
+    weight: 35
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_dob:
+    weight: 37
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_emailinfo:
+    type: entity_reference_revisions_entity_view
+    weight: 57
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_firstname:
+    weight: 6
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_firstname_admin:
+    weight: 4
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_gender:
+    weight: 39
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_generalfrequency:
+    weight: 43
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_gop_id:
+    weight: 36
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_hhcode:
+    weight: 48
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_hhmemberid:
+    weight: 47
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_hhrecid:
+    weight: 46
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_jurisdictionvoterid:
+    weight: 49
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_lastname:
+    weight: 5
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_lastname_admin:
+    weight: 6
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_ldname:
+    weight: 26
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_ldname_admin:
+    weight: 27
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_middlename:
+    weight: 12
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_middlename_admin:
+    weight: 13
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_observedparty:
+    weight: 40
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_officialparty:
+    weight: 41
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_phoneinfo:
+    type: entity_reference_revisions_entity_view
+    weight: 56
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_precinctname:
+    weight: 9
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_precinctname_admin:
+    weight: 10
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_precinctnumber:
+    weight: 44
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_primaryaddress1:
+    weight: 7
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_primaryaddress1_admin:
+    weight: 8
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_primarycity:
+    weight: 14
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_primarycity_admin:
+    weight: 15
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_primarystate:
+    weight: 16
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_primarystate_admin:
+    weight: 17
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_primaryunit:
+    weight: 20
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_primaryunit_admin:
+    weight: 22
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_primaryunitnumber:
+    weight: 21
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_primaryunitnumber_admin:
+    weight: 23
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_primaryzip:
+    weight: 18
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_primaryzip_admin:
+    weight: 19
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_rncregid:
+    weight: 51
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_sdname:
+    weight: 28
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_sdname_admin:
+    weight: 29
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_stateethnicity:
+    weight: 53
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_statevoterid:
+    weight: 55
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_taginfo:
+    type: entity_reference_revisions_entity_view
+    weight: 58
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_township:
+    weight: 32
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_township_admin:
+    weight: 33
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_voterkey:
+    weight: 45
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  uid:
+    label: above
+    type: author
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

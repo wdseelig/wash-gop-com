@@ -1,0 +1,8 @@
+uuid: 9a876a10-c232-4abb-a76d-ed57eae450cf
+langcode: en
+status: true
+dependencies: {  }
+id: usercomment
+label: UserComment
+target_entity_type_id: user
+description: 'This is a comment on a user'

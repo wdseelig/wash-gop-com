@@ -1,0 +1,18 @@
+uuid: b1665ff9-5364-4771-a941-937670d83107
+langcode: en
+status: true
+dependencies:
+  module:
+    - contactdata
+id: contactdata.field_primaryaddress1_admin
+field_name: field_primaryaddress1_admin
+entity_type: contactdata
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

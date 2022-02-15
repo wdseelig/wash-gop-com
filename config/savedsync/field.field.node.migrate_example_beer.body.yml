@@ -1,0 +1,23 @@
+uuid: f1332875-c0ae-46c4-836d-68b1f492f364
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.migrate_example_beer
+  module:
+    - text
+id: node.migrate_example_beer.body
+field_name: body
+entity_type: node
+bundle: migrate_example_beer
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,20 @@
+uuid: 2412b77b-b951-46b7-9e82-fe3461a1a860
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.contactdata.field_primaryaddress1
+  module:
+    - contactdata
+id: contactdata.contactdata.field_primaryaddress1
+field_name: field_primaryaddress1
+entity_type: contactdata
+bundle: contactdata
+label: PrimaryAddress1
+description: 'The contact''s street address'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

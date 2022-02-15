@@ -1,0 +1,19 @@
+uuid: 261956ae-a825-4860-8224-477f38a9e3e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.lincoln_day_dinner_table_of_8
+    - field.storage.commerce_product_variation.field_tmp_person_2_name
+id: commerce_product_variation.lincoln_day_dinner_table_of_8.field_tmp_person_2_name
+field_name: field_tmp_person_2_name
+entity_type: commerce_product_variation
+bundle: lincoln_day_dinner_table_of_8
+label: 'Tmp Person 2 Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

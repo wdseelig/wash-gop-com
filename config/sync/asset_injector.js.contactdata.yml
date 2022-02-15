@@ -1,0 +1,24 @@
+uuid: 4c29ef8c-938e-4dfe-936f-63b53ed2eb7f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: contactdata
+label: ContactData
+code: |-
+  jQuery(document).ready(function($){
+    $(".T68fnw").hide();
+  });
+conditions_require_all: true
+conditions:
+  request_path:
+    id: request_path
+    pages: '/admin/content/contactdata/*/edit'
+    negate: false
+contexts: {  }
+header: true
+preprocess: true
+jquery: true
+noscript: ''
+noscriptRegion: {  }

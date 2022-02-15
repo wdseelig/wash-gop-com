@@ -1,0 +1,14 @@
+uuid: bcca2e68-f8d9-492f-8afc-15153f6c8766
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.view_contacts
+  module:
+    - user
+id: user_remove_role_action.view_contacts
+label: 'Remove the View Contacts role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: view_contacts

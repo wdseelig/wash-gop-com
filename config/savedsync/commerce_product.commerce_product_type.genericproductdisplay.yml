@@ -1,0 +1,12 @@
+uuid: c5d95b07-6289-4925-ae2b-f82e9e261780
+langcode: en
+status: true
+dependencies: {  }
+id: genericproductdisplay
+label: GenericProductDisplay
+description: 'This is a general purpose product display node content type'
+variationType: product
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

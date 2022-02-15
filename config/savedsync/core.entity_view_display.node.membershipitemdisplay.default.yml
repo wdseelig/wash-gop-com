@@ -1,0 +1,28 @@
+uuid: f2bafa0f-e52b-45d8-b9c2-298c90be6ffc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.membershipitemdisplay.body
+    - node.type.membershipitemdisplay
+  module:
+    - text
+    - user
+id: node.membershipitemdisplay.default
+targetEntityType: node
+bundle: membershipitemdisplay
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

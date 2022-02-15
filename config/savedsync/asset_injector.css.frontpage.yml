@@ -1,0 +1,159 @@
+uuid: 0b9f8bb6-04e7-482a-8f8c-17bf187f0e30
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: frontpage
+label: frontpage
+code: |
+  .node--view-mode-teaser > h2 {
+    display: none;
+  }
+  .node-readmore a {
+    display:  none;
+  }
+  .region-sidebar-first {
+    background-color: #b3eeff;
+    box-shadow: 0 0 0 20px #b3eeff;
+  }
+  .contextual-region.block div p img {
+    display:  block;
+    margin-left:  auto;
+    margin-right: auto;
+    width:  65%;
+  }
+  .region-sidebar-first h2 {
+    color:  red;
+    text-align: center;
+    font-size:  18px;
+  }
+  .region-sidebar-second h2 {
+    color:  red;
+    text-align: center;
+    font-size:  18px;
+  }
+  #sidebar-second {
+    background-color: #ffff00;
+    border-radius:  10px 10px 10px 10px;
+    width:  15%;
+  }
+  hr {
+      height: 5px;
+      background: blue;
+  }
+  .region-sidebar-second {
+    background-color: #ffff00;
+    padding-left: 0px;
+    border-left: 20px solid #ffff00;
+    border-top: 20px solid #ffff00;
+    margin-left: -15px;
+  /*  box-shadow: -16px -20px 0 #ffff00; */
+  }
+
+  .leftsidebar .region-sidebar-first{
+    box-shadow: 0 0 0 20px #b3eeff;
+  }
+  .rightsidebar .region-sidebar-second{
+    box-shadow: -16px -20px 0 #ffff00;
+  }
+  .region-sidebar-second .block {
+    background-color: transparent;
+  }
+  .region-header img {
+    text-align: center;
+  }
+  #content .section {
+    background-color: #b3eeff;
+  }
+  #main.layout-main {
+    margin-top: 0px;
+  }
+  .main-menuwrap {
+    margin-bottom:  0px;
+  }
+  .region.region-content {
+    margin-top: 0px;
+  }
+  h2.node__title {
+    display: none;
+  }
+  .region-header .block {
+    margin-top: 20px;
+    width:  1140px;
+  }
+  .col-md-6 {
+    background-color: #b3eeff;
+  }
+  .col-md-3 {
+    padding-right: 0px;
+  }
+  div.coOrvg {
+    display: none;
+  }
+  div.content {
+    margin-top: 0px;
+  }
+  .region.region-content {
+    margin-top: -10px;
+  }
+  .social-media {
+    display:  none;
+  }
+  .site-branding__slogan {
+    color:  #ffff00;
+  }
+  .site-branding__name a {
+    color:  #ff0000;
+    font-family: "Apple Chancery";
+    line-height:  150%;
+  }
+  .site-branding__slogan {
+    color:  #ffff00;
+    
+  }
+  .site-branding__logo img {
+    max-width:  60%;
+    
+  }
+  #main-menu a:link,
+  #main-menu a:visited{
+    color:  #ffff00;
+  }
+  #main-menu a:hover {
+    color:  #fc0fc0;
+  }
+  .region-footer-first {
+    background-color: #34eb7d;
+    height: 200px;
+    border: 30px solid green;
+    margin-right: -20px;
+  }
+  .region-footer-second {
+    background-color: #34eb7d;
+    height: 200px;
+     border: 30px solid green;
+    margin-left: -30px;
+    margin-right: -20px;
+  }
+  .region-footer-third {
+    background-color: #34eb7d;
+    height: 200px;
+     border: 30px solid green;
+    margin-left: -30px;
+  }
+  .copyright .container {
+    display: none;
+  }
+  body:not(.user-logged-in) .ExecutiveCommitteeMembers {
+    display: none;
+  }
+conditions_require_all: true
+conditions:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/About"
+    negate: false
+contexts: {  }
+media: all
+preprocess: true

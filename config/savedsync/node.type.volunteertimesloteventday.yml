@@ -1,0 +1,18 @@
+uuid: 20c1a312-5aaf-484e-89af-6614c3ea4404
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main-menu
+    parent: 'main-menu:0:'
+name: VolunteerTimeSlotEventDay
+type: volunteertimesloteventday
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

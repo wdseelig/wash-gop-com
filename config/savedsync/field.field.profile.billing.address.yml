@@ -1,0 +1,25 @@
+uuid: aff47a3d-d7f8-43bc-bd12-3e49be8bb40c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.address
+    - profile.type.billing
+  module:
+    - address
+id: profile.billing.address
+field_name: address
+entity_type: profile
+bundle: billing
+label: Address
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: null
+settings:
+  available_countries: {  }
+  langcode_override: ''
+  field_overrides: {  }
+  fields: {  }
+field_type: address

@@ -1,0 +1,8 @@
+uuid: 40164ec7-f215-4b6f-aa49-e275812edab2
+langcode: en
+status: true
+dependencies: {  }
+id: images
+label: Images
+description: 'Menu item for imce'
+locked: false

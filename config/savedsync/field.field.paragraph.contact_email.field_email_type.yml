@@ -1,0 +1,33 @@
+uuid: ae4d1432-a7ed-4dd2-bd43-3cef592838c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_email_type
+    - paragraphs.paragraphs_type.contact_email
+    - taxonomy.vocabulary.emailtypes
+  content:
+    - 'taxonomy_term:emailtypes:16b4c3a4-ef46-4b38-bcf3-2db544edb935'
+id: paragraph.contact_email.field_email_type
+field_name: field_email_type
+entity_type: paragraph
+bundle: contact_email
+label: 'Email type'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: 16b4c3a4-ef46-4b38-bcf3-2db544edb935
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      emailtypes: emailtypes
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

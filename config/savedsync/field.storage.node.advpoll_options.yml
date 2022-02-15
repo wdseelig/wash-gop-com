@@ -1,0 +1,39 @@
+uuid: 1f451f32-5fb9-4c91-a2de-d79ad38852c4
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.advpoll_options
+field_name: advpoll_options
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: writein
+      label: 'Allow users to cast write-in votes'
+    -
+      value: electoral
+      label: 'Restrict voting to electoral list'
+    -
+      value: block
+      label: 'Generate a block for this poll'
+    -
+      value: password
+      label: 'Require users to enter a password before taking this poll'
+    -
+      value: attendance
+      label: 'Show the users who have logged in to the meeting'
+    -
+      value: showvote
+      label: 'Show the votes that have been cast'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 4
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

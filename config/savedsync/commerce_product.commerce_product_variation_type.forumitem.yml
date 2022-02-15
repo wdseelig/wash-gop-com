@@ -1,0 +1,10 @@
+uuid: 7c917a7d-61de-412b-9a43-8e77a1660405
+langcode: en
+status: true
+dependencies: {  }
+id: forumitem
+label: ForumItem
+orderItemType: product
+generateTitle: false
+traits: {  }
+locked: false

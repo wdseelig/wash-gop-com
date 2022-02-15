@@ -1,0 +1,21 @@
+{#
+/**
+ * @file
+ * Default theme implementation to present a contactdata entity.
+ *
+ * This template is used when viewing a registered contactdata's page,
+ * e.g., /admin/content/contactdata)/123. 123 being the contactdata's ID.
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ *   print a subset such as 'content.title'.
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_contactdata()
+ */
+#}
+<article{{ attributes }}>
+  {% if content %}
+    {{- content -}}
+  {% endif %}
+</article>

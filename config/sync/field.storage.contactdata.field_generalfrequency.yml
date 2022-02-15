@@ -1,0 +1,20 @@
+uuid: 2dee0d12-bf80-44ae-8d0d-337574de0b97
+langcode: en
+status: true
+dependencies:
+  module:
+    - contactdata
+id: contactdata.field_generalfrequency
+field_name: field_generalfrequency
+entity_type: contactdata
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

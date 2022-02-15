@@ -1,0 +1,49 @@
+uuid: 799517c8-79be-4902-b14a-c28dff89380d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.phoneinfo.field_phonenumber
+    - field.field.paragraph.phoneinfo.field_phonesourceandtype
+    - paragraphs.paragraphs_type.phoneinfo
+  module:
+    - field_group
+    - telephone
+third_party_settings:
+  field_group:
+    group_phoneinfodisplay:
+      children:
+        - field_phonesourceandtype
+        - field_phonenumber
+      parent_name: ''
+      weight: 0
+      format_type: fieldset
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: group2
+        description: ''
+      label: PhoneInfoDisplay
+id: paragraph.phoneinfo.default
+targetEntityType: paragraph
+bundle: phoneinfo
+mode: default
+content:
+  field_phonenumber:
+    weight: 2
+    label: hidden
+    settings:
+      title: ''
+    third_party_settings: {  }
+    type: telephone_link
+    region: content
+  field_phonesourceandtype:
+    weight: 1
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

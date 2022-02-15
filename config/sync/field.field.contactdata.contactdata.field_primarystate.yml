@@ -1,0 +1,20 @@
+uuid: 4dd5719e-4b26-45a8-bf76-1c9160b967f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.contactdata.field_primarystate
+  module:
+    - contactdata
+id: contactdata.contactdata.field_primarystate
+field_name: field_primarystate
+entity_type: contactdata
+bundle: contactdata
+label: PrimaryState
+description: 'The state in which the contact lives'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

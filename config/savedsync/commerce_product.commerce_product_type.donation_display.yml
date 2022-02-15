@@ -1,0 +1,12 @@
+uuid: 9472cd0f-733b-4348-b037-775e6f761411
+langcode: en
+status: true
+dependencies: {  }
+id: donation_display
+label: 'Donation Display'
+description: 'Display Donations'
+variationType: donation
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

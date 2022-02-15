@@ -1,0 +1,28 @@
+uuid: a3a9fd40-0246-4897-8b8e-95e4bf5405df
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.pagewithadvancedpoll.body
+    - node.type.pagewithadvancedpoll
+  module:
+    - text
+    - user
+id: node.pagewithadvancedpoll.default
+targetEntityType: node
+bundle: pagewithadvancedpoll
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

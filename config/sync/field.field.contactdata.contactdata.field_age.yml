@@ -1,0 +1,24 @@
+uuid: ee490b02-74aa-487c-ba3a-a08e65905a08
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.contactdata.field_age
+  module:
+    - contactdata
+id: contactdata.contactdata.field_age
+field_name: field_age
+entity_type: contactdata
+bundle: contactdata
+label: Age
+description: 'The contact''s age'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

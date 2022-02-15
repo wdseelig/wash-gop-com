@@ -1,0 +1,6 @@
+name: wcgopcontactsmigrate
+type: module
+description: A module to migrate contacts from D7 to D9
+package: WCGOPCode
+core: 8.x
+core_version_requirement: ^8 || ^9

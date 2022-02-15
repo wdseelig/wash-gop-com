@@ -1,0 +1,8 @@
+uuid: 28a0df7c-75e2-45e8-a314-d71f451419f5
+langcode: en
+status: true
+dependencies: {  }
+name: Phonetype
+vid: phonetype
+description: 'The source and type of the phone number'
+weight: 0

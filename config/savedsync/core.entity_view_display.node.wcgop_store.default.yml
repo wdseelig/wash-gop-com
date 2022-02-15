@@ -1,0 +1,28 @@
+uuid: 760539a9-d294-46ca-b6fb-5abd94f44d1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.wcgop_store.body
+    - node.type.wcgop_store
+  module:
+    - text
+    - user
+id: node.wcgop_store.default
+targetEntityType: node
+bundle: wcgop_store
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

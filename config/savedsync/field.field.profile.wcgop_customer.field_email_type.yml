@@ -1,0 +1,31 @@
+uuid: 39084c19-74ef-41fa-bc9a-dc868f1b2bd9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_email_type
+    - paragraphs.paragraphs_type.contact_email
+    - profile.type.wcgop_customer
+  module:
+    - entity_reference_revisions
+id: profile.wcgop_customer.field_email_type
+field_name: field_email_type
+entity_type: profile
+bundle: wcgop_customer
+label: 'Email type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      contact_email: contact_email
+    target_bundles_drag_drop:
+      contact_email:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

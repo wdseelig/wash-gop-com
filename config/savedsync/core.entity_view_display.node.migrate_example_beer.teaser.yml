@@ -1,0 +1,30 @@
+uuid: 40d1c8a1-bff4-4fa7-a831-1b064400f6cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.migrate_example_beer.body
+    - node.type.migrate_example_beer
+  module:
+    - text
+    - user
+id: node.migrate_example_beer.teaser
+targetEntityType: node
+bundle: migrate_example_beer
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

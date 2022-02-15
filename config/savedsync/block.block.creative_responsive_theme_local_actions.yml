@@ -1,0 +1,20 @@
+uuid: d48100a5-d81e-4ab9-8f9a-345a9aa079e8
+langcode: en
+status: true
+dependencies:
+  theme:
+    - creative_responsive_theme
+_core:
+  default_config_hash: Vc_iBh-amT5wdaz_t8r-YQsiQzezZRw0ZEJB_036W6k
+id: creative_responsive_theme_local_actions
+theme: creative_responsive_theme
+region: auto_hidden_block
+weight: -13
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

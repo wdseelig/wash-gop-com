@@ -1,0 +1,10 @@
+uuid: b66208e1-df16-457d-ac54-9ba054ac5b63
+langcode: en
+status: true
+dependencies: {  }
+id: taginfo
+label: TagInfo
+icon_uuid: null
+icon_default: null
+description: 'The tags for this particular individual'
+behavior_plugins: {  }

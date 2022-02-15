@@ -1,0 +1,21 @@
+uuid: 2f6bd93a-0acd-41d0-99fd-64bd0f2e64cf
+langcode: en
+status: true
+dependencies:
+  module:
+    - contactdata
+id: contactdata.field_primaryzip
+field_name: field_primaryzip
+entity_type: contactdata
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

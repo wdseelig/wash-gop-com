@@ -1,0 +1,746 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for WCGOPIndividualInfo module.
+ *
+ * @DCG
+ * This file is no longer required in Drupal 8.
+ * @see https://www.drupal.org/node/2217931
+ *
+ * Implements hook_views_data
+ *
+ * We are using a two-table system.  this table, wcgopindividualinfo,  reflects the current value of the
+ * QVF received from state or RNC sources.  This module describes that file.
+ *
+ * The second table is actually an entity called displayQVF.  This contains any updates to the 'raw'
+ * table described here along with an indicator field to show whether that particular info_id/field had
+ * been "taken over" by our contact administrators.
+ */
+function wcgopindividualinfo_views_data() {
+  $data = [];
+  $data['wcgopindividualinfo'] = [];
+  $data['wcgopindividualinfo']['table'] = [];
+  $data['wcgopindividualinfo']['table']['group'] = t('ContactInfo');
+  $data['wcgopindividualinfo']['table']['provider'] = 'wcgopindividualinfo';
+  $data['wcgopindividualinfo']['table']['base'] = [
+    'field' =>  'info_id',
+    'title' => t('ContactInfo'),
+    'help'  => t('Table containing both raw QVF data from the RNC and WCGOP-entered contact data'),
+    'weight'  => -10,
+  ];
+// @TODO Add here any relationships that we are going to need.
+  $data['wcgopindividualinfo']['table']['join'] = [
+    'contactdata' => [
+      'left_field' => 'info_id',
+      'field' =>	'info_id',
+		],
+  ];
+ $data['wcgopindividualinfo']['info_id'] = [
+    'title' => t('info_id'),
+    'help' => t('The contact\'s id'),
+    'field' => [
+      'id' => 'numeric',
+    ],
+    'sort'  => [
+      'id'  => 'standard',
+    ],
+    'filter'  => [
+      'id'  => 'numeric',
+    ],
+    'argument'  => [
+      'id'  => 'numeric',
+    ],
+  ];
+  $data['wcgopindividualinfo']['StateVoterID'] = [
+    'title' => t('StateVoterID'),
+    'help' => t('The contact\'s State Voter ID (also known as the QVF number)'),
+    'field' => [
+      'id' => 'numeric',
+    ],
+    'sort'  => [
+      'id'  => 'standard',
+    ],
+    'filter'  => [
+      'id'  => 'numeric',
+    ],
+    'argument'  => [
+      'id'  => 'numeric',
+    ],
+  ];
+ $data['wcgopindividualinfo']['gop_id'] = [
+    'title' => t('gop_id'),
+    'help' => t('A numeric field from early spreadsheets'),
+    'field' => [
+      'id' => 'numeric',
+    ],
+    'sort'  => [
+      'id'  => 'standard',
+    ],
+    'filter'  => [
+      'id'  => 'numeric',
+    ],
+    'argument'  => [
+      'id'  => 'numeric',
+    ],
+  ];
+ $data['wcgopindividualinfo']['FirstName'] = [
+    'title' => t('FirstName'),
+    'help'  =>  t('The contact\'s first name'),
+    'field' => [
+      'id'  => 'standard',
+    ],
+    'sort'  => [
+      'id'  =>  'standard',
+    ],
+    'filter'  =>  [
+      'id'  => 'string',
+    ],
+    'argument'  => [
+      'id'  =>  'string',
+    ],
+  ];
+ $data['wcgopindividualinfo']['LastName'] = [
+      'title' => t('LastName'),
+      'help' => t('The contact\'s Last Name'),
+      'field' => [
+        'id' => 'standard',
+      ],
+      'sort'  => [
+        'id'  => 'standard',
+      ],
+      'filter'  => [
+        'id'  => 'string',
+      ],
+      'argument'  => [
+        'id'  => 'string',
+      ],
+    ];
+ $data['wcgopindividualinfo']['MiddleName'] = [
+    'title' => t('MiddleName'),
+    'help' => t('The contact\'s middle name'),
+    'field' => [
+      'id' => 'standard',
+    ],
+    'sort'  => [
+      'id'  => 'standard',
+    ],
+    'filter'  => [
+      'id'  => 'string',
+    ],
+    'argument'  => [
+      'id'  => 'string',
+    ],
+  ];
+  $data['wcgopindividualinfo']['PrimaryAddress1'] = array(
+    'title' => t('PrimaryAddress1'),
+    'help' => t('The Contact\'s Address'),
+    'field' => array(
+      'id' => 'standard',
+    ),
+    'sort'  => array(
+      'id'  => 'standard',
+    ),
+    'filter'  => array(
+      'id'  => 'string',
+    ),
+    'argument'  => array(
+      'id'  => 'string',
+    ),
+  );
+  $data['wcgopindividualinfo']['PrimaryAddress1'] = array(
+    'title' => t('PrimaryAddress1'),
+    'help' => t('The Contact\'s Address'),
+    'field' => array(
+      'id' => 'standard',
+    ),
+    'sort'  => array(
+      'id'  => 'standard',
+    ),
+    'filter'  => array(
+      'id'  => 'string',
+    ),
+    'argument'  => array(
+      'id'  => 'string',
+    ),
+  );
+  $data['wcgopindividualinfo']['PrimaryCity'] = array(
+    'title' => t('PrimaryCity'),
+    'help' => t('The city in which the contact lives'),
+    'field' => array(
+      'id' => 'standard',
+    ),
+    'sort'  => array(
+      'id'  => 'standard',
+    ),
+    'filter'  => array(
+      'id'  => 'string',
+    ),
+    'argument'  => array(
+      'id'  => 'string',
+    ),
+  );
+  $data['wcgopindividualinfo']['PrimaryState'] = array(
+    'title' => t('PrimaryState'),
+    'help' => t('The state in which the contact lives'),
+    'field' => array(
+      'id' => 'standard',
+    ),
+    'sort'  => array(
+      'id'  => 'standard',
+    ),
+    'filter'  => array(
+      'id'  => 'string',
+    ),
+    'argument'  => array(
+      'id'  => 'string',
+    ),
+  );
+  $data['wcgopindividualinfo']['PrimaryZip'] = array(
+    'title' => t('PrimaryZip'),
+    'help' => t('The contact\'s Zip Code'),
+    'field' => array(
+      'id' => 'standard',
+    ),
+    'sort'  => array(
+      'id'  => 'standard',
+    ),
+    'filter'  => array(
+      'id'  => 'string',
+    ),
+    'argument'  => array(
+      'id'  => 'string',
+    ),
+  );
+  $data['wcgopindividualinfo']['PrimaryZip4'] = array(
+    'title' => t('PrimaryZip4'),
+    'help' => t('The contact\'s Zip + 4 code'),
+    'field' => array(
+      'id' => 'standard',
+    ),
+    'sort'  => array(
+      'id'  => 'standard',
+    ),
+    'filter'  => array(
+      'id'  => 'string',
+    ),
+    'argument'  => array(
+      'id'  => 'string',
+    ),
+  );
+  $data['wcgopindividualinfo']['PrimaryHouseNumber'] = array(
+    'title' => t('PrimaryHouseNumber'),
+    'help' => t('The contact\'s House Number'),
+    'field' => array(
+      'id' => 'standard',
+    ),
+    'sort'  => array(
+      'id'  => 'standard',
+    ),
+    'filter'  => array(
+      'id'  => 'string',
+    ),
+    'argument'  => array(
+      'id'  => 'string',
+    ),
+  );
+  $data['wcgopindividualinfo']['PrimaryHouseHalf'] = array(
+    'title' => t('PrimaryHouseHalf'),
+    'help' => t('The contact\'s House Half Number'),
+    'field' => array(
+      'id' => 'standard',
+    ),
+    'sort'  => array(
+      'id'  => 'standard',
+    ),
+    'filter'  => array(
+      'id'  => 'string',
+    ),
+    'argument'  => array(
+      'id'  => 'string',
+    ),
+  );
+  $data['wcgopindividualinfo']['PrimaryStreetName'] = array(
+    'title' => t('PrimaryStreetName'),
+    'help' => t('The contact\'s Street Name'),
+    'field' => array(
+      'id' => 'standard',
+    ),
+    'sort'  => array(
+      'id'  => 'standard',
+    ),
+    'filter'  => array(
+      'id'  => 'string',
+    ),
+    'argument'  => array(
+      'id'  => 'string',
+    ),
+  );
+  $data['wcgopindividualinfo']['PrimaryStreetType'] = array(
+    'title' => t('PrimaryStreetType'),
+    'help' => t('The type of street the contact lives on (avenue, road, lane, etc.'),
+    'field' => array(
+      'id' => 'standard',
+    ),
+    'sort'  => array(
+      'id'  => 'standard',
+    ),
+    'filter'  => array(
+      'id'  => 'string',
+    ),
+    'argument'  => array(
+      'id'  => 'string',
+    ),
+  );
+  $data['wcgopindividualinfo']['PrimaryUnit'] = array(
+    'title' => t('PrimaryUnit'),
+    'help' => t('The contact\'s Unit as in Apartment'),
+    'field' => array(
+      'id' => 'standard',
+    ),
+    'sort'  => array(
+      'id'  => 'standard',
+    ),
+    'filter'  => array(
+      'id'  => 'string',
+    ),
+    'argument'  => array(
+      'id'  => 'string',
+    ),
+  );
+  $data['wcgopindividualinfo']['PrimaryUnitNumber'] = array(
+    'title' => t('PrimaryUnitNumber'),
+    'help' => t('The contact\'s Unit Number as in 401'),
+    'field' => array(
+      'id' => 'standard',
+    ),
+    'sort'  => array(
+      'id'  => 'standard',
+    ),
+    'filter'  => array(
+      'id'  => 'string',
+    ),
+    'argument'  => array(
+      'id'  => 'string',
+    ),
+  );
+  $data['wcgopindividualinfo']['PrimaryPhone'] = array(
+    'title' => t('PrimaryPhone'),
+    'help' => t('A phone number at which to reach the contact'),
+    'field' => array(
+      'id' => 'standard',
+    ),
+    'sort'  => array(
+      'id'  => 'standard',
+    ),
+    'filter'  => array(
+      'id'  => 'string',
+    ),
+    'argument'  => array(
+      'id'  => 'string',
+    ),
+  );
+  $data['wcgopindividualinfo']['HasPrimaryPhone'] = [
+    'title' => t('HasPrimaryPhone'),
+    'help' => t('A numeric field that indicates whether we have a Primary Phone for this contact'),
+    'field' => [
+      'id' => 'numeric',
+    ],
+    'sort'  => [
+      'id'  => 'standard',
+    ],
+    'filter'  => [
+      'id'  => 'numeric',
+    ],
+    'argument'  => [
+      'id'  => 'numeric',
+    ],
+  ];
+  $data['wcgopindividualinfo']['Age'] = [
+    'title' => t('Age'),
+    'help' => t('The contact\'s age'),
+    'field' => [
+      'id' => 'numeric',
+    ],
+    'sort'  => [
+      'id'  => 'standard',
+    ],
+    'filter'  => [
+      'id'  => 'numeric',
+    ],
+    'argument'  => [
+      'id'  => 'numeric',
+    ],
+  ];
+  $data['wcgopindividualinfo']['GeneralFrequency'] = [
+    'title' => t('GeneralFrequency'),
+    'help' => t('The number of past General Elections in which the contact has voted'),
+    'field' => [
+      'id' => 'numeric',
+    ],
+    'sort'  => [
+      'id'  => 'standard',
+    ],
+    'filter'  => [
+      'id'  => 'numeric',
+    ],
+    'argument'  => [
+      'id'  => 'numeric',
+    ],
+  ];
+  $data['wcgopindividualinfo']['Gender'] = array(
+    'title' => t('Gender'),
+    'help' => t('The contact\'s gender'),
+    'field' => array(
+      'id' => 'standard',
+    ),
+    'sort'  => array(
+      'id'  => 'standard',
+    ),
+    'filter'  => array(
+      'id'  => 'string',
+    ),
+    'argument'  => array(
+      'id'  => 'string',
+    ),
+  );
+  $data['wcgopindividualinfo']['CalculatedParty'] = array(
+    'title' => t('CalculatedParty'),
+    'help' => t('RNC estimate of the contact\'s party affiliation'),
+    'field' => array(
+      'id' => 'standard',
+    ),
+    'sort'  => array(
+      'id'  => 'standard',
+    ),
+    'filter'  => array(
+      'id'  => 'string',
+    ),
+    'argument'  => array(
+      'id'  => 'string',
+    ),
+  );
+  $data['wcgopindividualinfo']['OfficialParty'] = array(
+    'title' => t('OfficialParty'),
+    'help' => t('If state has official party registration (Michigan doesn\'t)'),
+    'field' => array(
+      'id' => 'standard',
+    ),
+    'sort'  => array(
+      'id'  => 'standard',
+    ),
+    'filter'  => array(
+      'id'  => 'string',
+    ),
+    'argument'  => array(
+      'id'  => 'string',
+    ),
+  );
+  $data['wcgopindividualinfo']['ObservedParty'] = array(
+    'title' => t('ObservedParty'),
+    'help' => t('Not sure what this is'),
+    'field' => array(
+      'id' => 'standard',
+    ),
+    'sort'  => array(
+      'id'  => 'standard',
+    ),
+    'filter'  => array(
+      'id'  => 'string',
+    ),
+    'argument'  => array(
+      'id'  => 'string',
+    ),
+  );
+  $data['wcgopindividualinfo']['LDName'] = array(
+    'title' => t('LDName'),
+    'help' => t('The contact\'s state Legislative District Name'),
+    'field' => array(
+      'id' => 'standard',
+    ),
+    'sort'  => array(
+      'id'  => 'standard',
+    ),
+    'filter'  => array(
+      'id'  => 'string',
+    ),
+    'argument'  => array(
+      'id'  => 'string',
+    ),
+  );
+  $data['wcgopindividualinfo']['SDName'] = array(
+    'title' => t('SDName'),
+    'help' => t('The contact\'s State Senate District Name'),
+    'field' => array(
+      'id' => 'standard',
+    ),
+    'sort'  => array(
+      'id'  => 'standard',
+    ),
+    'filter'  => array(
+      'id'  => 'string',
+    ),
+    'argument'  => array(
+      'id'  => 'string',
+    ),
+  );
+  $data['wcgopindividualinfo']['CountyName'] = array(
+    'title' => t('CountyName'),
+    'help' => t('The name of the county in which the contact lives'),
+    'field' => array(
+      'id' => 'standard',
+    ),
+    'sort'  => array(
+      'id'  => 'standard',
+    ),
+    'filter'  => array(
+      'id'  => 'string',
+    ),
+    'argument'  => array(
+      'id'  => 'string',
+    ),
+  );
+  $data['wcgopindividualinfo']['PrecinctNumber'] = array(
+    'title' => t('PrecinctNumber'),
+    'help' => t('The contact\'s Precinct Number'),
+    'field' => array(
+      'id' => 'standard',
+    ),
+    'sort'  => array(
+      'id'  => 'standard',
+    ),
+    'filter'  => array(
+      'id'  => 'string',
+    ),
+    'argument'  => array(
+      'id'  => 'string',
+    ),
+  );
+  $data['wcgopindividualinfo']['PrecinctName'] = array(
+    'title' => t('PrecinctName'),
+    'help' => t('The name of the precinct in which the contact resides'),
+    'field' => array(
+      'id' => 'standard',
+    ),
+    'sort'  => array(
+      'id'  => 'standard',
+    ),
+    'filter'  => array(
+      'id'  => 'string',
+    ),
+    'argument'  => array(
+      'id'  => 'string',
+    ),
+  );
+  $data['wcgopindividualinfo']['VoterKey'] = array(
+    'title' => t('VoterKey'),
+    'help' => t('The contact\'s Voter Key (whatever that is)'),
+    'field' => array(
+      'id' => 'standard',
+    ),
+    'sort'  => array(
+      'id'  => 'standard',
+    ),
+    'filter'  => array(
+      'id'  => 'string',
+    ),
+    'argument'  => array(
+      'id'  => 'string',
+    ),
+  );
+  $data['wcgopindividualinfo']['HHReciD'] = array(
+    'title' => t('HHRecid'),
+    'help' => t('The Household Record ID for this contact'),
+    'field' => array(
+      'id' => 'standard',
+    ),
+    'sort'  => array(
+      'id'  => 'standard',
+    ),
+    'filter'  => array(
+      'id'  => 'string',
+    ),
+    'argument'  => array(
+      'id'  => 'string',
+    ),
+  );
+  $data['wcgopindividualinfo']['HHMemberid'] = array(
+    'title' => t('HHMemberid'),
+    'help' => t('The contact\'s member number within the household'),
+    'field' => array(
+      'id' => 'standard',
+    ),
+    'sort'  => array(
+      'id'  => 'standard',
+    ),
+    'filter'  => array(
+      'id'  => 'string',
+    ),
+    'argument'  => array(
+      'id'  => 'string',
+    ),
+  );
+  $data['wcgopindividualinfo']['HHCode'] = array(
+    'title' => t('HHCode'),
+    'help' => t('The Household code (whatever that is)'),
+    'field' => array(
+      'id' => 'standard',
+    ),
+    'sort'  => array(
+      'id'  => 'standard',
+    ),
+    'filter'  => array(
+      'id'  => 'string',
+    ),
+    'argument'  => array(
+      'id'  => 'string',
+    ),
+  );
+  $data['wcgopindividualinfo']['JurisdictionVoterid'] = array(
+    'title' => t('JurisdictionVoterid'),
+    'help' => t('The contact\'s jurisdiction\'s id'),
+    'field' => array(
+      'id' => 'standard',
+    ),
+    'sort'  => array(
+      'id'  => 'standard',
+    ),
+    'filter'  => array(
+      'id'  => 'string',
+    ),
+    'argument'  => array(
+      'id'  => 'string',
+    ),
+  );
+  $data['wcgopindividualinfo']['ClientID'] = array(
+    'title' => t('ClientID'),
+    'help' => t('(Not sure what this is)'),
+    'field' => array(
+      'id' => 'standard',
+    ),
+    'sort'  => array(
+      'id'  => 'standard',
+    ),
+    'filter'  => array(
+      'id'  => 'string',
+    ),
+    'argument'  => array(
+      'id'  => 'string',
+    ),
+  );
+  $data['wcgopindividualinfo']['RNCRegID'] = array(
+    'title' => t('RNCRegID'),
+    'help' => t('(Not sure what this is)'),
+    'field' => array(
+      'id' => 'standard',
+    ),
+    'sort'  => array(
+      'id'  => 'standard',
+    ),
+    'filter'  => array(
+      'id'  => 'string',
+    ),
+    'argument'  => array(
+      'id'  => 'string',
+    ),
+  );
+  $data['wcgopindividualinfo']['StateEthnicity'] = array(
+    'title' => t('StateEthnicity'),
+    'help' => t('The contact\'s ethnicity, if the state records it (Michigan doesn\'t)'),
+    'field' => array(
+      'id' => 'standard',
+    ),
+    'sort'  => array(
+      'id'  => 'standard',
+    ),
+    'filter'  => array(
+      'id'  => 'string',
+    ),
+    'argument'  => array(
+      'id'  => 'string',
+    ),
+  );
+  $data['wcgopindividualinfo']['CellularPhone'] = array(
+    'title' => t('CellularPhone'),
+    'help' => t('The contact\'s cell phone'),
+    'field' => array(
+      'id' => 'standard',
+    ),
+    'sort'  => array(
+      'id'  => 'standard',
+    ),
+    'filter'  => array(
+      'id'  => 'string',
+    ),
+    'argument'  => array(
+      'id'  => 'string',
+    ),
+  );
+  $data['wcgopindividualinfo']['WorkPhone'] = array(
+    'title' => t('WorkPhone'),
+    'help' => t('The contact\'s Work Phone'),
+    'field' => array(
+      'id' => 'standard',
+    ),
+    'sort'  => array(
+      'id'  => 'standard',
+    ),
+    'filter'  => array(
+      'id'  => 'string',
+    ),
+    'argument'  => array(
+      'id'  => 'string',
+    ),
+  );
+  $data['wcgopindividualinfo']['HomePhone'] = array(
+    'title' => t('HomePhone'),
+    'help' => t('The contact\'s Home Phone'),
+    'field' => array(
+      'id' => 'standard',
+    ),
+    'sort'  => array(
+      'id'  => 'standard',
+    ),
+    'filter'  => array(
+      'id'  => 'string',
+    ),
+    'argument'  => array(
+      'id'  => 'string',
+    ),
+  );
+  $data['wcgopindividualinfo']['Township'] = array(
+    'title' => t('Township'),
+    'help' => t('The township in which the contact resides'),
+    'field' => array(
+      'id' => 'standard',
+    ),
+    'sort'  => array(
+      'id'  => 'standard',
+    ),
+    'filter'  => array(
+      'id'  => 'string',
+    ),
+    'argument'  => array(
+      'id'  => 'string',
+    ),
+  );
+  $data['wcgopindividualinfo']['CountyCommissionerDistrict'] = array(
+    'title' => t('CountyCommissionerDistrict'),
+    'help' => t('The County Commission District in which the contact resides'),
+    'field' => array(
+      'id' => 'standard',
+    ),
+    'sort'  => array(
+      'id'  => 'standard',
+    ),
+    'filter'  => array(
+      'id'  => 'string',
+    ),
+    'argument'  => array(
+      'id'  => 'string',
+    ),
+  );
+
+
+  return $data;
+}

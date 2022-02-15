@@ -1,0 +1,11 @@
+uuid: 70b88c31-4324-421b-aa75-c40a27f2f450
+langcode: en
+status: true
+dependencies: {  }
+name: Beer
+type: migrate_example_beer
+description: 'Beer is what we drink.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

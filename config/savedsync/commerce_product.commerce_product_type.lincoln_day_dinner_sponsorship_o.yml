@@ -1,0 +1,12 @@
+uuid: e82327a6-c6cb-43ce-8e68-bc73133c30cc
+langcode: en
+status: true
+dependencies: {  }
+id: lincoln_day_dinner_sponsorship_o
+label: 'Lincoln Day Dinner -- Sponsorship Options'
+description: 'Opportunities to support the WCGOP by sponsoring this event'
+variationType: lincoln_day_dinner_sponsorship_o
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

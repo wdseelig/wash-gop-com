@@ -1,0 +1,18 @@
+uuid: 74104012-062d-4ec3-9b17-5cc6111906f5
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main-menu
+    parent: 'main-menu:0:'
+name: 'GOP Lincoln Day Dinners'
+type: gop_lincoln_day_dinners
+description: 'These are the dinners that we''ll be serving'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

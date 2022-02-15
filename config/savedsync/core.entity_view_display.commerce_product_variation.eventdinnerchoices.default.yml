@@ -1,0 +1,45 @@
+uuid: 5911190c-a112-40cc-b041-6ed9152a7714
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.eventdinnerchoices
+    - field.field.commerce_product_variation.eventdinnerchoices.attribute_dessert
+    - field.field.commerce_product_variation.eventdinnerchoices.attribute_entree
+  module:
+    - commerce_price
+id: commerce_product_variation.eventdinnerchoices.default
+targetEntityType: commerce_product_variation
+bundle: eventdinnerchoices
+mode: default
+content:
+  attribute_dessert:
+    type: entity_reference_label
+    weight: 0
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  attribute_entree:
+    type: entity_reference_label
+    weight: 0
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  list_price:
+    label: above
+    type: commerce_price_default
+    weight: -1
+    region: content
+    settings:
+      strip_trailing_zeroes: false
+      currency_display: symbol
+    third_party_settings: {  }
+hidden:
+  price: true
+  product_id: true
+  sku: true
+  title: true

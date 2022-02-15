@@ -1,0 +1,7 @@
+votersearch.example:
+  path: '/votersearch/example'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\votersearch\Controller\VotersearchController::build'
+  requirements:
+    _permission: 'access content'

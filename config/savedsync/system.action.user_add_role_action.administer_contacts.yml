@@ -1,0 +1,14 @@
+uuid: 72a7b67e-ff26-4c1d-898c-230769214995
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.administer_contacts
+  module:
+    - user
+id: user_add_role_action.administer_contacts
+label: 'Add the Administer Contacts role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: administer_contacts

@@ -1,0 +1,48 @@
+uuid: 8ae9104c-ac1f-459d-878c-b59404d46fd6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.emailinfo.field_emailaddress
+    - field.field.paragraph.emailinfo.field_emailsourceandtype
+    - paragraphs.paragraphs_type.emailinfo
+  module:
+    - field_group
+third_party_settings:
+  field_group:
+    group_emailinfo:
+      children:
+        - field_emailsourceandtype
+        - field_emailaddress
+      parent_name: ''
+      weight: 0
+      format_type: fieldset
+      region: content
+      format_settings:
+        description: ''
+        id: ''
+        classes: group2
+        show_empty_fields: false
+      label: EmailInfo
+id: paragraph.emailinfo.default
+targetEntityType: paragraph
+bundle: emailinfo
+mode: default
+content:
+  field_emailaddress:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_emailsourceandtype:
+    weight: 1
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

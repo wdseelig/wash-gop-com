@@ -1,0 +1,31 @@
+uuid: b5c7831e-9fba-4553-a113-53a54c02208f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a6069486-6738-4924-adef-1c2ed64692e5'
+  module:
+    - block_content
+    - system
+  theme:
+    - acmain
+id: acmain_subscibe
+theme: acmain
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'block_content:a6069486-6738-4924-adef-1c2ed64692e5'
+settings:
+  id: 'block_content:a6069486-6738-4924-adef-1c2ed64692e5'
+  label: Subscibe
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

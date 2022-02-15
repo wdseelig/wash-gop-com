@@ -1,0 +1,24 @@
+uuid: 4b5e4282-f15c-463d-9f60-7bf33c3f8608
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.contactdata.field_precinctname_admin
+  module:
+    - contactdata
+id: contactdata.contactdata.field_precinctname_admin
+field_name: field_precinctname_admin
+entity_type: contactdata
+bundle: contactdata
+label: PrecinctName_admin
+description: 'Field controlled by contacts administrator'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

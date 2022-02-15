@@ -1,0 +1,18 @@
+uuid: e818d4ee-fadf-4d7a-9739-e721e108a4ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.gop_lincoln_day_dinners_v2
+id: node.gop_lincoln_day_dinners_v2.title
+field_name: title
+entity_type: node
+bundle: gop_lincoln_day_dinners_v2
+label: 'WDS GOP Lincoln Day Dinners V2'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

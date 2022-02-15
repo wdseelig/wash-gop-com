@@ -1,0 +1,22 @@
+uuid: c681af0c-e8f7-4c22-9ad3-ad70248260a5
+langcode: en
+status: true
+dependencies:
+  theme:
+    - creative_responsive_theme
+_core:
+  default_config_hash: lJWg79fgl3LtPLHkDq4lXTaLnli-H8OpndWPkVZtb5g
+id: creative_responsive_theme_local_tasks
+theme: creative_responsive_theme
+region: content
+weight: -14
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

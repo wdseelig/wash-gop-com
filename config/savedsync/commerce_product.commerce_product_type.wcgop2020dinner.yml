@@ -1,0 +1,12 @@
+uuid: a025ec9d-c4bd-4ecf-9170-d649b26473ab
+langcode: en
+status: true
+dependencies: {  }
+id: wcgop2020dinner
+label: WCGOP2020Dinner
+description: 'Single Dinners for the WCOP 2020 Lincoln Day'
+variationType: lddd2020
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

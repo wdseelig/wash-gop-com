@@ -1,0 +1,22 @@
+uuid: 29ea06d4-8be3-4160-bac9-5ca2e4046ed2
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - acmain
+_core:
+  default_config_hash: uWy58nYjWIMwjBpWG3bpQw4-czZknk6co5KbdGN8dxA
+id: acmain_messages
+theme: acmain
+region: highlighted
+weight: -50
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

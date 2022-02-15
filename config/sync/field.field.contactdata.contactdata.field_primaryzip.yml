@@ -1,0 +1,20 @@
+uuid: ccd9b40e-b0e4-43d3-a8bc-333a8a603651
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.contactdata.field_primaryzip
+  module:
+    - contactdata
+id: contactdata.contactdata.field_primaryzip
+field_name: field_primaryzip
+entity_type: contactdata
+bundle: contactdata
+label: PrimaryZip
+description: 'The contact''s zip code'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,20 @@
+uuid: 6c77b5d7-c96f-4a40-9553-403a08373926
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.contactdata.field_gender
+  module:
+    - contactdata
+id: contactdata.contactdata.field_gender
+field_name: field_gender
+entity_type: contactdata
+bundle: contactdata
+label: Gender
+description: 'The contact''s gender'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,20 @@
+uuid: 9c530be7-21b3-4d64-bccb-fcce29509423
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.contactdata.field_precinctnumber
+  module:
+    - contactdata
+id: contactdata.contactdata.field_precinctnumber
+field_name: field_precinctnumber
+entity_type: contactdata
+bundle: contactdata
+label: PrecinctNumber
+description: 'A state code for the precinct'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,21 @@
+uuid: bfa941c4-9ecc-4b4d-afb0-ce69c7b5d532
+langcode: en
+status: true
+dependencies:
+  module:
+    - contactdata
+id: contactdata.field_jurisdictionvoterid
+field_name: field_jurisdictionvoterid
+entity_type: contactdata
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

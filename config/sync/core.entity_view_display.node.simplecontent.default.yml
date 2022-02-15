@@ -1,0 +1,28 @@
+uuid: 7e109ef7-ad4e-4fe2-8eff-2f85598073d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.simplecontent.body
+    - node.type.simplecontent
+  module:
+    - text
+    - user
+id: node.simplecontent.default
+targetEntityType: node
+bundle: simplecontent
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

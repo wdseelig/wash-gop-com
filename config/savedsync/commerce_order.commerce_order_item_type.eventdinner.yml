@@ -1,0 +1,15 @@
+uuid: 73eed4bc-ce59-4bb0-9d06-8e2a322cd3ff
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_tax
+third_party_settings:
+  commerce_tax:
+    taxable_type: physical_goods
+label: EventDinner
+id: eventdinner
+purchasableEntityType: commerce_product_variation
+orderType: default
+traits: {  }
+locked: false

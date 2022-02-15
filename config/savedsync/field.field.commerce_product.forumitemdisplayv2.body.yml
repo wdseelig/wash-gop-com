@@ -1,0 +1,23 @@
+uuid: 0bd3eac3-e86e-4ab9-8e05-ee5630024421
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.forumitemdisplayv2
+    - field.storage.commerce_product.body
+  module:
+    - text
+id: commerce_product.forumitemdisplayv2.body
+field_name: body
+entity_type: commerce_product
+bundle: forumitemdisplayv2
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: null
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

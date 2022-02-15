@@ -1,0 +1,30 @@
+uuid: e3218457-a504-4b2d-b244-a6f031432b24
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:464e4ff0-3f82-4146-adf2-664f85a82e49'
+  module:
+    - block_content
+    - system
+  theme:
+    - acmain
+id: acmain_gotocart
+theme: acmain
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'block_content:464e4ff0-3f82-4146-adf2-664f85a82e49'
+settings:
+  id: 'block_content:464e4ff0-3f82-4146-adf2-664f85a82e49'
+  label: 'Go to Cart'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /trial
+    negate: false

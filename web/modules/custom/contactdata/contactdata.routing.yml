@@ -1,0 +1,7 @@
+entity.contactdata.settings:
+  path: 'admin/structure/contactdata'
+  defaults:
+    _form: '\Drupal\contactdata\Form\ContactdataSettingsForm'
+    _title: 'contactData'
+  requirements:
+    _permission: 'administer contactdata'

@@ -1,0 +1,30 @@
+uuid: de6115d3-c48f-4e8b-a2a9-ba77274e05d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.forumadmissionselection.body
+    - node.type.forumadmissionselection
+  module:
+    - text
+    - user
+id: node.forumadmissionselection.teaser
+targetEntityType: node
+bundle: forumadmissionselection
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

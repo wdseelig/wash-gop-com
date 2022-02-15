@@ -1,0 +1,20 @@
+uuid: aa04ae7b-9fdc-42d6-ade4-9706891218a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.contactdata.field_primaryunit
+  module:
+    - contactdata
+id: contactdata.contactdata.field_primaryunit
+field_name: field_primaryunit
+entity_type: contactdata
+bundle: contactdata
+label: PrimaryUnit
+description: 'Apt., Trl., Unit, etc.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

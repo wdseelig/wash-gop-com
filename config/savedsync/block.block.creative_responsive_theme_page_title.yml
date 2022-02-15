@@ -1,0 +1,20 @@
+uuid: 57aaea19-395e-4711-ad9d-3acf05d53835
+langcode: en
+status: false
+dependencies:
+  theme:
+    - creative_responsive_theme
+_core:
+  default_config_hash: _zLaasd8lWP6MChTbVkSrx_t2rGh5IMwXBtbR9u9MF8
+id: creative_responsive_theme_page_title
+theme: creative_responsive_theme
+region: page_title
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

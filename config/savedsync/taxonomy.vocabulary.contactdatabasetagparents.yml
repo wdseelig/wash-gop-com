@@ -1,0 +1,8 @@
+uuid: 8c68869e-7d85-4edc-89c2-87719394ef80
+langcode: en
+status: true
+dependencies: {  }
+name: ContactDataBaseTagParents
+vid: contactdatabasetagparents
+description: 'This is the 0th level of the contacts data base tags system'
+weight: 0

@@ -1,0 +1,21 @@
+uuid: 378baf36-d5b3-48b2-9ab3-42af98d8b74c
+langcode: en
+status: true
+dependencies:
+  module:
+    - contactdata
+id: contactdata.field_stateethnicity
+field_name: field_stateethnicity
+entity_type: contactdata
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

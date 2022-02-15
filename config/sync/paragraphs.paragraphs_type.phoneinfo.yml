@@ -1,0 +1,10 @@
+uuid: 16e673fd-19b7-420f-8f66-dac6b7479cd3
+langcode: en
+status: true
+dependencies: {  }
+id: phoneinfo
+label: PhoneInfo
+icon_uuid: null
+icon_default: null
+description: 'Information about telephone contacts'
+behavior_plugins: {  }

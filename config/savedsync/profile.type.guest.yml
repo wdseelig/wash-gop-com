@@ -1,0 +1,12 @@
+uuid: 6dfa027a-6c55-4754-ad10-86907468d665
+langcode: en
+status: true
+dependencies: {  }
+id: guest
+label: Guest
+display_label: null
+multiple: false
+registration: false
+roles: {  }
+allow_revisions: false
+new_revision: false

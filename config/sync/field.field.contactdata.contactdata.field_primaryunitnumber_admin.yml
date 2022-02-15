@@ -1,0 +1,24 @@
+uuid: 03913ccb-abfd-4878-9fc7-57319c4c5c2d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.contactdata.field_primaryunitnumber_admin
+  module:
+    - contactdata
+id: contactdata.contactdata.field_primaryunitnumber_admin
+field_name: field_primaryunitnumber_admin
+entity_type: contactdata
+bundle: contactdata
+label: PrimaryUnitNumber_admin
+description: 'Field controlled by contacts admin'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

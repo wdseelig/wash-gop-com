@@ -1,0 +1,30 @@
+uuid: 80fe2a2c-16e4-4faf-a972-508736e6d9fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.basicpetition.body
+    - node.type.basicpetition
+  module:
+    - text
+    - user
+id: node.basicpetition.teaser
+targetEntityType: node
+bundle: basicpetition
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

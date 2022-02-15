@@ -1,0 +1,28 @@
+uuid: c7cefc75-4632-409f-aee6-b04df10575e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.lddd2020sponsorshipdisplay.body
+    - node.type.lddd2020sponsorshipdisplay
+  module:
+    - text
+    - user
+id: node.lddd2020sponsorshipdisplay.default
+targetEntityType: node
+bundle: lddd2020sponsorshipdisplay
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

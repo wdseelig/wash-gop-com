@@ -1,0 +1,23 @@
+uuid: c39714c3-7c5f-4cfe-9a76-c2d2a1d784cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.membershipitemdisplay
+  module:
+    - text
+id: node.membershipitemdisplay.body
+field_name: body
+entity_type: node
+bundle: membershipitemdisplay
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

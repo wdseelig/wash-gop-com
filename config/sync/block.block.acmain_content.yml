@@ -1,0 +1,22 @@
+uuid: a86f3ee9-d00d-4c7f-8f6d-37609cbf1567
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - acmain
+_core:
+  default_config_hash: BI2cnDdYGrlfwpU3S3VvGKjD5M1Ep2AHKflxRnfr4t4
+id: acmain_content
+theme: acmain
+region: content
+weight: -13
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

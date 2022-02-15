@@ -1,0 +1,23 @@
+uuid: 71dfc469-15d0-4241-a2b5-ede9553aa78f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.cmcv_volunteer
+  module:
+    - text
+id: node.cmcv_volunteer.body
+field_name: body
+entity_type: node
+bundle: cmcv_volunteer
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

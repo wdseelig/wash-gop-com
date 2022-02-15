@@ -1,0 +1,8 @@
+administer admincontacts configuration:
+  title: 'Administer admincontacts configuration'
+  description: 'Optional description.'
+  restrict access: true
+access admincontacts page:
+  title:  'Access the search page for contacts'
+  restrict access:  true
+

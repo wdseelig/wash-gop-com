@@ -1,0 +1,10 @@
+uuid: 88a18174-7a4d-4a08-8b75-c2462486c641
+langcode: en
+status: true
+dependencies: {  }
+label: product
+id: product
+purchasableEntityType: commerce_product_variation
+orderType: default
+traits: {  }
+locked: false

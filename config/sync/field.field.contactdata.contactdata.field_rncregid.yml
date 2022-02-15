@@ -1,0 +1,20 @@
+uuid: 62705e04-3733-4b79-89bb-74a4d80d61c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.contactdata.field_rncregid
+  module:
+    - contactdata
+id: contactdata.contactdata.field_rncregid
+field_name: field_rncregid
+entity_type: contactdata
+bundle: contactdata
+label: RNCRegId
+description: 'Some kind of RNC Id'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

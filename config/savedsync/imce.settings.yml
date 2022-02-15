@@ -1,0 +1,7 @@
+abs_urls: true
+admin_theme: true
+roles_profiles:
+  superadmin_user:
+    public: imageuploader
+  site_editor:
+    public: imageuploader

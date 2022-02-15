@@ -1,0 +1,109 @@
+uuid: 048d922e-f7a1-4aa2-868c-aa3dba9d9459
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_node_event
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Nodes (Event)'
+source:
+  plugin: d7_node
+  node_type: event
+process:
+  nid:
+    -
+      plugin: get
+      source: tnid
+  vid:
+    -
+      plugin: get
+      source: vid
+  langcode:
+    -
+      plugin: default_value
+      source: language
+      default_value: und
+  title:
+    -
+      plugin: get
+      source: title
+  uid:
+    -
+      plugin: get
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: changed
+  promote:
+    -
+      plugin: get
+      source: promote
+  sticky:
+    -
+      plugin: get
+      source: sticky
+  revision_uid:
+    -
+      plugin: get
+      source: revision_uid
+  revision_log:
+    -
+      plugin: get
+      source: log
+  revision_timestamp:
+    -
+      plugin: get
+      source: timestamp
+  comment_node_event/0/status:
+    -
+      plugin: get
+      source: comment
+  taxonomy_vocabulary_1:
+    -
+      plugin: get
+      source: taxonomy_vocabulary_1
+  body:
+    -
+      plugin: get
+      source: body
+  upload:
+    -
+      plugin: sub_process
+      source: upload
+      process:
+        target_id: fid
+        display: display
+        description: description
+  field_begin:
+    -
+      plugin: sub_process
+      source: field_begin
+      process:
+        value:
+          plugin: format_date
+          from_format: 'Y-m-d H:i:s'
+          to_format: 'Y-m-d\TH:i:s'
+          source: value
+destination:
+  plugin: 'entity:node'
+  default_bundle: event
+migration_dependencies:
+  required:
+    - upgrade_d7_user
+    - upgrade_d7_node_type
+  optional:
+    - upgrade_d7_field_instance

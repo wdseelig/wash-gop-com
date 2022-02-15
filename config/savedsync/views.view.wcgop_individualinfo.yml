@@ -1,0 +1,86 @@
+uuid: da372bda-e538-42c8-94e4-b3f71d2b9572
+langcode: en
+status: true
+dependencies: {  }
+id: wcgop_individualinfo
+label: WCGOPIndividualInfoView
+module: views
+description: ''
+tag: ''
+base_table: wcgopindividualinfo
+base_field: nid
+display:
+  default:
+    display_plugin: default
+    id: default
+    display_title: Default
+    position: 0
+    display_options:
+      access:
+        type: none
+        options: {  }
+      cache:
+        type: tag
+        options: {  }
+      query:
+        type: views_query
+        options:
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_comment: ''
+          query_tags: {  }
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        type: some
+        options:
+          items_per_page: 11
+          offset: 0
+      style:
+        type: table
+      row:
+        type: fields
+      fields:
+        table:
+          table: wcgopindividualinfo
+          field: table
+          id: table
+          entity_type: null
+          entity_field: null
+          plugin_id: null
+          exclude: false
+      filters: {  }
+      sorts: {  }
+      title: WCGOPIndividualInfoView
+      header: {  }
+      footer: {  }
+      empty: {  }
+      relationships: {  }
+      arguments: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+      tags: {  }
+  page_1:
+    display_plugin: page
+    id: page_1
+    display_title: Page
+    position: 1
+    display_options:
+      display_extenders: {  }
+      path: wcgopindividualinfoview
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+      tags: {  }

@@ -1,0 +1,18 @@
+uuid: 285cc76b-60d2-43a7-8b28-826927c78800
+langcode: en
+status: true
+dependencies:
+  module:
+    - contactdata
+id: contactdata.field_primarystate_admin
+field_name: field_primarystate_admin
+entity_type: contactdata
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

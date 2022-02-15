@@ -1,11 +1,15 @@
 module:
   address: 0
   admin_toolbar: 0
+  admin_toolbar_search: 0
   admin_toolbar_tools: 0
+  admincontacts: 0
   asset_injector: 0
   block: 0
   block_content: 0
   breakpoint: 0
+  chosen: 0
+  chosen_lib: 0
   ckeditor: 0
   comment: 0
   commerce: 0
@@ -24,7 +28,9 @@ module:
   commerce_tax: 0
   commerce_variation_cart_form: 0
   commerce_webform_order: 0
+  conditional_fields: 0
   config: 0
+  contactdata: 0
   contextual: 0
   datetime: 0
   dblog: 0
@@ -35,12 +41,15 @@ module:
   entity: 0
   entity_reference_revisions: 0
   field: 0
+  field_group: 0
   field_ui: 0
   file: 0
   filter: 0
   gdoc_field: 0
   imce: 0
   inline_entity_form: 0
+  jquery_ui: 0
+  jquery_ui_accordion: 0
   layout_builder: 0
   layout_discovery: 0
   libraries: 0
@@ -78,8 +87,11 @@ module:
   user: 0
   views_secondary_row: 0
   views_ui: 0
+  votersearch: 0
   votingapi: 0
   wcgop_commerce: 0
+  wcgopcontactsmigrate: 0
+  wcgopindividualinfo: 0
   webform: 0
   webform_migrate: 0
   webform_node: 0
@@ -87,6 +99,7 @@ module:
   webform_submission_export_import: 0
   webform_ui: 0
   views: 10
+  paragraphs: 11
   minimal: 1000
 theme:
   stark: 0
@@ -94,6 +107,7 @@ theme:
   seven: 0
   creative_responsive_theme: 0
   claro: 0
+  acmain: 0
 profile: minimal
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc

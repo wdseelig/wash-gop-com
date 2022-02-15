@@ -1,0 +1,21 @@
+uuid: 02a03a30-15ef-4b5d-8a63-a3bc52ee36f8
+langcode: en
+status: true
+dependencies:
+  module:
+    - contactdata
+id: contactdata.field_primaryunitnumber
+field_name: field_primaryunitnumber
+entity_type: contactdata
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

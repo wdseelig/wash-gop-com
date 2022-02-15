@@ -1,0 +1,28 @@
+uuid: d8dd8d3f-7600-4edb-a18e-dc5664e4ae9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.donation_display.body
+    - node.type.donation_display
+  module:
+    - text
+    - user
+id: node.donation_display.default
+targetEntityType: node
+bundle: donation_display
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

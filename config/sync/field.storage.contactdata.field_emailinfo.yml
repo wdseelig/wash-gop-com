@@ -1,0 +1,21 @@
+uuid: c1b95f89-50f1-4834-8fab-e02720ded13e
+langcode: en
+status: true
+dependencies:
+  module:
+    - contactdata
+    - entity_reference_revisions
+    - paragraphs
+id: contactdata.field_emailinfo
+field_name: field_emailinfo
+entity_type: contactdata
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

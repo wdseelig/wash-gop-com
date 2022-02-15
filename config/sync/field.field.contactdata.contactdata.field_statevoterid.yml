@@ -1,0 +1,20 @@
+uuid: 2d3c8be6-c9f5-4249-a962-496a52687401
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.contactdata.field_statevoterid
+  module:
+    - contactdata
+id: contactdata.contactdata.field_statevoterid
+field_name: field_statevoterid
+entity_type: contactdata
+bundle: contactdata
+label: StateVoterID
+description: 'The QVF number'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

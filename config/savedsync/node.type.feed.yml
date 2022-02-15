@@ -1,0 +1,18 @@
+uuid: 2d397dc1-4e35-4b6d-9af5-436dd07254f9
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - navigation
+    parent: 'navigation:0:'
+name: Feed
+type: feed
+description: 'Items from these feeds will be turned into nodes.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

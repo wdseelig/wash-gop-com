@@ -1,0 +1,49 @@
+uuid: 5d10fe10-b2d5-46f6-921a-0c0d5c9e5cfb
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: cart
+label: responsivenonfront
+code: |-
+  .unitprice {
+    padding-right: 10px;
+  }
+  .site-branding__slogan {
+    color:  #ffff00;
+  }
+  .site-branding__name a {
+    color:  #ff0000;
+    font-family: "Apple Chancery";
+    line-height:  150%;
+  }
+  div.brand.logo {
+    padding-top:  30px;
+  }
+  div.brand.logo img {
+    max-width:  70%;
+    height: auto;
+  }
+  div.region.region-content {
+    font-family:  "Arial";
+    font-size:  18px;
+  }
+  .col-md-3 {
+    width:  75%;
+  }
+  .social-media {
+    display:  none;
+  }
+  .copyright .container {
+    display:  none;
+  }
+conditions_require_all: true
+conditions:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+contexts: {  }
+media: all
+preprocess: true

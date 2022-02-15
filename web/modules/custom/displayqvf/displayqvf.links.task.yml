@@ -1,0 +1,22 @@
+entity.displayqvf.settings:
+  title: Settings
+  route_name: entity.displayqvf.settings
+  base_route: entity.displayqvf.settings
+entity.displayqvf.view:
+  title: View
+  route_name: entity.displayqvf.canonical
+  base_route: entity.displayqvf.canonical
+entity.displayqvf.edit_form:
+  title: Edit
+  route_name: entity.displayqvf.edit_form
+  base_route: entity.displayqvf.canonical
+entity.displayqvf.delete_form:
+  title: Delete
+  route_name: entity.displayqvf.delete_form
+  base_route: entity.displayqvf.canonical
+  weight: 10
+entity.displayqvf.collection:
+  title: displayQVF
+  route_name: entity.displayqvf.collection
+  base_route: system.admin_content
+  weight: 10

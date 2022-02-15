@@ -1,0 +1,5 @@
+name: myvotersearch
+type: module
+description: A module to put up the voter search form, process the search and then dispatch
+package: WCGOPCode
+core_version_requirement: ^8 || ^9

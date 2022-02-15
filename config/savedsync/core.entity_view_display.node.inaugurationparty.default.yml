@@ -1,0 +1,28 @@
+uuid: 8d64de1b-ed4a-4bbe-ac19-8e51335e654b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.inaugurationparty.body
+    - node.type.inaugurationparty
+  module:
+    - text
+    - user
+id: node.inaugurationparty.default
+targetEntityType: node
+bundle: inaugurationparty
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

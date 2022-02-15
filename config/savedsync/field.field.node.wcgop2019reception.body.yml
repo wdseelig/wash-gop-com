@@ -1,0 +1,23 @@
+uuid: a488835c-2dad-4af4-8ca0-437f934d0cc5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.wcgop2019reception
+  module:
+    - text
+id: node.wcgop2019reception.body
+field_name: body
+entity_type: node
+bundle: wcgop2019reception
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

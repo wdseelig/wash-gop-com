@@ -1,0 +1,20 @@
+uuid: f9697822-fd61-48e3-a523-a59e7875baff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.contactdata.field_township
+  module:
+    - contactdata
+id: contactdata.contactdata.field_township
+field_name: field_township
+entity_type: contactdata
+bundle: contactdata
+label: Township
+description: 'The township in which the contact resides'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

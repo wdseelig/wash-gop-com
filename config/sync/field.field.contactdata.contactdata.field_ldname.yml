@@ -1,0 +1,20 @@
+uuid: 9ad9d59e-d129-43a7-8f7d-8ce1fa4911fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.contactdata.field_ldname
+  module:
+    - contactdata
+id: contactdata.contactdata.field_ldname
+field_name: field_ldname
+entity_type: contactdata
+bundle: contactdata
+label: LDName
+description: 'The contact''s State Legislative District'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

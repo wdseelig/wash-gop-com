@@ -1,0 +1,20 @@
+uuid: 63a353ee-cc50-4f27-982a-3c31cec88870
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.contactdata.field_hhmemberid
+  module:
+    - contactdata
+id: contactdata.contactdata.field_hhmemberid
+field_name: field_hhmemberid
+entity_type: contactdata
+bundle: contactdata
+label: HHMemberId
+description: 'The contact''s household member ID'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

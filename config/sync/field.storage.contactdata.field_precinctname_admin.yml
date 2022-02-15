@@ -1,0 +1,18 @@
+uuid: 01976948-1af2-4ef4-ae5c-eb5cf381b018
+langcode: en
+status: true
+dependencies:
+  module:
+    - contactdata
+id: contactdata.field_precinctname_admin
+field_name: field_precinctname_admin
+entity_type: contactdata
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

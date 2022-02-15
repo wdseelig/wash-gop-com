@@ -1,0 +1,31 @@
+uuid: cd3ba09d-e9ab-49f5-9da7-6833a3bb38e0
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b82101bc-2e12-4464-8a4e-f5f2b531a2b8'
+  module:
+    - block_content
+    - system
+  theme:
+    - creative_responsive_theme
+id: walbergonfreespeech_3
+theme: creative_responsive_theme
+region: sidebar_first
+weight: -11
+provider: null
+plugin: 'block_content:b82101bc-2e12-4464-8a4e-f5f2b531a2b8'
+settings:
+  id: 'block_content:b82101bc-2e12-4464-8a4e-f5f2b531a2b8'
+  label: 'The Congressman''s Corner'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

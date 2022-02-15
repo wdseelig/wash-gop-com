@@ -1,0 +1,28 @@
+uuid: 58e1fb8c-ccba-48ee-b6b4-24d091e141d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.mass_contact.body
+    - node.type.mass_contact
+  module:
+    - text
+    - user
+id: node.mass_contact.default
+targetEntityType: node
+bundle: mass_contact
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,20 @@
+uuid: 745c4a9a-7f11-45d1-8625-307bac6db730
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.contactdata.field_primarycity
+  module:
+    - contactdata
+id: contactdata.contactdata.field_primarycity
+field_name: field_primarycity
+entity_type: contactdata
+bundle: contactdata
+label: PrimaryCity
+description: 'The city in which the contact lives'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

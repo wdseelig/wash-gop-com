@@ -1,0 +1,33 @@
+uuid: 333f56c9-c37e-4a00-ac8b-bb5306fdc72f
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_order
+    - options
+id: commerce_order_item.field_entrees
+field_name: field_entrees
+entity_type: commerce_order_item
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '0'
+      label: Undecided
+    -
+      value: '1'
+      label: 'Beef Medallions with Pomme Frites'
+    -
+      value: '2'
+      label: 'Chicken Almondine with Asparagus'
+    -
+      value: '3'
+      label: 'Veal Scallopini with Angel Hair Pasta'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 10
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

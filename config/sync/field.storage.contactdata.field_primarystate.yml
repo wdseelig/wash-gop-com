@@ -1,0 +1,21 @@
+uuid: 0844c3cf-3b0c-4b88-adb7-b021e5a3e853
+langcode: en
+status: true
+dependencies:
+  module:
+    - contactdata
+id: contactdata.field_primarystate
+field_name: field_primarystate
+entity_type: contactdata
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

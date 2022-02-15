@@ -1,0 +1,28 @@
+uuid: 623c489c-b1a4-43e8-b6cf-f0e6765e7a7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.membership_products.body
+    - node.type.membership_products
+  module:
+    - text
+    - user
+id: node.membership_products.default
+targetEntityType: node
+bundle: membership_products
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

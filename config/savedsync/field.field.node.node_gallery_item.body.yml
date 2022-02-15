@@ -1,0 +1,23 @@
+uuid: c2964070-a312-4acb-8652-778c1fe81c68
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.node_gallery_item
+  module:
+    - text
+id: node.node_gallery_item.body
+field_name: body
+entity_type: node
+bundle: node_gallery_item
+label: LowerCaption
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

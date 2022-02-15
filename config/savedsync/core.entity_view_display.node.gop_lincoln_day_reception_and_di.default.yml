@@ -1,0 +1,28 @@
+uuid: bce26ae7-5cb1-41f4-a154-9433a941d708
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.gop_lincoln_day_reception_and_di.body
+    - node.type.gop_lincoln_day_reception_and_di
+  module:
+    - text
+    - user
+id: node.gop_lincoln_day_reception_and_di.default
+targetEntityType: node
+bundle: gop_lincoln_day_reception_and_di
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

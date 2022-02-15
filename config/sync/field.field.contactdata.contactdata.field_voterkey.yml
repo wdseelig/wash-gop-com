@@ -1,0 +1,20 @@
+uuid: 8613b133-b7a0-4c58-a389-0eff3e4f05eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.contactdata.field_voterkey
+  module:
+    - contactdata
+id: contactdata.contactdata.field_voterkey
+field_name: field_voterkey
+entity_type: contactdata
+bundle: contactdata
+label: VoterKey
+description: 'A RNC id field'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

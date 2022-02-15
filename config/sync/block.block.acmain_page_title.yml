@@ -1,0 +1,20 @@
+uuid: 20d18305-1108-4b04-8ccb-68d6733cb254
+langcode: en
+status: false
+dependencies:
+  theme:
+    - acmain
+_core:
+  default_config_hash: _zLaasd8lWP6MChTbVkSrx_t2rGh5IMwXBtbR9u9MF8
+id: acmain_page_title
+theme: acmain
+region: sidebar_first
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

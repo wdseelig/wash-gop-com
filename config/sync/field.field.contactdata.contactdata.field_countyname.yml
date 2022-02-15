@@ -1,0 +1,20 @@
+uuid: 34933845-8799-45a8-bdca-c8219eb4b747
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.contactdata.field_countyname
+  module:
+    - contactdata
+id: contactdata.contactdata.field_countyname
+field_name: field_countyname
+entity_type: contactdata
+bundle: contactdata
+label: CountyName
+description: 'The county in which the contact resides'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

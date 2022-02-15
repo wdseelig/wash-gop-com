@@ -1,0 +1,5 @@
+name: wcgopindividualinfo
+type: module
+description: A module to describe the wcgopindividualinfo table to D9 Views
+package: WCGOPCode
+core_version_requirement: ^8 || ^9

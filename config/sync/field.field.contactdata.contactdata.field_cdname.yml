@@ -1,0 +1,20 @@
+uuid: 470fa895-27fe-41a1-9e54-6b928846c39a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.contactdata.field_cdname
+  module:
+    - contactdata
+id: contactdata.contactdata.field_cdname
+field_name: field_cdname
+entity_type: contactdata
+bundle: contactdata
+label: CDName
+description: 'The contact''s congressional district'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

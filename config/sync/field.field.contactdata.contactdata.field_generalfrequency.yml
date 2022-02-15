@@ -1,0 +1,24 @@
+uuid: b0bc17cb-bbee-4b91-af97-c7d79ef2c56e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.contactdata.field_generalfrequency
+  module:
+    - contactdata
+id: contactdata.contactdata.field_generalfrequency
+field_name: field_generalfrequency
+entity_type: contactdata
+bundle: contactdata
+label: GeneralFrequency
+description: 'The contact''s voting frequency'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

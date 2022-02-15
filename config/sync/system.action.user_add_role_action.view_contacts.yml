@@ -1,0 +1,14 @@
+uuid: 55927c89-9d93-4137-b35b-61b29a3bfac5
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.view_contacts
+  module:
+    - user
+id: user_add_role_action.view_contacts
+label: 'Add the View Contacts role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: view_contacts

@@ -1,0 +1,6 @@
+services:
+  wcgopcontactsmigrate.event_subscriber:
+    class: Drupal\wcgopcontactsmigrate\EventSubscriber\WcgopcontactsmigrateSubscriber
+    arguments: ['@messenger']
+    tags:
+      - { name: event_subscriber }

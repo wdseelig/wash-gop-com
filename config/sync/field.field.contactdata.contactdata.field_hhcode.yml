@@ -1,0 +1,20 @@
+uuid: d71ea18d-c3c2-4947-8a06-258e2874cc94
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.contactdata.field_hhcode
+  module:
+    - contactdata
+id: contactdata.contactdata.field_hhcode
+field_name: field_hhcode
+entity_type: contactdata
+bundle: contactdata
+label: HHCode
+description: 'Contact''s position within household (H, M, S)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,32 @@
+uuid: 339eff99-8619-445f-af0b-73632dcc3942
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - user
+  theme:
+    - creative_responsive_theme
+id: userlogin
+theme: creative_responsive_theme
+region: header
+weight: -5
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: 'User login'
+  provider: user
+  label_display: visible
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+  request_path:
+    id: request_path
+    pages: /user
+    negate: false

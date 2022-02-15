@@ -1,0 +1,18 @@
+uuid: 487071b2-3a36-42fb-964d-41b2878045ae
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main-menu
+    parent: 'main-menu:0:'
+name: LDDD2020Couples
+type: lddd2020couples
+description: 'This is the display node for the Couples Meal Purchase'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,11 @@
+uuid: 042fd3b5-bb37-403b-9106-ac8759eb9017
+langcode: en
+status: true
+dependencies: {  }
+name: 'Paypal donate page'
+type: paypal_donate
+description: 'Allow your users to leave you a donation'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,23 @@
+uuid: 30067177-0743-42cd-87bb-f04f82c361ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.lddd2020vipplusdisplay
+  module:
+    - text
+id: node.lddd2020vipplusdisplay.body
+field_name: body
+entity_type: node
+bundle: lddd2020vipplusdisplay
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

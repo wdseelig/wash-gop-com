@@ -1,0 +1,31 @@
+uuid: d943c676-35c6-4d25-bbc0-caa67b7af51f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.contactdata.field_phoneinfo
+    - paragraphs.paragraphs_type.phoneinfo
+  module:
+    - contactdata
+    - entity_reference_revisions
+id: contactdata.contactdata.field_phoneinfo
+field_name: field_phoneinfo
+entity_type: contactdata
+bundle: contactdata
+label: PhoneInfo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      phoneinfo: phoneinfo
+    target_bundles_drag_drop:
+      phoneinfo:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

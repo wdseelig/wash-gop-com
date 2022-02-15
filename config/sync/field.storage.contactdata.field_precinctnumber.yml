@@ -1,0 +1,21 @@
+uuid: 76df8251-f91d-416c-9b30-6d568b81816a
+langcode: en
+status: true
+dependencies:
+  module:
+    - contactdata
+id: contactdata.field_precinctnumber
+field_name: field_precinctnumber
+entity_type: contactdata
+type: string
+settings:
+  max_length: 20
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

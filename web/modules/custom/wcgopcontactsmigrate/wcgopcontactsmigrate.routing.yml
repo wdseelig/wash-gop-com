@@ -1,0 +1,57 @@
+wcgopcontactsmigrate.example:
+  path: '/wcgopcontactsmigrate/example'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\wcgopcontactsmigrate\Controller\WcgopcontactsmigrateController::build'
+  requirements:
+    _permission: 'access content'
+
+wcgopcontactsmigrate.transfer:
+  path: 'wcgopcontactsmigrate/transfer'
+  defaults:
+    _title: 'Transfer contacts'
+    _controller: '\Drupal\wcgopcontactsmigrate\Controller\WcgopcontactsmigrateController::transfer'
+  requirements:
+    _permission: 'access content'
+wcgopcontactsmigrate.transferqvf:
+  path: 'wcgopcontactsmigrate/transferqvf'
+  defaults:
+    _title: 'Transfer contacts'
+    _controller: '\Drupal\wcgopcontactsmigrate\Controller\WcgopcontactsmigrateController::transferqvf'
+  requirements:
+    _permission: 'access content'
+wcgopcontactsmigrate.experiment:
+  path: 'wcgopcontactsmigrate/experiment'
+  defaults:
+    _title: 'WCGOP Contacts Management System'
+    _controller: '\Drupal\wcgopcontactsmigrate\Controller\WcgopcontactsmigrateController::experiment'
+  requirements:
+    _permission: 'access content'
+wcgopcontactsmigrate.transferparagraph:
+  path: 'wcgopcontactsmigrate/transferphoneinfo'
+  defaults:
+    _title: 'WCGOP Contacts Management System'
+    _controller: '\Drupal\wcgopcontactsmigrate\Controller\WcgopcontactsmigrateController::transferphoneinfo'
+  requirements:
+    _permission: 'access content'
+wcgopcontactsmigrate.linkpara:
+  path: 'wcgopcontactsmigrate/linkpara'
+  defaults:
+    _title: 'WCGOP Contacts Management System'
+    _controller:  '\Drupal\wcgopcontactsmigrate\Controller\WcgopcontactsmigrateController::linkpara'
+  requirements:
+    _permission:  'access content'
+wcgopcontactsmigrate.transferemail:
+  path: 'wcgopcontactsmigrate/transferemail'
+  defaults:
+    _title: 'WCGOP Contacts Management System'
+    _controller:  '\Drupal\wcgopcontactsmigrate\Controller\WcgopcontactsmigrateController::transferemail'
+  requirements:
+    _permission:  'access content'
+wcgopcontactsmigrate.transfertags:
+  path: 'wcgopcontactsmigrate/transfertags'
+  defaults:
+    _title: 'WCGOP Contacts Management System'
+    _controller:  '\Drupal\wcgopcontactsmigrate\Controller\WcgopcontactsmigrateController::transfertags'
+  requirements:
+    _permission:  'access content'

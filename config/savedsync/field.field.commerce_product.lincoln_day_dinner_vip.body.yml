@@ -1,0 +1,23 @@
+uuid: 1f6e7515-de17-4f45-8651-5606e108aa9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.lincoln_day_dinner_vip
+    - field.storage.commerce_product.body
+  module:
+    - text
+id: commerce_product.lincoln_day_dinner_vip.body
+field_name: body
+entity_type: commerce_product
+bundle: lincoln_day_dinner_vip
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: null
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

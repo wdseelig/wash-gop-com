@@ -1,0 +1,31 @@
+uuid: 0cafb134-aca1-4cf2-9dbd-9372b85f6446
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:89e461bd-d449-4f77-854a-d62104e6a596'
+  module:
+    - block_content
+    - system
+  theme:
+    - creative_responsive_theme
+id: usefullinksfortheuser
+theme: creative_responsive_theme
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'block_content:89e461bd-d449-4f77-854a-d62104e6a596'
+settings:
+  id: 'block_content:89e461bd-d449-4f77-854a-d62104e6a596'
+  label: 'Useful links for the user'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

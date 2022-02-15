@@ -1,0 +1,31 @@
+uuid: 3d03c279-120e-4be8-9a8d-fc16c0b742f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_email
+    - paragraphs.paragraphs_type.contact_email
+  module:
+    - entity_reference_revisions
+    - user
+id: user.user.field_email
+field_name: field_email
+entity_type: user
+bundle: user
+label: Email
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      contact_email: contact_email
+    target_bundles_drag_drop:
+      contact_email:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

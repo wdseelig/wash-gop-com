@@ -1,0 +1,20 @@
+uuid: 345a7dfe-9d23-4c3e-8a05-73999a58258e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.displayqvf.field_firstname
+  module:
+    - displayqvf
+id: displayqvf.displayqvf.field_firstname
+field_name: field_firstname
+entity_type: displayqvf
+bundle: displayqvf
+label: FirstName
+description: 'The contact\''s First Name'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,5 @@
+displayqvf.add_form:
+  route_name: entity.displayqvf.add_form
+  title: 'Add displayqvf'
+  appears_on:
+    - entity.displayqvf.collection

@@ -1,0 +1,19 @@
+uuid: 6dbb3328-7efe-494a-886d-66d3a0a28299
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_first_name
+    - profile.type.customer
+id: profile.customer.field_first_name
+field_name: field_first_name
+entity_type: profile
+bundle: customer
+label: 'First Name'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

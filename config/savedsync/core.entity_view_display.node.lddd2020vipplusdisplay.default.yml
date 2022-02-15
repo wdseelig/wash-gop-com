@@ -1,0 +1,28 @@
+uuid: e33ff28d-34a1-4225-958e-76177ef0c50b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.lddd2020vipplusdisplay.body
+    - node.type.lddd2020vipplusdisplay
+  module:
+    - text
+    - user
+id: node.lddd2020vipplusdisplay.default
+targetEntityType: node
+bundle: lddd2020vipplusdisplay
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

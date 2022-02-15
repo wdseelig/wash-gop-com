@@ -1,0 +1,18 @@
+uuid: 60ad92ca-8cca-4bfa-8d80-48f8bd3fc3c5
+langcode: en
+status: true
+dependencies:
+  module:
+    - contactdata
+id: contactdata.field_middlename_admin
+field_name: field_middlename_admin
+entity_type: contactdata
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

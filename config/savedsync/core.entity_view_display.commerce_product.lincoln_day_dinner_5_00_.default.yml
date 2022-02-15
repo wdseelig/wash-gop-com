@@ -1,0 +1,27 @@
+uuid: 7b472463-21cf-4343-86da-1abc7d30fea7
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.lincoln_day_dinner_5_00_
+    - field.field.commerce_product.lincoln_day_dinner_5_00_.body
+id: commerce_product.lincoln_day_dinner_5_00_.default
+targetEntityType: commerce_product
+bundle: lincoln_day_dinner_5_00_
+mode: default
+content:
+  variations:
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+hidden:
+  body: true
+  created: true
+  stores: true
+  title: true
+  uid: true

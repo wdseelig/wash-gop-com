@@ -1,0 +1,24 @@
+uuid: 7040d72c-fac0-432b-b8d7-a20f8c3311d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.contactdata.field_countyname_admin
+  module:
+    - contactdata
+id: contactdata.contactdata.field_countyname_admin
+field_name: field_countyname_admin
+entity_type: contactdata
+bundle: contactdata
+label: CountyName_admin
+description: 'Field controlled by contacts admin'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

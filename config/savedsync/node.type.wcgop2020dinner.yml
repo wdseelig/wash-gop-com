@@ -1,0 +1,18 @@
+uuid: a6ba6df7-7b55-4e78-b373-d5ea665702ea
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main-menu
+    parent: 'main-menu:0:'
+name: WCGOP2020Dinner
+type: wcgop2020dinner
+description: 'Single Dinners for the WCOP 2020 Lincoln Day'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

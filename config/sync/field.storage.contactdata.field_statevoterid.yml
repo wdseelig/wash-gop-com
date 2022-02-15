@@ -1,0 +1,21 @@
+uuid: 06d6183a-52d1-4705-b7e1-00285e7b3589
+langcode: en
+status: true
+dependencies:
+  module:
+    - contactdata
+id: contactdata.field_statevoterid
+field_name: field_statevoterid
+entity_type: contactdata
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

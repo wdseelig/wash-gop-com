@@ -1,0 +1,10 @@
+entity.displayqvf.settings:
+  title: displayQVF
+  description: Configure a displayQVF entity type
+  route_name:  entity.displayqvf.settings
+  parent: system.admin_structure
+entity.displayqvf.collection:
+  title: displayQVFs
+  description: List of displayqvfs
+  route_name: entity.displayqvf.collection
+  parent: system.admin_content

@@ -1,0 +1,7 @@
+name: contactData
+type: module
+description: 'Provides a contactdata entity.'
+package: WCGOPCode
+core: 8.x
+core_version_requirement: ^8 || ^9
+configure: entity.contactdata.settings

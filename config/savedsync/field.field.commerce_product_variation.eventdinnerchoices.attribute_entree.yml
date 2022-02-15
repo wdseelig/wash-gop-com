@@ -1,0 +1,24 @@
+uuid: 74223c66-eaca-4350-83cb-0f51545bce94
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_attribute.entree
+    - commerce_product.commerce_product_variation_type.eventdinnerchoices
+    - field.storage.commerce_product_variation.attribute_entree
+id: commerce_product_variation.eventdinnerchoices.attribute_entree
+field_name: attribute_entree
+entity_type: commerce_product_variation
+bundle: eventdinnerchoices
+label: Entree
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:commerce_product_attribute_value'
+  handler_settings:
+    target_bundles:
+      - entree
+field_type: entity_reference

@@ -1,0 +1,785 @@
+uuid: f337ef78-26d2-4f9c-8399-89bafe3907e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.contactdata.contactdata.field_age
+    - field.field.contactdata.contactdata.field_calculatedparty
+    - field.field.contactdata.contactdata.field_ccdistrict_admin
+    - field.field.contactdata.contactdata.field_cdname
+    - field.field.contactdata.contactdata.field_cdname_admin
+    - field.field.contactdata.contactdata.field_clientid
+    - field.field.contactdata.contactdata.field_countycommissionerdistrict
+    - field.field.contactdata.contactdata.field_countyname
+    - field.field.contactdata.contactdata.field_countyname_admin
+    - field.field.contactdata.contactdata.field_dob
+    - field.field.contactdata.contactdata.field_emailinfo
+    - field.field.contactdata.contactdata.field_firstname
+    - field.field.contactdata.contactdata.field_firstname_admin
+    - field.field.contactdata.contactdata.field_gender
+    - field.field.contactdata.contactdata.field_generalfrequency
+    - field.field.contactdata.contactdata.field_gop_id
+    - field.field.contactdata.contactdata.field_hhcode
+    - field.field.contactdata.contactdata.field_hhmemberid
+    - field.field.contactdata.contactdata.field_hhrecid
+    - field.field.contactdata.contactdata.field_jurisdictionvoterid
+    - field.field.contactdata.contactdata.field_lastname
+    - field.field.contactdata.contactdata.field_lastname_admin
+    - field.field.contactdata.contactdata.field_ldname
+    - field.field.contactdata.contactdata.field_ldname_admin
+    - field.field.contactdata.contactdata.field_middlename
+    - field.field.contactdata.contactdata.field_middlename_admin
+    - field.field.contactdata.contactdata.field_observedparty
+    - field.field.contactdata.contactdata.field_officialparty
+    - field.field.contactdata.contactdata.field_phoneinfo
+    - field.field.contactdata.contactdata.field_precinctname
+    - field.field.contactdata.contactdata.field_precinctname_admin
+    - field.field.contactdata.contactdata.field_precinctnumber
+    - field.field.contactdata.contactdata.field_primaryaddress1
+    - field.field.contactdata.contactdata.field_primaryaddress1_admin
+    - field.field.contactdata.contactdata.field_primarycity
+    - field.field.contactdata.contactdata.field_primarycity_admin
+    - field.field.contactdata.contactdata.field_primarystate
+    - field.field.contactdata.contactdata.field_primarystate_admin
+    - field.field.contactdata.contactdata.field_primaryunit
+    - field.field.contactdata.contactdata.field_primaryunit_admin
+    - field.field.contactdata.contactdata.field_primaryunitnumber
+    - field.field.contactdata.contactdata.field_primaryunitnumber_admin
+    - field.field.contactdata.contactdata.field_primaryzip
+    - field.field.contactdata.contactdata.field_primaryzip_admin
+    - field.field.contactdata.contactdata.field_rncregid
+    - field.field.contactdata.contactdata.field_sdname
+    - field.field.contactdata.contactdata.field_sdname_admin
+    - field.field.contactdata.contactdata.field_stateethnicity
+    - field.field.contactdata.contactdata.field_statevoterid
+    - field.field.contactdata.contactdata.field_taginfo
+    - field.field.contactdata.contactdata.field_township
+    - field.field.contactdata.contactdata.field_township_admin
+    - field.field.contactdata.contactdata.field_voterkey
+  module:
+    - conditional_fields
+    - contactdata
+    - field_group
+    - paragraphs
+third_party_settings:
+  field_group:
+    group_3:
+      children:
+        - field_lastname
+        - field_firstname
+        - field_middlename
+        - field_lastname_admin
+        - field_firstname_admin
+        - field_middlename_admin
+      parent_name: group_acitemqvfdata
+      weight: 0
+      format_type: fieldset
+      region: content
+      format_settings:
+        description: ''
+        required_fields: true
+        id: ''
+        classes: group3
+        show_empty_fields: false
+      label: Names
+    group_4:
+      children:
+        - field_primaryaddress1
+        - field_primarycity
+        - field_primarystate
+        - field_primaryzip
+        - field_primaryaddress1_admin
+        - field_primarycity_admin
+        - field_primarystate_admin
+        - field_primaryzip_admin
+      parent_name: group_acitemqvfdata
+      weight: 1
+      format_type: fieldset
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: group4
+        description: ''
+        required_fields: true
+      label: Address
+    group_4a:
+      children:
+        - field_primaryunit
+        - field_primaryunitnumber
+        - field_township
+        - field_countyname
+        - field_primaryunit_admin
+        - field_township_admin
+        - field_primaryunitnumber_admin
+        - field_countyname_admin
+      parent_name: group_acitemqvfdata
+      weight: 2
+      format_type: fieldset
+      region: content
+      format_settings:
+        description: ''
+        required_fields: true
+        id: ''
+        classes: group4a
+        show_empty_fields: false
+      label: MoreAddress
+    group_3a:
+      children:
+        - field_cdname
+        - field_ldname
+        - field_sdname
+        - field_cdname_admin
+        - field_ldname_admin
+        - field_sdname_admin
+      parent_name: group_acitemqvfdata
+      weight: 3
+      format_type: fieldset
+      region: content
+      format_settings:
+        description: ''
+        required_fields: true
+        id: ''
+        classes: group3a
+        show_empty_fields: false
+      label: Jurisdictions
+    group_2a:
+      children:
+        - field_precinctname
+        - field_countycommissionerdistrict
+        - field_ccdistrict_admin
+        - field_precinctname_admin
+      parent_name: group_acitemqvfdata
+      weight: 4
+      format_type: fieldset
+      region: content
+      format_settings:
+        description: ''
+        required_fields: true
+        id: ''
+        classes: group2a
+        show_empty_fields: false
+      label: MoreJurisdictions
+    group_accordion1:
+      children:
+        - group_acitemqvfdata
+        - group_acitemnonqvf
+      parent_name: ''
+      weight: 0
+      format_type: accordion
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        effect: none
+      label: accordion1
+    group_acitemqvfdata:
+      children:
+        - group_3
+        - group_4
+        - group_4a
+        - group_3a
+        - group_2a
+      parent_name: group_accordion1
+      weight: 10
+      format_type: accordion_item
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        formatter: open
+        required_fields: true
+        description: ''
+      label: acitemQVFData
+    group_acitemnonqvf:
+      children:
+        - field_phoneinfo
+        - field_emailinfo
+        - field_taginfo
+      parent_name: group_accordion1
+      weight: 11
+      format_type: accordion_item
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        formatter: closed
+        required_fields: true
+        description: ''
+      label: acitemNonQVF
+id: contactdata.contactdata.default
+targetEntityType: contactdata
+bundle: contactdata
+mode: default
+content:
+  field_ccdistrict_admin:
+    type: boolean_checkbox
+    weight: 13
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_cdname:
+    weight: 13
+    settings:
+      size: 30
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        67e5836e-2e75-4012-80b3-7eaad9958a67:
+          dependee: field_cdname_admin
+          settings:
+            state: disabled
+            condition: '!checked'
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              value: false
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: contactdata
+          bundle: contactdata
+    type: string_textfield
+    region: content
+  field_cdname_admin:
+    weight: 16
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_countycommissionerdistrict:
+    weight: 11
+    settings:
+      size: 40
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        bcf4d66b-4d15-4a7b-8132-3acfe05afd75:
+          dependee: field_ccdistrict_admin
+          settings:
+            state: disabled
+            condition: '!checked'
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form: {  }
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: contactdata
+          bundle: contactdata
+    type: string_textfield
+    region: content
+  field_countyname:
+    weight: 5
+    settings:
+      size: 30
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        4b8f2fe3-361b-4e50-bb9a-e731de1323ae:
+          dependee: field_countyname_admin
+          settings:
+            state: disabled
+            condition: '!checked'
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              value: false
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: contactdata
+          bundle: contactdata
+    type: string_textfield
+    region: content
+  field_countyname_admin:
+    weight: 10
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_emailinfo:
+    type: entity_reference_paragraphs
+    weight: 15
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: emailinfo
+    third_party_settings: {  }
+    region: content
+  field_firstname:
+    weight: 10
+    settings:
+      size: 30
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        ef6d4130-cc8b-45da-b906-b56daa3dcd73:
+          dependee: field_firstname_admin
+          settings:
+            state: disabled
+            condition: '!checked'
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              value: 1
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: contactdata
+          bundle: contactdata
+    type: string_textfield
+    region: content
+  field_firstname_admin:
+    type: boolean_checkbox
+    weight: 13
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_lastname:
+    weight: 9
+    settings:
+      size: 30
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        6ac9cf8c-8bab-4d54-9780-28f80834c170:
+          dependee: field_lastname_admin
+          settings:
+            state: disabled
+            condition: '!checked'
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              value: false
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: contactdata
+          bundle: contactdata
+    type: string_textfield
+    region: content
+  field_lastname_admin:
+    type: boolean_checkbox
+    weight: 12
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_ldname:
+    weight: 14
+    settings:
+      size: 30
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        7b958bd1-7870-463e-b495-c9aae1308dda:
+          dependee: field_ldname_admin
+          settings:
+            state: disabled
+            condition: '!checked'
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              value: false
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: contactdata
+          bundle: contactdata
+    type: string_textfield
+    region: content
+  field_ldname_admin:
+    weight: 17
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_middlename:
+    weight: 11
+    settings:
+      size: 30
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        b1b5b6fe-3f32-458d-964a-3c3ac5d1884f:
+          dependee: field_middlename_admin
+          settings:
+            state: disabled
+            condition: '!checked'
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              value: false
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: contactdata
+          bundle: contactdata
+    type: string_textfield
+    region: content
+  field_middlename_admin:
+    weight: 14
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_phoneinfo:
+    type: entity_reference_paragraphs
+    weight: 14
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: preview
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: phoneinfo
+    third_party_settings: {  }
+    region: content
+  field_precinctname:
+    type: string_textfield
+    weight: 10
+    region: content
+    settings:
+      size: 40
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        40a30b41-c451-46fc-ab04-748302c618e5:
+          dependee: field_precinctname_admin
+          settings:
+            state: disabled
+            condition: '!checked'
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              value: false
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: contactdata
+          bundle: contactdata
+  field_precinctname_admin:
+    type: boolean_checkbox
+    weight: 14
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_primaryaddress1:
+    type: string_textfield
+    weight: 17
+    region: content
+    settings:
+      size: 30
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        fb0579d2-5343-4856-bf49-19344bff5558:
+          dependee: field_primaryaddress1_admin
+          settings:
+            state: disabled
+            condition: '!checked'
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              value: false
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: contactdata
+          bundle: contactdata
+  field_primaryaddress1_admin:
+    type: boolean_checkbox
+    weight: 21
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_primarycity:
+    weight: 18
+    settings:
+      size: 20
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        bee3c9ee-2260-4bf0-9a0c-b1dfbba3bb0d:
+          dependee: field_primarycity_admin
+          settings:
+            state: disabled
+            condition: '!checked'
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              value: false
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: contactdata
+          bundle: contactdata
+    type: string_textfield
+    region: content
+  field_primarycity_admin:
+    weight: 22
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_primarystate:
+    weight: 19
+    settings:
+      size: 10
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        079f5383-83c5-4260-85c3-d27d9c4ed4ec:
+          dependee: field_primarystate_admin
+          settings:
+            state: disabled
+            condition: '!checked'
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              value: false
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: contactdata
+          bundle: contactdata
+    type: string_textfield
+    region: content
+  field_primarystate_admin:
+    weight: 23
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_primaryunit:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 10
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        4ca274e4-5455-405c-afa4-41109ba78c6a:
+          dependee: field_primaryunit_admin
+          settings:
+            state: disabled
+            condition: '!checked'
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              value: false
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: contactdata
+          bundle: contactdata
+  field_primaryunit_admin:
+    type: boolean_checkbox
+    weight: 6
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_primaryunitnumber:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 10
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        0c6e5265-c2ec-40dd-b12e-7c6658bd06b1:
+          dependee: field_primaryunitnumber_admin
+          settings:
+            state: disabled
+            condition: '!checked'
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              value: false
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: contactdata
+          bundle: contactdata
+  field_primaryunitnumber_admin:
+    type: boolean_checkbox
+    weight: 9
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_primaryzip:
+    weight: 20
+    settings:
+      size: 10
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        ad988bff-971a-4f6d-b00b-4d84e32062f2:
+          dependee: field_primaryzip_admin
+          settings:
+            state: disabled
+            condition: '!checked'
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              value: false
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: contactdata
+          bundle: contactdata
+    type: string_textfield
+    region: content
+  field_primaryzip_admin:
+    weight: 24
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_sdname:
+    weight: 15
+    settings:
+      size: 30
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        b870bd88-a03a-4fdd-88ef-d450d0d31b46:
+          dependee: field_sdname_admin
+          settings:
+            state: disabled
+            condition: '!checked'
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              value: false
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: contactdata
+          bundle: contactdata
+    type: string_textfield
+    region: content
+  field_sdname_admin:
+    weight: 18
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_taginfo:
+    type: entity_reference_paragraphs
+    weight: 16
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: taginfo
+    third_party_settings: {  }
+    region: content
+  field_township:
+    weight: 4
+    settings:
+      size: 30
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        fda5fc7c-4530-4e72-9295-7fdcef68ca8e:
+          dependee: field_township_admin
+          settings:
+            state: disabled
+            condition: '!checked'
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              value: false
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: contactdata
+          bundle: contactdata
+    type: string_textfield
+    region: content
+  field_township_admin:
+    weight: 8
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+hidden:
+  created: true
+  field_age: true
+  field_calculatedparty: true
+  field_clientid: true
+  field_dob: true
+  field_gender: true
+  field_generalfrequency: true
+  field_gop_id: true
+  field_hhcode: true
+  field_hhmemberid: true
+  field_hhrecid: true
+  field_jurisdictionvoterid: true
+  field_observedparty: true
+  field_officialparty: true
+  field_precinctnumber: true
+  field_rncregid: true
+  field_stateethnicity: true
+  field_statevoterid: true
+  field_voterkey: true
+  uid: true

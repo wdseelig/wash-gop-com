@@ -1,0 +1,28 @@
+uuid: 00e99136-9c49-4863-8ff7-aab04ce3243e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: commerceorderinfo
+label: commerceorderinfo
+code: |+
+  label {
+    display:  block;
+  }
+  form {
+    background-color: #ffcb05;
+  }
+  #edit-payment-information-payment-method {
+    display:  none;
+  }
+
+conditions_require_all: true
+conditions:
+  request_path:
+    id: request_path
+    pages: "*/order_information\r\n*/checkout/*/login"
+    negate: false
+contexts: {  }
+media: all
+preprocess: true

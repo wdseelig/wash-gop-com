@@ -1,0 +1,20 @@
+uuid: 975389b0-d134-43d1-9622-6f4be75173aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.contactdata.field_dob
+  module:
+    - contactdata
+id: contactdata.contactdata.field_dob
+field_name: field_dob
+entity_type: contactdata
+bundle: contactdata
+label: DOB
+description: 'The year the contact was born'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

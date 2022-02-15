@@ -1,0 +1,12 @@
+uuid: 33d0f73a-e3a2-4263-a82d-07c74baedefc
+langcode: en
+status: true
+dependencies: {  }
+id: gop_lincoln_day_reception_and_di
+label: 'GOP LIncoln Day Reception and Dinners'
+description: 'GOP Reception and Dinner'
+variationType: receptionanddinner2018
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

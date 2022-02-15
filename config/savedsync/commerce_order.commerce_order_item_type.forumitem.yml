@@ -1,0 +1,10 @@
+uuid: f772f3c1-85a6-453e-b2d8-0d42f318ff3f
+langcode: en
+status: true
+dependencies: {  }
+label: forumitem
+id: forumitem
+purchasableEntityType: commerce_product_variation
+orderType: default
+traits: {  }
+locked: false

@@ -1,0 +1,23 @@
+uuid: f31d08bc-35b0-42c1-b5cd-c0cff56154fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.lddd2020couples
+  module:
+    - text
+id: node.lddd2020couples.body
+field_name: body
+entity_type: node
+bundle: lddd2020couples
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

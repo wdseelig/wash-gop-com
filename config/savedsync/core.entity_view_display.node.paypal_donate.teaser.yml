@@ -1,0 +1,30 @@
+uuid: 9024e4a1-2a8a-42e5-ac71-30cf404d5c67
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.paypal_donate.body
+    - node.type.paypal_donate
+  module:
+    - text
+    - user
+id: node.paypal_donate.teaser
+targetEntityType: node
+bundle: paypal_donate
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,24 @@
+uuid: 0375e434-cf9f-48c8-93e6-b531a8c9523e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.contactdata.field_firstname_admin
+  module:
+    - contactdata
+id: contactdata.contactdata.field_firstname_admin
+field_name: field_firstname_admin
+entity_type: contactdata
+bundle: contactdata
+label: FirstName_admin
+description: 'Field controlled by contacts admin'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

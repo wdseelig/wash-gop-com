@@ -1,0 +1,25 @@
+uuid: c8629454-3694-48ac-a99e-17215457d6dd
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - wcgop_commerce
+  theme:
+    - creative_responsive_theme
+id: wcgopcommercegotocartblock
+theme: creative_responsive_theme
+region: primary_menu
+weight: 0
+provider: null
+plugin: wcgop_commerce_gotocartblock
+settings:
+  id: wcgop_commerce_gotocartblock
+  label: 'WCGOP Commerce Go To Cart  Block'
+  provider: wcgop_commerce
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /trial
+    negate: false
