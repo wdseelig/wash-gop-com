@@ -41,6 +41,12 @@ class VoterSearchForm extends FormBase {
       ];
       return $build;
     }
+    $form['Header'] = [
+      '#type' => 'item',
+      '#prefix' => '<div class=contactsearch>',
+      '#markup' => '<h3>Contact Selection Criteria</h3>',
+      '#suffix' => '</div>',
+    ];
     $form['LastName'] = [
       '#type' => 'textfield',
       '#size' => 20,
@@ -86,11 +92,13 @@ class VoterSearchForm extends FormBase {
   public function searchajaxSubmit(&$form, FormStateInterface $form_state) {
     $ln = $form_state->getValue('LastName');
     $fn = $form_state->getValue('FirstName');
+    $addr = $form_state->getValue('Address');
     $contactdata_storage = \Drupal::entityTypeManager()->getStorage('contactdata');
     $result = \Drupal::entityQuery('contactdata', 'cd');
     $andGroup = $result->andConditionGroup()
       ->condition('field_firstname', '%' . $fn . '%', 'LIKE')
-      ->condition('field_lastname', '%' . $ln . '%', 'LIKE');
+      ->condition('field_lastname', '%' . $ln . '%', 'LIKE')
+      ->condition('field_primaryaddress1', '%' . $addr . '%' , 'LIKE');
     $result->condition($andGroup);
     $cidresult = $result->execute();
     $cids = $contactdata_storage->loadMultiple($cidresult);
@@ -105,11 +113,13 @@ class VoterSearchForm extends FormBase {
         $value->get('field_firstname')->value, $url);
       $link = $link->toString();
       /*TODO  Add additional info to $row*/
-      $rows[] = [Markup::create($link), $value->get('field_precinctname')->value];
+      $rows[] = [Markup::create($link), $value->get('field_primaryaddress1')->value,
+        $value->get('field_precinctname')->value];
     }
     /*TODO This just searches contacts; need to add search of info and merge tables   */
     $header = [
       'Name (Last, First)' => t('Name (Last, First)'),
+      'Address' => t('Address'),
       'Precinct' => t('Precinct'),
     ];
     $content['table'] = [

@@ -8,8 +8,15 @@ div.js-form-type-textfield {
 form.admincontacts-voter-search {
   background-color: lightblue;
 }
+div.contactsearch {
+  color:  blue;
+  text-align: center;
+}
 .form-actions {
   text-align: center;
+}
+form.admincontacts-voter-search input.form-text {
+  width:  170px;
 }
 
 div.region-content {
@@ -33,6 +40,7 @@ table {
   padding-left:   30px;
   width:  30%;
   height:  15px;
+  font-size:  12px;
 }
 td {
   height: 20px  !important;

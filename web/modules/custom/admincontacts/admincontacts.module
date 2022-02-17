@@ -39,6 +39,11 @@ function admincontacts_form_alter (&$form, \Drupal\Core\Form\FormStateInterface 
  */
 function admincontacts_entity_display_build_alter(&$build, $context)
 {
+  /*
+   * This method hijacks the contactdata entity display and creates the output
+   * that I want.  It is an example of a routine altering the render array before it
+   * is sent back to the browser.
+   */
   if (strpos($context['entity']->getEntityTypeId(), 'contactdata') !== false) {
     $build = [];
     $build['wrapper'] = array(
