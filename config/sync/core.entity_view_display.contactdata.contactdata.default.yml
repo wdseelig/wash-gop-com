@@ -29,6 +29,7 @@ dependencies:
     - field.field.contactdata.contactdata.field_ldname_admin
     - field.field.contactdata.contactdata.field_middlename
     - field.field.contactdata.contactdata.field_middlename_admin
+    - field.field.contactdata.contactdata.field_notes
     - field.field.contactdata.contactdata.field_observedparty
     - field.field.contactdata.contactdata.field_officialparty
     - field.field.contactdata.contactdata.field_phoneinfo
@@ -300,6 +301,13 @@ content:
       format_custom_true: ''
     third_party_settings: {  }
     type: boolean
+    region: content
+  field_notes:
+    weight: 59
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
     region: content
   field_observedparty:
     weight: 40

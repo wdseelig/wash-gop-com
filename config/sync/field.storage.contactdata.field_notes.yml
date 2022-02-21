@@ -1,0 +1,19 @@
+uuid: 5677c63c-c2fa-43e8-9506-cff7e9233176
+langcode: en
+status: true
+dependencies:
+  module:
+    - contactdata
+id: contactdata.field_notes
+field_name: field_notes
+entity_type: contactdata
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -55,3 +55,10 @@ wcgopcontactsmigrate.transfertags:
     _controller:  '\Drupal\wcgopcontactsmigrate\Controller\WcgopcontactsmigrateController::transfertags'
   requirements:
     _permission:  'access content'
+wcgopcontactsmigrate.transfernotes:
+  path: 'wcgopcontactsmigrate/transfernotes'
+  defaults:
+    _title: 'WCGOP Contacts Management System'
+    _controller:  '\Drupal\wcgopcontactsmigrate\Controller\WcgopcontactsmigrateController::transfernotes'
+  requirements:
+    _permission:  'access content'

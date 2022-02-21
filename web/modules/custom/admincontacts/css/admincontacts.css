@@ -48,3 +48,14 @@ td {
 a.c-link {
   color:  red !important;
 }
+div.noteview {
+  text-align: center;
+  background-color: lightyellow;
+  width:  50%;
+  color:  red;
+}
+div.noteview div {
+  text-align: left;
+  font-size:  14px;
+  color:  #000000;
+}

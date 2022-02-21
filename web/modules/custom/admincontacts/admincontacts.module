@@ -89,6 +89,15 @@ function admincontacts_entity_display_build_alter(&$build, $context)
       '#arguments' => [$context['entity']->id->getString()],
       '#embed' => TRUE,
     ];
+    $notestring = $context['entity']->field_notes->getString();
+    if (strlen($notestring)) {
+      $build['wrapper']['contactnotes'] = [
+        '#prefix' => '<div class="noteview">NOTES',
+        '#suffix' => '<br></div>',
+        '#type' => 'item',
+        '#markup' => $notestring,
+      ];
+    }
     return $build;
   }
 }

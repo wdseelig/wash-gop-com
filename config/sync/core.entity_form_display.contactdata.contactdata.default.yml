@@ -29,6 +29,7 @@ dependencies:
     - field.field.contactdata.contactdata.field_ldname_admin
     - field.field.contactdata.contactdata.field_middlename
     - field.field.contactdata.contactdata.field_middlename_admin
+    - field.field.contactdata.contactdata.field_notes
     - field.field.contactdata.contactdata.field_observedparty
     - field.field.contactdata.contactdata.field_officialparty
     - field.field.contactdata.contactdata.field_phoneinfo
@@ -198,6 +199,7 @@ third_party_settings:
         - field_phoneinfo
         - field_emailinfo
         - field_taginfo
+        - field_notes
       parent_name: group_accordion1
       weight: 11
       format_type: accordion_item
@@ -449,6 +451,14 @@ content:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
+    region: content
+  field_notes:
+    weight: 17
+    settings:
+      rows: 10
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
     region: content
   field_phoneinfo:
     type: entity_reference_paragraphs

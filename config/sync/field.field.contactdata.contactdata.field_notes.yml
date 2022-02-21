@@ -1,0 +1,20 @@
+uuid: 97b36ee9-9170-405f-a7f7-359bc273d952
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.contactdata.field_notes
+  module:
+    - contactdata
+id: contactdata.contactdata.field_notes
+field_name: field_notes
+entity_type: contactdata
+bundle: contactdata
+label: notes
+description: 'Notes about this contact'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

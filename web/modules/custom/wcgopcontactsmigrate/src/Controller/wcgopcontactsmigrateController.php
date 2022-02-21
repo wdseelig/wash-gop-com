@@ -477,5 +477,28 @@ class WcgopcontactsmigrateController extends ControllerBase
     ];
     return $build;
   }// End of transfertags
+  public function transfernotes() {
+    $query = \Drupal::database()->select('crm_core_contact', 'cc')
+      ->fields('cc', ['contact_id', 'notes'])
+      ->condition('type', 'v2individual', 'LIKE');
+    $result = $query->execute();
+    foreach ($result as $record)
+    {
+      $x = 1;
+      if (strlen($record->notes) > 0) {
+        $query = \Drupal::entityQuery('contactdata')
+          ->condition('d7cid', $record->contact_id);
+        $contact = $query->execute();
+        $cid = (int)array_values($contact)[0];
+        if ($cid > 0) {
+          $contact = \Drupal::entityTypeManager()->getStorage('contactdata')->load($cid);
+          $myfield = 'field_notes';
+          $contact->$myfield = $record->notes;
+          $contact->save();
+          $x = 1;
+        }
+      } // End of code processing a valid note
+    } // End of loop through contacts
+  } // End of transfernotes
 } // End of the wcgopcontactsmigratgeController class
 
