@@ -62,6 +62,11 @@ function admincontacts_entity_display_build_alter(&$build, $context)
         $context['entity']->field_primaryzip->getString() . '<br>' .
         $context['entity']->field_precinctname->getString(),
     ];
+    $build['wrapper']['contactage'] = [
+      '#type' => 'item',
+      '#markup' => '<h2>' . 'Age: ' . $context['entity']->get('field_age')->getString() . '<br>' .
+        'Voted in ' . $context['entity']->get('field_generalfrequency')->getString() . ' of the last 4 general elections',
+    ];
 
     $build['wrapper']['contactphonesview'] = [
       '#prefix' => '<div class="phoneview">',
