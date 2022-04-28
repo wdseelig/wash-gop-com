@@ -11,5 +11,5 @@ display_label: 'WCGOP Customer'
 multiple: true
 registration: true
 roles: {  }
-allow_revisions: true
+allow_revisions: false
 new_revision: false

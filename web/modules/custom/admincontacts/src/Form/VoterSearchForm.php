@@ -76,6 +76,10 @@ class VoterSearchForm extends FormBase {
       ],
       '#value' => $this->t('Click here to select the QVF+ voters who match your criteria'),
     ];
+    $form['content']['resetbutton'] = [
+      '#type'=> 'item',
+      '#markup' => '<img src="/files/images/site_editors/RestartButton.png" class="clrscreen">',
+    ];
     return $form;
   }
 
@@ -108,7 +112,7 @@ class VoterSearchForm extends FormBase {
       $url = Url::fromRoute('entity.contactdata.canonical',
         array( 'contactdata' => $value->get('id')->value));
       $url->setRouteParameter("acmain", "1");
-      $url->setOptions(['attributes' => ['class' => ['c-link']]]);
+      $url->setOptions(['attributes' => ['class' => ['c-link', 'r-elem']]]);
       $link = Link::fromTextAndUrl($value->get('field_lastname')->value . ', ' .
         $value->get('field_firstname')->value, $url);
       $link = $link->toString();
@@ -116,19 +120,55 @@ class VoterSearchForm extends FormBase {
       $rows[] = [Markup::create($link), $value->get('field_primaryaddress1')->value,
         $value->get('field_precinctname')->value];
     }
-    /*TODO This just searches contacts; need to add search of info and merge tables   */
+    /*
+     * This is now code that selects all of the relevant voters from the wcgopindividualinfo
+     * table who are NOT yet contacts.  We will add these to the $rows variable with a link that points
+     * to code that creates and displays a form that will allow these voters to be added as a contact
+     */
+
+    $query = \Drupal::database()->select('wcgopindividualinfo', 'w');
+    $query->leftJoin('contactdata', 'cd','cd.info_id = w.info_id');
+    $query->fields('w', ['LastName', 'FirstName', 'PrimaryAddress1', 'PrecinctName', 'info_id']);
+    $query->fields('cd', ['id', 'info_id']);
+    $andGroup = $query->andConditionGroup()
+      ->condition('w.LastName', '%' . $ln . '%' , 'LIKE')
+      ->condition('cd.id', NULL, 'IS NULL');
+    $noncontacts = $query->condition($andGroup)->execute()->fetchAll();
+    foreach ($noncontacts as $value)
+    {
+      $url = Url::fromRoute('admincontacts.voterinfo',
+        array( 'infoid' => $value->info_id));
+      $url->setRouteParameter("acmain", "1");
+      $url->setOptions(['attributes' => ['class' => ['c-link', 'b-elem']]]);
+      $link = Link::fromTextAndUrl($value->LastName . ', ' . $value->FirstName,$url);
+      $link = $link->toString();
+      /*TODO  Add additional info to $row*/
+      $rows[] = [Markup::create($link), $value->PrimaryAddress1, $value->PrecinctName];
+    }
+    usort($rows, function($a, $b) {
+      $first = explode('>', $a[0]->getGeneratedLink());
+      $second = explode('>', $b[0]->getGeneratedLink());
+     return(strnatcasecmp($first[1],$second[1]));
+    });
+
     $header = [
       'Name (Last, First)' => t('Name (Last, First)'),
       'Address' => t('Address'),
       'Precinct' => t('Precinct'),
     ];
     $content['table'] = [
+      '#prefix' => '<div class=searchtable>',
       '#type' => 'table',
-      '#attributes' => ['class' => ['searchtable']],
       '#header' => $header,
       '#rows' => $rows,
       '#cache.max-age' => 0,
+      '#suffix' => '</div>',
     ];
+
+
+
+
+
     $renderer = \Drupal::service('renderer');
     $content = $renderer->render($content);
     $myresponse = new AjaxResponse();

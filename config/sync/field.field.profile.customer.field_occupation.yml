@@ -1,0 +1,19 @@
+uuid: aec87e6a-6998-4032-9b23-646cee21ca30
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_occupation
+    - profile.type.customer
+id: profile.customer.field_occupation
+field_name: field_occupation
+entity_type: profile
+bundle: customer
+label: Occupation
+description: 'Enter you occupation '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

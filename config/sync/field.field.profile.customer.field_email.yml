@@ -1,0 +1,19 @@
+uuid: d3a44f31-54d3-4d6e-9c68-a7e0090159f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_email
+    - profile.type.customer
+id: profile.customer.field_email
+field_name: field_email
+entity_type: profile
+bundle: customer
+label: 'Email Address'
+description: 'We need this to communicate with you about your order'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

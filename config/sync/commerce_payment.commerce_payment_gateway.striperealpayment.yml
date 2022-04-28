@@ -1,0 +1,20 @@
+uuid: 61b683dc-81aa-4e5b-ad85-74fdf70338cf
+langcode: en
+status: false
+dependencies:
+  module:
+    - commerce_stripe
+id: striperealpayment
+label: StripeRealPayment
+weight: null
+plugin: stripe
+configuration:
+  publishable_key: pk_live_0WGSWOmBHkEXinclQ9h1zEPt
+  secret_key: sk_live_SvGaKbF4eWYQdWBJfurCyPXm
+  display_label: Manual
+  mode: live
+  payment_method_types:
+    - credit_card
+  collect_billing_information: false
+conditions: {  }
+conditionOperator: AND

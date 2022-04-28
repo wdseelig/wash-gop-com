@@ -1,0 +1,16 @@
+uuid: 2d777bca-1d08-4004-8297-2937be7ef7f7
+langcode: en
+status: true
+dependencies: {  }
+id: lincolndayconfirmation
+label: LincolnDayConfirmation
+event: order_paid
+targetEntityType: commerce_order
+from: 2022LincolnDay@wash-gop.com
+to: '[commerce_order:billing_profile:entity:field_email]'
+cc: ''
+bcc: ''
+subject: 'Your Lincoln Day Dinner'
+body: 'This is just some text for now.'
+conditions: {  }
+conditionOperator: AND

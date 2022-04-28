@@ -12,3 +12,18 @@ admincontacts.acdisplay:
     _controller: '\Drupal\admincontacts\Controller\AdmincontactsController::acdisplay'
   requirements:
     _permission: 'access content'
+admincontacts.voterinfo:
+  path: '/admincontacts/voterinfo/{infoid}'
+  defaults:
+    _title: 'WCGOP Voter Information'
+    _controller: '\Drupal\admincontacts\Controller\AdmincontactsController::voterinfo'
+  requirements:
+    _permission: 'access content'
+
+admincontacts.voter_info:
+  path: '/admincontacts/voter-info/{infoid}'
+  defaults:
+    _title: 'Voter info'
+    _form: 'Drupal\admincontacts\Form\VoterInfoForm'
+  requirements:
+    _permission: 'access content'

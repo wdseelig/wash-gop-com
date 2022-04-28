@@ -1,0 +1,22 @@
+uuid: b21b8e75-8958-4788-afa8-8154d577f1cf
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: commerce_order_information
+label: commerce_order_information
+code: |-
+  .form-text {
+    background-color:  #ffffff;
+    text-align: center;
+  }
+conditions_require_all: true
+conditions:
+  request_path:
+    id: request_path
+    pages: '/checkout/*/order_information'
+    negate: false
+contexts: {  }
+media: all
+preprocess: true

@@ -1,29 +1,25 @@
-uuid: 19059d42-5849-4735-b842-8562d71ac51a
+uuid: 40aaf825-7815-400a-b3f5-915a2f183989
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.profile.address
-    - profile.type.customer
+    - profile.type.wcgop_customer_v2
   module:
     - address
-_core:
-  default_config_hash: 0lW9atu6EsqDPufp7ZJ4IVzmKSzeZv0vhbHwZ2fIh8k
-id: profile.customer.address
+id: profile.wcgop_customer_v2.address
 field_name: address
 entity_type: profile
-bundle: customer
+bundle: wcgop_customer_v2
 label: Address
 description: ''
 required: true
 translatable: false
 default_value: {  }
-default_value_callback: ''
+default_value_callback: null
 settings:
   available_countries: {  }
   langcode_override: ''
-  field_overrides:
-    organization:
-      override: hidden
+  field_overrides: {  }
   fields: {  }
 field_type: address

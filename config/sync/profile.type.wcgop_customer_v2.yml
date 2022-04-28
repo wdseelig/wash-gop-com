@@ -1,0 +1,15 @@
+uuid: ec59e110-21b2-4fab-a604-210ca3691253
+langcode: en
+status: true
+dependencies: {  }
+third_party_settings:
+  commerce_order:
+    customer_profile_type: true
+id: wcgop_customer_v2
+label: 'WCGOP Customer V2'
+display_label: V2WCGOPCustomer
+multiple: false
+registration: false
+roles: {  }
+allow_revisions: true
+new_revision: false

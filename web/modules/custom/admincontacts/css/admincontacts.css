@@ -8,6 +8,15 @@ div.js-form-type-textfield {
 form.admincontacts-voter-search {
   background-color: lightblue;
 }
+form#admincontacts-voter-info {
+  background-color: lightblue;
+}
+div.cname h2 {
+  color:  red;
+}
+div.caddr h2 {
+  color:  blue;
+}
 div.contactsearch {
   color:  blue;
   text-align: center;
@@ -21,6 +30,9 @@ form.admincontacts-voter-search input.form-text {
 
 div.region-content {
   width:  100%;
+}
+.clrscreen {
+  visibility: hidden;
 }
 tr {
   background-color: #f2f2f2;
@@ -45,8 +57,11 @@ table {
 td {
   height: 20px  !important;
 }
-a.c-link {
+a.r-elem {
   color:  red !important;
+}
+a.b-elem {
+  color:  blue !important;
 }
 div.noteview {
   text-align: center;
@@ -58,4 +73,8 @@ div.noteview div {
   text-align: left;
   font-size:  14px;
   color:  #000000;
+}
+div.searchtable {
+  overflow-y: auto;
+  height: 500px;
 }

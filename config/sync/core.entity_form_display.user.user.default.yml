@@ -44,3 +44,4 @@ hidden:
   guest_profiles: true
   member_profiles: true
   non_paying_cu_profiles: true
+  wcgop_customer_v2_profiles: true

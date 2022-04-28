@@ -11,12 +11,12 @@ third_party_settings:
     cart_block_view: commerce_cart_block
     cart_expiration: {  }
   commerce_checkout:
-    checkout_flow: wcgop_checkout
+    checkout_flow: wcgop_custom_checkout_flow
 _core:
   default_config_hash: bROz7kd1J83kDf06qdZztYFSezi6UrfwftyJo53rNt4
 label: Default
 id: default
-workflow: order_default
+workflow: order_fulfillment_validation
 numberPattern: order_default
 refresh_mode: customer
 refresh_frequency: 15

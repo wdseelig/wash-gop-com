@@ -1,0 +1,23 @@
+uuid: e14e6ec8-ae03-4bed-88e9-61df6f91d0d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_order.commerce_order_type.default
+    - field.storage.commerce_order.field_orderpaid
+  module:
+    - state_machine
+id: commerce_order.default.field_orderpaid
+field_name: field_orderpaid
+entity_type: commerce_order
+bundle: default
+label: OrderPaid
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  workflow: ''
+  workflow_callback: ''
+field_type: state

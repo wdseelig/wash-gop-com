@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "589eee54ee52983f35a2f122e7c5318e",
+    "content-hash": "0ad085316f62ca26e0dbb305349dc7f3",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2592,6 +2592,68 @@
             }
         },
         {
+            "name": "drupal/commerce_email",
+            "version": "1.0.0-beta2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/commerce_email.git",
+                "reference": "8.x-1.0-beta2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/commerce_email-8.x-1.0-beta2.zip",
+                "reference": "8.x-1.0-beta2",
+                "shasum": "fc439b8c9a4387f62929d717f09bf1edf4db1b3a"
+            },
+            "require": {
+                "drupal/commerce": "^2.0",
+                "drupal/core": "^8.9 || ^9",
+                "drupal/token": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-beta2",
+                    "datestamp": "1647059065",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "jsacksick",
+                    "homepage": "https://www.drupal.org/user/972218"
+                },
+                {
+                    "name": "mglaman",
+                    "homepage": "https://www.drupal.org/user/2416470"
+                },
+                {
+                    "name": "paul.linney",
+                    "homepage": "https://www.drupal.org/user/928636"
+                },
+                {
+                    "name": "rinasek",
+                    "homepage": "https://www.drupal.org/user/1245514"
+                },
+                {
+                    "name": "rszrama",
+                    "homepage": "https://www.drupal.org/user/49344"
+                }
+            ],
+            "description": "Provides a UI for defining emails to send in response to various Drupal Commerce events.",
+            "homepage": "https://www.drupal.org/project/commerce_email",
+            "support": {
+                "source": "https://git.drupalcode.org/project/commerce_email"
+            }
+        },
+        {
             "name": "drupal/commerce_migrate",
             "version": "dev-3.1.x",
             "source": {
@@ -4260,6 +4322,50 @@
             "homepage": "https://www.drupal.org/project/inline_entity_form",
             "support": {
                 "source": "https://git.drupalcode.org/project/inline_entity_form"
+            }
+        },
+        {
+            "name": "drupal/inline_formatter_field",
+            "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/inline_formatter_field.git",
+                "reference": "8.x-2.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/inline_formatter_field-8.x-2.2.zip",
+                "reference": "8.x-2.2",
+                "shasum": "a27f13a551d7350f7b31178b2eaa1435b76047f2"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.2",
+                    "datestamp": "1649508027",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "bobbysaul",
+                    "homepage": "https://www.drupal.org/user/3570832"
+                }
+            ],
+            "description": "Creates a field type that allowed any HTML or Twig to be entered and is displayed by a boolean",
+            "homepage": "https://www.drupal.org/project/inline_formatter_field",
+            "support": {
+                "source": "https://git.drupalcode.org/project/inline_formatter_field"
             }
         },
         {
@@ -14887,6 +14993,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/advpoll": 20,
+        "drupal/commerce_email": 10,
         "drupal/commerce_migrate": 20,
         "drupal/commerce_stripe": 5,
         "drupal/commerce_webform_order": 10,

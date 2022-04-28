@@ -1,10 +1,10 @@
 uuid: d556e912-a98a-4bb6-bd6e-248270f9c692
 langcode: en
-status: true
+status: false
 dependencies: {  }
 id: commerce_stripe
 label: commerce_stripe
-weight: null
+weight: -10
 plugin: manual
 configuration:
   instructions:

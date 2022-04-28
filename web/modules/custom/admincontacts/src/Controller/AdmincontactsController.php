@@ -5,6 +5,9 @@ namespace Drupal\admincontacts\Controller;
 use Drupal\Core\Ajax\HtmlCommand;
 use Drupal\Core\Controller\ControllerBase;
 use Drupal\Core\Ajax\AjaxResponse;
+use Drupal\Core\Link;
+use Drupal\Core\Render\Markup;
+use Drupal\Core\Url;
 
 /**
  * Returns responses for admincontacts routes.
@@ -45,6 +48,14 @@ class AdmincontactsController extends ControllerBase {
       $selector = '.acrightcontainer';
       $ajaxresponse->addCommand(new Htmlcommand($selector,$content));
       return $ajaxresponse;
+    }
+    public function voterinfo($infoid)
+    {
+      /**
+       * Display a form with information about a voter in the info table who is not a contact
+       */
+      $form = \Drupal::formBuilder()->getForm('Drupal\admincontacts\Form\VoterInfoForm',$infoid);
+      return $form;
     }
 
 }

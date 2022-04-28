@@ -17,13 +17,14 @@ configuration:
     wcgop_commerce_checkout_pane:
       step: login
       weight: 0
-    payment_information:
+    order_summary:
+      view: commerce_checkout_order_summary
       step: order_information
       weight: 1
     stripe_review:
       button_id: edit-actions-next
-      step: review
-      weight: 2
+      step: _disabled
+      weight: 5
     payment_process:
       capture: true
       step: payment
@@ -34,10 +35,9 @@ configuration:
         format: '3'
       step: complete
       weight: 4
-    order_summary:
-      view: ''
-      step: _disabled
-      weight: 5
+    payment_information:
+      step: review
+      weight: 2
     contact_information:
       double_entry: false
       step: _disabled

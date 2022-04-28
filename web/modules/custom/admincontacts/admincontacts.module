@@ -64,7 +64,7 @@ function admincontacts_entity_display_build_alter(&$build, $context)
     ];
     $build['wrapper']['contactage'] = [
       '#type' => 'item',
-      '#markup' => '<h2>' . 'Age: ' . $context['entity']->get('field_age')->getString() . '<br>' .
+      '#markup' => '<h2>' . 'Age: ' . $context['entity']->field_age->value  . '<br>' .
         'Voted in ' . $context['entity']->get('field_generalfrequency')->getString() . ' of the last 4 general elections',
     ];
 

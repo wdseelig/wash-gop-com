@@ -1,0 +1,19 @@
+uuid: fee1240b-5051-4ee5-87c7-8a02edf99c46
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_order
+    - state_machine
+id: commerce_order.field_orderpaid
+field_name: field_orderpaid
+entity_type: commerce_order
+type: state
+settings: {  }
+module: state_machine
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

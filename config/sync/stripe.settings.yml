@@ -1,8 +1,8 @@
 environment: test
 apikey:
   test:
-    public: wcgop_admin
-    secret: wds217hhs1221
+    public: pk_test_dhUKvlgeFJL0q9yqZNA54PkC
+    secret: sk_test_0vv6PsHbaDyFwgAIPmd7QWCx
     webhook: ''
   live:
     public: ''

@@ -90,7 +90,7 @@ class WCGOPCheckoutPane extends CheckoutPaneBase {
     $order->setBillingProfile($profile);
     $order->save();
     $orderid = $order->get('order_id')->getValue();
-    $intorderid = $orderid[0]["value"];
+    $intorderid = (int) $orderid[0]["value"];
     $routeparameters = ['commerce_order' => $intorderid, 'step' => 'order_information'];
     $form_state->setRedirect('wcgop_commerce_gotopayment',$routeparameters);
    return;

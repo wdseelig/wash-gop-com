@@ -1,0 +1,22 @@
+uuid: 7ac9457a-9120-4648-9abb-3031a894a5e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.profile.wcgop_customer_v2.address
+    - profile.type.wcgop_customer_v2
+  module:
+    - address
+id: profile.wcgop_customer_v2.default
+targetEntityType: profile
+bundle: wcgop_customer_v2
+mode: default
+content:
+  address:
+    type: address_default
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  is_default: true

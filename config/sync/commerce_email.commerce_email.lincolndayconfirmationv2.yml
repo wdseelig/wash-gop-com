@@ -1,0 +1,16 @@
+uuid: 70fb17b6-dcb0-4738-a12c-d52b3b1c88b2
+langcode: en
+status: false
+dependencies: {  }
+id: lincolndayconfirmationv2
+label: LincolnDayConfirmationV2
+event: order_placed
+targetEntityType: commerce_order
+from: LincolnDayCoordinator@wash-gop.com
+to: '[commerce_order:billing_profile:entity:field_email]'
+cc: ''
+bcc: ''
+subject: 'Thanks for you Lincoln Day participation'
+body: 'This is just some text for now.'
+conditions: {  }
+conditionOperator: AND

@@ -4,7 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.profile.customer.address
+    - field.field.profile.customer.field_email
+    - field.field.profile.customer.field_employeraddress
     - field.field.profile.customer.field_first_name
+    - field.field.profile.customer.field_occupation
     - field.field.profile.customer.tax_number
     - profile.type.customer
   enforced:
@@ -21,12 +24,26 @@ mode: default
 content:
   address:
     type: address_default
-    weight: 1
+    weight: 0
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_first_name:
-    weight: 0
+  field_email:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_employeraddress:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_occupation:
+    weight: 2
     settings:
       size: 60
       placeholder: ''
@@ -34,5 +51,6 @@ content:
     type: string_textfield
     region: content
 hidden:
+  field_first_name: true
   is_default: true
   tax_number: true
