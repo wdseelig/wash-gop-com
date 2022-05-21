@@ -11,8 +11,8 @@ dependencies:
     - creative_responsive_theme
 id: shoppingcartlink
 theme: creative_responsive_theme
-region: primary_menu
-weight: -10
+region: breadcrumb
+weight: -12
 provider: null
 plugin: 'block_content:edce0e95-cccf-442b-ae3b-98d839bcf7eb'
 settings:

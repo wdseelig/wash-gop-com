@@ -10,7 +10,7 @@ dependencies:
 id: wcgopcommercegotocartblock
 theme: creative_responsive_theme
 region: primary_menu
-weight: 0
+weight: -11
 provider: null
 plugin: wcgop_commerce_gotocartblock
 settings:

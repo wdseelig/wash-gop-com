@@ -12,7 +12,7 @@ dependencies:
 id: gotocart
 theme: creative_responsive_theme
 region: primary_menu
-weight: 0
+weight: -9
 provider: null
 plugin: 'block_content:464e4ff0-3f82-4146-adf2-664f85a82e49'
 settings:

@@ -1,0 +1,6 @@
+uuid: 97a49481-2a8c-4927-a005-b2e64a449134
+langcode: en
+status: true
+dependencies: {  }
+id: content-provider
+label: 'Content provider'

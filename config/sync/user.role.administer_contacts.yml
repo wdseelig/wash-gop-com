@@ -7,5 +7,11 @@ label: 'Administer Contacts'
 weight: 10
 is_admin: null
 permissions:
+  - 'access contactdata overview'
+  - 'administer admincontacts configuration'
+  - 'administer contactdata'
   - 'administer contacts'
+  - 'bypass node access'
+  - 'create contact data'
   - 'edit contact data'
+  - 'view contact data'

@@ -1,0 +1,21 @@
+uuid: 7f573e8d-ed28-4d52-8ffa-28b65c1f5f55
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: wcgopcommercepurchase
+label: WCGOPCommercePurchase
+code: |-
+  .main-header {
+    position: fixed;
+  }
+conditions_require_all: true
+conditions:
+  request_path:
+    id: request_path
+    pages: /trial
+    negate: false
+contexts: {  }
+media: all
+preprocess: true

@@ -57,6 +57,7 @@ module:
   layout_discovery: 0
   libraries: 0
   link: 0
+  masquerade: 0
   menu_link_content: 0
   menu_ui: 0
   migrate: 0
@@ -75,6 +76,7 @@ module:
   pdf_reader: 0
   profile: 0
   settings_tray: 0
+  shortcut: 0
   smtp: 0
   state_machine: 0
   stripe: 0

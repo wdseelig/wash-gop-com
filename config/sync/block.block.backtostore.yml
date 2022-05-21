@@ -12,7 +12,7 @@ dependencies:
 id: backtostore
 theme: creative_responsive_theme
 region: primary_menu
-weight: 0
+weight: -12
 provider: null
 plugin: 'block_content:7fbdd400-4ba9-4162-92f9-0e08824c98a9'
 settings:

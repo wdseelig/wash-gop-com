@@ -15,8 +15,6 @@ title: 'Trial Webform II'
 description: ''
 category: ''
 elements: |-
-  '#attributes':
-    style: message
   processed_text:
     '#type': processed_text
     '#text': |
@@ -239,6 +237,10 @@ settings:
   form_access_denied_message: ''
   form_access_denied_attributes: {  }
   form_file_limit: ''
+  form_method: ''
+  form_action: ''
+  form_attributes:
+    style: message
   share: false
   share_node: false
   share_theme_name: ''
