@@ -1,0 +1,32 @@
+uuid: 56dff9f4-54a8-4770-b7f0-d9ce2cef3d34
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - user
+  theme:
+    - cdview
+id: cdview_userlogin
+theme: cdview
+region: content
+weight: -5
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: 'User login'
+  provider: user
+  label_display: visible
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+  request_path:
+    id: request_path
+    pages: /user
+    negate: false

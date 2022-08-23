@@ -12,7 +12,7 @@ dependencies:
 id: thesenatorscorner
 theme: creative_responsive_theme
 region: sidebar_second
-weight: 0
+weight: -12
 provider: null
 plugin: 'block_content:a33b5947-90de-411f-82e9-48118a878896'
 settings:

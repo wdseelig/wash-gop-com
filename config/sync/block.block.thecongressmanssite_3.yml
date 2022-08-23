@@ -12,7 +12,7 @@ dependencies:
 id: thecongressmanssite_3
 theme: creative_responsive_theme
 region: sidebar_first
-weight: -10
+weight: -14
 provider: null
 plugin: 'block_content:aac62bad-b43e-46a2-b9f2-2d59a9891c73'
 settings:

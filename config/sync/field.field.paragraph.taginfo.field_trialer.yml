@@ -1,0 +1,21 @@
+uuid: 2021b99f-8186-40ad-8adc-8f3f20af8aa8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_trialer
+    - paragraphs.paragraphs_type.taginfo
+id: paragraph.taginfo.field_trialer
+field_name: field_trialer
+entity_type: paragraph
+bundle: taginfo
+label: trialer
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

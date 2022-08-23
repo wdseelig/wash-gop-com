@@ -1,0 +1,29 @@
+uuid: 03ed7837-ecbd-4acf-9838-f5a74b67b626
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.ld
+  module:
+    - facets
+    - system
+  theme:
+    - cdview
+id: ld
+theme: cdview
+region: sidebar_first
+weight: -12
+provider: null
+plugin: 'facet_block:ld'
+settings:
+  id: 'facet_block:ld'
+  label: LD
+  provider: facets
+  label_display: '0'
+  block_id: ld
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: "/cdv8\r\n/cdv5"
+    negate: false

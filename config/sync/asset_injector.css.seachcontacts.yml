@@ -1,0 +1,21 @@
+uuid: 5c8850d4-c067-4726-ac11-5ad429850ccd
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: seachcontacts
+label: seachcontacts
+code: |-
+  .searchcontacts table {
+    width:  80%;
+  }
+conditions_require_all: true
+conditions:
+  request_path:
+    id: request_path
+    pages: /wcgop-contact-data
+    negate: false
+contexts: {  }
+media: all
+preprocess: true

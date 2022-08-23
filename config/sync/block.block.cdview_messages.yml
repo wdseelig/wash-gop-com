@@ -1,0 +1,22 @@
+uuid: 33b5fde8-7cd5-4a79-8490-ee6ac1c68f7a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cdview
+_core:
+  default_config_hash: uWy58nYjWIMwjBpWG3bpQw4-czZknk6co5KbdGN8dxA
+id: cdview_messages
+theme: cdview
+region: content
+weight: -50
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

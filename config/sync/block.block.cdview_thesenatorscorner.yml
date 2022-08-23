@@ -1,0 +1,31 @@
+uuid: d7cdb414-09c9-4557-adee-52d9a9d9eb5d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a33b5947-90de-411f-82e9-48118a878896'
+  module:
+    - block_content
+    - system
+  theme:
+    - cdview
+id: cdview_thesenatorscorner
+theme: cdview
+region: sidebar_second
+weight: -12
+provider: null
+plugin: 'block_content:a33b5947-90de-411f-82e9-48118a878896'
+settings:
+  id: 'block_content:a33b5947-90de-411f-82e9-48118a878896'
+  label: 'Our Senator Speaks'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

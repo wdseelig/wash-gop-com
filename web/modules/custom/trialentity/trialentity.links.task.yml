@@ -1,0 +1,22 @@
+entity.trialentity.settings:
+  title: Settings
+  route_name: entity.trialentity.settings
+  base_route: entity.trialentity.settings
+entity.trialentity.view:
+  title: View
+  route_name: entity.trialentity.canonical
+  base_route: entity.trialentity.canonical
+entity.trialentity.edit_form:
+  title: Edit
+  route_name: entity.trialentity.edit_form
+  base_route: entity.trialentity.canonical
+entity.trialentity.delete_form:
+  title: Delete
+  route_name: entity.trialentity.delete_form
+  base_route: entity.trialentity.canonical
+  weight: 10
+entity.trialentity.collection:
+  title: trialentity
+  route_name: entity.trialentity.collection
+  base_route: system.admin_content
+  weight: 10

@@ -1,0 +1,22 @@
+uuid: 9dd4a400-497d-4095-bcdd-82f97a444a40
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cdview
+_core:
+  default_config_hash: 4HEhetpv2ix0xFfAqD-jL6ggEsaW2skSV98mALGd0n0
+id: cdview_breadcrumbs
+theme: cdview
+region: content
+weight: -13
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

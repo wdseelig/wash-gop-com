@@ -1,0 +1,25 @@
+uuid: ff0ace74-01ee-4871-8c7e-73c649a78249
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.order_summary
+  module:
+    - views
+  theme:
+    - cdview
+id: cdview_views_block__order_summary_block_1
+theme: cdview
+region: content
+weight: -12
+provider: null
+plugin: 'views_block:order_summary-block_1'
+settings:
+  id: 'views_block:order_summary-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility: {  }

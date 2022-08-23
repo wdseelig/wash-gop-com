@@ -1,0 +1,112 @@
+uuid: 4dc06b1c-ed5b-480d-a125-d680a7f549ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.contactdata.field_cdname
+    - field.storage.contactdata.field_countycommissionerdistrict
+    - field.storage.contactdata.field_firstname
+    - field.storage.contactdata.field_lastname
+    - field.storage.contactdata.field_ldname
+    - field.storage.contactdata.field_sdname
+    - field.storage.contactdata.field_taginfo
+    - search_api.server.d9sitedbserver
+  module:
+    - contactdata
+    - search_api
+id: cdindexv2
+name: cdindexv2
+description: 'In index of contactdata information'
+read_only: false
+field_settings:
+  contactdata_tags:
+    label: TagField
+    property_path: contactdata_tags
+    type: string
+  field_cdname:
+    label: CDName
+    datasource_id: 'entity:contactdata'
+    property_path: field_cdname
+    type: string
+    dependencies:
+      config:
+        - field.storage.contactdata.field_cdname
+  field_countycommissionerdistrict:
+    label: CountyCommissionerDistrict
+    datasource_id: 'entity:contactdata'
+    property_path: field_countycommissionerdistrict
+    type: string
+    dependencies:
+      config:
+        - field.storage.contactdata.field_countycommissionerdistrict
+  field_firstname:
+    label: FirstName
+    datasource_id: 'entity:contactdata'
+    property_path: field_firstname
+    type: string
+    dependencies:
+      config:
+        - field.storage.contactdata.field_firstname
+  field_lastname:
+    label: LastName
+    datasource_id: 'entity:contactdata'
+    property_path: field_lastname
+    type: string
+    dependencies:
+      config:
+        - field.storage.contactdata.field_lastname
+  field_ldname:
+    label: LDName
+    datasource_id: 'entity:contactdata'
+    property_path: field_ldname
+    type: string
+    dependencies:
+      config:
+        - field.storage.contactdata.field_ldname
+  field_sdname:
+    label: SDName
+    datasource_id: 'entity:contactdata'
+    property_path: field_sdname
+    type: string
+    dependencies:
+      config:
+        - field.storage.contactdata.field_sdname
+  field_taginfo:
+    label: TagInfo
+    datasource_id: 'entity:contactdata'
+    property_path: field_taginfo
+    type: integer
+    dependencies:
+      config:
+        - field.storage.contactdata.field_taginfo
+  id:
+    label: ID
+    datasource_id: 'entity:contactdata'
+    property_path: id
+    type: integer
+    dependencies:
+      module:
+        - contactdata
+  url:
+    label: URI
+    property_path: search_api_url
+    type: string
+    configuration:
+      absolute: true
+datasource_settings:
+  'entity:contactdata': {  }
+processor_settings:
+  add_contactdatatags: {  }
+  add_url: {  }
+  aggregated_field: {  }
+  entity_type: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  track_changes_in_references: true
+  cron_limit: 50
+server: d9sitedbserver

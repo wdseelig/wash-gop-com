@@ -1,0 +1,20 @@
+uuid: a6244f5a-5d44-4b70-857e-c2490d224d8d
+langcode: en
+status: false
+dependencies:
+  theme:
+    - cdview
+_core:
+  default_config_hash: _zLaasd8lWP6MChTbVkSrx_t2rGh5IMwXBtbR9u9MF8
+id: cdview_page_title
+theme: cdview
+region: content
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

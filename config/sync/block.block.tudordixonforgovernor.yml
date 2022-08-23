@@ -1,0 +1,30 @@
+uuid: 3e833682-7206-4740-9bb4-106d586f81e4
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8bc1e00c-2cdf-436b-b1d1-aa395fbe96e9'
+  module:
+    - block_content
+    - system
+  theme:
+    - creative_responsive_theme
+id: tudordixonforgovernor
+theme: creative_responsive_theme
+region: sidebar_second
+weight: -15
+provider: null
+plugin: 'block_content:8bc1e00c-2cdf-436b-b1d1-aa395fbe96e9'
+settings:
+  id: 'block_content:8bc1e00c-2cdf-436b-b1d1-aa395fbe96e9'
+  label: 'Tudor Dixon for Governor'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

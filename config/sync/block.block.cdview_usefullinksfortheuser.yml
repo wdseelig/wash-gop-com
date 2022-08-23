@@ -1,0 +1,31 @@
+uuid: db67a7f1-8e85-4f53-933c-af751aa2901f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:89e461bd-d449-4f77-854a-d62104e6a596'
+  module:
+    - block_content
+    - system
+  theme:
+    - cdview
+id: cdview_usefullinksfortheuser
+theme: cdview
+region: sidebar_second
+weight: -10
+provider: null
+plugin: 'block_content:89e461bd-d449-4f77-854a-d62104e6a596'
+settings:
+  id: 'block_content:89e461bd-d449-4f77-854a-d62104e6a596'
+  label: 'Useful links for the user'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

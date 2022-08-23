@@ -1,0 +1,31 @@
+uuid: 667a665e-9b7e-48a0-8de1-8806f042d63a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5f942d6b-5d9d-46e9-bfd2-6129ecfe77f0'
+  module:
+    - block_content
+    - system
+  theme:
+    - cdview
+id: cdview_membershipform
+theme: cdview
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:5f942d6b-5d9d-46e9-bfd2-6129ecfe77f0'
+settings:
+  id: 'block_content:5f942d6b-5d9d-46e9-bfd2-6129ecfe77f0'
+  label: 'Membership Form'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

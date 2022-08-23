@@ -1,0 +1,29 @@
+uuid: 09469859-e150-4dfe-bf09-8eabbabf83f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.precinctname
+  module:
+    - facets
+    - system
+  theme:
+    - cdview
+id: precinct
+theme: cdview
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'facet_block:precinctname'
+settings:
+  id: 'facet_block:precinctname'
+  label: Precinct
+  provider: facets
+  label_display: visible
+  block_id: precinct
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: /cdv5
+    negate: false

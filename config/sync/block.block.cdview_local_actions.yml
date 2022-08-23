@@ -1,0 +1,20 @@
+uuid: 68f41262-9747-4ba2-b176-d37deb0f8d3c
+langcode: en
+status: true
+dependencies:
+  theme:
+    - cdview
+_core:
+  default_config_hash: Vc_iBh-amT5wdaz_t8r-YQsiQzezZRw0ZEJB_036W6k
+id: cdview_local_actions
+theme: cdview
+region: content
+weight: -13
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

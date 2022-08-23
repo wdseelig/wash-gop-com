@@ -1,0 +1,30 @@
+uuid: e52cf467-b914-466c-93af-93d20b678f6a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3e30aea3-bfa9-420d-816d-ab659d7f442d'
+  module:
+    - block_content
+    - system
+  theme:
+    - creative_responsive_theme
+id: disclaimer
+theme: creative_responsive_theme
+region: footer_menu
+weight: 0
+provider: null
+plugin: 'block_content:3e30aea3-bfa9-420d-816d-ab659d7f442d'
+settings:
+  id: 'block_content:3e30aea3-bfa9-420d-816d-ab659d7f442d'
+  label: 'Paid for by the Washtenaw County Republican Party.  Not authorized by any candidate or candidate''s committee.'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

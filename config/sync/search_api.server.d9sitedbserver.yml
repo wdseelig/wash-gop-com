@@ -1,0 +1,14 @@
+uuid: 51d8fec8-cfda-488c-9275-f461e194bfab
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_db
+id: d9sitedbserver
+name: d9sitedbserver
+description: 'A database server for the d9 site'
+backend: search_api_db
+backend_config:
+  database: 'default:default'
+  min_chars: 1
+  matching: words

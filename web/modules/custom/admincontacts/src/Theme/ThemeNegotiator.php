@@ -36,12 +36,20 @@ class ThemeNegotiator implements ThemeNegotiatorInterface {
   private function negotiateRoute(RouteMatchInterface $route_match)
   {
     $acmain = \Drupal::request()->query->get('acmain');
+    $pagepath = $route_match->getRouteName();
+    if (strpos($pagepath, "contactdatav5") || strpos($pagepath, "cdv8")){
+      return 'cdview';
+    }
     $route_name = $route_match->getRouteName();
     if ($route_match->getRouteName() == 'admincontacts.home')
     {
       return 'acmain';
     }
-    if ($route_match->getRouteName() == 'entity.contactdata.edit_form' && !empty($acmain) && ($acmain=="1"))
+    if ($route_match->getRouteName() == 'entity.contactdata.edit_form' && (empty($acmain) || ($acmain !=="0")))
+    {
+      return 'acmain';
+    }
+    if ($route_match->getRouteName() == 'entity.contactdata.add_form' && (empty($acmain) || ($acmain !== "0")))
     {
       return 'acmain';
     }

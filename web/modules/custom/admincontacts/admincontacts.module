@@ -16,7 +16,7 @@ function admincontacts_theme($existing, $type, $theme, $path) {
     'admincontacts_main' => [
       'render_element' => 'children',
       'path' => $path . '/templates',
-      'template' => 'admincontacts-main',
+      'template' => 'acmain-main',
       'variables' => [
         'searchform' => 'Default search form value',
       ],
@@ -37,6 +37,7 @@ function admincontacts_form_alter (&$form, \Drupal\Core\Form\FormStateInterface 
 /**
  * Implements hook_entity_display_build_alter().
  */
+
 function admincontacts_entity_display_build_alter(&$build, $context)
 {
   /*
@@ -44,7 +45,15 @@ function admincontacts_entity_display_build_alter(&$build, $context)
    * that I want.  It is an example of a routine altering the render array before it
    * is sent back to the browser.
    */
-  if (strpos($context['entity']->getEntityTypeId(), 'contactdata') !== false) {
+  /*@TODO  I need to put a test in here to see if this contact has a QVF record.
+    If it does, fine, but if it doesnt' then I should put an "UNMATCHED" line in the output
+    so that the user will know that this record is not sourced from a QVF file.
+
+    I don't like doing this becauese it involves another hit on the database, but this is
+    just for displaying the contact view form, so it will not be a major penalty.
+  */
+  if  ((strpos($context['entity']->getEntityTypeId(), 'contactdata') !== false) &&
+    (strpos($GLOBALS['_SERVER']['REQUEST_URI'],  'contactdata' . chr(47 ) )   == true ) ) {
     $build = [];
     $build['wrapper'] = array(
       '#type' => 'item',

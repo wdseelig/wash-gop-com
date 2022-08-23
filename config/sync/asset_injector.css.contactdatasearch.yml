@@ -15,7 +15,7 @@ conditions_require_all: true
 conditions:
   request_path:
     id: request_path
-    pages: /contactdata
+    pages: "/contactdata\r\n/contactdatasearchv2"
     negate: false
 contexts: {  }
 media: all

@@ -1,0 +1,12 @@
+uuid: 483f94ba-4226-4266-b292-4ca82e1a9909
+langcode: en
+status: true
+dependencies: {  }
+id: search_api__views_page__contactdatav5__page_1
+name: 'search_api:views_page__contactdatav5__page_1'
+filter_key: cdv5
+url_processor: query_string
+breadcrumb:
+  active: false
+  before: true
+  group: false

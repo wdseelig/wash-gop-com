@@ -1,0 +1,31 @@
+uuid: 9d286208-419b-482d-ba57-b3fd5009554a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:56797707-ddb9-4851-9dda-716d3a1beb0a'
+  module:
+    - block_content
+    - system
+  theme:
+    - cdview
+id: cdview_thewashtenawcountytwitteraccount
+theme: cdview
+region: sidebar_first
+weight: -13
+provider: null
+plugin: 'block_content:56797707-ddb9-4851-9dda-716d3a1beb0a'
+settings:
+  id: 'block_content:56797707-ddb9-4851-9dda-716d3a1beb0a'
+  label: 'The Washtenaw County Twitter Account'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

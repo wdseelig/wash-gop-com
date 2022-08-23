@@ -1,0 +1,22 @@
+uuid: 2d625fc4-d2d1-4e37-80e2-40e4419920e9
+langcode: en
+status: true
+dependencies:
+  theme:
+    - cdview
+_core:
+  default_config_hash: lJWg79fgl3LtPLHkDq4lXTaLnli-H8OpndWPkVZtb5g
+id: cdview_local_tasks
+theme: cdview
+region: content
+weight: -14
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

@@ -1,0 +1,31 @@
+uuid: fa91f68f-5e42-4aa5-b0ee-05fb669c7440
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:block_standard:7d358440-1df6-4218-8ac5-a84954067b24'
+  module:
+    - block_content
+    - system
+  theme:
+    - cdview
+id: cdview_bannerforapril_2
+theme: cdview
+region: content
+weight: -7
+provider: null
+plugin: 'block_content:7d358440-1df6-4218-8ac5-a84954067b24'
+settings:
+  id: 'block_content:7d358440-1df6-4218-8ac5-a84954067b24'
+  label: 'Banner for April'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

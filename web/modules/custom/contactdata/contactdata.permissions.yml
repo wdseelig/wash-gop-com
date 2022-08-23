@@ -1,11 +1,16 @@
 administer contactdata:
-  title: 'Administer contactdata settings'
+  title: 'Administer contactdata to add/edit/update contacts'
   restrict access: true
 access contactdata overview:
   title: 'Access contactdata overview page'
-view contact data:
+view contactdata:
   title: 'View contact data'
 edit contact data:
   title:  'Edit the contacts database'
   restrict access:  true
+administer site configuration:
+  title: 'Permission to view contacts I think'
+  restrict access: true
+
+
 

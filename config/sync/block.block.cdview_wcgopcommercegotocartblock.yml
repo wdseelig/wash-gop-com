@@ -1,0 +1,25 @@
+uuid: ae0643a8-4a55-49e8-89f8-0ba69fba14b7
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - wcgop_commerce
+  theme:
+    - cdview
+id: cdview_wcgopcommercegotocartblock
+theme: cdview
+region: content
+weight: -11
+provider: null
+plugin: wcgop_commerce_gotocartblock
+settings:
+  id: wcgop_commerce_gotocartblock
+  label: 'WCGOP Commerce Go To Cart  Block'
+  provider: wcgop_commerce
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /trial
+    negate: false

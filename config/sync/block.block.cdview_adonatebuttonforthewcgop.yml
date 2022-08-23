@@ -1,0 +1,31 @@
+uuid: 20aa0709-6b3c-4bdd-ab77-f20459822a91
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2b95b536-4de4-42f7-852d-33d1617fa82c'
+  module:
+    - block_content
+    - system
+  theme:
+    - cdview
+id: cdview_adonatebuttonforthewcgop
+theme: cdview
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:2b95b536-4de4-42f7-852d-33d1617fa82c'
+settings:
+  id: 'block_content:2b95b536-4de4-42f7-852d-33d1617fa82c'
+  label: 'A donate button for the WCGOP'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

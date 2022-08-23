@@ -41,18 +41,21 @@ module:
   editor: 0
   entity: 0
   entity_reference_revisions: 0
+  facets: 0
   field: 0
   field_group: 0
   field_ui: 0
   file: 0
   filter: 0
   gdoc_field: 0
+  image: 0
   imce: 0
   inline_entity_form: 0
   inline_formatter_display: 0
   inline_formatter_field: 0
   jquery_ui: 0
   jquery_ui_accordion: 0
+  language: 0
   layout_builder: 0
   layout_discovery: 0
   libraries: 0
@@ -75,6 +78,8 @@ module:
   pdf: 0
   pdf_reader: 0
   profile: 0
+  search_api: 0
+  search_api_db: 0
   settings_tray: 0
   shortcut: 0
   smtp: 0
@@ -87,7 +92,9 @@ module:
   text: 0
   token: 0
   toolbar: 0
+  trialentity: 0
   twig_tweak: 0
+  twig_xdebug: 0
   update: 0
   upgrade_status: 0
   user: 0
@@ -97,7 +104,6 @@ module:
   votingapi: 0
   wcgop_commerce: 0
   wcgopcontactsmigrate: 0
-  wcgopindividualinfo: 0
   webform: 0
   webform_migrate: 0
   webform_node: 0
@@ -114,6 +120,7 @@ theme:
   creative_responsive_theme: 0
   claro: 0
   acmain: 0
+  cdview: 0
 profile: minimal
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc

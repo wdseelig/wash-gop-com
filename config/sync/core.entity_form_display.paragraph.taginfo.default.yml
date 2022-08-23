@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.paragraph.taginfo.field_tag
     - field.field.paragraph.taginfo.field_tagsource
+    - field.field.paragraph.taginfo.field_trialer
     - paragraphs.paragraphs_type.taginfo
   module:
     - field_group
@@ -42,6 +43,16 @@ content:
       match_operator: CONTAINS
       match_limit: 10
       size: 40
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_trialer:
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete

@@ -1,0 +1,13 @@
+administer trialentity:
+  title: 'Administer trialentity settings'
+  restrict access: true
+access trialentity overview:
+  title: 'Access trialentity overview page'
+delete trialentity:
+  title: Delete trialentity
+create trialentity:
+  title: Create trialentity
+view trialentity:
+  title: View trialentity
+edit trialentity:
+  title: Edit trialentity

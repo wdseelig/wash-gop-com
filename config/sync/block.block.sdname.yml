@@ -1,0 +1,24 @@
+uuid: 4680999a-e4b9-4c4f-9b22-8b19804f39c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.sdname
+  module:
+    - facets
+  theme:
+    - cdview
+id: sdname
+theme: cdview
+region: sidebar_first
+weight: -11
+provider: null
+plugin: 'facet_block:sdname'
+settings:
+  id: 'facet_block:sdname'
+  label: 'State Senate District'
+  provider: facets
+  label_display: visible
+  block_id: sdname
+  context_mapping: {  }
+visibility: {  }

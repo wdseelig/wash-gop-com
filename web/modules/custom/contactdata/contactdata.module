@@ -16,6 +16,7 @@ function contactdata_theme() {
       'render element' => 'elements',
     ],
   ];
+  $foo = 'bar';
 }
 
 /**
@@ -33,19 +34,22 @@ function template_preprocess_contactdata(array &$variables) {
   foreach (Element::children($variables['elements']) as $key) {
     $variables['content'][$key] = $variables['elements'][$key];
   }
+  $foo = 'bar';
 }
 function contactdata_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id)
 {
   $match = "contactdata_edit_form";
-  if (strpos($form_id, $match ) !== false){
+  if (strpos($form_id, $match) !== false) {
     $form['item'] = array(
       '#markup' => "<h2 style=color:red;>WCGOP Contact Edit Form</h2>",
       '#weight' => -5,
       '#prefix' => '<span class="itemclass">',
       '#suffix' => '</span>',
     );
-
-
-
-}
+  } else {
+    $match = "contactdata_add_form";
+    if (strpos($form_id, $match) !== false)
+      $form['#attached']['library'][] = 'admincontacts/admincontacts';
+    $x = 1;
+  }
 }

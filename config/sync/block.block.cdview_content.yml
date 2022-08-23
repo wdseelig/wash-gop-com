@@ -1,0 +1,22 @@
+uuid: 23ef97fd-9bed-4371-9007-368799f2372d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cdview
+_core:
+  default_config_hash: BI2cnDdYGrlfwpU3S3VvGKjD5M1Ep2AHKflxRnfr4t4
+id: cdview_content
+theme: cdview
+region: content
+weight: -13
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

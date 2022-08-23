@@ -792,4 +792,6 @@ hidden:
   field_stateethnicity: true
   field_statevoterid: true
   field_voterkey: true
+  status: true
+  title: true
   uid: true

@@ -1,0 +1,29 @@
+uuid: a8173641-f0c3-408f-b960-bd677054135c
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.tagfield
+  module:
+    - facets
+    - system
+  theme:
+    - cdview
+id: cdview_tagfield
+theme: cdview
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'facet_block:tagfield'
+settings:
+  id: 'facet_block:tagfield'
+  label: TagField
+  provider: facets
+  label_display: visible
+  block_id: tagfield
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: "/cdv5\r\n<front>"
+    negate: false

@@ -1,0 +1,31 @@
+uuid: 965f8793-3344-42d8-a824-1af58eee178a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:aac62bad-b43e-46a2-b9f2-2d59a9891c73'
+  module:
+    - block_content
+    - system
+  theme:
+    - cdview
+id: cdview_thecongressmanssite_3
+theme: cdview
+region: sidebar_first
+weight: -14
+provider: null
+plugin: 'block_content:aac62bad-b43e-46a2-b9f2-2d59a9891c73'
+settings:
+  id: 'block_content:aac62bad-b43e-46a2-b9f2-2d59a9891c73'
+  label: 'The Congressman''s Site'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

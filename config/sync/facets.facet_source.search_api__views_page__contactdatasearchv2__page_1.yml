@@ -1,0 +1,9 @@
+uuid: c8847daa-0a76-4a6e-8a4a-22fcb39ec666
+langcode: en
+status: true
+dependencies: {  }
+id: search_api__views_page__contactdatasearchv2__page_1
+name: 'search_api:views_page__contactdatasearchv2__page_1'
+filter_key: null
+url_processor: query_string
+breadcrumb: {  }

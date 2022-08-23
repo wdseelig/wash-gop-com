@@ -1,0 +1,30 @@
+uuid: 7121a1bd-369a-406d-b59f-d2652aff4f92
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: cd_search
+label: contactdatasearch
+code: |-
+  .row.layout {
+    display:  flex;
+  }
+  .row.layout .region-content {
+    flex: 1;
+  }
+  .row.layout .region-sidebar-second {
+    flex: 1;
+  }
+  .block-facet-blocktagfield {
+    width:  300px;
+  }
+conditions_require_all: true
+conditions:
+  request_path:
+    id: request_path
+    pages: /cdv5
+    negate: false
+contexts: {  }
+media: all
+preprocess: true

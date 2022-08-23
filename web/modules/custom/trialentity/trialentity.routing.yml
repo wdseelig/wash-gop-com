@@ -1,0 +1,7 @@
+entity.trialentity.settings:
+  path: 'admin/structure/trialentity'
+  defaults:
+    _form: '\Drupal\trialentity\Form\TrialentitySettingsForm'
+    _title: 'trialentity'
+  requirements:
+    _permission: 'administer trialentity'

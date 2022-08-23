@@ -12,7 +12,7 @@ dependencies:
 id: thewcgopelectionintegrityproject_3
 theme: creative_responsive_theme
 region: sidebar_second
-weight: 0
+weight: -11
 provider: null
 plugin: 'block_content:7330e494-8265-4cdb-b7d5-06885a99b262'
 settings:

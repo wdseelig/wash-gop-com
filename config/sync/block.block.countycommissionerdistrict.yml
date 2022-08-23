@@ -1,0 +1,29 @@
+uuid: fc8e43e7-2a27-4c19-b7ae-f3b9068ee1a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.countycommissionerdistrict
+  module:
+    - facets
+    - system
+  theme:
+    - cdview
+id: countycommissionerdistrict
+theme: cdview
+region: sidebar_first
+weight: -10
+provider: null
+plugin: 'facet_block:countycommissionerdistrict'
+settings:
+  id: 'facet_block:countycommissionerdistrict'
+  label: 'CC District'
+  provider: facets
+  label_display: visible
+  block_id: countycommissionerdistrict
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: /cdv5
+    negate: false

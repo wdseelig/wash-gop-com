@@ -1,0 +1,29 @@
+uuid: 971a3c44-bc2e-4aca-9c04-261e0d9fa7d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.tagfield
+  module:
+    - facets
+    - system
+  theme:
+    - creative_responsive_theme
+id: tagfield
+theme: creative_responsive_theme
+region: sidebar_second
+weight: -9
+provider: null
+plugin: 'facet_block:tagfield'
+settings:
+  id: 'facet_block:tagfield'
+  label: TagField
+  provider: facets
+  label_display: visible
+  block_id: tagfield
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: "/cdv5\r\n<front>"
+    negate: false

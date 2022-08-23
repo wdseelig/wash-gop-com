@@ -1,0 +1,30 @@
+uuid: 2c09c1c9-dba0-4702-bb79-2c12899b696b
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:464e4ff0-3f82-4146-adf2-664f85a82e49'
+  module:
+    - block_content
+    - system
+  theme:
+    - cdview
+id: cdview_gotocart
+theme: cdview
+region: content
+weight: -9
+provider: null
+plugin: 'block_content:464e4ff0-3f82-4146-adf2-664f85a82e49'
+settings:
+  id: 'block_content:464e4ff0-3f82-4146-adf2-664f85a82e49'
+  label: 'Go to Cart'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /trial
+    negate: false

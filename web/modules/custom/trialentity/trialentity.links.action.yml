@@ -1,0 +1,5 @@
+trialentity.add_form:
+  route_name: entity.trialentity.add_form
+  title: 'Add trialentity'
+  appears_on:
+    - entity.trialentity.collection

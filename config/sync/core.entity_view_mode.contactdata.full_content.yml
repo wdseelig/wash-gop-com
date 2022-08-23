@@ -1,0 +1,10 @@
+uuid: ea8e9fc1-5106-4130-b5d2-e63d738a93a1
+langcode: en
+status: true
+dependencies:
+  module:
+    - contactdata
+id: contactdata.full_content
+label: 'Full content'
+targetEntityType: contactdata
+cache: true

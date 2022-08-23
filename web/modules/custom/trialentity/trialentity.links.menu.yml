@@ -1,0 +1,10 @@
+entity.trialentity.settings:
+  title: trialentity
+  description: Configure a trialentity entity type
+  route_name:  entity.trialentity.settings
+  parent: system.admin_structure
+entity.trialentity.collection:
+  title: trialentities
+  description: List of trialentities
+  route_name: entity.trialentity.collection
+  parent: system.admin_content

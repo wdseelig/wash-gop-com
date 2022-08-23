@@ -87,6 +87,7 @@ class WcgopcontactsmigrateController extends ControllerBase
     // Add QVF info to the contact
     foreach ($result as $record) {
       $infoid = $record->info_id;
+      if ( !($infoid > 0)) continue;
       $query = \Drupal::entityQuery('contactdata')
         ->condition('info_id', $infoid);
       $cid = $query->execute();
@@ -98,16 +99,18 @@ class WcgopcontactsmigrateController extends ControllerBase
         ->condition('w.info_id', $infoid)
         ->execute();
       $record = $result->fetchAll();
+      /* Note that if there is no matching wcgopindividualinfo field the contact is just saved as is */
       foreach ($record as $myobj) {
         $myarr = (array)$myobj;
-        /*@TODO Put the test of the _admin field in here  */
+        /*@TODO Put the test of the _admin field in here to preserve contact admin edits */
         foreach ($myarr as $key => $value) {
           $fieldname = 'field_' . $key;
           $mycontact->$fieldname = $value;
-        }
-      }
-      $mycontact->save();
-    }
+        } // Loop over all fields in the contact
+      } // Loop over all records with this info_id [should just be one]
+      if ($mycontact)
+        $mycontact->save();
+    } // Loop over all existing contacts
     $build['content'] = [
       '#type' => 'item',
       '#markup' => $this->t('Finished the QVF transfer routine'),

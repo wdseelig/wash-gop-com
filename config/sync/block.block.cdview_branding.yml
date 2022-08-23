@@ -1,0 +1,25 @@
+uuid: c20c53e4-aa10-4b95-9b6f-bb75d4fb834a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cdview
+_core:
+  default_config_hash: UOc1JR94blJQjul9ylyOuWm21IjfhByUwiVMsEOOhC4
+id: cdview_branding
+theme: cdview
+region: content
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }
