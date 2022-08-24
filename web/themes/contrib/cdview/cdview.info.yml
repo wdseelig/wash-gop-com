@@ -1,0 +1,12 @@
+name: cdview
+type: theme
+description: A theme for the contacts view and filter page
+core: 8.x
+core_version_requirement: ^8 || ^9
+base theme: false
+libraries:
+  - cdview/global-styling
+regions:
+  content: Content
+  sidebar_first:  "Sidebar First"
+  sidebar_second: "Sidebar Second"

@@ -1,0 +1,42 @@
+.cdviewcontainer {
+  display:   flex;
+}
+.cdviewleft {
+  flex:  20%;
+}
+.cdcontent {
+  flex:  50%;
+}
+.cdviewright {
+  flex:  30%
+}
+.cdviewleft div h3 {
+  color:  red;
+  text-align: center;
+}
+.cdviewleft div h2 {
+  display:  none;
+}
+.cdviewright div h3 {
+  color:  red;
+  text-align: center;
+}
+.cdviewright div h2 {
+  display:  none;
+}
+.cdcontent header h1 {
+  color:  red;
+  text-align: center;
+}
+.cdcontent td {
+  font-size: large;
+}
+td.views-field-field-precinctname {
+width:  300px;
+}
+td.views-field-field-lastname {
+  width:  200px;
+}
+td.views-field-field-countycommissionerdistrict {
+  width: 200px;
+}
