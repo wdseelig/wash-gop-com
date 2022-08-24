@@ -9,7 +9,7 @@ use Drupal\Core\Entity\EntityChangedInterface;
 /**
  * Provides an interface defining a contactdata entity type.
  */
-interface contactdataInterface extends ContentEntityInterface, EntityOwnerInterface, EntityChangedInterface {
+interface ContactdataInterface extends ContentEntityInterface, EntityOwnerInterface, EntityChangedInterface {
 
   /**
    * Gets the contactdata creation timestamp.

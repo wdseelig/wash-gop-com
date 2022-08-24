@@ -48,7 +48,7 @@ use Drupal\user\UserInterface;
  *   field_ui_base_route = "entity.contactdata.settings"
  * )
  */
-class contactdata extends ContentEntityBase implements contactdataInterface {
+class Contactdata extends ContentEntityBase implements ContactdataInterface {
 
   use EntityChangedTrait;
 
