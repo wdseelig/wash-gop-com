@@ -56,6 +56,7 @@
         "drupal/stripe": "^1.0",
         "drupal/twig_tweak": "^3.1",
         "drupal/upgrade_status": "^3.8",
+        "drupal/views_data_export": "^1.1",
         "drupal/views_secondary_row": "^1.1",
         "drupal/votingapi": "^3.0@beta",
         "drupal/webform": "^6.2@beta",

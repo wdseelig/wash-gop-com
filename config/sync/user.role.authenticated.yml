@@ -9,7 +9,6 @@ label: 'authenticated user'
 weight: 1
 is_admin: false
 permissions:
-  - 'access admincontacts page'
   - 'access checkout'
   - 'access comments'
   - 'access commerce_order overview'
@@ -124,7 +123,6 @@ permissions:
   - 'view any commerce_product entity of bundle receptionanddinner2017'
   - 'view any commerce_product entity of bundle sponsorship2017'
   - 'view any crm_core_contact entity'
-  - 'view any webform submission'
   - 'view commerce_product'
   - 'view commerce_product_attribute'
   - 'view commerce_store'

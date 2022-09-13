@@ -12,7 +12,7 @@ dependencies:
 id: cdview_thewashtenawcountytwitteraccount
 theme: cdview
 region: sidebar_first
-weight: -13
+weight: -14
 provider: null
 plugin: 'block_content:56797707-ddb9-4851-9dda-716d3a1beb0a'
 settings:

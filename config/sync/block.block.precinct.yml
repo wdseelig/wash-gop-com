@@ -12,7 +12,7 @@ dependencies:
 id: precinct
 theme: cdview
 region: sidebar_first
-weight: 0
+weight: -9
 provider: null
 plugin: 'facet_block:precinctname'
 settings:

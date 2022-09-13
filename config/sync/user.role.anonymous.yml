@@ -94,7 +94,6 @@ permissions:
   - 'view any commerce_product entity of bundle picnic_item'
   - 'view any commerce_product entity of bundle receptionanddinner2017'
   - 'view any commerce_product entity of bundle sponsorship2017'
-  - 'view any webform submission'
   - 'view commerce_product'
   - 'view commerce_product_attribute'
   - 'view commerce_store'

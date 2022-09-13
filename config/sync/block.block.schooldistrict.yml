@@ -1,29 +1,29 @@
-uuid: 03ed7837-ecbd-4acf-9838-f5a74b67b626
+uuid: 6e5801ff-88e1-4d07-bdb9-972b4f9048eb
 langcode: en
 status: true
 dependencies:
   config:
-    - facets.facet.ld
+    - facets.facet.schooldistrict
   module:
     - facets
     - system
   theme:
     - cdview
-id: ld
+id: schooldistrict
 theme: cdview
 region: sidebar_first
-weight: -13
+weight: -11
 provider: null
-plugin: 'facet_block:ld'
+plugin: 'facet_block:schooldistrict'
 settings:
-  id: 'facet_block:ld'
-  label: LD
+  id: 'facet_block:schooldistrict'
+  label: SchoolDistrict
   provider: facets
-  label_display: '0'
-  block_id: ld
+  label_display: visible
+  block_id: schooldistrict
   context_mapping: {  }
 visibility:
   request_path:
     id: request_path
-    pages: "/cdv8\r\n/cdv5"
+    pages: /cdv5
     negate: false

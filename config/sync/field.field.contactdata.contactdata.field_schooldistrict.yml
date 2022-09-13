@@ -1,0 +1,20 @@
+uuid: 163e9db2-d9d5-47e3-abdb-039de453ced5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.contactdata.field_schooldistrict
+  module:
+    - contactdata
+id: contactdata.contactdata.field_schooldistrict
+field_name: field_schooldistrict
+entity_type: contactdata
+bundle: contactdata
+label: SchoolDistrict
+description: 'The school district in which this contact lives'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

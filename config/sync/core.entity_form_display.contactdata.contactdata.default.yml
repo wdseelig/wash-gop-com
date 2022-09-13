@@ -49,6 +49,8 @@ dependencies:
     - field.field.contactdata.contactdata.field_primaryzip
     - field.field.contactdata.contactdata.field_primaryzip_admin
     - field.field.contactdata.contactdata.field_rncregid
+    - field.field.contactdata.contactdata.field_schoodistrict_admin
+    - field.field.contactdata.contactdata.field_schooldistrict
     - field.field.contactdata.contactdata.field_sdname
     - field.field.contactdata.contactdata.field_sdname_admin
     - field.field.contactdata.contactdata.field_stateethnicity
@@ -148,8 +150,10 @@ third_party_settings:
       children:
         - field_precinctname
         - field_countycommissionerdistrict
-        - field_ccdistrict_admin
+        - field_schooldistrict
         - field_precinctname_admin
+        - field_ccdistrict_admin
+        - field_schoodistrict_admin
       parent_name: group_acitemqvfdata
       weight: 4
       format_type: fieldset
@@ -158,7 +162,7 @@ third_party_settings:
         description: ''
         required_fields: true
         id: ''
-        classes: group2a
+        classes: group3a
         show_empty_fields: false
       label: MoreJurisdictions
     group_accordion1:
@@ -219,7 +223,7 @@ mode: default
 content:
   field_ccdistrict_admin:
     type: boolean_checkbox
-    weight: 13
+    weight: 14
     region: content
     settings:
       display_label: true
@@ -259,7 +263,7 @@ content:
   field_countycommissionerdistrict:
     weight: 11
     settings:
-      size: 40
+      size: 15
       placeholder: ''
     third_party_settings:
       conditional_fields:
@@ -314,7 +318,7 @@ content:
     region: content
   field_emailinfo:
     type: entity_reference_paragraphs
-    weight: 15
+    weight: 28
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -453,7 +457,7 @@ content:
     type: boolean_checkbox
     region: content
   field_notes:
-    weight: 17
+    weight: 30
     settings:
       rows: 10
       placeholder: ''
@@ -462,7 +466,7 @@ content:
     region: content
   field_phoneinfo:
     type: entity_reference_paragraphs
-    weight: 14
+    weight: 27
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -477,7 +481,7 @@ content:
     weight: 10
     region: content
     settings:
-      size: 40
+      size: 25
       placeholder: ''
     third_party_settings:
       conditional_fields:
@@ -499,7 +503,7 @@ content:
           bundle: contactdata
   field_precinctname_admin:
     type: boolean_checkbox
-    weight: 14
+    weight: 13
     region: content
     settings:
       display_label: true
@@ -696,6 +700,21 @@ content:
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
+  field_schoodistrict_admin:
+    weight: 15
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_schooldistrict:
+    weight: 12
+    settings:
+      size: 30
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_sdname:
     weight: 15
     settings:
@@ -730,7 +749,7 @@ content:
     region: content
   field_taginfo:
     type: entity_reference_paragraphs
-    weight: 16
+    weight: 29
     settings:
       title: Paragraph
       title_plural: Paragraphs
