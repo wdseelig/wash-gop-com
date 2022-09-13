@@ -18,13 +18,13 @@ plugin: 'block_content:8bc1e00c-2cdf-436b-b1d1-aa395fbe96e9'
 settings:
   id: 'block_content:8bc1e00c-2cdf-436b-b1d1-aa395fbe96e9'
   label: 'Tudor Dixon for Governor'
-  provider: block_content
   label_display: visible
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
+    pages: '<front>'

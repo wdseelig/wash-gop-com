@@ -1,7 +1,114 @@
 uuid: d78fe2c7-b388-4094-b927-3ab8faebb92e
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.1
+    - filter.format.2
+    - filter.format.3
+    - filter.format.commerce_order_message
+    - filter.format.ds_code
+    - filter.format.migrate_example
+    - filter.format.site_editor
+    - node.type.advpoll
+    - node.type.basicpetition
+    - node.type.blog
+    - node.type.blogauto
+    - node.type.cmcv_volunteer
+    - node.type.commercelineitems
+    - node.type.donation_display
+    - node.type.event
+    - node.type.feed
+    - node.type.feed_item
+    - node.type.forum_admission
+    - node.type.forum_ticket
+    - node.type.forumadmissionselection
+    - node.type.forumitemdisplay
+    - node.type.golfoutingdisplay
+    - node.type.gop_lincoln_day_dinners
+    - node.type.gop_lincoln_day_reception_and_di
+    - node.type.gop_lincoln_day_sponsorships
+    - node.type.inaugurationparty
+    - node.type.mass_contact
+    - node.type.membership_products
+    - node.type.membershipitemdisplay
+    - node.type.node_gallery_gallery
+    - node.type.node_gallery_item
+    - node.type.page
+    - node.type.pagewithadvancedpoll
+    - node.type.paypal_donate
+    - node.type.picnicitemdisplay
+    - node.type.poll
+    - node.type.pollwithpage
+    - node.type.product_display
+    - node.type.story
+    - node.type.trialproductdisplay
+    - node.type.volunteertimeslotevent
+    - node.type.volunteertimesloteventday
+    - node.type.wcgop_store
+    - node.type.wcgopevent
+    - node.type.webform
+    - taxonomy.vocabulary.catalog
+    - taxonomy.vocabulary.contactdatabase
+    - taxonomy.vocabulary.contactdatabasetagparents
+    - taxonomy.vocabulary.contactdatabasetags
+    - taxonomy.vocabulary.contactvolunteer
+    - taxonomy.vocabulary.vocabulary_1
+    - user.role.administer_contacts
+    - user.role.authenticated
+    - user.role.site_editor
+    - user.role.view_contacts
+  module:
+    - admincontacts
+    - asset_injector
+    - block
+    - block_content
+    - comment
+    - commerce
+    - commerce_checkout
+    - commerce_email
+    - commerce_number_pattern
+    - commerce_order
+    - commerce_payment
+    - commerce_price
+    - commerce_product
+    - commerce_promotion
+    - commerce_store
+    - commerce_tax
+    - conditional_fields
+    - config
+    - contactdata
+    - contextual
+    - devel
+    - entity_reference_revisions
+    - facets
+    - field_ui
+    - file
+    - filter
+    - image
+    - imce
+    - inline_formatter_field
+    - language
+    - layout_builder
+    - masquerade
+    - migrate_tools
+    - node
+    - paragraphs
+    - path
+    - pdf_reader
+    - profile
+    - search_api
+    - shortcut
+    - smtp
+    - stripe
+    - system
+    - taxonomy
+    - toolbar
+    - views_ui
+    - votingapi
+    - wcgop_commerce
+    - webform
+    - webform_node
 id: superadmin_user
 label: 'superadmin user'
 weight: 7
@@ -64,7 +171,6 @@ permissions:
   - 'access sources report'
   - 'access statistics'
   - 'access toolbar'
-  - 'access trialentity overview'
   - 'access user profiles'
   - 'access volunteer overview report'
   - 'access volunteer report'
@@ -254,7 +360,6 @@ permissions:
   - 'administer taxonomy_term fields'
   - 'administer taxonomy_term form display'
   - 'administer themes'
-  - 'administer trialentity'
   - 'administer url aliases'
   - 'administer user display'
   - 'administer user fields'
@@ -439,7 +544,6 @@ permissions:
   - 'create terms in contactdatabasetagparents'
   - 'create terms in contactdatabasetags'
   - 'create terms in contactvolunteer'
-  - 'create trialentity'
   - 'create trialproductdisplay commerce_product'
   - 'create trialproductdisplay content'
   - 'create url aliases'
@@ -675,7 +779,6 @@ permissions:
   - 'delete terms in contactdatabasetags'
   - 'delete terms in contactvolunteer'
   - 'delete terms in vocabulary_1'
-  - 'delete trialentity'
   - 'delete webform submissions any node'
   - 'delete webform submissions own node'
   - 'display drupal links'
@@ -895,7 +998,6 @@ permissions:
   - 'edit terms in contactdatabasetags'
   - 'edit terms in contactvolunteer'
   - 'edit terms in vocabulary_1'
-  - 'edit trialentity'
   - 'edit webform assets'
   - 'edit webform components'
   - 'edit webform source'
@@ -1422,7 +1524,6 @@ permissions:
   - 'view rsvplist'
   - 'view simple commerce_product'
   - 'view the administration theme'
-  - 'view trialentity'
   - 'view trialproductdisplay commerce_product'
   - 'view unpublished paragraphs'
   - 'view uploaded files'

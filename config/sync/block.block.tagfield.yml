@@ -18,12 +18,12 @@ plugin: 'facet_block:tagfield'
 settings:
   id: 'facet_block:tagfield'
   label: TagField
-  provider: facets
   label_display: visible
-  block_id: tagfield
+  provider: facets
   context_mapping: {  }
+  block_id: tagfield
 visibility:
   request_path:
     id: request_path
-    pages: "/cdv5\r\n<front>"
     negate: false
+    pages: "/cdv5\r\n<front>"

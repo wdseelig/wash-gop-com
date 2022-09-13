@@ -16,10 +16,10 @@ plugin: wcgop_commerce_gotocartblock
 settings:
   id: wcgop_commerce_gotocartblock
   label: 'WCGOP Commerce Go To Cart  Block'
-  provider: wcgop_commerce
   label_display: visible
+  provider: wcgop_commerce
 visibility:
   request_path:
     id: request_path
-    pages: /trial
     negate: false
+    pages: /trial

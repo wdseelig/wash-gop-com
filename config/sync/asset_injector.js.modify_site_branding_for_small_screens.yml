@@ -1,0 +1,24 @@
+uuid: f164f143-939a-46f3-9c54-941bf77cba1e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: modify_site_branding_for_small_screens
+label: 'Modify Site Branding for Small Screens'
+code: |-
+  jQuery(document).ready(function($){
+   $('div.site-branding__name').html('<a href="/">The Washtenaw County<br>Republican Party</a>');
+  });
+noscript: ''
+noscriptRegion: {  }
+jquery: false
+header: false
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
+contexts: {  }
+conditions_require_all: true

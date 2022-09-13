@@ -18,14 +18,14 @@ plugin: 'block_content:7330e494-8265-4cdb-b7d5-06885a99b262'
 settings:
   id: 'block_content:7330e494-8265-4cdb-b7d5-06885a99b262'
   label: 'The WCGOP Election Integrity Project'
-  provider: block_content
   label_display: visible
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
     context_mapping: {  }
+    pages: '<front>'

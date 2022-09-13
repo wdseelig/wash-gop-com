@@ -14,38 +14,38 @@ third_party_settings:
       children:
         - field_tagsource
         - field_tag
+      label: taginfo
+      region: content
       parent_name: ''
       weight: 0
       format_type: fieldset
-      region: content
       format_settings:
+        classes: group2
         show_empty_fields: false
         id: ''
-        classes: group2
         description: ''
         required_fields: true
-      label: taginfo
 id: paragraph.taginfo.default
 targetEntityType: paragraph
 bundle: taginfo
 mode: default
 content:
   field_tag:
+    type: options_select
     weight: 2
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_tagsource:
+    type: entity_reference_autocomplete
     weight: 1
+    region: content
     settings:
       match_operator: CONTAINS
       match_limit: 10
       size: 40
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
 hidden:
   created: true
   status: true

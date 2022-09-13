@@ -18,14 +18,14 @@ plugin: 'block_content:5f942d6b-5d9d-46e9-bfd2-6129ecfe77f0'
 settings:
   id: 'block_content:5f942d6b-5d9d-46e9-bfd2-6129ecfe77f0'
   label: 'Membership Form'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
     context_mapping: {  }
+    pages: '<front>'

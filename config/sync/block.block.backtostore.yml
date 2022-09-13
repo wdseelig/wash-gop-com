@@ -18,13 +18,13 @@ plugin: 'block_content:7fbdd400-4ba9-4162-92f9-0e08824c98a9'
 settings:
   id: 'block_content:7fbdd400-4ba9-4162-92f9-0e08824c98a9'
   label: BackToStore
-  provider: block_content
   label_display: visible
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '/*goplincoln*'
     negate: false
+    pages: '/*goplincoln*'

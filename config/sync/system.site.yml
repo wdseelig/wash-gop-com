@@ -1,3 +1,6 @@
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+langcode: en
 uuid: 2f28fe3b-22dd-4403-b589-40b08d5cb719
 name: 'The Washtenaw County Republican Party'
 mail: admin@wash-gop.com
@@ -8,7 +11,4 @@ page:
   front: /frontpage
 admin_compact_mode: false
 weight_select_max: 100
-langcode: en
 default_langcode: en
-_core:
-  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

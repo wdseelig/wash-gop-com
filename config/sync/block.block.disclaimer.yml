@@ -18,13 +18,13 @@ plugin: 'block_content:3e30aea3-bfa9-420d-816d-ab659d7f442d'
 settings:
   id: 'block_content:3e30aea3-bfa9-420d-816d-ab659d7f442d'
   label: 'Paid for by the Washtenaw County Republican Party.  Not authorized by any candidate or candidate''s committee.'
-  provider: block_content
   label_display: visible
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
+    pages: '<front>'

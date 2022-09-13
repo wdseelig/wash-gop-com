@@ -18,14 +18,14 @@ plugin: 'block_content:a6069486-6738-4924-adef-1c2ed64692e5'
 settings:
   id: 'block_content:a6069486-6738-4924-adef-1c2ed64692e5'
   label: Subscibe
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
     context_mapping: {  }
+    pages: '<front>'

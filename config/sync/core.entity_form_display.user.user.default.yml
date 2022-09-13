@@ -26,22 +26,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  wcgop_customer_profiles:
-    type: entity_reference_autocomplete
-    weight: 3
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
 hidden:
   adminaccounti_profiles: true
   billing_profiles: true
   commerce_remote_id: true
   customer_profiles: true
   guest_profiles: true
+  langcode: true
   member_profiles: true
   non_paying_cu_profiles: true
+  wcgop_customer_profiles: true
   wcgop_customer_v2_profiles: true

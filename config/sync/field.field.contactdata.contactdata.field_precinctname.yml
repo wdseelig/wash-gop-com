@@ -11,7 +11,7 @@ field_name: field_precinctname
 entity_type: contactdata
 bundle: contactdata
 label: PrecinctName
-description: 'The contact precinct'
+description: 'The name of the precinct in which the contact resides'
 required: false
 translatable: false
 default_value: {  }

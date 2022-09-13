@@ -8,7 +8,6 @@ dependencies:
     - field.storage.contactdata.field_lastname
     - field.storage.contactdata.field_ldname
     - field.storage.contactdata.field_precinctname
-    - field.storage.contactdata.field_schooldistrict
     - field.storage.contactdata.field_sdname
     - field.storage.contactdata.field_taginfo
     - search_api.server.d9sitedbserver
@@ -64,14 +63,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.contactdata.field_precinctname
-  field_schooldistrict:
-    label: SchoolDistrict
-    datasource_id: 'entity:contactdata'
-    property_path: field_schooldistrict
-    type: string
-    dependencies:
-      config:
-        - field.storage.contactdata.field_schooldistrict
   field_sdname:
     label: SDName
     datasource_id: 'entity:contactdata'

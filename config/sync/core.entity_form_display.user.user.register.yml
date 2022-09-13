@@ -6,7 +6,6 @@ dependencies:
     - core.entity_form_mode.user.register
     - field.field.user.user.commerce_remote_id
   module:
-    - profile
     - user
 id: user.user.register
 targetEntityType: user
@@ -14,38 +13,28 @@ bundle: user
 mode: register
 content:
   account:
-    weight: -10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  customer_profiles:
-    type: profile_form
-    weight: 90
-    settings:
-      form_mode: default
-    third_party_settings: {  }
-    region: content
-  language:
     weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
-  timezone:
-    weight: 6
+  language:
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
-  wcgop_customer_profiles:
-    type: profile_form
-    weight: 90
-    settings:
-      form_mode: wcgop_customer
-    third_party_settings: {  }
+  timezone:
+    weight: 2
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   adminaccounti_profiles: true
   billing_profiles: true
   commerce_remote_id: true
+  customer_profiles: true
   guest_profiles: true
+  langcode: true
   member_profiles: true
   non_paying_cu_profiles: true
+  wcgop_customer_profiles: true
+  wcgop_customer_v2_profiles: true

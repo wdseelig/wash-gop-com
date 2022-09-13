@@ -17,14 +17,14 @@ provider: null
 plugin: 'block_content:c482b648-fa80-4590-bfaf-43bc67a834e8'
 settings:
   id: 'block_content:c482b648-fa80-4590-bfaf-43bc67a834e8'
-  label: 'Whitney Williams for Congress'
-  provider: block_content
+  label: 'Whittney Williams for Congress'
   label_display: visible
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
+    pages: '<front>'

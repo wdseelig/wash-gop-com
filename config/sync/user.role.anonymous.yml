@@ -1,7 +1,27 @@
 uuid: f1fc6cd0-3e4f-4694-9de5-c2b686654b79
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.commerce_order_message
+    - node.type.commercelineitems
+    - node.type.webform
+  module:
+    - asset_injector
+    - comment
+    - commerce_checkout
+    - commerce_order
+    - commerce_payment
+    - commerce_product
+    - commerce_store
+    - contactdata
+    - filter
+    - node
+    - profile
+    - system
+    - toolbar
+    - webform
+    - webform_node
 _core:
   default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
 id: anonymous

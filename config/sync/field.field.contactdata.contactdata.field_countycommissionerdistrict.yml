@@ -10,8 +10,8 @@ id: contactdata.contactdata.field_countycommissionerdistrict
 field_name: field_countycommissionerdistrict
 entity_type: contactdata
 bundle: contactdata
-label: 'CC District'
-description: 'Contact''s CC District'
+label: CountyCommissionerDistrict
+description: 'The contact''s County Commissioner District'
 required: false
 translatable: false
 default_value: {  }

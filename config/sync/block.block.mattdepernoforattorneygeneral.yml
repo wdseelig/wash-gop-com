@@ -18,13 +18,13 @@ plugin: 'block_content:ff51c74e-37af-470a-ae5f-cbbe9537496d'
 settings:
   id: 'block_content:ff51c74e-37af-470a-ae5f-cbbe9537496d'
   label: 'Matt DePerno for Attorney General'
-  provider: block_content
   label_display: visible
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
+    pages: '<front>'

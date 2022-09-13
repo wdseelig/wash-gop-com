@@ -33,6 +33,7 @@ code: |-
       margin-right: auto;
       width:  65%;
     }
+    
     .region-sidebar-first h2 {
       color:  red;
       text-align: center;
@@ -72,6 +73,10 @@ code: |-
     }
     .region-header img {
       text-align: center;
+      width:	100%;
+    }
+    .region-header .contextual-region.block img {
+    	width: 55%;
     }
     #content .section {
       background-color: #b3eeff;
@@ -113,11 +118,27 @@ code: |-
     .site-branding__slogan {
       color:  #ffff00;
     }
+    @media only screen and (max-width: 1200px) {
     .site-branding__name a {
       color:  #ff0000;
       font-family: "Apple Chancery";
-      line-height:  150%;
+      font-size:	20px;
     }
+    .region-header .brand {
+    	margin-left:	-40px;
+    }
+    .logo {
+    	padding-left: 40px;
+    }
+    }
+    @media only screen and (min-width: 1201px) {
+    .site-branding__name a {
+      color:  #ff0000;
+      font-family: "Apple Chancery";
+      line-height:  1.2;
+    }
+    }
+    
     .site-branding__slogan {
       color:  #ffff00;
       
@@ -158,12 +179,12 @@ code: |-
     body:not(.user-logged-in) .ExecutiveCommitteeMembers {
       display: none;
     }
-conditions_require_all: true
+media: all
+preprocess: true
 conditions:
   request_path:
     id: request_path
-    pages: "<front>\r\n/About"
     negate: false
+    pages: "<front>\r\n/About"
 contexts: {  }
-media: all
-preprocess: true
+conditions_require_all: true

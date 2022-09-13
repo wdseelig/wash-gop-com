@@ -18,14 +18,14 @@ plugin: 'block_content:b82101bc-2e12-4464-8a4e-f5f2b531a2b8'
 settings:
   id: 'block_content:b82101bc-2e12-4464-8a4e-f5f2b531a2b8'
   label: 'The Congressman''s Corner'
-  provider: block_content
   label_display: visible
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: "<front>\r\n/admincontacts"
     negate: false
     context_mapping: {  }
+    pages: "<front>\r\n/admincontacts"

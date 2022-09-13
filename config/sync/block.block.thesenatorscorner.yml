@@ -18,14 +18,14 @@ plugin: 'block_content:a33b5947-90de-411f-82e9-48118a878896'
 settings:
   id: 'block_content:a33b5947-90de-411f-82e9-48118a878896'
   label: 'Our Senator Speaks'
-  provider: block_content
   label_display: visible
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
     context_mapping: {  }
+    pages: '<front>'

@@ -18,13 +18,13 @@ plugin: 'block_content:edce0e95-cccf-442b-ae3b-98d839bcf7eb'
 settings:
   id: 'block_content:edce0e95-cccf-442b-ae3b-98d839bcf7eb'
   label: ShoppingCartLink
-  provider: block_content
   label_display: visible
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: /goplincolnday2021
     negate: false
+    pages: /goplincolnday2021

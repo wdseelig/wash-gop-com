@@ -1,7 +1,28 @@
 uuid: 265ed880-4cb9-4e3a-952c-e8e49e741c12
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.1
+    - filter.format.2
+    - filter.format.3
+    - filter.format.commerce_order_message
+    - filter.format.ds_code
+    - filter.format.site_editor
+    - node.type.page
+  module:
+    - asset_injector
+    - block
+    - comment
+    - devel
+    - filter
+    - image
+    - imce
+    - node
+    - path
+    - pdf_reader
+    - toolbar
+    - votingapi
 id: site_editor
 label: 'Site editor'
 weight: 8
