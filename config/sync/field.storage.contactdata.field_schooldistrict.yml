@@ -1,0 +1,21 @@
+uuid: c64d79b4-d2be-4a88-9e4e-48672c4af12f
+langcode: en
+status: true
+dependencies:
+  module:
+    - contactdata
+id: contactdata.field_schooldistrict
+field_name: field_schooldistrict
+entity_type: contactdata
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

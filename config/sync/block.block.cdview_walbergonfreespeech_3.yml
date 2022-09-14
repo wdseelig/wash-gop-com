@@ -12,7 +12,7 @@ dependencies:
 id: cdview_walbergonfreespeech_3
 theme: cdview
 region: sidebar_first
-weight: -15
+weight: -16
 provider: null
 plugin: 'block_content:b82101bc-2e12-4464-8a4e-f5f2b531a2b8'
 settings:

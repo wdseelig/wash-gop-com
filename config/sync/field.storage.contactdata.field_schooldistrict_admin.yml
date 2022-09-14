@@ -1,0 +1,18 @@
+uuid: ca671a30-fec8-4813-b0c5-360d287fe2b3
+langcode: en
+status: true
+dependencies:
+  module:
+    - contactdata
+id: contactdata.field_schooldistrict_admin
+field_name: field_schooldistrict_admin
+entity_type: contactdata
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
