@@ -71,6 +71,10 @@ function admincontacts_entity_display_build_alter(&$build, $context)
         $context['entity']->field_primaryzip->getString() . '<br>' .
         $context['entity']->field_precinctname->getString(),
     ];
+    $build['wrapper']['contactid'] = [
+      '#type' => 'item',
+      '#markup' => '<h2> Contact ID:  ' . $context['entity']->id() ,
+    ];
     $build['wrapper']['contactage'] = [
       '#type' => 'item',
       '#markup' => '<h2>' . 'Age: ' . $context['entity']->field_age->value  . '<br>' .
@@ -115,5 +119,6 @@ function admincontacts_entity_display_build_alter(&$build, $context)
     return $build;
   }
 }
+
 
 
