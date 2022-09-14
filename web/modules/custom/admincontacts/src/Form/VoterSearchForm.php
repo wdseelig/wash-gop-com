@@ -132,6 +132,8 @@ class VoterSearchForm extends FormBase {
     $query->fields('cd', ['id', 'info_id']);
     $andGroup = $query->andConditionGroup()
       ->condition('w.LastName', '%' . $ln . '%' , 'LIKE')
+      ->condition('w.FirstName', '%'. $fn . '%' , 'LIKE')
+      ->condition('w.primaryaddress1', '%' . $addr . '%' , 'LIKE' )
       ->condition('cd.id', NULL, 'IS NULL');
     $noncontacts = $query->condition($andGroup)->execute()->fetchAll();
     foreach ($noncontacts as $value)
