@@ -101,9 +101,14 @@ class VoterSearchForm extends FormBase {
     $result = \Drupal::entityQuery('contactdata', 'cd');
     $andGroup = $result->andConditionGroup()
       ->condition('field_firstname', '%' . $fn . '%', 'LIKE')
-      ->condition('field_lastname', '%' . $ln . '%', 'LIKE')
-      ->condition('field_primaryaddress1', '%' . $addr . '%' , 'LIKE');
-    $result->condition($andGroup);
+      ->condition('field_lastname', '%' . $ln . '%', 'LIKE');
+    $orGroup = $result->orConditionGroup()
+      ->condition('field_primaryaddress1', '%'. $addr  . '%', 'LIKE')
+      ->notExists('field_primaryaddress1');
+    $finalGroup = $result->andConditionGroup()
+      ->condition($andGroup)
+      ->condition($orGroup);
+    $result->condition($finalGroup);
     $cidresult = $result->execute();
     $cids = $contactdata_storage->loadMultiple($cidresult);
 
