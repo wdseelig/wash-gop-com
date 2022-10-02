@@ -54,6 +54,7 @@
         "drupal/search_api_solr": "^4.2",
         "drupal/smtp": "^1.0",
         "drupal/stripe": "^1.0",
+        "drupal/stripe_webform": "^1.2",
         "drupal/twig_tweak": "^3.1",
         "drupal/upgrade_status": "^3.8",
         "drupal/views_data_export": "^1.1",
@@ -61,6 +62,7 @@
         "drupal/votingapi": "^3.0@beta",
         "drupal/webform": "^6.2@beta",
         "drupal/webform_migrate": "^1.2",
+        "drupal/webform_product": "^3.0",
         "drush/drush": "^10.3",
         "mnsami/composer-custom-directory-installer": "^2.0"
     },

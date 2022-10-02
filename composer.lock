@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3baab667ae0ad7cb29444759519a4ef2",
+    "content-hash": "425294c9a8d2e7949a0b9c787404fb50",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -5937,6 +5937,52 @@
             }
         },
         {
+            "name": "drupal/stripe_webform",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/stripe_webform.git",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/stripe_webform-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "500c0b5a52f9904e36b6777584338d56b7827417"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/stripe": "*",
+                "drupal/webform": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1608159884",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "hanoii",
+                    "homepage": "https://www.drupal.org/user/23157"
+                }
+            ],
+            "description": "Provides a stripe webform element and default handlers",
+            "homepage": "https://www.drupal.org/project/stripe_webform",
+            "support": {
+                "source": "https://git.drupalcode.org/project/stripe_webform"
+            }
+        },
+        {
             "name": "drupal/token",
             "version": "1.11.0",
             "source": {
@@ -6554,6 +6600,78 @@
             "homepage": "https://www.drupal.org/project/webform",
             "support": {
                 "source": "https://git.drupalcode.org/project/webform"
+            }
+        },
+        {
+            "name": "drupal/webform_product",
+            "version": "3.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/webform_product.git",
+                "reference": "3.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/webform_product-3.0.1.zip",
+                "reference": "3.0.1",
+                "shasum": "a4dc47fee9695da50e7cee1d7028bb8c5af32eea"
+            },
+            "require": {
+                "drupal/commerce": "*",
+                "drupal/commerce_cart": "*",
+                "drupal/commerce_checkout": "*",
+                "drupal/commerce_order": "*",
+                "drupal/commerce_payment": "*",
+                "drupal/commerce_product": "*",
+                "drupal/core": "^8 || ^9",
+                "drupal/webform": "*"
+            },
+            "require-dev": {
+                "drupal/commerce": "*",
+                "drupal/commerce_checkout": "*",
+                "drupal/commerce_order": "*",
+                "drupal/commerce_payment": "*",
+                "drupal/commerce_payment_example": "*",
+                "drupal/commerce_price": "*",
+                "drupal/commerce_product": "*",
+                "drupal/commerce_store": "*",
+                "drupal/webform": "*",
+                "drupal/webform_product": "*",
+                "drupal/webform_ui": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.0.1",
+                    "datestamp": "1650013252",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Tess Bakker",
+                    "homepage": "https://www.drupal.org/user/592104"
+                },
+                {
+                    "name": "mr.york",
+                    "homepage": "https://www.drupal.org/user/52785"
+                },
+                {
+                    "name": "nagy.balint",
+                    "homepage": "https://www.drupal.org/user/1763952"
+                }
+            ],
+            "description": "Setup a single webform as a product for Commerce.",
+            "homepage": "https://www.drupal.org/project/webform_product",
+            "support": {
+                "source": "https://git.drupalcode.org/project/webform_product"
             }
         },
         {
